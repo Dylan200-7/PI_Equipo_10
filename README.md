@@ -15,7 +15,6 @@ Nuestro proyecto se denomina **Kartoffelmachine**, un clasificador inteligente d
 Nuestro trabajo se encuentra relacionado principalmente con los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
 
 * ♻️ **ODS 12:** Producción y Consumo Responsables
-* 🌾 **ODS 2:** Hambre Cero
 * 💡 **ODS 9:** Industria, Innovación e Infraestructura
 
 ---
