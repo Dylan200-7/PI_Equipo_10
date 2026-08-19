@@ -3,7 +3,8 @@
 <p align="center"><b>Kartoffelmachine</b> · Clasificador inteligente de papas</p>
 <p align="center">
   <em>ODS 12 — Producción y Consumo Responsables</em>
-  
+</p> 
+<p align="center">
   <em>ODS 9 — Industria, Innovación e Infraestructura</em>
 </p>
 
