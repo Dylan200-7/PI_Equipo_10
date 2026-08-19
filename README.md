@@ -51,7 +51,7 @@ De acuerdo con lo expresado, nuestro proyecto está relacionado principalmente c
 
 ### 💡 ODS 9: Industria, Innovación e Infraestructura
 
----
+* **9.5:** Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales de todos los países, en particular los países en desarrollo, entre otras cosas fomentando la innovación y aumentando considerablemente, de aquí a 2030, el número de personas que trabajan en investigación y desarrollo por millón de habitantes y los gastos de los sectores público y privado en investigación y desarrollo
 
 ## 📸 Fotografía del Equipo
 
