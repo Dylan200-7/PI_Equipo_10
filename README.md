@@ -1,43 +1,55 @@
 <!-- Encabezado -->
+
 <h1 align="center">Equipo 10 — Proyecto Integrador 2026-2</h1>
-<p align="center"><b>Kartoffelmachine</b> · Clasificador inteligente de papas</p>
+
 <p align="center">
-  <em>ODS 12 — Producción y Consumo Responsables</em>
-</p> 
+  <b>Kartoffelmachine</b> · Clasificador inteligente de papas
+</p>
+
 <p align="center">
+  <em>ODS 12 — Producción y Consumo Responsables</em><br>
   <em>ODS 9 — Industria, Innovación e Infraestructura</em>
 </p>
 
 <p align="center">
   <img alt="UPCH" src="https://img.shields.io/badge/Universidad-UPCH-0B7A75?style=flat-square">
-  <img alt="Curso" src="https://img.shields.io/badge/Curso-Fundamentos%20de%20Diseño-1F2937?style=flat-square">
+  <img alt="Curso" src="https://img.shields.io/badge/Curso-Proyecto%20Integrador-1F2937?style=flat-square">
   <img alt="Estado" src="https://img.shields.io/badge/Estado-En%20desarrollo-334155?style=flat-square">
   <img alt="ODS 12" src="https://img.shields.io/badge/ODS-12-DAA520?style=flat-square">
-</p>
-<p align="center">
-  <img src="recursos/imagenes/ODS12.gif" alt="ODS 12 - Producción y consumo responsables" width="300"/>
+  <img alt="ODS 9" src="https://img.shields.io/badge/ODS-9-FD6925?style=flat-square">
 </p>
 
+<p align="center">
+  <img src="recursos/imagenes/ODS12.gif" alt="ODS 12 - Producción y Consumo Responsables" width="300"/>
+</p>
+
+---
 
 # Equipo 10 - Proyecto Integrador
 
-### Carrera de Ingeniería Informática/ Ingeniería Ambiental
+### Carrera de Ingeniería Informática / Ingeniería Ambiental
 
 **Universidad Peruana Cayetano Heredia**
 
+---
 
-## Descripción del Equipo
+## 🌍 Descripción del Equipo
 
-El **Equipo 10** del curso **Proyecto Integrador 2026-2**, esta conformado por estudiantes de la carrera de **Ingeniería Informática e Ingeniería Ambiental**.
+El **Equipo 10** del curso **Proyecto Integrador 2026-2** está conformado por estudiantes de las carreras de **Ingeniería Informática e Ingeniería Ambiental**.
 
-Nuestro proyecto se denomina **Kartoffelmachine**, un clasificador inteligente de papas canchan, el cual utiliza  herramientas de **programación, diseño de prototipodo y machine learning una rama de la inteligencia artificial**. Este tiene la finalidad de optimizar el proceso de clasificación de papas y evitar su desperdicio.
+Nuestro proyecto se denomina **Kartoffelmachine**, un clasificador inteligente de papas canchan, el cual utiliza herramientas de **programación, diseño de prototipado y machine learning, una rama de la inteligencia artificial**.
 
-De acuerdo a lo expresado, nuestro proyecto esta relacionado principalmente con los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
+Este tiene la finalidad de optimizar el proceso de clasificación de papas y evitar su desperdicio.
 
-* ♻️ **ODS 12:** Producción y Consumo Responsables
-*   Metas específicas:
-        12.3 De aquí a 2030, reducir a la mitad el desperdicio de alimentos per capita mundial en la venta al por menor y a           nivel de los consumidores y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas           las pérdidas posteriores a la cosecha
-* 💡 **ODS 9:** Industria, Innovación e Infraestructura
+De acuerdo con lo expresado, nuestro proyecto está relacionado principalmente con los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
+
+### ♻️ ODS 12: Producción y Consumo Responsables
+
+**Meta específica:**
+
+* **12.3:** De aquí a 2030, reducir a la mitad el desperdicio de alimentos per cápita mundial en la venta al por menor y a nivel de los consumidores, y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas las pérdidas posteriores a la cosecha.
+
+### 💡 ODS 9: Industria, Innovación e Infraestructura
 
 ---
 
@@ -65,4 +77,3 @@ De acuerdo a lo expresado, nuestro proyecto esta relacionado principalmente con 
 ## 📌 Resumen Final
 
 Este README presenta al **Equipo 10**, sus integrantes y el proyecto **Kartoffelmachine**, el cual continuaremos desarrollando durante el curso de **Proyecto Integrador 2026-2**, con énfasis en tecnología, innovación y producción responsable.
-
