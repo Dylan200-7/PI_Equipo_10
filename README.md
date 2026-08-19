@@ -35,7 +35,7 @@ Nuestro proyecto se denomina **Kartoffelmachine**, un clasificador inteligente d
 De acuerdo a lo expresado, nuestro proyecto esta relacionado principalmente con los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
 
 * ♻️ **ODS 12:** Producción y Consumo Responsables
-    Metas específicas:
+*   Metas específicas:
         12.3 De aquí a 2030, reducir a la mitad el desperdicio de alimentos per capita mundial en la venta al por menor y a           nivel de los consumidores y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas           las pérdidas posteriores a la cosecha
 * 💡 **ODS 9:** Industria, Innovación e Infraestructura
 
