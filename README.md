@@ -23,15 +23,10 @@
   <img src="recursos/imagenes/ODS12.gif" alt="ODS 12 - Producción y Consumo Responsables" width="300"/>
 </p>
 
----
-
-# Equipo 10 - Proyecto Integrador
 
 ### Carrera de Ingeniería Informática / Ingeniería Ambiental
 
 **Universidad Peruana Cayetano Heredia**
-
----
 
 ## 🌍 Descripción del Equipo
 
