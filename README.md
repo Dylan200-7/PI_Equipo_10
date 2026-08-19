@@ -62,10 +62,10 @@ De acuerdo con lo expresado, nuestro proyecto está relacionado principalmente c
 
 | Foto                                                  | Nombre                                    | Rol                          | Intereses                                        |
 | ----------------------------------------------------- | ----------------------------------------- | ---------------------------- | ------------------------------------------------ |
-| <img src="recursos/imagenes/Josue.jpg" width="90"/>   | **Josue Cristhian Mateo Mogollon Flores** | Líder del equipo             | Innovación, tecnología y sostenibilidad          |
-| <img src="recursos/imagenes/Dylan.jpg" width="90"/> | **Mathias Dylan Henry Quispe Charres**    | Diseñador / Modelador        | Diseño de prototipos, modelado 3D y programación |
-| <img src="recursos/imagenes/Nicole.jpg" width="90"/>   | **Nicole Jacqueline Anyosa Barrientos**   | Responsable de investigación | Investigación y desarrollo sostenible            |
-| <img src="recursos/imagenes/Dayra.jpg" width="90"/>   | **Dayra Martina Kuang Mauricio**          | Encargada de documentación   | Documentación y comunicación                     |
+| <img src="Recursos/Imagenes/Josue.jpg" width="90"/>   | **Josue Cristhian Mateo Mogollon Flores** | Líder del equipo             | Innovación, tecnología y sostenibilidad          |
+| <img src="Recursos/Imagenes/Dylan.jpg" width="90"/> | **Mathias Dylan Henry Quispe Charres**    | Diseñador / Modelador        | Diseño de prototipos, modelado 3D y programación |
+| <img src="Recursos/Imagenes/Nicole.jpg" width="90"/>   | **Nicole Jacqueline Anyosa Barrientos**   | Responsable de investigación | Investigación y desarrollo sostenible            |
+| <img src="Recursos/Imagenes/Dayra.jpg" width="90"/>   | **Dayra Martina Kuang Mauricio**          | Encargada de documentación   | Documentación y comunicación                     |
 
 ---
 
