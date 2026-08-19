@@ -1,18 +1,17 @@
 # Equipo 10 - Proyecto Integrador
 
-### Carrera de Ingeniería Informática
+### Carrera de Ingeniería Informática/ Ingeniería Ambiental
 
 **Universidad Peruana Cayetano Heredia**
 
----
 
-## 🌍 Descripción del Equipo
+## Descripción del Equipo
 
-Somos el **Equipo 10** del curso **Proyecto Integrador 2026-2**, conformado por estudiantes de la carrera de **Ingeniería Informática**.
+El **Equipo 10** del curso **Proyecto Integrador 2026-2**, esta conformado por estudiantes de la carrera de **Ingeniería Informática e Ingeniería Ambiental**.
 
-Nuestro proyecto se denomina **Kartoffelmachine**, un clasificador inteligente de papas que busca integrar herramientas de **programación, inteligencia artificial, visión artificial y diseño de prototipos** para mejorar el proceso de clasificación de papas.
+Nuestro proyecto se denomina **Kartoffelmachine**, un clasificador inteligente de papas canchan, el cual utiliza  herramientas de **programación, diseño de prototipodo y machine learning una rama de la inteligencia artificial**. Este tiene la finalidad de optimizar el proceso de clasificación de papas y evitar su desperdicio.
 
-Nuestro trabajo se encuentra relacionado principalmente con los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
+De acuerdo a lo expresado, nuestro proyecto esta relacionado principalmente con los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
 
 * ♻️ **ODS 12:** Producción y Consumo Responsables
 * 💡 **ODS 9:** Industria, Innovación e Infraestructura
