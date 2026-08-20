@@ -2,7 +2,7 @@
 
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=cylinder&color=0:0B1026,25:132C5B,50:1E5EFF,75:00C2FF,100:7DF9FF&height=240&section=header&text=KARTOFFELMACHINE&fontSize=48&fontColor=EAFBFF&animation=fadeIn&fontAlignY=40&desc=Sistema%20inteligente%20de%20clasificaci%C3%B3n%20de%20papas&descAlignY=62&descSize=19"
+    src="https://capsule-render.vercel.app/api?type=cylinder&color=0:071A12,25:0B3D2E,50:146B4A,75:22C55E,100:7CFC9B&height=240&section=header&text=KARTOFFELMACHINE&fontSize=48&fontColor=F0FFF4&animation=fadeIn&fontAlignY=40&desc=Sistema%20inteligente%20de%20clasificaci%C3%B3n%20de%20papas&descAlignY=62&descSize=19"
     width="100%"
     alt="Kartoffelmachine Header"
   />
@@ -10,15 +10,15 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2300&pause=900&color=7DF9FF&center=true&vCenter=true&width=1000&lines=Proyecto+Integrador+2026-2+%7C+Equipo+10+%7C+UPCH;Machine+Learning+%2B+Visi%C3%B3n+Artificial+%2B+Prototipado+3D;Clasificaci%C3%B3n+autom%C3%A1tica+para+reducir+desperdicio+agr%C3%ADcola;ODS+12+%7C+ODS+9+%7C+Innovaci%C3%B3n+con+impacto+real"
+    src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2300&pause=900&color=39FF88&center=true&vCenter=true&width=1000&lines=Proyecto+Integrador+2026-2+%7C+Equipo+10+%7C+UPCH;Machine+Learning+%2B+Visi%C3%B3n+Artificial+%2B+Prototipado+3D;Clasificaci%C3%B3n+inteligente+para+reducir+el+desperdicio+agr%C3%ADcola;Tecnolog%C3%ADa+%2B+Agricultura+%2B+Sostenibilidad"
     alt="Typing Animation"
   />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/UPCH-Universidad%20Peruana%20Cayetano%20Heredia-0A192F?style=for-the-badge&logo=academia&logoColor=7DF9FF" alt="UPCH"/>
-  <img src="https://img.shields.io/badge/Estado-En%20Desarrollo-111827?style=for-the-badge&logo=githubactions&logoColor=00E5FF" alt="Estado"/>
-  <img src="https://img.shields.io/badge/Proyecto-Kartoffelmachine-0F172A?style=for-the-badge&logo=dependabot&logoColor=7DF9FF" alt="Proyecto"/>
+  <img src="https://img.shields.io/badge/UPCH-Cayetano%20Heredia-0B3D2E?style=for-the-badge&logo=academia&logoColor=7CFC9B" alt="UPCH"/>
+  <img src="https://img.shields.io/badge/Estado-En%20Desarrollo-102A1E?style=for-the-badge&logo=githubactions&logoColor=39FF88" alt="Estado"/>
+  <img src="https://img.shields.io/badge/Proyecto-Kartoffelmachine-123524?style=for-the-badge&logo=dependabot&logoColor=7CFC9B" alt="Proyecto"/>
 </p>
 
 <p align="center">
