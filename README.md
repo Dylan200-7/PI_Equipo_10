@@ -38,7 +38,6 @@
 
 <div align="center">
 
---
 
 ## 🌍 Descripción del Equipo
 
