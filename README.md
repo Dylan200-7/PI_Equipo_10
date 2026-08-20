@@ -1,118 +1,53 @@
-<!-- ========================================================= -->
-<!--                 KARTOFFELMACHINE HEADER                    -->
-<!-- ========================================================= -->
+<!-- ========================= -->
+<!-- Encabezado innovador -->
+<!-- ========================= -->
 
 <div align="center">
 
-# 🥔 KARTOFFELMACHINE
-
-### Sistema inteligente de clasificación de papas
-
-**Equipo 10 · Proyecto Integrador 2026-2 · UPCH**
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=34&duration=2500&pause=900&color=8B5E3C&center=true&vCenter=true&width=900&lines=KARTOFFELMACHINE;Sistema+inteligente+de+clasificaci%C3%B3n+de+papas" alt="Titulo animado Kartoffelmachine" />
 
 <br>
 
-<img src="https://img.shields.io/badge/PROYECTO-KARTOFFELMACHINE-6D4C41?style=for-the-badge&logoColor=white"/>
-<img src="https://img.shields.io/badge/ESTADO-EN%20DESARROLLO-2E7D32?style=for-the-badge"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2200&pause=1000&color=3F7E44&center=true&vCenter=true&width=900&lines=Proyecto+Integrador+2026-2+%7C+Equipo+10+%7C+UPCH;Machine+Learning+%2B+Visi%C3%B3n+Artificial+%2B+Prototipado;Tecnolog%C3%ADa+para+reducir+el+desperdicio+de+alimentos;Clasificaci%C3%B3n+autom%C3%A1tica+orientada+al+ODS+12+y+ODS+9" alt="Descripcion animada" />
 
 <br><br>
 
-<pre>
-╔══════════════════════════════════════════════════════════════════════╗
-║                     🥔 KARTOFFELMACHINE 🥔                          ║
-║                                                                      ║
-║            PAPA  ───────►  👁️ VISIÓN ARTIFICIAL                    ║
-║                                │                                     ║
-║                                ▼                                     ║
-║                         🧠 MACHINE LEARNING                           ║
-║                                │                                     ║
-║                  ┌─────────────┼─────────────┐                       ║
-║                  ▼             ▼             ▼                       ║
-║              PEQUEÑA        MEDIANA        GRANDE                    ║
-║                  │             │             │                       ║
-║                  └─────────────┴─────────────┘                       ║
-║                                │                                     ║
-║                                ▼                                     ║
-║                     ♻️ APROVECHAMIENTO                              ║
-╚══════════════════════════════════════════════════════════════════════╝
-</pre>
-
-### `DETECTAR` · `ANALIZAR` · `CLASIFICAR` · `APROVECHAR`
-
-<br>
-
-<img src="https://img.shields.io/badge/Machine%20Learning-IA-6C63FF?style=flat-square"/>
-<img src="https://img.shields.io/badge/Visión-Artificial-00897B?style=flat-square"/>
-<img src="https://img.shields.io/badge/Modelado-3D-1565C0?style=flat-square"/>
-<img src="https://img.shields.io/badge/Agricultura-Tecnológica-558B2F?style=flat-square"/>
-<img src="https://img.shields.io/badge/Clasificación-Automática-795548?style=flat-square"/>
+<img alt="Estado" src="https://img.shields.io/badge/Estado-En%20desarrollo-556B2F?style=for-the-badge&labelColor=2F3E1F"/>
+<img alt="Proyecto" src="https://img.shields.io/badge/Proyecto-Kartoffelmachine-8B5E3C?style=for-the-badge&labelColor=5C3B28"/>
+<img alt="Curso" src="https://img.shields.io/badge/Curso-Proyecto%20Integrador-1F2937?style=for-the-badge&labelColor=111827"/>
 
 <br><br>
 
-### 🌱 Tecnología aplicada al aprovechamiento inteligente de productos agrícolas
-
-> **Transformamos la clasificación tradicional de papas en un proceso automatizado mediante inteligencia artificial y visión por computadora.**
+<table>
+<tr>
+<td align="center" width="220">
+  <img alt="ODS 12" src="https://img.shields.io/badge/ODS%2012-Producci%C3%B3n%20y%20Consumo%20Responsables-3F7E44?style=for-the-badge"/>
+</td>
+<td align="center" width="220">
+  <img alt="ODS 9" src="https://img.shields.io/badge/ODS%209-Industria%2C%20Innovaci%C3%B3n%20e%20Infraestructura-FD6925?style=for-the-badge"/>
+</td>
+</tr>
+</table>
 
 <br>
 
 <table>
 <tr>
-<td align="center">
-  <b>♻️ ODS 12</b><br>
-  <sub>Producción y Consumo<br>Responsables</sub>
+<td align="center" width="180">
+  <img alt="ML" src="https://img.shields.io/badge/Machine%20Learning-6C63FF?style=flat-square"/>
 </td>
-<td align="center">
-  <b>🏭 ODS 9</b><br>
-  <sub>Industria, Innovación<br>e Infraestructura</sub>
+<td align="center" width="180">
+  <img alt="Vision" src="https://img.shields.io/badge/Visi%C3%B3n%20Artificial-00897B?style=flat-square"/>
 </td>
-<td align="center">
-  <b>🎓 UPCH</b><br>
-  <sub>Ingeniería Informática<br>+ Ingeniería Ambiental</sub>
+<td align="center" width="180">
+  <img alt="Prototipado" src="https://img.shields.io/badge/Prototipado%203D-1565C0?style=flat-square"/>
 </td>
-</tr>
-</table>
-
-</div>
-
----
-
-## 🧭 Kartoffelmachine en una mirada
-
-<table>
-<tr>
-<td width="25%" align="center">
-<h3>🥔</h3>
-<b>Entrada</b><br>
-<sub>Papas para clasificar</sub>
-</td>
-
-<td width="25%" align="center">
-<h3>📷</h3>
-<b>Captura</b><br>
-<sub>Visión artificial</sub>
-</td>
-
-<td width="25%" align="center">
-<h3>🧠</h3>
-<b>Análisis</b><br>
-<sub>Machine Learning</sub>
-</td>
-
-<td width="25%" align="center">
-<h3>📦</h3>
-<b>Salida</b><br>
-<sub>Clasificación automática</sub>
+<td align="center" width="180">
+  <img alt="Agricultura" src="https://img.shields.io/badge/Agricultura%20Tecnol%C3%B3gica-689F38?style=flat-square"/>
 </td>
 </tr>
 </table>
 
----
-
-### Ingeniería Informática / Ingeniería Ambiental
-
-**Universidad Peruana Cayetano Heredia**
-
----
 
 
 ## 🌍 Descripción del Equipo
