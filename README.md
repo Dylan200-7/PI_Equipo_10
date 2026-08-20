@@ -1,54 +1,44 @@
-<!-- ========================= -->
-<!-- Encabezado innovador -->
-<!-- ========================= -->
+<!--  Encabezado  -->
+
+<p align="center">
+  <img
+    src="https://capsule-render.vercel.app/api?type=cylinder&color=0:0B1026,25:132C5B,50:1E5EFF,75:00C2FF,100:7DF9FF&height=240&section=header&text=KARTOFFELMACHINE&fontSize=48&fontColor=EAFBFF&animation=fadeIn&fontAlignY=40&desc=Sistema%20inteligente%20de%20clasificaci%C3%B3n%20de%20papas&descAlignY=62&descSize=19"
+    width="100%"
+    alt="Kartoffelmachine Header"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2300&pause=900&color=7DF9FF&center=true&vCenter=true&width=1000&lines=Proyecto+Integrador+2026-2+%7C+Equipo+10+%7C+UPCH;Machine+Learning+%2B+Visi%C3%B3n+Artificial+%2B+Prototipado+3D;Clasificaci%C3%B3n+autom%C3%A1tica+para+reducir+desperdicio+agr%C3%ADcola;ODS+12+%7C+ODS+9+%7C+Innovaci%C3%B3n+con+impacto+real"
+    alt="Typing Animation"
+  />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/UPCH-Universidad%20Peruana%20Cayetano%20Heredia-0A192F?style=for-the-badge&logo=academia&logoColor=7DF9FF" alt="UPCH"/>
+  <img src="https://img.shields.io/badge/Estado-En%20Desarrollo-111827?style=for-the-badge&logo=githubactions&logoColor=00E5FF" alt="Estado"/>
+  <img src="https://img.shields.io/badge/Proyecto-Kartoffelmachine-0F172A?style=for-the-badge&logo=dependabot&logoColor=7DF9FF" alt="Proyecto"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/ODS%2012-Producci%C3%B3n%20y%20Consumo%20Responsables-163B2B?style=for-the-badge&logo=leaflet&logoColor=7CFC9B" alt="ODS 12"/>
+  <img src="https://img.shields.io/badge/ODS%209-Industria%2C%20Innovaci%C3%B3n%20e%20Infraestructura-3B1D0A?style=for-the-badge&logo=stackshare&logoColor=FFB347" alt="ODS 9"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Machine%20Learning-0B1220?style=flat-square&logo=tensorflow&logoColor=FF6F00" alt="Machine Learning"/>
+  <img src="https://img.shields.io/badge/Visi%C3%B3n%20Artificial-0B1220?style=flat-square&logo=opencv&logoColor=5CFFB2" alt="Vision Artificial"/>
+  <img src="https://img.shields.io/badge/Prototipado%203D-0B1220?style=flat-square&logo=autodesk&logoColor=58A6FF" alt="Prototipado 3D"/>
+  <img src="https://img.shields.io/badge/Clasificaci%C3%B3n%20Inteligente-0B1220?style=flat-square&logo=databricks&logoColor=C084FC" alt="Clasificacion Inteligente"/>
+  <img src="https://img.shields.io/badge/Agricultura%20Tecnol%C3%B3gica-0B1220?style=flat-square&logo=googleearth&logoColor=7CFC9B" alt="Agricultura Tecnologica"/>
+</p>
+
+<br>
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=34&duration=2500&pause=900&color=8B5E3C&center=true&vCenter=true&width=900&lines=KARTOFFELMACHINE;Sistema+inteligente+de+clasificaci%C3%B3n+de+papas" alt="Titulo animado Kartoffelmachine" />
-
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&duration=2200&pause=1000&color=3F7E44&center=true&vCenter=true&width=900&lines=Proyecto+Integrador+2026-2+%7C+Equipo+10+%7C+UPCH;Machine+Learning+%2B+Visi%C3%B3n+Artificial+%2B+Prototipado;Tecnolog%C3%ADa+para+reducir+el+desperdicio+de+alimentos;Clasificaci%C3%B3n+autom%C3%A1tica+orientada+al+ODS+12+y+ODS+9" alt="Descripcion animada" />
-
-<br><br>
-
-<img alt="Estado" src="https://img.shields.io/badge/Estado-En%20desarrollo-556B2F?style=for-the-badge&labelColor=2F3E1F"/>
-<img alt="Proyecto" src="https://img.shields.io/badge/Proyecto-Kartoffelmachine-8B5E3C?style=for-the-badge&labelColor=5C3B28"/>
-<img alt="Curso" src="https://img.shields.io/badge/Curso-Proyecto%20Integrador-1F2937?style=for-the-badge&labelColor=111827"/>
-
-<br><br>
-
-<table>
-<tr>
-<td align="center" width="220">
-  <img alt="ODS 12" src="https://img.shields.io/badge/ODS%2012-Producci%C3%B3n%20y%20Consumo%20Responsables-3F7E44?style=for-the-badge"/>
-</td>
-<td align="center" width="220">
-  <img alt="ODS 9" src="https://img.shields.io/badge/ODS%209-Industria%2C%20Innovaci%C3%B3n%20e%20Infraestructura-FD6925?style=for-the-badge"/>
-</td>
-</tr>
-</table>
-
-<br>
-
-<table>
-<tr>
-<td align="center" width="180">
-  <img alt="ML" src="https://img.shields.io/badge/Machine%20Learning-6C63FF?style=flat-square"/>
-</td>
-<td align="center" width="180">
-  <img alt="Vision" src="https://img.shields.io/badge/Visi%C3%B3n%20Artificial-00897B?style=flat-square"/>
-</td>
-<td align="center" width="180">
-  <img alt="Prototipado" src="https://img.shields.io/badge/Prototipado%203D-1565C0?style=flat-square"/>
-</td>
-<td align="center" width="180">
-  <img alt="Agricultura" src="https://img.shields.io/badge/Agricultura%20Tecnol%C3%B3gica-689F38?style=flat-square"/>
-</td>
-</tr>
-</table>
-
-
+--
 
 ## 🌍 Descripción del Equipo
 
