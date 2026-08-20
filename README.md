@@ -1,32 +1,92 @@
-<!-- Encabezado -->
-
-<h1 align="center">Equipo 10 — Proyecto Integrador 2026-2</h1>
+<!-- Encabezado principal -->
 
 <p align="center">
-  <b>Kartoffelmachine</b> · Clasificador inteligente de papas
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:4A2C1A,45:7A4B2A,100:5E8C31&height=230&section=header&text=EQUIPO%2010&fontSize=58&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Proyecto%20Integrador%202026-2&descAlignY=58&descSize=22"
+    width="100%"
+    alt="Equipo 10 - Proyecto Integrador 2026-2"
+  />
 </p>
 
 <p align="center">
-  <em>ODS 12 — Producción y Consumo Responsables</em><br>
-  <em>ODS 9 — Industria, Innovación e Infraestructura</em>
+  <a href="https://readme-typing-svg.demolab.com">
+    <img
+      src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=23&pause=1200&color=5E8C31&center=true&vCenter=true&width=850&lines=Ingenier%C3%ADa+Inform%C3%A1tica+%2F+Ingenier%C3%ADa+Ambiental;Kartoffelmachine+%7C+Clasificador+inteligente+de+papas;Machine+Learning+%2B+Visi%C3%B3n+Artificial+%2B+Prototipado;Tecnolog%C3%ADa+para+reducir+el+desperdicio+alimentario"
+      alt="Typing SVG"
+    />
+  </a>
+</p>
+
+<h3 align="center">
+  🥔 Kartoffelmachine
+</h3>
+
+<p align="center">
+  <strong>Clasificador inteligente de papas · Proyecto Integrador 2026-2</strong>
 </p>
 
 <p align="center">
-  <img alt="UPCH" src="https://img.shields.io/badge/Universidad-UPCH-0B7A75?style=flat-square">
-  <img alt="Curso" src="https://img.shields.io/badge/Curso-Proyecto%20Integrador-1F2937?style=flat-square">
-  <img alt="Estado" src="https://img.shields.io/badge/Estado-En%20desarrollo-334155?style=flat-square">
-  <img alt="ODS 12" src="https://img.shields.io/badge/ODS-12-DAA520?style=flat-square">
-  <img alt="ODS 9" src="https://img.shields.io/badge/ODS-9-FD6925?style=flat-square">
+  Universidad Peruana Cayetano Heredia
+</p>
+
+<br>
+
+<p align="center">
+  <img
+    src="https://img.shields.io/badge/ODS%2012-Producci%C3%B3n%20y%20Consumo%20Responsables-3F7E44?style=for-the-badge"
+    alt="ODS 12"
+  />
+  <img
+    src="https://img.shields.io/badge/ODS%209-Industria%2C%20Innovaci%C3%B3n%20e%20Infraestructura-FD6925?style=for-the-badge"
+    alt="ODS 9"
+  />
 </p>
 
 <p align="center">
-  <img src="recursos/imagenes/ODS12.gif" alt="ODS 12 - Producción y Consumo Responsables" width="300"/>
+  <img
+    src="https://img.shields.io/badge/IA-Machine%20Learning-6C63FF?style=flat-square"
+    alt="Machine Learning"
+  />
+  <img
+    src="https://img.shields.io/badge/Visi%C3%B3n-Artificial-00897B?style=flat-square"
+    alt="Visión Artificial"
+  />
+  <img
+    src="https://img.shields.io/badge/Prototipado-3D-1565C0?style=flat-square"
+    alt="Prototipado 3D"
+  />
+  <img
+    src="https://img.shields.io/badge/Clasificaci%C3%B3n-Papas-8D6E63?style=flat-square"
+    alt="Clasificación de papas"
+  />
+  <img
+    src="https://img.shields.io/badge/Estado-En%20desarrollo-455A64?style=flat-square"
+    alt="Estado"
+  />
 </p>
 
+<br>
 
-### Carrera de Ingeniería Informática / Ingeniería Ambiental
+<div align="center">
 
-**Universidad Peruana Cayetano Heredia**
+### 🥔 Inteligencia Artificial · Agricultura · Sostenibilidad
+
+**Aplicando tecnología para mejorar la clasificación de papas y reducir las pérdidas de alimentos.**
+
+</div>
+
+<br>
+
+<p align="center">
+  <img
+    src="recursos/imagenes/ODS12.gif"
+    alt="ODS 12 - Producción y Consumo Responsables"
+    width="280"
+  />
+</p>
+
+---
+
 
 ## 🌍 Descripción del Equipo
 
