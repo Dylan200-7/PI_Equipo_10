@@ -1,19 +1,13 @@
-<!--  Encabezado  -->
+<!-- Encabezado Kartoffelmachine -->
 
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=cylinder&color=0:071A12,25:0B3D2E,50:146B4A,75:22C55E,100:7CFC9B&height=240&section=header&text=KARTOFFELMACHINE&fontSize=48&fontColor=F0FFF4&animation=fadeIn&fontAlignY=40&desc=Sistema%20inteligente%20de%20clasificaci%C3%B3n%20de%20papas&descAlignY=62&descSize=19"
+    src="./assets/kartoffelmachine-animation.svg"
     width="100%"
-    alt="Kartoffelmachine Header"
+    alt="Kartoffelmachine - Sistema inteligente de inspección de papas"
   />
 </p>
 
-<p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=24&duration=2300&pause=900&color=39FF88&center=true&vCenter=true&width=1000&lines=Proyecto+Integrador+2026-2+%7C+Equipo+10+%7C+UPCH;Machine+Learning+%2B+Visi%C3%B3n+Artificial+%2B+Prototipado+3D;Clasificaci%C3%B3n+inteligente+para+reducir+el+desperdicio+agr%C3%ADcola;Tecnolog%C3%ADa+%2B+Agricultura+%2B+Sostenibilidad"
-    alt="Typing Animation"
-  />
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/UPCH-Cayetano%20Heredia-0B3D2E?style=for-the-badge&logo=academia&logoColor=7CFC9B" alt="UPCH"/>
