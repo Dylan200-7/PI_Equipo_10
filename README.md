@@ -45,7 +45,7 @@ El **Equipo 10** del curso **Proyecto Integrador 2026-2** está conformado por e
 
 Nuestro proyecto se denomina **Kartoffelmachine**, un clasificador inteligente de papas canchan, el cual utiliza herramientas de **programación, diseño de prototipado y machine learning, una rama de la inteligencia artificial**.
 
-Este tiene la finalidad de optimizar el proceso de clasificación de papas y evitar su desperdicio.
+Este tiene la finalidad de optimizar el proceso de clasificación de papas y evitar su desperdicio en posibles ventas.
 
 De acuerdo con lo expresado, nuestro proyecto está relacionado principalmente con los siguientes **Objetivos de Desarrollo Sostenible (ODS):**
 
