@@ -4,13 +4,12 @@
 
 | **LISTA DE EXIGENCIAS** |                                                                                                                       |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Páginas:**            | 5                                                                                                                     |
 | **Edición:**            | Rev. 1                                                                                                                |
 | **PROYECTO:**           | **Diseño de sistema mecatrónico inteligente de triaje poscosecha de papa Chaucha / grupo Phureja — Kartoffelmachine** |
 | **Fecha:**              | 20/08/2026                                                                                                            |
 | **Revisado:**           |                                                                                                                       |
 | **CLIENTE:**            | **UNIVERSIDAD PERUANA CAYETANO HEREDIA**                                                                              |
-| **Elaborado:**          | **Equipo Kartoffelmachine**                                                                                           |
+| **Elaborado:**          | **Josue Mogollon(JM), Nicole Anyosa(NA), Dayra Kuang(DK), Dylan Quispe(DQ)**                                                                                           |
 
 ---
 
