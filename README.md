@@ -74,7 +74,7 @@ De acuerdo con lo expresado, nuestro proyecto está relacionado principalmente c
 | Foto                                                  | Nombre                                    | Rol                          | Intereses                                        |
 | ----------------------------------------------------- | ----------------------------------------- | ---------------------------- | ------------------------------------------------ |
 | <img src="Recursos/Imágenes/Josue.jpg" width="90"/>   | **Josue Cristhian Mateo Mogollon Flores** | Líder del equipo             | Innovación, tecnología y sostenibilidad          |
-| <img src="Recursos/Imágenes/Dylan.jpg" width="90"/> | **Mathias Dylan Henry Quispe Charres**    | Diseñador / Modelador        | Diseño de prototipos, modelado 3D y programación |
+| <img src="Recursos/Imágenes/Dylan.png" width="90"/> | **Mathias Dylan Henry Quispe Charres**    | Diseñador / Modelador        | Diseño de prototipos, modelado 3D y programación |
 | <img src="Recursos/Imágenes/Nicole.jpg" width="90"/>   | **Nicole Jacqueline Anyosa Barrientos**   | Responsable de investigación | Investigación y desarrollo sostenible            |
 | <img src="Recursos/Imágenes/Dayra.jpg" width="90"/>   | **Dayra Martina Kuang Mauricio**          | Encargada de documentación   | Documentación y comunicación                     |
 
