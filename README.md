@@ -2,7 +2,7 @@
 
 <p align="center">
   <img
-    src="./assets/kartoffelmachine-animation.svg"
+    src="./Recursos/Imágenes/kartoffelmachine-animation.svg"
     width="100%"
     alt="Kartoffelmachine - Sistema inteligente de inspección de papas"
   />
