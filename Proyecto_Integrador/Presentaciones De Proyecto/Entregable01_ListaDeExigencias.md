@@ -76,269 +76,46 @@
 
 ---
 
-# Bibliografía
+| **Fecha (cambios)** | **Deseo o Exigencia** | **Descripción**                                                                                                                                                                   | **Responsable**         |
+| ------------------- | :-------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| 20/08/26            |           E           | **Función Principal:** Inspeccionar y clasificar automáticamente papa Chaucha/Phureja según defectos externos, brotación y tamaño, para determinar su aprovechamiento poscosecha. | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Geometría:** El sistema deberá manipular papas de distintos tamaños, incluyendo tubérculos pequeños, evitando caídas o atascos durante el proceso.                              | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Cinemática:** El transporte deberá desplazar y orientar las papas de manera controlada para facilitar su inspección sin producir daños.                                         | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Fuerzas:** Los mecanismos no deberán producir golpes, cortes, aplastamiento ni daños significativos en los tubérculos.                                                          | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Energía:** El sistema deberá utilizar una alimentación eléctrica adecuada para los motores, sensores, cámara, controlador y actuadores.                                         | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Materia:** Se procesarán papas Chaucha/Phureja de diferentes tamaños y estados visibles, considerando defectos, deterioro y brotación.                                          | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Señales:** Entradas: encendido, inicio, parada, sensores y cámara. Salidas: estado, clasificación, accionamiento del separador, error y emergencia.                             | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Control:** El sistema deberá coordinar transporte, captura de imágenes, clasificación y separación automática de cada tubérculo.                                                | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Electrónico (hardware):** Se utilizará cámara, iluminación, sensores, controlador, motores y actuadores necesarios para la inspección y clasificación.                          | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Software:** El programa deberá procesar las imágenes obtenidas y clasificar automáticamente las papas según las características detectadas.                                     | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Inspección visual:** Las imágenes deberán capturarse con iluminación controlada para identificar color, textura, forma y defectos externos.                                     | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Medición:** El sistema deberá estimar el tamaño del tubérculo mediante visión artificial y sin realizar contacto destructivo.                                                   | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Comunicaciones:** Sensores, cámara, controlador y actuadores deberán intercambiar información correctamente y mantenerse sincronizados.                                         | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Seguridad:** El diseño deberá proteger al usuario de partes móviles y conexiones eléctricas, además de contar con un sistema de parada de emergencia.                           | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Higiene e inocuidad:** Las superficies en contacto con la papa deberán ser resistentes, no tóxicas y fáciles de limpiar.                                                        | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Ergonomía:** Los controles y zonas de alimentación y recolección deberán permitir una operación cómoda y segura.                                                                | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Fabricación:** Se priorizarán materiales y componentes comerciales disponibles localmente o de fácil adquisición y reemplazo.                                                   | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Control de calidad:** Se evaluará la clasificación correcta, tiempo de procesamiento, funcionamiento de la separación, presencia de atascos y posibles daños en las papas.      | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Montaje:** Los componentes mecánicos, electrónicos y de visión deberán instalarse de manera estable y permitir su desmontaje.                                                   | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Transporte:** El prototipo deberá tener dimensiones y peso adecuados para ser trasladado fácilmente dentro de la universidad.                                                   | Equipo Kartoffelmachine |
+| 20/08/26            |           D           | **Uso:** El prototipo funcionará principalmente en interiores y deberá mantener condiciones adecuadas de iluminación para la inspección.                                          | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Mantenimiento:** Los componentes deberán ser accesibles para limpieza, inspección, ajuste y reemplazo.                                                                          | Equipo Kartoffelmachine |
+| 20/08/26            |           D           | **Costos:** Se priorizarán componentes comerciales y reutilizables para mantener un costo accesible de fabricación.                                                               | Equipo Kartoffelmachine |
+| 20/08/26            |           E           | **Plazos:** El proyecto se desarrollará durante el periodo académico **2026-2**, siguiendo las etapas establecidas para el desarrollo del sistema.                                | Equipo Kartoffelmachine |
+
+## Bibliografía 
+
+* **Gamez-Rojas, G., Fuertes-Guerrero, C., & Mejía-España, D. (2025).** *Fumigación con etanol como tratamiento para inhibir la brotación en papa criolla colombiana (Solanum phureja).* TecnoLógicas, 28(63).
+* **Seminario-Cunya, J. F., Villanueva-Guevara, R., & Valdez-Yopla, M. H. (2018).** *Rendimiento de cultivares de papa amarillos precoces del grupo Phureja.* Agronomía Mesoamericana, 29(3), 639–653.
+* **Ruiz Santa Cruz, Y. F., & Sánchez Torres, M. R. (2024).** *Método de clasificación automática para defectos externos de Solanum phureja.* Universidad Señor de Sipán.
+* **Barnes, M., Duckett, T., Cielniak, G., Stroud, G., & Harper, G. (2010).** *Visual detection of blemishes in potatoes using minimalist boosted classifiers.* Journal of Food Engineering, 98(3), 339–346.
+* **Su, Q., Kondo, N., Li, M., Sun, H., & Al Riza, D. F. (2017).** *Potato feature prediction based on machine vision and 3D model rebuilding.* Computers and Electronics in Agriculture, 137, 41–51.
+* **Yang, Y., Liu, Z., Huang, M., Zhu, Q., & Zhao, X. (2023).** *Automatic detection of multi-type defects on potatoes using multispectral imaging combined with a deep learning model.* Journal of Food Engineering, 336.
+* **Li, J., Sun, W., Meng, Y., Liu, K., & Simionescu, P. A. (2026).** *Design and experimental study of a seed potato cutting machine and its machine vision-based defective tuber removal system.* Computers and Electronics in Agriculture.
+* **Ministerio de Salud del Perú.** *D.S. N.° 007-98-SA — Reglamento sobre Vigilancia y Control Sanitario de Alimentos y Bebidas.*
+* **Congreso de la República del Perú.** *Ley N.° 29783 — Ley de Seguridad y Salud en el Trabajo.*
+* **ISO 12100:2010.** *Safety of machinery — Risk assessment and risk reduction.*
+* **ISO 7250-1:2017.** *Basic human body measurements for technological design.*
+* **ISO 22000:2018.** *Food safety management systems.*
+* **VDI/VDE 2206:2021.** *Development of mechatronic and cyber-physical systems.*
 
-## Lista de Requerimientos
-
-**Gamez-Rojas, G., Fuertes-Guerrero, C., & Mejía-España, D. (2025).**
-*Fumigación con etanol como tratamiento para inhibir la brotación en papa criolla colombiana (Solanum Phureja).* TecnoLógicas, 28(63), e3278.
-DOI: **10.22430/22565337.3278**.
-
-Esta investigación demuestra la corta vida útil poscosecha de *Solanum phureja* asociada a la rápida brotación. En el tratamiento testigo se registró un índice de brotación de 82,8 % durante el periodo experimental, sustentando la necesidad de evaluar rápidamente la condición poscosecha del tubérculo.
-
----
-
-**Sinche Serra, M. V., Anguisaca Totasig, E. P., & Cuesta Plúa, M. C. (2021).**
-*Tratamiento postcosecha con radiación gamma para extender la vida útil de papa chaucha amarilla (Solanum phureja).* ACI Avances en Ciencias e Ingenierías, 12(3), 18.
-DOI: **10.18272/aci.v12i3.2020**.
-
-La investigación analiza el deterioro y brotación durante el almacenamiento de papa Chaucha amarilla, respaldando la necesidad de identificar signos visibles asociados con el estado poscosecha.
-
----
-
-**Seminario-Cunya, J. F., Villanueva-Guevara, R., & Valdez-Yopla, M. H. (2018).**
-*Rendimiento de cultivares de papa (Solanum tuberosum L.) amarillos precoces del grupo Phureja.* Agronomía Mesoamericana, 29(3), 639–653.
-DOI: **10.15517/ma.v29i3.32623**.
-
-La investigación caracteriza cultivares del grupo Phureja de Cajamarca y reporta tubérculos pequeños, incluso de alrededor de 2 cm o menos, además de diferentes destinos de procesamiento asociados al tamaño.
-
----
-
-**Ruiz Santa Cruz, Y. F., & Sánchez Torres, M. R. (2024).**
-*Método de clasificación automática para defectos externos con actualización manual de Solanum phureja para las exigencias de percepción de calidad.* Tesis de grado, Universidad Señor de Sipán. ALICIA-CONCYTEC.
-
-La investigación identifica que la clasificación realizada por productores es manual y que descartar tubérculos con daños externos demanda trabajo y tiempo. Su método de clasificación mediante redes neuronales reportó **92 % de exactitud y 93 % de precisión promedio**.
-
----
-
-**Ministerio de Salud del Perú. (1998).**
-*Decreto Supremo N.° 007-98-SA. Reglamento sobre Vigilancia y Control Sanitario de Alimentos y Bebidas.*
-
-El **Artículo 37** establece que los equipos y utensilios empleados en manipulación de alimentos deben fabricarse con materiales que no emitan sustancias tóxicas, no transfieran olores o sabores, no sean absorbentes, resistan la corrosión y soporten operaciones repetidas de limpieza y desinfección.
-
-El **Artículo 38** establece que los equipos deberán diseñarse para permitir una fácil y completa limpieza y desinfección.
-
----
-
-**Congreso de la República del Perú. (2011).**
-*Ley N.° 29783 — Ley de Seguridad y Salud en el Trabajo.*
-
-Se utiliza como referencia para considerar la prevención de riesgos y protección del operador durante el funcionamiento del prototipo.
-
----
-
-**ISO. (2010).**
-*ISO 12100:2010 — Safety of machinery — General principles for design — Risk assessment and risk reduction.*
-
-Proporciona principios para identificar peligros, evaluar riesgos y aplicar medidas de reducción del riesgo durante el diseño de maquinaria.
-
----
-
-**ISO. (2017).**
-*ISO 7250-1:2017 — Basic human body measurements for technological design — Part 1: Body measurement definitions and landmarks.*
-
-Se utilizará como referencia para considerar parámetros antropométricos durante el diseño ergonómico de las zonas de operación del equipo.
-
----
-
-**ISO. (2018).**
-*ISO 22000:2018 — Food safety management systems — Requirements for any organization in the food chain.*
-
-Se utiliza como referencia general para los aspectos relacionados con inocuidad en sistemas que intervienen dentro de una cadena alimentaria.
-
----
-
-**Ministerio de Energía y Minas del Perú.**
-*Código Nacional de Electricidad — Utilización.*
-
-Las disposiciones sobre alimentación desde redes de servicio público contemplan sistemas monofásicos de **220 V** y una frecuencia nominal de **60 Hz**, valores considerados para la alimentación principal del prototipo.
-
----
-
-**VDI / VDE. (2021).**
-*VDI/VDE 2206 — Development of mechatronic and cyber-physical systems.*
-
-La norma proporciona un marco para el desarrollo interdisciplinario de sistemas mecatrónicos y ciberfísicos y será utilizada como metodología principal de desarrollo del proyecto Kartoffelmachine.
-
----
-
-# Estado del Arte
-
-**Barnes, M., Duckett, T., Cielniak, G., Stroud, G., & Harper, G. (2010).**
-*Visual detection of blemishes in potatoes using minimalist boosted classifiers.* Journal of Food Engineering, 98(3), 339–346.
-DOI: **10.1016/j.jfoodeng.2010.01.010**.
-
-El trabajo desarrolló un sistema de visión para detectar defectos superficiales en papa mediante características de color y textura. Reportó aproximadamente **89,6 % y 89,5 % de exactitud** para variedades de papa blanca y roja.
-
----
-
-**ElMasry, G., Cubero, S., Moltó, E., & Blasco, J. (2012).**
-*A real-time mathematical computer method for potato inspection using machine vision.* Computers & Mathematics with Applications, 63(1), 268–279.
-DOI: **10.1016/j.camwa.2011.11.019**.
-
-Propone inspección automática de papas mediante visión artificial, combinando clasificación por tamaño y detección de defectos externos.
-
----
-
-**Su, Q., Kondo, N., Li, M., Sun, H., & Al Riza, D. F. (2017).**
-*Potato feature prediction based on machine vision and 3D model rebuilding.* Computers and Electronics in Agriculture, 137, 41–51.
-DOI: **10.1016/j.compag.2017.03.020**.
-
-Demuestra la posibilidad de obtener características dimensionales como longitud, ancho, espesor, volumen y masa mediante visión artificial y reconstrucción tridimensional.
-
----
-
-**Su, Q., Kondo, N., Li, M., Sun, H., Al Riza, D. F., & Habaragamuwa, H. (2018).**
-*Potato quality grading based on machine vision and 3D shape analysis.* Computers and Electronics in Agriculture, 152, 261–268.
-
-El sistema empleó información bidimensional y tridimensional para clasificación de calidad, detección de deformaciones y estimación del tamaño de los tubérculos.
-
----
-
-**Yang, Y., Liu, Z., Huang, M., Zhu, Q., & Zhao, X. (2023).**
-*Automatic detection of multi-type defects on potatoes using multispectral imaging combined with a deep learning model.* Journal of Food Engineering, 336, 111213.
-DOI: **10.1016/j.jfoodeng.2022.111213**.
-
-El trabajo evaluó papas sanas y papas con diferentes defectos, incluyendo brotación, sarna común, pudrición seca y magulladuras. El modelo propuesto alcanzó un **mAP de 90,26 %**.
-
----
-
-**Ruiz Santa Cruz, Y. F., & Sánchez Torres, M. R. (2024).**
-*Método de clasificación automática para defectos externos con actualización manual de Solanum phureja para las exigencias de percepción de calidad.* Universidad Señor de Sipán.
-
-Es uno de los antecedentes más cercanos a Kartoffelmachine debido a que trabaja específicamente con *Solanum phureja* y clasificación automática de defectos externos.
-
----
-
-**HCRP-YOLO. (2025).**
-*HCRP-YOLO: A lightweight algorithm for potato defect detection.* Smart Agricultural Technology, 10, 100849.
-DOI: **10.1016/j.atech.2025.100849**.
-
-Propone una arquitectura ligera basada en YOLO orientada a detectar defectos externos de papa, demostrando el interés actual por sistemas de visión artificial capaces de operar con menor costo computacional.
-
----
-
-**Li, J., Sun, W., Meng, Y., Liu, K., & Simionescu, P. A. (2026).**
-*Design and experimental study of a seed potato cutting machine and its machine vision-based defective tuber removal system.* Computers and Electronics in Agriculture, 249, 111818.
-DOI: **10.1016/j.compag.2026.111818**.
-
-Presenta un sistema integrado de procesamiento de papa que combina alimentación, orientación mecánica, transporte, visión artificial y separación automática. Constituye un antecedente importante para demostrar que la innovación de Kartoffelmachine no debe formularse simplemente como “usar una cámara y una IA para clasificar papas”, sino en la solución específica desarrollada para tubérculos Phureja pequeños y para la decisión de aprovechamiento poscosecha.
-
----
-
-# Proyecto preliminar
-
-**Seminario-Cunya, J. F., Villanueva-Guevara, R., & Valdez-Yopla, M. H. (2018).**
-*Rendimiento de cultivares de papa (Solanum tuberosum L.) amarillos precoces del grupo Phureja.*
-DOI: **10.15517/ma.v29i3.32623**.
-
-Fuente utilizada para establecer las características dimensionales de la materia prima y la necesidad de que el mecanismo pueda manipular tubérculos pequeños.
-
----
-
-**Gamez-Rojas, G., Fuertes-Guerrero, C., & Mejía-España, D. (2025).**
-*Fumigación con etanol como tratamiento para inhibir la brotación en papa criolla colombiana (Solanum Phureja).*
-DOI: **10.22430/22565337.3278**.
-
-Fuente utilizada para caracterizar la problemática de vida poscosecha reducida y rápida brotación.
-
----
-
-**Sinche Serra, M. V., Anguisaca Totasig, E. P., & Cuesta Plúa, M. C. (2021).**
-*Tratamiento postcosecha con radiación gamma para extender la vida útil de papa chaucha amarilla (Solanum phureja).*
-DOI: **10.18272/aci.v12i3.2020**.
-
-Fuente utilizada para analizar cambios de calidad, brotación, pérdida de peso y deterioro durante el almacenamiento.
-
----
-
-**D.S. N.° 007-98-SA.**
-*Reglamento sobre Vigilancia y Control Sanitario de Alimentos y Bebidas.*
-
-Fuente utilizada para la selección preliminar de materiales y definición de superficies destinadas al contacto con el tubérculo.
-
----
-
-**ISO 12100:2010.**
-*Safety of machinery — General principles for design — Risk assessment and risk reduction.*
-
-Fuente utilizada para el diseño preliminar de elementos de seguridad y análisis de riesgos.
-
----
-
-**ISO 7250-1:2017.**
-*Basic human body measurements for technological design.*
-
-Fuente utilizada como referencia para definir dimensiones asociadas a la interacción del operador con el prototipo.
-
----
-
-# Proyecto definitivo
-
-Las siguientes fuentes deberán emplearse durante la selección final de los algoritmos, componentes mecánicos y hardware del prototipo.
-
-**Barnes, M., Duckett, T., Cielniak, G., Stroud, G., & Harper, G. (2010).**
-*Visual detection of blemishes in potatoes using minimalist boosted classifiers.*
-DOI: **10.1016/j.jfoodeng.2010.01.010**.
-
-Referencia para procesamiento de características visuales de la superficie del tubérculo.
-
----
-
-**Su, Q., Kondo, N., Li, M., Sun, H., & Al Riza, D. F. (2017).**
-*Potato feature prediction based on machine vision and 3D model rebuilding.*
-DOI: **10.1016/j.compag.2017.03.020**.
-
-Referencia para estimación de dimensiones mediante visión artificial.
-
----
-
-**Yang, Y., Liu, Z., Huang, M., Zhu, Q., & Zhao, X. (2023).**
-*Automatic detection of multi-type defects on potatoes using multispectral imaging combined with a deep learning model.*
-DOI: **10.1016/j.jfoodeng.2022.111213**.
-
-Referencia para modelos de detección automática de múltiples defectos.
-
----
-
-**Ruiz Santa Cruz, Y. F., & Sánchez Torres, M. R. (2024).**
-*Método de clasificación automática para defectos externos con actualización manual de Solanum phureja para las exigencias de percepción de calidad.*
-
-Referencia directa para el entrenamiento y evaluación de modelos de clasificación aplicados a papa Phureja.
-
----
-
-**Li, J., Sun, W., Meng, Y., Liu, K., & Simionescu, P. A. (2026).**
-*Design and experimental study of a seed potato cutting machine and its machine vision-based defective tuber removal system.* Computers and Electronics in Agriculture, 249, 111818.
-DOI: **10.1016/j.compag.2026.111818**.
-
-Referencia para integración mecatrónica entre transporte, manipulación, visión artificial y separación automática.
-
----
-
-**VDI/VDE 2206. (2021).**
-*Development of mechatronic and cyber-physical systems.*
-
-Referencia metodológica para la especificación, diseño interdisciplinario, integración, verificación y validación de Kartoffelmachine.
-
----
-
-# Fuentes principales utilizadas para sustentar las exigencias
-
-| **Fuente**                              | **Información que aporta al proyecto**                                                     |
-| --------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Gamez-Rojas et al. (2025)               | Corta vida poscosecha y rápida brotación de *Solanum phureja*.                             |
-| Sinche Serra et al. (2021)              | Deterioro, brotación y cambios durante almacenamiento de papa Chaucha.                     |
-| Seminario-Cunya et al. (2018)           | Características y tamaños de tubérculos del grupo Phureja, incluyendo tubérculos pequeños. |
-| Ruiz Santa Cruz & Sánchez Torres (2024) | Selección manual, defectos externos y clasificación automática de *Solanum phureja*.       |
-| Barnes et al. (2010)                    | Detección de defectos superficiales mediante color y textura.                              |
-| Su et al. (2017; 2018)                  | Medición dimensional y evaluación de calidad mediante visión artificial.                   |
-| Yang et al. (2023)                      | Detección automática de múltiples defectos mediante deep learning.                         |
-| Li et al. (2026)                        | Integración de orientación, transporte, visión artificial y separación de papa.            |
-| D.S. N.° 007-98-SA                      | Materiales, higiene, limpieza y diseño de equipos relacionados con alimentos.              |
-| Ley N.° 29783                           | Seguridad y salud durante la operación.                                                    |
-| ISO 12100:2010                          | Evaluación y reducción de riesgos de maquinaria.                                           |
-| ISO 7250-1:2017                         | Ergonomía y antropometría.                                                                 |
-| ISO 22000:2018                          | Gestión de inocuidad alimentaria.                                                          |
-| Código Nacional de Electricidad         | Alimentación de 220 V y frecuencia de 60 Hz.                                               |
-| VDI/VDE 2206:2021                       | Metodología de desarrollo mecatrónico e integración del sistema.                           |
