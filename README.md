@@ -8,6 +8,12 @@
   />
 </p>
 
+<p align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=22&duration=2300&pause=900&color=39FF88&center=true&vCenter=true&width=1000&lines=Proyecto+Integrador+2026-2+%7C+Equipo+10+%7C+UPCH;Raspberry+Pi+%2B+Visi%C3%B3n+Artificial+%2B+Mecatr%C3%B3nica;Inspecci%C3%B3n+continua+de+papa+Criolla+%2F+Chaucha;Tecnolog%C3%ADa+%2B+Agricultura+%2B+Sostenibilidad"
+    alt="Kartoffelmachine"
+  />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/UPCH-Cayetano%20Heredia-0B3D2E?style=for-the-badge&logo=academia&logoColor=7CFC9B" alt="UPCH"/>
