@@ -16,7 +16,7 @@
 | **Fecha (cambios)** | **Deseo o Exigencia** | **Descripción**                                                                                                                                                                   | **Responsable** |
 | ------------------- | :-------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------: |
 | 20/08/26 | E | **Función Principal:** Inspeccionar y clasificar automáticamente papa Chaucha/Phureja según defectos externos, brotación y tamaño, para determinar su aprovechamiento poscosecha. | JM |
-| 20/08/26 | E | **Geometría:** El sistema deberá manipular papas de distintos tamaños, incluyendo tubérculos pequeños, evitando caídas o atascos durante el proceso. | DQ |
+| 20/08/26 | E | **Geometría:** El sistema deberá manipular papas de distintos tamaños, incluyendo tubérculos pequeños, evitando caídas o atascos durante el proceso. | DK |
 | 20/08/26 | E | **Cinemática:** El transporte deberá desplazar y orientar las papas de manera controlada para facilitar su inspección sin producir daños. | DQ |
 | 20/08/26 | E | **Fuerzas:** Los mecanismos no deberán producir golpes, cortes, aplastamiento ni daños significativos en los tubérculos. | DQ |
 | 20/08/26 | E | **Energía:** El sistema deberá utilizar una alimentación eléctrica adecuada para los motores, sensores, cámara, controlador y actuadores. | DQ |
