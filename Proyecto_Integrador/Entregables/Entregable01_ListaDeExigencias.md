@@ -34,7 +34,7 @@
 | 15/10/26 | E | **Fabricación:** Se priorizarán materiales y componentes comerciales disponibles localmente o de fácil adquisición y reemplazo. | DQ |
 | 20/10/26 | E | **Control de calidad:** Se evaluará la clasificación correcta, tiempo de procesamiento, funcionamiento de la separación, presencia de atascos y posibles daños en las papas. | NA |
 | 22/10/26 | E | **Montaje:** Los componentes mecánicos, electrónicos y de visión deberán instalarse de manera estable y permitir su desmontaje. | DQ |
-| 27/10/26 | E | **Transporte:** El prototipo deberá tener dimensiones y peso adecuados para ser trasladado fácilmente dentro de la universidad. | DQ |
+| 27/10/26 | E | **Transporte:** El prototipo deberá tener dimensiones y peso adecuados para ser trasladado fácilmente dentro de la universidad. | DK |
 | 29/10/26 | D | **Uso:** El prototipo funcionará principalmente en interiores y deberá mantener condiciones adecuadas de iluminación para la inspección. | DK |
 | 03/11/26 | E | **Mantenimiento:** Los componentes deberán ser accesibles para limpieza, inspección, ajuste y reemplazo. | DQ |
 | 05/11/26 | D | **Costos:** Se priorizarán componentes comerciales y reutilizables para mantener un costo accesible de fabricación. | JM |
