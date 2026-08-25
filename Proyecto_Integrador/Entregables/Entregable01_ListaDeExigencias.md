@@ -84,7 +84,6 @@
 * **[4] Barnes, M., Duckett, T., Cielniak, G., Stroud, G., & Harper, G. (2010).** *Visual detection of blemishes in potatoes using minimalist boosted classifiers.* Journal of Food Engineering, 98(3), 339–346.
 * **[5] Su, Q., Kondo, N., Li, M., Sun, H., & Al Riza, D. F. (2017).** *Potato feature prediction based on machine vision and 3D model rebuilding.* Computers and Electronics in Agriculture, 137, 41–51.
 * **[6] Yang, Y., Liu, Z., Huang, M., Zhu, Q., & Zhao, X. (2023).** *Automatic detection of multi-type defects on potatoes using multispectral imaging combined with a deep learning model.* Journal of Food Engineering, 336.
-* **[7] Li, J., Sun, W., Meng, Y., Liu, K., & Simionescu, P. A. (2026).** *Design and experimental study of a seed potato cutting machine and its machine vision-based defective tuber removal system.* Computers and Electronics in Agriculture.
 * **[8] Ministerio de Salud del Perú.** *D.S. N.° 007-98-SA — Reglamento sobre Vigilancia y Control Sanitario de Alimentos y Bebidas.*
 * **[9] Congreso de la República del Perú.** *Ley N.° 29783 — Ley de Seguridad y Salud en el Trabajo.*
 * **[10] ISO 12100:2010.** *Safety of machinery — Risk assessment and risk reduction.*
