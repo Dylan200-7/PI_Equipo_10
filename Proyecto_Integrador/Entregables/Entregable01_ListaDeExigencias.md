@@ -16,29 +16,29 @@
 | **Fecha (cambios)** | **Deseo o Exigencia** | **Descripción**                                                                                                                                                                   | **Responsable** |
 | ------------------- | :-------------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------: |
 | 20/08/26 | E | **Función Principal:** Inspeccionar y clasificar automáticamente papa Chaucha/Phureja según defectos externos, brotación y tamaño, para determinar su aprovechamiento poscosecha. | JM |
-| 20/08/26 | E | **Geometría:** El sistema deberá manipular papas de distintos tamaños, incluyendo tubérculos pequeños, evitando caídas o atascos durante el proceso. | DK |
-| 20/08/26 | E | **Cinemática:** El transporte deberá desplazar y orientar las papas de manera controlada para facilitar su inspección sin producir daños. | DQ |
-| 20/08/26 | E | **Fuerzas:** Los mecanismos no deberán producir golpes, cortes, aplastamiento ni daños significativos en los tubérculos. | DQ |
-| 20/08/26 | E | **Energía:** El sistema deberá utilizar una alimentación eléctrica adecuada para los motores, sensores, cámara, controlador y actuadores. | DQ |
-| 20/08/26 | E | **Materia:** Se procesarán papas Chaucha/Phureja de diferentes tamaños y estados visibles, considerando defectos, deterioro y brotación. | NA |
-| 20/08/26 | E | **Señales:** Entradas: encendido, inicio, parada, sensores y cámara. Salidas: estado, clasificación, accionamiento del separador, error y emergencia. | DQ |
-| 20/08/26 | E | **Control:** El sistema deberá coordinar transporte, captura de imágenes, clasificación y separación automática de cada tubérculo. | DQ |
-| 20/08/26 | E | **Electrónico (hardware):** Se utilizará cámara, iluminación, sensores, controlador, motores y actuadores necesarios para la inspección y clasificación. | DQ |
-| 20/08/26 | E | **Software:** El programa deberá procesar las imágenes obtenidas y clasificar automáticamente las papas según las características detectadas. | DQ |
-| 20/08/26 | E | **Inspección visual:** Las imágenes deberán capturarse con iluminación controlada para identificar color, textura, forma y defectos externos. | NA |
-| 20/08/26 | E | **Medición:** El sistema deberá estimar el tamaño del tubérculo mediante visión artificial y sin realizar contacto destructivo. | DQ |
-| 20/08/26 | E | **Comunicaciones:** Sensores, cámara, controlador y actuadores deberán intercambiar información correctamente y mantenerse sincronizados. | DQ |
-| 20/08/26 | E | **Seguridad:** El diseño deberá proteger al usuario de partes móviles y conexiones eléctricas, además de contar con un sistema de parada de emergencia. | DK |
-| 20/08/26 | E | **Higiene e inocuidad:** Las superficies en contacto con la papa deberán ser resistentes, no tóxicas y fáciles de limpiar. | NA |
-| 20/08/26 | E | **Ergonomía:** Los controles y zonas de alimentación y recolección deberán permitir una operación cómoda y segura. | DQ |
-| 20/08/26 | E | **Fabricación:** Se priorizarán materiales y componentes comerciales disponibles localmente o de fácil adquisición y reemplazo. | DQ |
-| 20/08/26 | E | **Control de calidad:** Se evaluará la clasificación correcta, tiempo de procesamiento, funcionamiento de la separación, presencia de atascos y posibles daños en las papas. | NA |
-| 20/08/26 | E | **Montaje:** Los componentes mecánicos, electrónicos y de visión deberán instalarse de manera estable y permitir su desmontaje. | DQ |
-| 20/08/26 | E | **Transporte:** El prototipo deberá tener dimensiones y peso adecuados para ser trasladado fácilmente dentro de la universidad. | DQ |
-| 20/08/26 | D | **Uso:** El prototipo funcionará principalmente en interiores y deberá mantener condiciones adecuadas de iluminación para la inspección. | DK |
-| 20/08/26 | E | **Mantenimiento:** Los componentes deberán ser accesibles para limpieza, inspección, ajuste y reemplazo. | DQ |
-| 20/08/26 | D | **Costos:** Se priorizarán componentes comerciales y reutilizables para mantener un costo accesible de fabricación. | JM |
-| 20/08/26 | E | **Plazos:** El proyecto se desarrollará durante el periodo académico **2026-2**, siguiendo las etapas establecidas para el desarrollo del sistema. | DK |
+| 25/08/26 | E | **Geometría:** El sistema deberá manipular papas de distintos tamaños, incluyendo tubérculos pequeños, evitando caídas o atascos durante el proceso. | DK |
+| 27/08/26 | E | **Cinemática:** El transporte deberá desplazar y orientar las papas de manera controlada para facilitar su inspección sin producir daños. | DQ |
+| 01/09/26 | E | **Fuerzas:** Los mecanismos no deberán producir golpes, cortes, aplastamiento ni daños significativos en los tubérculos. | DQ |
+| 03/09/26 | E | **Energía:** El sistema deberá utilizar una alimentación eléctrica adecuada para los motores, sensores, cámara, controlador y actuadores. | DQ |
+| 08/09/26 | E | **Materia:** Se procesarán papas Chaucha/Phureja de diferentes tamaños y estados visibles, considerando defectos, deterioro y brotación. | NA |
+| 10/09/26 | E | **Señales:** Entradas: encendido, inicio, parada, sensores y cámara. Salidas: estado, clasificación, accionamiento del separador, error y emergencia. | DQ |
+| 15/09/26 | E | **Control:** El sistema deberá coordinar transporte, captura de imágenes, clasificación y separación automática de cada tubérculo. | DQ |
+| 17/09/26 | E | **Electrónico (hardware):** Se utilizará cámara, iluminación, sensores, controlador, motores y actuadores necesarios para la inspección y clasificación. | DQ |
+| 22/09/26 | E | **Software:** El programa deberá procesar las imágenes obtenidas y clasificar automáticamente las papas según las características detectadas. | DQ |
+| 24/09/26 | E | **Inspección visual:** Las imágenes deberán capturarse con iluminación controlada para identificar color, textura, forma y defectos externos. | NA |
+| 29/09/26 | E | **Medición:** El sistema deberá estimar el tamaño del tubérculo mediante visión artificial y sin realizar contacto destructivo. | DQ |
+| 01/10/26 | E | **Comunicaciones:** Sensores, cámara, controlador y actuadores deberán intercambiar información correctamente y mantenerse sincronizados. | DQ |
+| 06/10/26 | E | **Seguridad:** El diseño deberá proteger al usuario de partes móviles y conexiones eléctricas, además de contar con un sistema de parada de emergencia. | DK |
+| 08/10/26 | E | **Higiene e inocuidad:** Las superficies en contacto con la papa deberán ser resistentes, no tóxicas y fáciles de limpiar. | NA |
+| 13/10/26 | E | **Ergonomía:** Los controles y zonas de alimentación y recolección deberán permitir una operación cómoda y segura. | DQ |
+| 15/10/26 | E | **Fabricación:** Se priorizarán materiales y componentes comerciales disponibles localmente o de fácil adquisición y reemplazo. | DQ |
+| 20/10/26 | E | **Control de calidad:** Se evaluará la clasificación correcta, tiempo de procesamiento, funcionamiento de la separación, presencia de atascos y posibles daños en las papas. | NA |
+| 22/10/26 | E | **Montaje:** Los componentes mecánicos, electrónicos y de visión deberán instalarse de manera estable y permitir su desmontaje. | DQ |
+| 27/10/26 | E | **Transporte:** El prototipo deberá tener dimensiones y peso adecuados para ser trasladado fácilmente dentro de la universidad. | DQ |
+| 29/10/26 | D | **Uso:** El prototipo funcionará principalmente en interiores y deberá mantener condiciones adecuadas de iluminación para la inspección. | DK |
+| 03/11/26 | E | **Mantenimiento:** Los componentes deberán ser accesibles para limpieza, inspección, ajuste y reemplazo. | DQ |
+| 05/11/26 | D | **Costos:** Se priorizarán componentes comerciales y reutilizables para mantener un costo accesible de fabricación. | JM |
+| 10/11/26 | E | **Plazos:** El proyecto se desarrollará durante el periodo académico **2026-2**, siguiendo las etapas establecidas para el desarrollo del sistema. | DK |
 
 ---
 
