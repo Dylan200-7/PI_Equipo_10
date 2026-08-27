@@ -74,7 +74,7 @@ Los soportes permiten transmitir las cargas desde las guías hacia la base.
 
 ### Modelo final desarrollado en Onshape
 
-![Modelo del módulo V desarrollado en Onshape](/Recursos_Imagenes/Onshape_Modulo_V.png)
+![Modelo del módulo V desarrollado en Onshape](../../Recursos_Imágenes/Onshape_Modulo_V.png)
 
 El modelo incluye:
 
