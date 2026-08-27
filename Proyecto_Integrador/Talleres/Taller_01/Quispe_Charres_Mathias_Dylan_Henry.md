@@ -64,7 +64,7 @@ Esto permitirá transferir el movimiento del rodillo hacia la superficie de la p
 
 ## 2.3 Incorporación de soportes
 
-Durante el desarrollo inicial se detectó que las dos paredes de la V se encontraban separadas de la base y no tenían una conexión estructural adecuada.
+Durante el desarrollo inicial se detectó qu e las dos paredes de la V se encontraban separadas de la base y no tenían una conexión estructural adecuada.
 
 Esto podía producir problemas durante el análisis estructural, ya que las cargas aplicadas sobre las guías no tenían una trayectoria adecuada hacia la base.
 
@@ -74,7 +74,7 @@ Los soportes permiten transmitir las cargas desde las guías hacia la base.
 
 ### Modelo final desarrollado en Onshape
 
-![Modelo del módulo V desarrollado en Onshape](../../Recursos_Imagenes/Onshape_Modulo_V.png)
+![Modelo del módulo V desarrollado en Onshape](/Recursos_Imagenes/Onshape_Modulo_V.png)
 
 El modelo incluye:
 
