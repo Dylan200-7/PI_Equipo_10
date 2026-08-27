@@ -8,7 +8,7 @@ El diseño fue realizado inicialmente en **Onshape** y posteriormente fue import
 
 ---
 
-# 1. Objetivo
+## 1. Objetivo
 
 El objetivo de esta etapa fue diseñar y analizar un módulo mecánico capaz de mantener una papa centrada durante su desplazamiento y permitir posteriormente su rotación mediante un rodillo inferior.
 
@@ -21,7 +21,7 @@ El módulo está compuesto principalmente por:
 - Dos soportes estructurales.
 - Un sistema de fijación hacia la base.
 
-Este módulo posteriormente será repetido varias veces a lo largo de una faja transportadora, de manera que cada papa pueda ocupar su propia posición durante el proceso de inspección.
+Este módulo posteriormente podrá repetirse varias veces a lo largo de una faja transportadora, de manera que cada papa ocupe su propia posición durante el proceso de inspección.
 
 ---
 
@@ -29,9 +29,9 @@ Este módulo posteriormente será repetido varias veces a lo largo de una faja t
 
 ## 2.1 Diseño inicial
 
-El modelado comenzó en **Onshape**, utilizando un `Part Studio`.
+El modelado fue realizado utilizando **Onshape** mediante un `Part Studio`.
 
-Inicialmente se crearon las siguientes piezas:
+Inicialmente se desarrollaron las piezas principales del módulo:
 
 1. Base.
 2. Guía izquierda.
@@ -39,110 +39,111 @@ Inicialmente se crearon las siguientes piezas:
 4. Rodillo inferior.
 5. Eje del rodillo.
 
-Las dos guías fueron colocadas con una inclinación simétrica para formar una geometría en V.
+Las dos guías fueron ubicadas de forma inclinada para obtener una geometría en **V**.
 
-Esta geometría permite mantener la papa centrada y evita que se desplace lateralmente durante el movimiento.
+Esta geometría tiene como finalidad mantener la papa centrada durante su recorrido y reducir sus desplazamientos laterales.
 
 ---
 
 ## 2.2 Rodillo inferior
 
-En la parte inferior de la V se colocó un rodillo cilíndrico.
+En la zona inferior de la V se incorporó un rodillo cilíndrico.
 
-Este rodillo tiene como función futura generar la rotación de la papa.
+La función de este elemento será permitir la rotación de la papa durante la etapa de inspección.
 
-La idea es que el rodillo sea accionado mediante un motor y que posteriormente cuente con un recubrimiento de mayor fricción, como:
+Posteriormente, el rodillo podrá ser accionado mediante un motor y recubierto con un material de mayor fricción, como:
 
 - Goma.
 - Caucho.
 - Silicona.
 - TPU.
 
-Esto permitirá transferir el movimiento del rodillo hacia la superficie de la papa.
+El incremento de fricción permitirá transmitir el movimiento del rodillo hacia la superficie de la papa.
 
 ---
 
 ## 2.3 Incorporación de soportes
 
-Durante el desarrollo inicial se detectó qu e las dos paredes de la V se encontraban separadas de la base y no tenían una conexión estructural adecuada.
+Durante el desarrollo inicial se identificó que las dos guías inclinadas se encontraban separadas de la base.
 
-Esto podía producir problemas durante el análisis estructural, ya que las cargas aplicadas sobre las guías no tenían una trayectoria adecuada hacia la base.
+Esto representaba un problema estructural, ya que las fuerzas ejercidas sobre las guías no tenían una trayectoria física adecuada hacia la estructura inferior.
 
-Para solucionar este problema se añadieron dos soportes estructurales.
+Para solucionar este problema se incorporaron dos soportes estructurales que conectan las guías en V con la base.
 
-Los soportes permiten transmitir las cargas desde las guías hacia la base.
+De esta manera, las cargas pueden ser transmitidas desde las guías hacia la estructura principal.
 
-### Modelo final desarrollado en Onshape
+### Modelo desarrollado en Onshape
 
-![Modelo del módulo V desarrollado en Onshape](../../Recursos/Imágenes/Onshape_Modulo_V.png)
+<p align="center">
+  <img src="../../Recursos_Imagenes/Onshape_Modulo_V.png" width="800"/>
+</p>
 
-El modelo incluye:
+<p align="center">
+  <em>Figura 1. Modelo del módulo en V desarrollado en Onshape.</em>
+</p>
 
-- Base.
+El modelo desarrollado está compuesto por:
+
+- Base estructural.
 - Guía izquierda.
 - Guía derecha.
-- Rodillo.
-- Eje.
 - Soporte izquierdo.
 - Soporte derecho.
+- Rodillo inferior.
+- Eje central.
 
 ---
 
 # 3. Importación a SimScale
 
-Una vez finalizado el modelo en Onshape, se importó la geometría hacia **SimScale**.
+Una vez finalizado el modelo principal en Onshape, la geometría fue importada hacia **SimScale**.
 
-El objetivo fue realizar un análisis estructural estático para observar el comportamiento del módulo frente a cargas equivalentes al peso y presión ejercida por una papa.
+El objetivo fue realizar una primera evaluación del comportamiento mecánico del módulo utilizando un análisis estructural estático.
 
 ---
 
 # 4. Problemas encontrados durante la importación
 
-Durante la primera importación se presentó un error relacionado con un cuerpo superficial.
+Durante la primera importación se detectó un error relacionado con un cuerpo superficial.
 
-SimScale detectó una geometría denominada:
+SimScale identificó una geometría denominada:
 
 `Surface 1`
 
-Esta pieza tenía:
+Esta pieza presentaba área, pero no volumen, por lo que había sido creada como una superficie y no como un sólido tridimensional.
 
-- Área.
-- Cero volumen.
+El análisis estructural utilizado requiere sólidos para realizar correctamente los cálculos.
 
-Por lo tanto, era considerada una superficie y no un sólido tridimensional.
+Por este motivo, la superficie que no era necesaria para el análisis fue eliminada.
 
-El análisis estructural utilizado requería cuerpos sólidos.
-
-Para solucionar el problema se eliminó la superficie que no era necesaria para el análisis.
-
-Después de esta modificación, el modelo quedó compuesto únicamente por sólidos.
+Después de esta corrección, el modelo quedó compuesto únicamente por cuerpos sólidos.
 
 ---
 
-# 5. Configuración del análisis
+# 5. Configuración del análisis estructural
 
-Se utilizó un análisis:
+En SimScale se utilizó un análisis:
 
 ## Static Structural
 
 Este análisis permite estudiar el comportamiento de una estructura frente a cargas constantes.
 
-El objetivo principal fue evaluar:
+En esta primera etapa se buscó evaluar principalmente:
 
-- Desplazamiento.
-- Deformación.
-- Comportamiento de las guías.
-- Transmisión de cargas hacia la base.
+- El desplazamiento de las guías.
+- La deformación del módulo.
+- La transmisión de cargas hacia la base.
+- El comportamiento estructural preliminar.
 
 ---
 
-# 6. Material
+# 6. Material utilizado
 
-Se seleccionó **PLA** como material preliminar.
+Para el análisis se utilizó **PLA** como material preliminar.
 
-La elección se realizó considerando que el prototipo podría fabricarse parcialmente mediante impresión 3D.
+Esta elección se realizó considerando la posibilidad de fabricar parte del prototipo mediante impresión 3D.
 
-Los parámetros utilizados fueron:
+Los principales parámetros utilizados fueron:
 
 | Propiedad | Valor |
 |---|---:|
@@ -152,61 +153,82 @@ Los parámetros utilizados fueron:
 | Comportamiento | Elástico lineal |
 | Dependencia | Isotrópica |
 
-El material fue asignado a todos los sólidos del modelo.
+El PLA fue asignado a los cuatro sólidos presentes en el análisis:
 
-### Asignación de PLA
+- Part 1.
+- Part 2.
+- Part 3.
+- Part 4.
 
-![Asignación de material PLA en SimScale](../../Recursos_Imagenes/SimScale_PLA.png)
+### Configuración del material PLA
+
+<p align="center">
+  <img src="../../Recursos_Imagenes/SimScale_PLA.png" width="800"/>
+</p>
+
+<p align="center">
+  <em>Figura 2. Asignación del material PLA a los componentes del modelo.</em>
+</p>
 
 ---
 
-# 7. Gravedad
+# 7. Configuración de la gravedad
 
-Se activó la gravedad dentro del modelo.
+También se incorporó la gravedad al modelo.
 
 Se utilizó una magnitud de:
 
 **9.81 m/s²**
 
-orientada hacia la dirección vertical negativa.
+dirigida hacia la dirección vertical negativa del sistema.
 
 ### Configuración de gravedad
 
-![Configuración de gravedad](../../Recursos_Imagenes/SimScale_Gravedad.png)
+<p align="center">
+  <img src="../../Recursos_Imagenes/SimScale_Gravedad.png" width="800"/>
+</p>
 
-La gravedad permite considerar el peso propio de los componentes durante la simulación.
+<p align="center">
+  <em>Figura 3. Configuración de la gravedad dentro del análisis estructural.</em>
+</p>
+
+Esta condición permite considerar el peso propio de los componentes durante la simulación.
 
 ---
 
-# 8. Fixed Support
+# 8. Condición Fixed Support
 
-Para representar que la base del módulo estará sujeta al chasis principal de Kartoffelmachine, se utilizó una condición:
+Para representar la conexión del módulo con la estructura principal de Kartoffelmachine, se utilizó una condición de:
 
 ## Fixed Support
 
-Esta condición restringe completamente el movimiento de las caras seleccionadas.
+Esta condición restringe el desplazamiento de las superficies seleccionadas de la base.
 
-### Configuración del Fixed Support
+### Fixed Support aplicado
 
-![Fixed Support aplicado en la base](../../Recursos_Imagenes/SimScale_Fixed_Support.png)
+<p align="center">
+  <img src="../../Recursos_Imagenes/SimScale_Fixed_Support.png" width="800"/>
+</p>
 
-Esta condición representa que la base estará firmemente unida a la estructura principal.
+<p align="center">
+  <em>Figura 4. Condición Fixed Support aplicada sobre la base del módulo.</em>
+</p>
+
+Esta configuración representa que la base se encuentra firmemente sujeta a la estructura de la máquina.
 
 ---
 
 # 9. Aplicación de fuerzas
 
-Para representar aproximadamente la carga ejercida por una papa sobre ambas guías se utilizaron dos fuerzas.
+Para representar de manera simplificada la carga que ejercería una papa sobre ambas paredes de la V, se utilizaron dos fuerzas.
 
-Estas fuerzas fueron aplicadas sobre las superficies inclinadas de la V.
+Estas cargas fueron aplicadas sobre las superficies inclinadas.
 
 ---
 
 ## 9.1 Force 2
 
-La primera fuerza fue aplicada sobre una de las paredes.
-
-Los valores utilizados fueron:
+Para una de las guías se configuraron los siguientes valores:
 
 | Componente | Valor |
 |---|---:|
@@ -214,21 +236,27 @@ Los valores utilizados fueron:
 | Fy | 5 N |
 | Fz | -5 N |
 
-### Force 2
+### Configuración de Force 2
 
-![Force 2 aplicada sobre una guía](../../Recursos_Imagenes/SimScale_Force_2.png)
+<p align="center">
+  <img src="../../Recursos_Imagenes/SimScale_Force_2.png" width="800"/>
+</p>
+
+<p align="center">
+  <em>Figura 5. Fuerza aplicada sobre una de las guías en V.</em>
+</p>
 
 La componente vertical negativa representa una carga dirigida hacia abajo.
 
-La componente lateral representa la fuerza ejercida hacia uno de los lados de la V.
+La componente lateral representa la presión ejercida sobre uno de los lados de la V.
 
 ---
 
 ## 9.2 Force 3
 
-En la guía opuesta se utilizó una fuerza similar, pero con dirección lateral contraria.
+En la guía contraria se aplicó una fuerza similar, pero con dirección lateral opuesta.
 
-Los valores fueron:
+Los valores utilizados fueron:
 
 | Componente | Valor |
 |---|---:|
@@ -236,45 +264,53 @@ Los valores fueron:
 | Fy | -5 N |
 | Fz | -5 N |
 
-### Force 3
+### Configuración de Force 3
 
-![Force 3 aplicada sobre la otra guía](../../Recursos_Imagenes/SimScale_Force_3.png)
+<p align="center">
+  <img src="../../Recursos_Imagenes/SimScale_Force_3.png" width="800"/>
+</p>
 
-De esta manera se representa aproximadamente una distribución simétrica de carga sobre ambas superficies.
+<p align="center">
+  <em>Figura 6. Fuerza aplicada sobre la segunda guía en V.</em>
+</p>
+
+La utilización de componentes laterales opuestas permite representar de manera aproximada la carga generada por una papa apoyada entre ambas superficies inclinadas.
 
 ---
 
 # 10. Contactos entre componentes
 
-Durante las primeras pruebas se detectó que algunas partes del modelo no se encontraban correctamente conectadas.
+Durante las primeras pruebas se detectó que algunas piezas se encontraban estructuralmente aisladas.
 
-Esto provocaba que SimScale identificara algunos componentes como cuerpos independientes sin interacción.
+Inicialmente las paredes en V no tenían una conexión física adecuada con la base.
 
-Para solucionar este problema se realizaron modificaciones en Onshape y se incorporaron soportes físicos.
+Debido a ello, SimScale no podía transmitir correctamente las fuerzas entre los distintos componentes.
 
-Después de actualizar el modelo se configuraron los contactos necesarios entre los componentes.
+Para solucionar el problema se realizaron modificaciones en Onshape y se incorporaron soportes estructurales.
 
-Finalmente, SimScale detectó:
+Después de actualizar la geometría se configuraron los contactos correspondientes entre las diferentes piezas.
+
+Finalmente, el modelo contó con:
 
 **Contacts (3)**
 
-Esto permitió que las fuerzas se transmitieran correctamente entre las piezas.
+Estos contactos permiten transmitir las cargas entre los componentes durante el análisis.
 
 ---
 
-# 11. Mallado
+# 11. Generación de la malla
 
 Una vez configurados:
 
 - Material.
 - Gravedad.
+- Fixed Support.
 - Fuerzas.
 - Contactos.
-- Fixed Support.
 
-se procedió a generar la malla.
+se procedió a generar la malla del modelo.
 
-Se utilizó:
+Los principales parámetros utilizados fueron:
 
 | Parámetro | Configuración |
 |---|---|
@@ -282,60 +318,72 @@ Se utilizó:
 | Sizing | Automatic |
 | Fineness | 8.5 |
 
-### Mallado del módulo
+### Mallado del modelo
 
-![Mallado generado en SimScale](../../Recursos_Imagenes/SimScale_Mallado.png)
+<p align="center">
+  <img src="../../Recursos_Imagenes/SimScale_Mallado.png" width="800"/>
+</p>
 
-La malla obtenida contó aproximadamente con:
+<p align="center">
+  <em>Figura 7. Mallado generado para el análisis estructural.</em>
+</p>
 
-- **3.4 millones de celdas**
-- **5 millones de nodos**
+La malla final presentó aproximadamente:
 
-La geometría fue dividida en numerosos elementos pequeños para permitir el cálculo mediante elementos finitos.
+- **3.4 millones de celdas.**
+- **5 millones de nodos.**
+
+La generación de la malla permite dividir la geometría en elementos pequeños sobre los cuales SimScale realiza los cálculos mediante el método de elementos finitos.
 
 ---
 
-# 12. Ejecución
+# 12. Ejecución de la simulación
 
-Una vez configurado el modelo se ejecutó:
+Una vez completada la configuración del modelo se ejecutó:
 
 ## Static — Run 1
 
-La simulación finalizó correctamente.
+El proceso de simulación finalizó correctamente.
 
-También se confirmó que la generación de la malla terminó sin errores.
+También se confirmó que el mallado fue generado sin errores.
 
 ---
 
-# 13. Resultado de desplazamiento
+# 13. Resultados obtenidos
 
-El principal resultado evaluado inicialmente fue:
+El principal resultado evaluado durante esta etapa fue:
 
 ## Displacement Z
 
-Este parámetro representa el desplazamiento vertical de la estructura.
+Este resultado representa el desplazamiento de los componentes en la dirección vertical.
 
-### Resultado obtenido
+### Resultado de desplazamiento
 
-![Resultado de desplazamiento vertical](../../Recursos_Imagenes/SimScale_Desplazamiento.png)
+<p align="center">
+  <img src="../../Recursos_Imagenes/SimScale_Desplazamiento.png" width="800"/>
+</p>
 
-La escala muestra aproximadamente un desplazamiento mínimo de:
+<p align="center">
+  <em>Figura 8. Resultado del desplazamiento vertical obtenido en SimScale.</em>
+</p>
+
+La escala obtenida muestra aproximadamente un desplazamiento mínimo de:
 
 **−2.984 × 10⁻⁴ m**
 
-Al convertirlo a milímetros:
+Al convertir este valor a milímetros:
 
-**−2.984 × 10⁻⁴ m × 1000**
+**−2.984 × 10⁻⁴ × 1000**
 
-Resultado:
+se obtiene aproximadamente:
 
-**≈ −0.2984 mm**
+## **−0.2984 mm**
 
-Por lo tanto, el desplazamiento vertical máximo aproximado fue:
+Por lo tanto, el desplazamiento vertical máximo hacia abajo observado fue aproximadamente:
 
-## 0.30 mm
+## **0.30 mm**
 
-También se observa un desplazamiento positivo máximo cercano a:
+También se observó un desplazamiento positivo máximo cercano a:
 
 **2.006 × 10⁻⁵ m**
 
@@ -345,129 +393,117 @@ equivalente aproximadamente a:
 
 ---
 
-# 14. Interpretación
+# 14. Interpretación de los resultados
 
-Los resultados muestran que las zonas más alejadas de los soportes presentan un mayor desplazamiento.
+Los resultados muestran una variación del desplazamiento a lo largo de las guías inclinadas.
 
-Esto es coherente con el comportamiento esperado de una placa sometida a carga.
+Las zonas más alejadas de los soportes presentan mayores desplazamientos, mientras que las zonas cercanas a la estructura presentan menores movimientos.
 
-El desplazamiento máximo obtenido fue aproximadamente:
+El desplazamiento máximo aproximado fue de:
 
 **0.30 mm**
 
-Este valor es pequeño en comparación con las dimensiones generales del módulo.
+Este valor resulta relativamente pequeño en comparación con las dimensiones generales del módulo.
 
-Por lo tanto, de manera preliminar, el diseño presenta una rigidez suficiente para continuar con el desarrollo del prototipo.
+Por lo tanto, bajo las condiciones utilizadas en esta simulación preliminar, la estructura presenta un comportamiento adecuado para continuar con el desarrollo del prototipo.
 
-Sin embargo, este resultado no debe considerarse todavía como una validación definitiva del sistema final.
+Sin embargo, los resultados todavía no representan el funcionamiento completo de Kartoffelmachine.
 
 ---
 
 # 15. Simplificaciones realizadas
 
-Para esta primera simulación se realizaron varias simplificaciones.
+En esta primera simulación se realizaron diferentes simplificaciones para reducir la complejidad del análisis.
 
-No se incorporaron todavía:
+No se incorporaron:
 
-- La papa como cuerpo físico.
-- Fricción entre papa y rodillo.
-- Movimiento del rodillo.
-- Motor.
-- Torque.
-- Movimiento de la faja.
-- Tolva.
-- Cámara.
-- Raspberry Pi.
-- Sistema de separación.
-- Impactos producidos por la caída de las papas.
+- La papa como cuerpo tridimensional.
+- La fricción entre la papa y el rodillo.
+- La rotación del rodillo.
+- El motor.
+- El torque generado por el motor.
+- El movimiento de la faja transportadora.
+- La tolva.
+- La cámara.
+- El sistema electrónico.
+- La Raspberry Pi.
+- El mecanismo de separación.
+- El impacto producido por la caída de una papa.
 
-La carga ejercida por la papa fue representada mediante fuerzas equivalentes sobre las paredes de la V.
-
-El objetivo de esta etapa fue únicamente evaluar preliminarmente el comportamiento estructural del módulo.
+La acción de la papa fue representada mediante fuerzas aplicadas sobre las paredes de la V.
 
 ---
 
-# 16. Problemas encontrados y soluciones
+# 16. Problemas encontrados y soluciones aplicadas
 
-Durante el desarrollo se identificaron distintos problemas.
+Durante el proceso de modelado y simulación se presentaron diferentes dificultades.
 
 | Problema | Causa | Solución |
 |---|---|---|
-| Sheet bodies detected | Existía una superficie sin volumen | Se eliminó `Surface 1` |
-| Piezas sin interacción | Algunas piezas no tenían contactos | Se configuraron contactos |
-| Guías sin conexión con la base | El diseño inicial no tenía soportes | Se añadieron soportes en Onshape |
-| Simulación no ejecutaba correctamente | Había cuerpos estructuralmente aislados | Se corrigió la geometría |
-| Necesidad de representar la carga de una papa | La papa no se modeló como cuerpo sólido | Se utilizaron fuerzas equivalentes |
-| Diseño inicialmente poco fabricable | Las paredes en V parecían suspendidas | Se incorporaron soportes estructurales |
+| `Sheet bodies detected` | Existía una superficie sin volumen | Se eliminó `Surface 1` |
+| Piezas sin interacción | Algunas partes no tenían contactos | Se configuraron contactos |
+| Guías sin conexión con la base | El diseño inicial no incluía soportes | Se agregaron soportes en Onshape |
+| Simulación no podía ejecutarse | Existían cuerpos estructuralmente aislados | Se modificó la geometría |
+| Representación de la papa | No se modeló como cuerpo sólido | Se utilizaron fuerzas equivalentes |
+| Diseño inicialmente poco fabricable | Las guías parecían estar suspendidas | Se incorporaron soportes estructurales |
 
 ---
 
-# 17. Evolución del diseño
+# 17. Mejora del diseño mediante simulación
 
-El modelo fue modificándose durante el proceso de simulación.
+El uso de SimScale permitió identificar problemas que no eran completamente evidentes durante el modelado inicial.
 
-Inicialmente estaba compuesto principalmente por:
+Inicialmente el módulo estaba constituido principalmente por:
 
 - Base.
-- Dos placas en V.
+- Dos guías inclinadas.
 - Rodillo.
 
-Posteriormente se añadieron soportes que conectan las placas inclinadas con la base.
+Durante la configuración del análisis se identificó que las guías no tenían una conexión estructural adecuada hacia la base.
 
-Esto permitió obtener una geometría más:
+Como consecuencia, se regresó a Onshape y se añadieron soportes.
 
-- Realista.
-- Estructuralmente coherente.
-- Fabricable.
-- Compatible con el análisis en SimScale.
-
-El proceso de simulación también ayudó a identificar problemas que no eran evidentes únicamente mediante la visualización del modelo.
+Por lo tanto, la simulación no solamente permitió obtener resultados numéricos, sino que también contribuyó directamente a mejorar el diseño mecánico.
 
 ---
 
 # 18. Integración con Kartoffelmachine
 
-El módulo desarrollado representa una sola posición para una papa.
+El módulo desarrollado representa una posición individual para una papa.
 
-El sistema completo contempla el uso de múltiples módulos distribuidos sobre una faja transportadora.
+El diseño general de Kartoffelmachine contempla utilizar múltiples posiciones similares distribuidas a lo largo de una faja transportadora.
 
-Cada papa se ubicará en una V individual.
+Cada papa podrá colocarse dentro de su propio soporte en V.
 
-Posteriormente se integrarán:
+Durante el funcionamiento futuro:
 
-- Faja transportadora.
-- Varias posiciones en V.
-- Tolva.
-- Cámara de reconocimiento.
-- Iluminación.
-- Raspberry Pi.
-- Modelo de visión artificial.
-- Motor de rotación.
-- Sistema de separación.
-
-El rodillo inferior permitirá que la papa cambie de orientación mientras avanza.
-
-La cámara podrá capturar múltiples vistas y posteriormente el sistema de visión artificial determinará si la papa corresponde a una categoría:
-
-- Buena.
-- Mala.
+1. Las papas ingresarán mediante una tolva.
+2. Cada papa ocupará una posición individual.
+3. La faja realizará el transporte.
+4. El rodillo permitirá generar la rotación.
+5. Una cámara capturará diferentes vistas.
+6. La Raspberry Pi procesará las imágenes.
+7. El modelo de visión artificial determinará la calidad de la papa.
+8. Un mecanismo automático realizará la separación correspondiente.
 
 ---
 
 # 19. Trabajo futuro
 
-Como siguiente etapa se plantea:
+Las siguientes etapas del desarrollo consideran:
 
 1. Modelar la faja transportadora completa.
-2. Repetir el módulo en V varias veces.
-3. Diseñar la tolva.
-4. Incorporar el soporte de la cámara.
-5. Incorporar el motor del rodillo.
-6. Definir el mecanismo de transmisión.
-7. Analizar la rotación de la papa.
-8. Evaluar la interacción entre papa y rodillo.
-9. Incorporar el sistema de clasificación final.
-10. Integrar todos los componentes en un único modelo.
+2. Incorporar múltiples módulos en V.
+3. Diseñar la tolva de alimentación.
+4. Diseñar el soporte de la cámara.
+5. Incorporar iluminación.
+6. Incorporar el motor del rodillo.
+7. Diseñar el sistema de transmisión.
+8. Analizar la rotación de la papa.
+9. Evaluar la fricción entre papa y rodillo.
+10. Diseñar el mecanismo de separación.
+11. Integrar todos los componentes en un único ensamblaje.
+12. Realizar nuevas simulaciones sobre el sistema completo.
 
 ---
 
@@ -475,26 +511,26 @@ Como siguiente etapa se plantea:
 
 Se desarrolló satisfactoriamente un primer modelo mecánico del módulo de posicionamiento y rotación de papas utilizando **Onshape**.
 
-El diseño está compuesto por una geometría en V y un rodillo inferior que permitirá posteriormente generar la rotación de cada papa.
+El módulo está compuesto principalmente por dos superficies inclinadas que forman una geometría en V y un rodillo inferior que permitirá posteriormente generar la rotación de cada papa.
 
-Durante el desarrollo se identificó la necesidad de añadir soportes que conectaran las guías inclinadas con la base, permitiendo obtener una estructura más realista y físicamente construible.
+Durante el proceso se identificó la necesidad de incorporar soportes que conectaran las guías inclinadas con la base, obteniendo una estructura más realista y físicamente construible.
 
-Posteriormente el modelo fue importado a **SimScale**, donde se configuró un análisis estructural estático.
+Posteriormente el modelo fue importado hacia **SimScale**, donde se configuró un análisis estructural estático.
 
 Se definieron:
 
 - Material PLA.
 - Gravedad.
-- Fuerzas.
 - Fixed Support.
+- Fuerzas.
 - Contactos.
 - Mallado.
-- Simulación.
+- Condiciones de simulación.
 
 El análisis permitió obtener un desplazamiento vertical máximo aproximado de:
 
-## 0.30 mm
+## **0.30 mm**
 
-Este resultado representa una primera evaluación virtual del subsistema mecánico.
+Este resultado constituye una primera evaluación virtual del subsistema mecánico.
 
-A partir de este módulo se continuará desarrollando la estructura completa de Kartoffelmachine, integrando la faja transportadora, múltiples soportes en V, tolva, cámara, sistema de rotación y mecanismo de clasificación automática.
+A partir de este módulo se continuará desarrollando la estructura completa de **Kartoffelmachine**, incorporando la faja transportadora, múltiples módulos en V, la tolva, el sistema de rotación, la cámara de reconocimiento y el mecanismo de clasificación automática.
