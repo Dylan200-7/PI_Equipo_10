@@ -12,7 +12,7 @@ La forma en V permite centrar la papa y reducir su desplazamiento lateral durant
 [Ver modelo en Onshape](https://cad.onshape.com/documents/ae63f36f4342b7ddb9845e0c/w/7c21d35c96e35642a47e9d04/e/2c1a282385f188e1420c34c3)
 
 <p align="center">
-  <img src="Recursos/Imágenes/Onshape_Modulo_V.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/Onshape_Modulo_V.png?raw=1" width="800"/>
 </p>
 
 <p align="center">
@@ -46,12 +46,12 @@ Para la simulación se utilizó **PLA** como material y se configuraron condicio
 
 ## Material utilizado
 
-Para el análisis se utilizó **PLA**, considerando que el prototipo podrá fabricar algunos de sus componentes mediante impresión 3D.
+Para el análisis se utilizó **PLA**, considerando que algunos componentes del prototipo podrían ser fabricados mediante impresión 3D.
 
 Las principales propiedades utilizadas fueron:
 
 | Propiedad | Valor |
-| ---------------------- | --------------------: |
+|---|---:|
 | Material | PLA |
 | Módulo de Young | 3.5 × 10⁹ Pa |
 | Coeficiente de Poisson | 0.36 |
@@ -60,7 +60,7 @@ Las principales propiedades utilizadas fueron:
 | Comportamiento | Isotrópico |
 
 <p align="center">
-  <img src="Recursos/Imágenes/SimScale_PLA.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/SimScale_PLA.png?raw=1" width="800"/>
 </p>
 
 <p align="center">
@@ -80,7 +80,7 @@ orientada hacia la dirección vertical negativa del modelo.
 Esta condición permite considerar el peso propio de los componentes del módulo durante la simulación.
 
 <p align="center">
-  <img src="Recursos/Imágenes/SimScale_Gravedad.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/SimScale_Gravedad.png?raw=1" width="800"/>
 </p>
 
 <p align="center">
@@ -93,12 +93,12 @@ Esta condición permite considerar el peso propio de los componentes del módulo
 
 Para representar la unión del módulo con la estructura principal de Kartoffelmachine se configuró una condición de:
 
-**Fixed Support**
+### Fixed Support
 
 Esta condición restringe el desplazamiento de las superficies seleccionadas en la base del módulo.
 
 <p align="center">
-  <img src="Recursos/Imágenes/SimScale_Fixed_Support.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/SimScale_Fixed_Support.png?raw=1" width="800"/>
 </p>
 
 <p align="center">
@@ -116,38 +116,40 @@ Para representar de manera simplificada la carga ejercida por una papa sobre las
 En una de las guías se configuraron los siguientes componentes:
 
 | Componente | Valor |
-| ---------------------- | --------------------: |
+|---|---:|
 | Fx | 0 N |
 | Fy | 5 N |
 | Fz | -5 N |
 
 <p align="center">
-  <img src="Recursos/Imágenes/SimScale_Force_2.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/SimScale_Force_2.png?raw=1" width="800"/>
 </p>
 
 <p align="center">
   <em>Figura 5. Force 2 aplicada sobre una de las guías del módulo.</em>
 </p>
 
+---
+
 ### Force 3
 
 En la guía opuesta se aplicó una fuerza en sentido lateral contrario:
 
 | Componente | Valor |
-| ---------------------- | --------------------: |
+|---|---:|
 | Fx | 0 N |
 | Fy | -5 N |
 | Fz | -5 N |
 
 <p align="center">
-  <img src="Recursos/Imágenes/SimScale_Force_3.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/SimScale_Force_3.png?raw=1" width="800"/>
 </p>
 
 <p align="center">
   <em>Figura 6. Force 3 aplicada sobre la segunda guía del módulo.</em>
 </p>
 
-Las componentes laterales opuestas permiten representar de manera aproximada la presión ejercida por una papa al encontrarse apoyada entre ambas superficies inclinadas.
+Las componentes laterales opuestas permiten representar aproximadamente la presión ejercida por una papa al encontrarse apoyada entre ambas superficies inclinadas.
 
 ---
 
@@ -163,7 +165,7 @@ Finalmente se trabajó con:
 
 **Contacts (3)**
 
-permitiendo transmitir correctamente las cargas entre los componentes durante la simulación.
+permitiendo transmitir las cargas entre los componentes durante la simulación.
 
 ---
 
@@ -174,7 +176,7 @@ Para realizar los cálculos mediante elementos finitos se generó una malla sobr
 La configuración utilizada fue:
 
 | Parámetro | Configuración |
-| ---------------------- | --------------------: |
+|---|---:|
 | Algoritmo | Standard |
 | Sizing | Automatic |
 | Fineness | 8.5 |
@@ -182,7 +184,7 @@ La configuración utilizada fue:
 | Nodos aproximados | 5 millones |
 
 <p align="center">
-  <img src="Recursos/Imágenes/SimScale_Mallado.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/SimScale_Mallado.png?raw=1" width="800"/>
 </p>
 
 <p align="center">
@@ -198,7 +200,7 @@ El principal resultado evaluado fue el desplazamiento vertical:
 ## Displacement Z
 
 <p align="center">
-  <img src="Recursos/Imágenes/SimScale_Desplazamiento.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/SimScale_Desplazamiento.png?raw=1" width="800"/>
 </p>
 
 <p align="center">
@@ -226,7 +228,7 @@ También se obtuvo un desplazamiento positivo máximo cercano a:
 ## Resumen de resultados
 
 | Parámetro | Resultado |
-| ---------------------- | --------------------: |
+|---|---:|
 | Material | PLA |
 | Tipo de análisis | Estructural estático |
 | Resultado evaluado | Displacement Z |
@@ -284,7 +286,7 @@ El proceso de simulación permitió detectar problemas en el diseño inicial que
 Los principales problemas detectados fueron:
 
 | Problema | Solución |
-| ---------------------- | -------------------- |
+|---|---|
 | Existencia de `Surface 1` sin volumen | Eliminación de la superficie |
 | Guías estructuralmente aisladas | Incorporación de soportes |
 | Falta de transmisión de cargas | Configuración de contactos |
@@ -320,7 +322,7 @@ El rodillo ubicado en la zona inferior permitirá hacer girar la papa durante la
 
 ---
 
-## Conclusión
+# Conclusión
 
 Se desarrolló en **Onshape** un primer modelo del módulo mecánico de posicionamiento y rotación de papas para el proyecto **Kartoffelmachine**.
 
