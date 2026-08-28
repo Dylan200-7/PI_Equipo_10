@@ -197,6 +197,9 @@ Como mejoras futuras se plantea:
 - Analizar impactos producidos por la caída de papas.
 
 ---
+#Justificación
+
+El diseño de la tolva compacta y su validación estructural responden a la necesidad de garantizar que el componente soporte, de manera segura, el peso propio y la carga generada por el producto durante la etapa inicial del proceso de la Kartoffelmachine. Se utilizó acero como material de referencia por ser una opción estándar en el diseño de estructuras mecánicas sometidas a cargas estáticas, mientras que la simulación en SimScale permitió verificar, mediante el criterio de Von Mises, que la geometría propuesta no presenta puntos críticos de falla bajo las condiciones de carga establecidas. Esta primera validación respalda la viabilidad del diseño actual y sienta las bases para futuras iteraciones que incorporen espesores reales, uniones soldadas y el análisis del impacto por caída del producto.
 
 # Enlaces del proyecto
 
