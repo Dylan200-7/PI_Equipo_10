@@ -55,7 +55,7 @@ estructural estático.
 
 ## Simulación
 
-[Ver simulación en SimScale](https://www.simscale.com/workbench/?pid=4499940546658918321&rru=d2182d79-83d6-4060-b9a3-3cbf4cab1c8a&sh=1&ci=fac46db1-6586-4c8d-8075-8ad184b23d28&ct=MESH&mt=SIMULATION_RESULT)
+[Abrir simulación en SimScale](https://www.simscale.com/workbench/?pid=7623883839998516883&mi=spec:ca080429-a24a-4a33-ac29-93cac2c179b4%2Cservice:SIMULATION%2Cstrategy:1)
 
 ---
 
@@ -249,4 +249,4 @@ versión definitiva de la tolva.
 
 ## Simulación estructural
 
-[Abrir simulación en SimScale](https://www.simscale.com/workbench/?pid=4499940546658918321&rru=d2182d79-83d6-4060-b9a3-3cbf4cab1c8a&sh=1&ci=fac46db1-6586-4c8d-8075-8ad184b23d28&ct=MESH&mt=SIMULATION_RESULT)
+[Abrir simulación en SimScale](https://www.simscale.com/workbench/?pid=7623883839998516883&mi=spec:ca080429-a24a-4a33-ac29-93cac2c179b4%2Cservice:SIMULATION%2Cstrategy:1)
