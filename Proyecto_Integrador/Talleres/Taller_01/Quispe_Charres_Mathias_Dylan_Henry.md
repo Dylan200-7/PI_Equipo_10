@@ -25,9 +25,9 @@ Este módulo posteriormente podrá repetirse varias veces a lo largo de una faja
 
 ---
 
-# 2. Modelado en Onshape
+## 2. Modelado en Onshape
 
-## 2.1 Diseño inicial
+### 2.1 Diseño inicial
 
 El modelado fue realizado utilizando **Onshape** mediante un `Part Studio`.
 
@@ -45,7 +45,7 @@ Esta geometría tiene como finalidad mantener la papa centrada durante su recorr
 
 ---
 
-## 2.2 Rodillo inferior
+### 2.2 Rodillo inferior
 
 En la zona inferior de la V se incorporó un rodillo cilíndrico.
 
@@ -62,7 +62,7 @@ El incremento de fricción permitirá transmitir el movimiento del rodillo hacia
 
 ---
 
-## 2.3 Incorporación de soportes
+### 2.3 Incorporación de soportes
 
 Durante el desarrollo inicial se identificó que las dos guías inclinadas se encontraban separadas de la base.
 
@@ -75,7 +75,7 @@ De esta manera, las cargas pueden ser transmitidas desde las guías hacia la est
 ### Modelo desarrollado en Onshape
 
 <p align="center">
-  <img src="../../Recursos_Imagenes/Onshape_Modulo_V.png" width="800"/>
+  <img src="Recursos/Imágenes/Onshape_Modulo_V.png" width="800"/>
 </p>
 
 <p align="center">
@@ -94,7 +94,7 @@ El modelo desarrollado está compuesto por:
 
 ---
 
-# 3. Importación a SimScale
+## 3. Importación a SimScale
 
 Una vez finalizado el modelo principal en Onshape, la geometría fue importada hacia **SimScale**.
 
@@ -102,7 +102,7 @@ El objetivo fue realizar una primera evaluación del comportamiento mecánico de
 
 ---
 
-# 4. Problemas encontrados durante la importación
+## 4. Problemas encontrados durante la importación
 
 Durante la primera importación se detectó un error relacionado con un cuerpo superficial.
 
@@ -120,11 +120,11 @@ Después de esta corrección, el modelo quedó compuesto únicamente por cuerpos
 
 ---
 
-# 5. Configuración del análisis estructural
+## 5. Configuración del análisis estructural
 
 En SimScale se utilizó un análisis:
 
-## Static Structural
+### Static Structural
 
 Este análisis permite estudiar el comportamiento de una estructura frente a cargas constantes.
 
@@ -137,7 +137,7 @@ En esta primera etapa se buscó evaluar principalmente:
 
 ---
 
-# 6. Material utilizado
+## 6. Material utilizado
 
 Para el análisis se utilizó **PLA** como material preliminar.
 
@@ -163,7 +163,7 @@ El PLA fue asignado a los cuatro sólidos presentes en el análisis:
 ### Configuración del material PLA
 
 <p align="center">
-  <img src="../../Recursos_Imagenes/SimScale_PLA.png" width="800"/>
+  <img src="Recursos/Imágenes/SimScale_PLA.png" width="800"/>
 </p>
 
 <p align="center">
@@ -172,7 +172,7 @@ El PLA fue asignado a los cuatro sólidos presentes en el análisis:
 
 ---
 
-# 7. Configuración de la gravedad
+## 7. Configuración de la gravedad
 
 También se incorporó la gravedad al modelo.
 
@@ -185,7 +185,7 @@ dirigida hacia la dirección vertical negativa del sistema.
 ### Configuración de gravedad
 
 <p align="center">
-  <img src="../../Recursos_Imagenes/SimScale_Gravedad.png" width="800"/>
+  <img src="Recursos/Imágenes/SimScale_Gravedad.png" width="800"/>
 </p>
 
 <p align="center">
@@ -196,18 +196,18 @@ Esta condición permite considerar el peso propio de los componentes durante la 
 
 ---
 
-# 8. Condición Fixed Support
+## 8. Condición Fixed Support
 
 Para representar la conexión del módulo con la estructura principal de Kartoffelmachine, se utilizó una condición de:
 
-## Fixed Support
+### Fixed Support
 
 Esta condición restringe el desplazamiento de las superficies seleccionadas de la base.
 
 ### Fixed Support aplicado
 
 <p align="center">
-  <img src="../../Recursos_Imagenes/SimScale_Fixed_Support.png" width="800"/>
+  <img src="Recursos/Imágenes/SimScale_Fixed_Support.png" width="800"/>
 </p>
 
 <p align="center">
@@ -218,7 +218,7 @@ Esta configuración representa que la base se encuentra firmemente sujeta a la e
 
 ---
 
-# 9. Aplicación de fuerzas
+## 9. Aplicación de fuerzas
 
 Para representar de manera simplificada la carga que ejercería una papa sobre ambas paredes de la V, se utilizaron dos fuerzas.
 
@@ -226,7 +226,7 @@ Estas cargas fueron aplicadas sobre las superficies inclinadas.
 
 ---
 
-## 9.1 Force 2
+### 9.1 Force 2
 
 Para una de las guías se configuraron los siguientes valores:
 
@@ -239,7 +239,7 @@ Para una de las guías se configuraron los siguientes valores:
 ### Configuración de Force 2
 
 <p align="center">
-  <img src="../../Recursos_Imagenes/SimScale_Force_2.png" width="800"/>
+  <img src="Recursos/Imágenes/SimScale_Force_2.png" width="800"/>
 </p>
 
 <p align="center">
@@ -252,7 +252,7 @@ La componente lateral representa la presión ejercida sobre uno de los lados de 
 
 ---
 
-## 9.2 Force 3
+### 9.2 Force 3
 
 En la guía contraria se aplicó una fuerza similar, pero con dirección lateral opuesta.
 
@@ -267,7 +267,7 @@ Los valores utilizados fueron:
 ### Configuración de Force 3
 
 <p align="center">
-  <img src="../../Recursos_Imagenes/SimScale_Force_3.png" width="800"/>
+  <img src="Recursos/Imágenes/SimScale_Force_3.png" width="800"/>
 </p>
 
 <p align="center">
@@ -278,7 +278,7 @@ La utilización de componentes laterales opuestas permite representar de manera 
 
 ---
 
-# 10. Contactos entre componentes
+## 10. Contactos entre componentes
 
 Durante las primeras pruebas se detectó que algunas piezas se encontraban estructuralmente aisladas.
 
@@ -298,7 +298,7 @@ Estos contactos permiten transmitir las cargas entre los componentes durante el 
 
 ---
 
-# 11. Generación de la malla
+## 11. Generación de la malla
 
 Una vez configurados:
 
@@ -321,7 +321,7 @@ Los principales parámetros utilizados fueron:
 ### Mallado del modelo
 
 <p align="center">
-  <img src="../../Recursos_Imagenes/SimScale_Mallado.png" width="800"/>
+  <img src="Recursos/Imágenes/SimScale_Mallado.png" width="800"/>
 </p>
 
 <p align="center">
@@ -337,11 +337,11 @@ La generación de la malla permite dividir la geometría en elementos pequeños 
 
 ---
 
-# 12. Ejecución de la simulación
+## 12. Ejecución de la simulación
 
 Una vez completada la configuración del modelo se ejecutó:
 
-## Static — Run 1
+### Static — Run 1
 
 El proceso de simulación finalizó correctamente.
 
@@ -349,18 +349,18 @@ También se confirmó que el mallado fue generado sin errores.
 
 ---
 
-# 13. Resultados obtenidos
+## 13. Resultados obtenidos
 
 El principal resultado evaluado durante esta etapa fue:
 
-## Displacement Z
+### Displacement Z
 
 Este resultado representa el desplazamiento de los componentes en la dirección vertical.
 
 ### Resultado de desplazamiento
 
 <p align="center">
-  <img src="../../Recursos_Imagenes/SimScale_Desplazamiento.png" width="800"/>
+  <img src="Recursos/Imágenes/SimScale_Desplazamiento.png" width="800"/>
 </p>
 
 <p align="center">
@@ -377,7 +377,7 @@ Al convertir este valor a milímetros:
 
 se obtiene aproximadamente:
 
-## **−0.2984 mm**
+**−0.2984 mm**
 
 Por lo tanto, el desplazamiento vertical máximo hacia abajo observado fue aproximadamente:
 
@@ -393,7 +393,7 @@ equivalente aproximadamente a:
 
 ---
 
-# 14. Interpretación de los resultados
+## 14. Interpretación de los resultados
 
 Los resultados muestran una variación del desplazamiento a lo largo de las guías inclinadas.
 
@@ -411,7 +411,7 @@ Sin embargo, los resultados todavía no representan el funcionamiento completo d
 
 ---
 
-# 15. Simplificaciones realizadas
+## 15. Simplificaciones realizadas
 
 En esta primera simulación se realizaron diferentes simplificaciones para reducir la complejidad del análisis.
 
@@ -434,7 +434,7 @@ La acción de la papa fue representada mediante fuerzas aplicadas sobre las pare
 
 ---
 
-# 16. Problemas encontrados y soluciones aplicadas
+## 16. Problemas encontrados y soluciones aplicadas
 
 Durante el proceso de modelado y simulación se presentaron diferentes dificultades.
 
@@ -449,7 +449,7 @@ Durante el proceso de modelado y simulación se presentaron diferentes dificulta
 
 ---
 
-# 17. Mejora del diseño mediante simulación
+## 17. Mejora del diseño mediante simulación
 
 El uso de SimScale permitió identificar problemas que no eran completamente evidentes durante el modelado inicial.
 
@@ -467,7 +467,7 @@ Por lo tanto, la simulación no solamente permitió obtener resultados numérico
 
 ---
 
-# 18. Integración con Kartoffelmachine
+## 18. Integración con Kartoffelmachine
 
 El módulo desarrollado representa una posición individual para una papa.
 
@@ -488,7 +488,7 @@ Durante el funcionamiento futuro:
 
 ---
 
-# 19. Trabajo futuro
+## 19. Trabajo futuro
 
 Las siguientes etapas del desarrollo consideran:
 
@@ -507,7 +507,7 @@ Las siguientes etapas del desarrollo consideran:
 
 ---
 
-# 20. Conclusión
+## 20. Conclusión
 
 Se desarrolló satisfactoriamente un primer modelo mecánico del módulo de posicionamiento y rotación de papas utilizando **Onshape**.
 
