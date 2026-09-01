@@ -1,4 +1,4 @@
-# Caja Negra, Esquema de Funciones y Matriz Morfológica — Kartoffelmachine
+# Caja Negra, Esquema de Funciones y Matriz Morfológica — Kartoffelmaschine
 
 ## Caja Negra
 
