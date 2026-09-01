@@ -23,7 +23,10 @@ Como salidas principales se obtienen **papas clasificadas como buenas** y **papa
 
 ## Esquema de Funciones
 
-<img src="Recursos/Imágenes/Esquema_Funciones_Kartoffelmachine.png" width="1200"/>
+<p align="center">
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/Esquema_de_Funciones.jpeg?raw=1" width="800"/>
+</p>
+
 
 El **Esquema de Funciones** descompone Kartoffelmachine en los principales subsistemas que permiten realizar automáticamente el proceso de inspección y clasificación. El sistema está conformado por los subsistemas de **energía, control, sensores y visión, Machine Learning, actuadores y sistema mecánico**.
 
