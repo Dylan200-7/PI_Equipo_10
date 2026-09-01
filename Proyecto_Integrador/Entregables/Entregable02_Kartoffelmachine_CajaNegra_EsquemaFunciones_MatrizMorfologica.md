@@ -134,7 +134,9 @@ De esta manera, la papa pasa por las etapas de **alimentación, orientación, ro
 
 ## Matriz Morfológica
 
-<img src="Recursos/Imágenes/Matriz_Morfologica_Kartoffelmachine.png" width="1200"/>
+<p align="center">
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/Matriz_Morfologica.png?raw=1" width="800"/>
+</p>
 
 La **Matriz Morfológica** presenta diferentes alternativas tecnológicas para cada una de las funciones necesarias en Kartoffelmachine. Las funciones se agrupan en cinco áreas principales: **energía, procesamiento y control de señales, mecánica, comunicación y material/estructura**.
 
