@@ -1,8 +1,9 @@
 # Caja Negra, Esquema de Funciones y Matriz Morfológica — Kartoffelmaschine
 
 ## Caja Negra
-
-<img src="Recursos/Imágenes/Caja_Negra_Kartoffelmachine.png" width="1000"/>
+<p align="center">
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/Caja_Negra_Equipo_10.png?raw=1" width="800"/>
+</p>
 
 La **Caja Negra** representa de manera general el funcionamiento de **Kartoffelmachine**, un sistema mecatrónico automatizado diseñado para la **inspección y clasificación de papas Chaucha mediante visión artificial**.
 
