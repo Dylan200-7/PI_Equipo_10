@@ -7,7 +7,7 @@ El siguiente esquemático representa la organización y conexión de los compone
 El circuito está compuesto por el **emisor infrarrojo**, el **receptor**, sus respectivas resistencias, un conector de alimentación/señal y el **microcontrolador Raspberry Pi Pico**, encargado de recibir y procesar la señal generada por el sensor.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_02/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/SCH_Sensor_IR_TCRT5000_1-P1_Quispe_Charres_Mathias_Dylan_Henry.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/SCH_Sensor_IR_TCRT5000_1-P1_Quispe_Charres_Mathias_Dylan_Henry.png" width="800"/>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ El circuito está compuesto por el **emisor infrarrojo**, el **receptor**, sus r
 A partir del esquemático electrónico se realizó el diseño de la **placa de circuito impreso (PCB)**, ubicando los componentes y realizando el enrutamiento de las pistas necesarias para conectar el sensor infrarrojo, las resistencias, el conector y el microcontrolador.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_02/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_PCB1_Quispe_Charres_Mathias_Dylan_Henry.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_PCB1_Quispe_Charres_Mathias_Dylan_Henry.png" width="800"/>
 </p>
 
 <p align="center">
@@ -57,7 +57,6 @@ En esta vista se puede observar el **Raspberry Pi Pico**, el **sensor infrarrojo
 </p>
 
 ---
-
 ## 📦 4. Archivos Gerber
 
 Una vez finalizado el diseño de la PCB, se generaron los **archivos Gerber**, los cuales contienen la información necesaria para la fabricación física de la placa de circuito impreso.
@@ -65,7 +64,7 @@ Una vez finalizado el diseño de la PCB, se generaron los **archivos Gerber**, l
 Estos archivos incluyen información relacionada con las capas de cobre, perforaciones, máscara de soldadura, serigrafía y contorno de la PCB.
 
 <p align="center">
-  <a href="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip">
+  <a href="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip">
     <strong>⬇️ Descargar archivos Gerber</strong>
   </a>
 </p>
@@ -76,8 +75,8 @@ Estos archivos incluyen información relacionada con las capas de cobre, perfora
 
 | Archivo | Descripción |
 |---|---|
-| `SCH_Sensor_IR_TCRT5000_1-P1_Quispe_Charres_Mathias_Dylan_Henry.png` | Imagen del esquemático electrónico del sensor infrarrojo TCRT5000 elaborado en EasyEDA. |
-| `PCB_PCB1_Quispe_Charres_Mathias_Dylan_Henry.png` | Imagen principal del diseño de la placa PCB. |
-| `PCB_PCB2_Quispe_Charres_Mathias_Dylan_Henry.png` | Vista de las pistas y conexiones de la PCB. |
-| `PCB_3D_PCB1_Quispe_Charres_Mathias_Dylan_Henry.png` | Vista tridimensional de la PCB con los componentes electrónicos. |
-| [`Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip`](https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip) | Archivo comprimido que contiene los archivos Gerber necesarios para la fabricación de la PCB. |
+| [SCH_Sensor_IR_TCRT5000_1-P1_Quispe_Charres_Mathias_Dylan_Henry.pdf](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/SCH_Sensor_IR_TCRT5000_1-P1_Quispe_Charres_Mathias_Dylan_Henry.pdf) | Archivo PDF del esquemático electrónico del sensor infrarrojo TCRT5000 elaborado en EasyEDA. |
+| [PCB_PCB1_Quispe_Charres_Mathias_Dylan_Henry.pdf](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_PCB1_Quispe_Charres_Mathias_Dylan_Henry.pdf) | Archivo PDF del diseño principal de la placa PCB. |
+| [PCB_PCB2_Quispe_Charres_Mathias_Dylan_Henry.pdf](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_PCB2_Quispe_Charres_Mathias_Dylan_Henry.pdf) | Archivo PDF con la vista de las pistas y conexiones de la PCB. |
+| [PCB_3D_PCB1_Quispe_Charres_Mathias_Dylan_Henry.pdf](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_3D_PCB1_Quispe_Charres_Mathias_Dylan_Henry.pdf) | Archivo PDF con la vista tridimensional de la PCB y sus componentes electrónicos. |
+| [Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip) | Archivo comprimido que contiene los archivos Gerber necesarios para la fabricación de la PCB. |
