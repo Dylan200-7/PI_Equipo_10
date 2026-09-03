@@ -65,7 +65,7 @@ Una vez finalizado el diseño de la PCB, se generaron los **archivos Gerber**, l
 Estos archivos incluyen información relacionada con las capas de cobre, perforaciones, máscara de soldadura, serigrafía y contorno de la PCB.
 
 <p align="center">
-  <a href="https://github.com/Dylan200-7/PI_Equipo_10/raw/main/Proyecto_Integrador/Talleres/Taller_02/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip">
+  <a href="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip">
     <strong>⬇️ Descargar archivos Gerber</strong>
   </a>
 </p>
@@ -80,4 +80,4 @@ Estos archivos incluyen información relacionada con las capas de cobre, perfora
 | `PCB_PCB1_Quispe_Charres_Mathias_Dylan_Henry.png` | Imagen principal del diseño de la placa PCB. |
 | `PCB_PCB2_Quispe_Charres_Mathias_Dylan_Henry.png` | Vista de las pistas y conexiones de la PCB. |
 | `PCB_3D_PCB1_Quispe_Charres_Mathias_Dylan_Henry.png` | Vista tridimensional de la PCB con los componentes electrónicos. |
-| [`Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip`](https://github.com/Dylan200-7/PI_Equipo_10/raw/main/Proyecto_Integrador/Talleres/Taller_02/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip) | Archivo comprimido que contiene los archivos Gerber necesarios para la fabricación de la PCB. |
+| [`Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip`](https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/Gerber_PCB1_Quispe_Charres_Mathias_Dylan_Henry.zip) | Archivo comprimido que contiene los archivos Gerber necesarios para la fabricación de la PCB. |
