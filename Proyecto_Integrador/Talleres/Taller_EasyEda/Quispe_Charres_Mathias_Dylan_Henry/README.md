@@ -33,7 +33,7 @@ A partir del esquemático electrónico se realizó el diseño de la **placa de c
 La siguiente vista permite observar con mayor detalle las pistas, conexiones y distribución de los diferentes elementos presentes en la placa.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_02/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_PCB2_Quispe_Charres_Mathias_Dylan_Henry.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_PCB2_Quispe_Charres_Mathias_Dylan_Henry.png" width="800"/>
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@ EasyEDA permite visualizar el diseño final de la placa en tres dimensiones, fac
 En esta vista se puede observar el **Raspberry Pi Pico**, el **sensor infrarrojo TCRT5000**, las resistencias, el conector y los diferentes elementos gráficos incorporados en la placa.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_02/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_3D_PCB1_Quispe_Charres_Mathias_Dylan_Henry.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Quispe_Charres_Mathias_Dylan_Henry/Imagenes/PCB_3D_PCB1_Quispe_Charres_Mathias_Dylan_Henry.png" width="800"/>
 </p>
 
 <p align="center">
