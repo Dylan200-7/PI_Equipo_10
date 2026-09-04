@@ -70,6 +70,5 @@ Estos archivos incluyen información relacionada con las capas de cobre (top/bot
   </a>
 </p>
 
----
-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/PCB_3D_PCB1_Mogollon_Flores_Josue.pdf) | Archivo PDF de la vista tridimensional de la PCB. |
+
 | [Gerber_PCB1_Mogollon_Flores_Josue.zip](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/Gerber_PCB1_Mogollon_Flores_Josue.zip) | Archivos Gerber y de perforación (drill) para la fabricación de la PCB. |
