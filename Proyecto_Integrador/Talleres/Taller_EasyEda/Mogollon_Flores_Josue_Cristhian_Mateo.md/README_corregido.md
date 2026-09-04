@@ -71,13 +71,5 @@ Estos archivos incluyen información relacionada con las capas de cobre (top/bot
 </p>
 
 ---
-
-## 📁 Archivos de la entrega
-
-| Archivo | Descripción |
-|---|---|
-| [SCH_Sensor_Peso_HX711_1-P1_Mogollon_Flores_Josue.pdf](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/SCH_Sensor_Peso_HX711_1-P1_Mogollon_Flores_Josue.pdf) | Archivo PDF del esquemático electrónico del sensor de peso HX711 elaborado en EasyEDA. |
-| [PCB_PCB1_Mogollon_Flores_Josue.pdf](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/PCB_PCB1_Mogollon_Flores_Josue.pdf) | Archivo PDF del diseño principal de la placa PCB. |
-| [PCB_PCB2_Mogollon_Flores_Josue.pdf](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/PCB_PCB2_Mogollon_Flores_Josue.pdf) | Archivo PDF con la vista de las pistas y conexiones de la PCB. |
-| [PCB_3D_PCB1_Mogollon_Flores_Josue.pdf](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/PCB_3D_PCB1_Mogollon_Flores_Josue.pdf) | Archivo PDF de la vista tridimensional de la PCB. |
+7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/PCB_3D_PCB1_Mogollon_Flores_Josue.pdf) | Archivo PDF de la vista tridimensional de la PCB. |
 | [Gerber_PCB1_Mogollon_Flores_Josue.zip](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/Gerber_PCB1_Mogollon_Flores_Josue.zip) | Archivos Gerber y de perforación (drill) para la fabricación de la PCB. |
