@@ -23,47 +23,21 @@ Los principales componentes empleados son:
 - *C3:* Capacitor de 100 nF.
 - *J1:* Conector de cuatro pines para alimentación y señal.
 
-<p align="center">
-  <img src="3D_SensorGiro.png" width="800"/>
-</p>
 
-<p align="center">
-  <em>Figura 1. Esquemático electrónico del módulo sensor de efecto Hall A3144 desarrollado en EasyEDA.</em>
-</p>
+## 2. Diseño PCB
 
----
-
-## 🧩 2. Diseño PCB
-
-A partir del esquemático electrónico se realizó el diseño de la *placa de circuito impreso (PCB)*, distribuyendo los componentes de forma compacta y realizando el enrutamiento de las pistas necesarias para interconectar el sensor, las resistencias, los capacitores y el conector de alimentación y señal.
-
-Durante el diseño de la PCB se buscó mantener los componentes de filtrado próximos al sensor A3144, reduciendo las distancias de conexión y favoreciendo la estabilidad eléctrica del circuito.
+A partir del esquemático electrónico se realizó el diseño de la placa de circuito impreso PCB, distribuyendo los componentes de forma compacta y realizando el enrutamiento de las pistas necesarias para interconectar el sensor, las resistencias, los capacitores y el conector de alimentación y señal. Durante el diseño de la PCB se mantuvo a los componentes próximos al sensor A3144, reduciendo las distancias de conexión y favoreciendo la estabilidad eléctrica
 
 El conector principal permite conectar la placa con un sistema externo mediante las líneas de alimentación de *5 V y 3.3 V, tierra (GND) y la salida digital **SIGNAL*.
 
 <p align="center">
-  <img src="RUTA_DE_TU_IMAGEN_PCB.png" width="800"/>
+  <img src="Sensor_Giro.png" width="800"/>
 </p>
 
 <p align="center">
   <em>Figura 2. Diseño principal de la placa PCB del sensor de efecto Hall A3144 desarrollado en EasyEDA.</em>
 </p>
 
-### Vista de pistas de la PCB
-
-La siguiente vista permite observar con mayor detalle la distribución de las pistas de cobre y las conexiones eléctricas realizadas entre los diferentes componentes.
-
-El enrutamiento conecta el sensor A3144 con su circuito de alimentación, filtrado y acondicionamiento de señal, además de dirigir las líneas de alimentación y salida hacia el conector principal de la placa.
-
-<p align="center">
-  <img src="RUTA_DE_TU_IMAGEN_DE_PISTAS.png" width="800"/>
-</p>
-
-<p align="center">
-  <em>Figura 3. Vista de las pistas y conexiones de la PCB del sensor de efecto Hall A3144.</em>
-</p>
-
----
 
 ## 🖥️ 3. Vista 3D de la PCB
 
@@ -74,7 +48,7 @@ En la representación 3D se pueden observar los principales elementos que confor
 Esta vista permite verificar aspectos como la orientación de los componentes, su separación, el espacio disponible para soldadura y la disposición general de la placa.
 
 <p align="center">
-  <img src="RUTA_DE_TU_IMAGEN_3D.png" width="800"/>
+  <img src="3D_SensorGiro.png" width="800"/>
 </p>
 
 <p align="center">
