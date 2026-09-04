@@ -1,22 +1,20 @@
-# Diseño de PCB – Sensor de Efecto Hall A3144
+# Diseño de PCB – Sensor de Giro
 
-## 🔌 1. Esquemático electrónico
+## 1. Esquemático electrónico
 
-El siguiente esquemático representa la organización y conexión de los componentes electrónicos utilizados para el desarrollo de un módulo basado en el *sensor de efecto Hall A3144*, encargado de detectar la presencia de un campo magnético.
+El siguiente esquemático representa la organización y conexión de los componentes electrónicos utilizados para el desarrollo del sensor Hall A3144*, encargado de detectar la presencia de la papa.
 
-El circuito utiliza el *A3144 (U1)* como elemento principal. El sensor es alimentado mediante una fuente de *5 V, mientras que su salida digital es acondicionada para trabajar con un nivel lógico de **3.3 V*, permitiendo su posterior conexión con un microcontrolador u otro sistema digital compatible.
+El circuito utiliza el A3144 como elemento principal. El sensor es alimentado mediante una fuente de 5V, mientras que su salida digital es acondicionada para trabajar con un nivel de 3.3 V, permitiendo su posterior conexión con un microcontrolador que sería el Raspberry Pi.
 
 Para mejorar la estabilidad del circuito se incorporaron capacitores de desacoplamiento y filtrado. Asimismo, se emplea una resistencia *pull-up de 10 kΩ (R1)* conectada a 3.3 V y una resistencia de *1 kΩ (R2)* asociada a la línea de salida SIGNAL.
 
 El circuito incorpora además un *conector de cuatro pines (J1)* que permite acceder a las líneas de:
-
 - +5 V
 - +3.3 V
 - GND
 - SIGNAL
 
 Los principales componentes empleados son:
-
 - *U1:* Sensor de efecto Hall A3144.
 - *R1:* Resistencia de 10 kΩ.
 - *R2:* Resistencia de 1 kΩ.
@@ -83,24 +81,3 @@ Esta vista permite verificar aspectos como la orientación de los componentes, s
   <em>Figura 4. Vista tridimensional de la PCB del módulo sensor de efecto Hall A3144 desarrollada en EasyEDA.</em>
 </p>
 
----
-
-## 📦 4. Archivos Gerber
-
-Una vez finalizado y verificado el diseño de la PCB, se generaron los *archivos Gerber*, necesarios para la fabricación física de la placa de circuito impreso.
-
-Estos archivos contienen la información correspondiente a las diferentes capas que conforman la PCB, incluyendo:
-
-- Capas de cobre.
-- Máscara de soldadura.
-- Serigrafía.
-- Perforaciones.
-- Contorno de la placa.
-
-Los archivos pueden ser utilizados por servicios de fabricación de PCB para producir físicamente el módulo diseñado.
-
-<p align="center">
-  <a href="RUTA_DE_TU_ARCHIVO_GERBER.zip">
-    <strong>⬇️ Descargar archivos Gerber</strong>
-  </a>
-</p>
