@@ -24,7 +24,7 @@ Los principales componentes empleados son:
 - *J1:* Conector de cuatro pines para alimentación y señal.
 
 <p align="center">
-  <img src="3D_PCB1_2026-09-03.png" width="800"/>
+  <img src="3D_SensorGiro.png" width="800"/>
 </p>
 
 <p align="center">
