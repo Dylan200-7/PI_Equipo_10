@@ -16,20 +16,18 @@ El diseño PCB contempla los componentes U1 (VL53L0X), U2 (conector 2.54-2*20), 
 
 El archivo Gerber generado contiene las diferentes capas necesarias para la fabricación de la placa, incluyendo las capas de cobre superior e inferior, máscara de soldadura, serigrafía, pasta de soldadura y archivos de perforación.
 
-<p align="center"> <em>Figura 2. Diseño principal de la placa PCB desarrollado en EasyEDA.</em> </p>
+
 Vista de pistas de la PCB
 
 La vista de pistas permite observar la distribución de las conexiones eléctricas realizadas sobre la placa, así como las diferentes rutas utilizadas para interconectar los componentes.
 
 El paquete Gerber proporcionado contiene las capas TopLayer y BottomLayer, correspondientes a las capas de cobre superior e inferior de la PCB, además de las capas de serigrafía y máscara de soldadura.
 
-<p align="center"> <em>Figura 3. Vista de las pistas y conexiones de la PCB.</em> </p>
+
 🖥️ 3. Vista 3D de la PCB
 
 La vista tridimensional de la PCB permite comprobar visualmente la distribución y ubicación de los componentes sobre la placa, facilitando la revisión del diseño antes de su fabricación.
 
 En el diseño desarrollado se encuentran el sensor VL53L0X, las resistencias R1, R2 y R3, los capacitores C1 y C2 y el conector de 40 pines. El esquemático identifica específicamente estos componentes y sus respectivos valores.
 
-<p align="center"> <em>Figura 4. Vista tridimensional de la PCB desarrollada en EasyEDA.</em> </p>
 
-Nota: en los archivos que me proporcionaste aquí no viene una captura/render de la vista 3D, por lo que no voy a inventar esa imagen. Si tienes la captura 3D de EasyEDA, se coloca directamente en esta sección.
