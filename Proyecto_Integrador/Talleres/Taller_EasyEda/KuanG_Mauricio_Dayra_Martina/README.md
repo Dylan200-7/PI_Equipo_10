@@ -31,7 +31,7 @@ A partir del esquemático electrónico se realizó el diseño de la placa de cir
 El conector principal permite conectar la placa con un sistema externo mediante las líneas de alimentación de *5 V y 3.3 V, tierra (GND) y la salida digital **SIGNAL*.
 
 <p align="center">
-  <img src="Sensor_Giro.png" width="800"/>
+  <img src="imágenes/Sensor_Giro.png" width="800"/>
 </p>
 
 <p align="center">
@@ -48,7 +48,7 @@ En la representación 3D se pueden observar los principales elementos que confor
 Esta vista permite verificar aspectos como la orientación de los componentes, su separación, el espacio disponible para soldadura y la disposición general de la placa.
 
 <p align="center">
-  <img src="3D_SensorGiro.png" width="800"/>
+  <img src="imágenes/3D_SensorGiro.png" width="800"/>
 </p>
 
 <p align="center">
