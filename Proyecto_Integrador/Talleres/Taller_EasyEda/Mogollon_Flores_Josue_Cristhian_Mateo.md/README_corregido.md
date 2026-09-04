@@ -7,7 +7,7 @@ El siguiente esquemático representa la organización y conexión de los compone
 El circuito está compuesto por el **conector de la celda de carga** (E+, E-, A+, A-), el **módulo HX711** (amplificador y conversor ADC de 24 bits), sus capacitores de desacople, y el **microcontrolador Raspberry Pi Pico**, encargado de recibir y procesar la señal digital (DOUT / PD_SCK) generada por el sensor.
 
 <p align="center">
-  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/SCH_Sensor_Peso_HX711_1-P1_Mogollon_Flores_Josue.png" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Proyecto_Integrador/Talleres/Taller_EasyEda/Mogollon_Flores_Josue_Cristhian_Mateo.md/Imagenes/SCH_Sensor_Peso_HX711_1-P1_Mogollon_Flores_Josue.png.png" width="800"/>
 </p>
 
 <p align="center">
