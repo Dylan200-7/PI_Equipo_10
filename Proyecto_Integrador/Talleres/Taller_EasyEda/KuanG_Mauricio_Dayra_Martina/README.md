@@ -1,0 +1,106 @@
+# Diseño de PCB – Sensor de Efecto Hall A3144
+
+## 🔌 1. Esquemático electrónico
+
+El siguiente esquemático representa la organización y conexión de los componentes electrónicos utilizados para el desarrollo de un módulo basado en el *sensor de efecto Hall A3144*, encargado de detectar la presencia de un campo magnético.
+
+El circuito utiliza el *A3144 (U1)* como elemento principal. El sensor es alimentado mediante una fuente de *5 V, mientras que su salida digital es acondicionada para trabajar con un nivel lógico de **3.3 V*, permitiendo su posterior conexión con un microcontrolador u otro sistema digital compatible.
+
+Para mejorar la estabilidad del circuito se incorporaron capacitores de desacoplamiento y filtrado. Asimismo, se emplea una resistencia *pull-up de 10 kΩ (R1)* conectada a 3.3 V y una resistencia de *1 kΩ (R2)* asociada a la línea de salida SIGNAL.
+
+El circuito incorpora además un *conector de cuatro pines (J1)* que permite acceder a las líneas de:
+
+- +5 V
+- +3.3 V
+- GND
+- SIGNAL
+
+Los principales componentes empleados son:
+
+- *U1:* Sensor de efecto Hall A3144.
+- *R1:* Resistencia de 10 kΩ.
+- *R2:* Resistencia de 1 kΩ.
+- *C1:* Capacitor de 100 nF.
+- *C2:* Capacitor de 10 µF.
+- *C3:* Capacitor de 100 nF.
+- *J1:* Conector de cuatro pines para alimentación y señal.
+
+<p align="center">
+  <img src="3D_PCB1_2026-09-03.png" width="800"/>
+</p>
+
+<p align="center">
+  <em>Figura 1. Esquemático electrónico del módulo sensor de efecto Hall A3144 desarrollado en EasyEDA.</em>
+</p>
+
+---
+
+## 🧩 2. Diseño PCB
+
+A partir del esquemático electrónico se realizó el diseño de la *placa de circuito impreso (PCB)*, distribuyendo los componentes de forma compacta y realizando el enrutamiento de las pistas necesarias para interconectar el sensor, las resistencias, los capacitores y el conector de alimentación y señal.
+
+Durante el diseño de la PCB se buscó mantener los componentes de filtrado próximos al sensor A3144, reduciendo las distancias de conexión y favoreciendo la estabilidad eléctrica del circuito.
+
+El conector principal permite conectar la placa con un sistema externo mediante las líneas de alimentación de *5 V y 3.3 V, tierra (GND) y la salida digital **SIGNAL*.
+
+<p align="center">
+  <img src="RUTA_DE_TU_IMAGEN_PCB.png" width="800"/>
+</p>
+
+<p align="center">
+  <em>Figura 2. Diseño principal de la placa PCB del sensor de efecto Hall A3144 desarrollado en EasyEDA.</em>
+</p>
+
+### Vista de pistas de la PCB
+
+La siguiente vista permite observar con mayor detalle la distribución de las pistas de cobre y las conexiones eléctricas realizadas entre los diferentes componentes.
+
+El enrutamiento conecta el sensor A3144 con su circuito de alimentación, filtrado y acondicionamiento de señal, además de dirigir las líneas de alimentación y salida hacia el conector principal de la placa.
+
+<p align="center">
+  <img src="RUTA_DE_TU_IMAGEN_DE_PISTAS.png" width="800"/>
+</p>
+
+<p align="center">
+  <em>Figura 3. Vista de las pistas y conexiones de la PCB del sensor de efecto Hall A3144.</em>
+</p>
+
+---
+
+## 🖥️ 3. Vista 3D de la PCB
+
+EasyEDA permite visualizar el diseño final de la placa en tres dimensiones, facilitando la revisión de la distribución física de los componentes antes de proceder con su fabricación.
+
+En la representación 3D se pueden observar los principales elementos que conforman el módulo: el *sensor A3144, las resistencias **R1 y R2, los capacitores de filtrado **C1, C2 y C3, así como el **conector J1* utilizado para establecer la conexión con un sistema externo.
+
+Esta vista permite verificar aspectos como la orientación de los componentes, su separación, el espacio disponible para soldadura y la disposición general de la placa.
+
+<p align="center">
+  <img src="RUTA_DE_TU_IMAGEN_3D.png" width="800"/>
+</p>
+
+<p align="center">
+  <em>Figura 4. Vista tridimensional de la PCB del módulo sensor de efecto Hall A3144 desarrollada en EasyEDA.</em>
+</p>
+
+---
+
+## 📦 4. Archivos Gerber
+
+Una vez finalizado y verificado el diseño de la PCB, se generaron los *archivos Gerber*, necesarios para la fabricación física de la placa de circuito impreso.
+
+Estos archivos contienen la información correspondiente a las diferentes capas que conforman la PCB, incluyendo:
+
+- Capas de cobre.
+- Máscara de soldadura.
+- Serigrafía.
+- Perforaciones.
+- Contorno de la placa.
+
+Los archivos pueden ser utilizados por servicios de fabricación de PCB para producir físicamente el módulo diseñado.
+
+<p align="center">
+  <a href="RUTA_DE_TU_ARCHIVO_GERBER.zip">
+    <strong>⬇️ Descargar archivos Gerber</strong>
+  </a>
+</p>
