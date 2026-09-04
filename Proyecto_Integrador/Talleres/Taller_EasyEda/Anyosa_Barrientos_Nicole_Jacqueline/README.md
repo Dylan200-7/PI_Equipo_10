@@ -25,7 +25,7 @@ A partir del esquemático electrónico se realizó el diseño de la **placa de c
 El diseño PCB contempla los componentes **U1 (VL53L0X), U2 (conector 2.54-2*20), R1, R2, R3, C1 y C2**. Las resistencias R1, R2 y R3 presentan un valor de 10 kΩ, mientras que C1 tiene un valor de 100 nF y C2 un valor de 4.7 µF.
 
 <p align="center">
-  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/PCB_PCB1_2026.PNG" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/PCB_PCB1_2026-09-03.png" width="800"/>
 </p>
 
 <p align="center">
@@ -75,6 +75,6 @@ El conjunto de archivos Gerber se encuentra comprimido en formato **ZIP**, facil
 | Archivo | Descripción |
 |---|---|
 | [SCH_Schematic1_2026-09-03.pdf](SCH_Schematic1_2026-09-03.pdf) | Archivo PDF del esquemático electrónico del sensor de distancia VL53L0X elaborado en EasyEDA. |
-| [PCB_PCB1_2026.PNG](https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/PCB_PCB1_2026.PNG) | Imagen del diseño principal de la placa PCB desarrollado en EasyEDA. |
-| [3D_PCB1_2026-09-03 (1).png](https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/3D_PCB1_2026-09-03%20%281%29.png) | Imagen de la vista tridimensional de la PCB desarrollada en EasyEDA. |
+| [PCB_PCB1_2026-09-03.png](https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/PCB_PCB1_2026-09-03.png "PCB_PCB1_2026-09-03.png") | Imagen del diseño principal de la placa PCB desarrollado en EasyEDA. |
+| [3D_PCB1_2026-09-03 (1).png](https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/3D_PCB1_2026-09-03%20%281%29.png "3D_PCB1_2026-09-03 (1).png") | Imagen de la vista tridimensional de la PCB desarrollada en EasyEDA. |
 | [Gerber_PCB1_2026-09-03.zip](Gerber_PCB1_2026-09-03.zip) | Archivo comprimido que contiene los archivos Gerber necesarios para la fabricación de la PCB. |
