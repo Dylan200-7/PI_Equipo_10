@@ -185,7 +185,7 @@ Las tres soluciones preliminares fueron organizadas según las **20 funciones de
 <p align="center">
   <strong>Figura 5. Configuración tecnológica de las soluciones propuestas</strong>
   <br><br>
-  <img src="../../Recursos/Imágenes/Esquema_De_Funciones_Concepto.jpeg" alt="Configuración de conceptos de Kartoffelmachine" width="900">
+  <img src="../../Recursos/Imágenes/Esquema_De_Funciones_Conecpto.jpeg" alt="Configuración de conceptos de Kartoffelmachine" width="900">
 </p>
 
 Esta organización permite comparar directamente las arquitecturas propuestas y reconocer las principales diferencias existentes entre ellas antes de iniciar la evaluación cuantitativa.
