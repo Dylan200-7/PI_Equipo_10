@@ -4,7 +4,7 @@
   <img
     src="./Recursos/Imágenes/kartoffelmachine-animation.svg"
     width="100%"
-    alt="Kartoffelmachine - Sistema inteligente de inspección de papas"
+    alt="Kartoffelmaschine - Sistema inteligente de inspección de papas"
   />
 </p>
 
