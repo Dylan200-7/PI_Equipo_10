@@ -20,13 +20,115 @@ Como salidas principales se obtienen **papas clasificadas como buenas** y **papa
 - **Información:** representa órdenes, parámetros, señales, resultados y datos del proceso.
 
 ---
-## 2.3. Matriz Morfológica
 
-La **matriz morfológica** es una herramienta de diseño que permite explorar diferentes alternativas tecnológicas para cada una de las funciones que debe cumplir un sistema. Su aplicación facilita la generación de distintas configuraciones antes de seleccionar la solución más adecuada para el desarrollo del prototipo.
+## Esquema de Funciones
 
-Para **Kartoffelmachine** se establecieron **20 funciones principales**, distribuidas entre los subsistemas de **energía, procesamiento y control de señales, mecánica, comunicación y material/estructura**. Para cada función se propusieron diferentes componentes, mecanismos o tecnologías capaces de cumplir con el requerimiento correspondiente.
+<p align="center">
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/Esquema_de_Funciones.jpg?raw=1" width="800"/>
+</p>
 
-Este procedimiento permite analizar el sistema de manera integral, considerando no solamente el rendimiento individual de cada componente, sino también su compatibilidad, facilidad de integración, costo, fabricación y desempeño dentro del conjunto.
+
+El **Esquema de Funciones** descompone Kartoffelmachine en los principales subsistemas que permiten realizar automáticamente el proceso de inspección y clasificación. El sistema está conformado por los subsistemas de **energía, control, sensores y visión, Machine Learning, actuadores y sistema mecánico**.
+
+Estos subsistemas intercambian flujos de **materia, energía e información**, permitiendo que la papa avance desde la entrada hasta una de las dos salidas según el resultado obtenido por el modelo de visión artificial.
+
+### Subsistema de energía
+
+La energía eléctrica ingresa al sistema y pasa por las siguientes funciones:
+
+1. **Recibir energía eléctrica.**
+2. **Regular la energía.**
+3. **Distribuir la energía** hacia el sistema de control, sensores, cámara, iluminación y actuadores.
+
+Este subsistema proporciona los niveles de tensión necesarios para el funcionamiento adecuado de los componentes electrónicos y mecánicos.
+
+### Subsistema de control
+
+El sistema de control coordina el funcionamiento general de Kartoffelmachine. Sus principales funciones son:
+
+1. **Detectar la señal de encendido o apagado.**
+2. **Recibir la señal de los sensores.**
+3. **Enviar las imágenes al sistema de inteligencia artificial.**
+4. **Recibir el resultado generado por la IA.**
+5. **Activar los actuadores según el resultado obtenido.**
+
+De esta manera, el control actúa como enlace entre la detección de la papa, el procesamiento mediante inteligencia artificial y los mecanismos físicos del sistema.
+
+### Subsistema de sensores y visión
+
+Este subsistema permite detectar la presencia de la papa y obtener las imágenes necesarias para realizar su clasificación.
+
+Sus funciones principales son:
+
+1. **Detectar la papa en posición.**
+2. **Capturar imágenes durante la rotación de la papa.**
+3. **Enviar la señal digital al sistema de control.**
+
+La rotación de la papa permite observar diferentes zonas de su superficie y obtener mayor información para el proceso de clasificación.
+
+### Subsistema de Machine Learning — YOLO
+
+El procesamiento mediante inteligencia artificial se realiza a partir de las imágenes capturadas durante la inspección.
+
+El flujo de procesamiento es:
+
+1. **Recibir las imágenes enviadas por el control.**
+2. **Analizar las imágenes mediante el modelo YOLO.**
+3. **Clasificar la papa como buena o mala.**
+4. **Enviar el resultado de clasificación al sistema de control.**
+
+El modelo de visión artificial permite identificar características o defectos visibles en la superficie de la papa y generar automáticamente el resultado de clasificación.
+
+### Subsistema de actuadores
+
+Los actuadores convierten las señales enviadas por el control en acciones físicas dentro del prototipo.
+
+Sus principales funciones son:
+
+1. **Girar los motores** encargados de la rotación y el transporte.
+2. **Accionar la compuerta separadora.**
+3. **Iluminar la zona de captura mediante LED.**
+4. **Mostrar el resultado mediante un LED de color.**
+
+### Sistema mecánico
+
+El sistema mecánico se encarga directamente del desplazamiento y manipulación de las papas.
+
+El flujo principal es:
+
+```text
+Papa sin clasificar
+        ↓
+Recibir papa
+(Tolva)
+        ↓
+Sujetar y orientar papa
+(Guía / rodillos en V)
+        ↓
+Rotar la papa 360°
+y capturar imágenes
+        ↓
+Transportar papa
+(Faja)
+        ↓
+Separar papa
+(Compuerta)
+      ↙     ↘
+ Papa buena  Papa mala
+ (Salida 1)  (Salida 2)
+```
+
+De esta manera, la papa pasa por las etapas de **alimentación, orientación, rotación, captura de imágenes, transporte y separación** hasta llegar al contenedor correspondiente.
+
+### Señales principales del esquema
+
+| Señal | Descripción |
+| --- | --- |
+| **Z** | Señal de encendido/apagado que habilita el funcionamiento general del sistema. |
+| **A** | Señal relacionada con la posición de la papa y la interacción entre el sistema mecánico, sensores y control. |
+| **B** | Imágenes enviadas desde el control hacia el sistema de Machine Learning. |
+| **C** | Resultado de clasificación enviado por la IA al sistema de control. |
+| **E** | Señal de accionamiento enviada hacia los actuadores. |
 
 ---
 
