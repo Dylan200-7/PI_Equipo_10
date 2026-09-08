@@ -24,7 +24,7 @@ Como salidas principales se obtienen **papas clasificadas como buenas** y **papa
 ## Esquema de Funciones
 
 <p align="center">
-  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/Esquema_de_Funciones.jpeg?raw=1" width="800"/>
+  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/Esquema_de_Funciones.jpg?raw=1" width="800"/>
 </p>
 
 
