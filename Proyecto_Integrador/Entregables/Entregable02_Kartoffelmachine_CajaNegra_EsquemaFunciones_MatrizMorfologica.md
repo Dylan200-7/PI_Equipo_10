@@ -2,9 +2,8 @@
 
 ## Caja Negra
 <p align="center">
-  <img src="https://github.com/Dylan200-7/PI_Equipo_10/blob/main/Recursos/Im%C3%A1genes/Caja_Negra_Equipo_10.png?raw=1" width="800"/>
+  <img src="../../Recursos/Imágenes/Caja_Negra_Equipo_10.png" alt="Configuración de conceptos de Kartoffelmachine" width="900">
 </p>
-
 La **Caja Negra** representa de manera general el funcionamiento de **Kartoffelmachine**, un sistema mecatrónico automatizado diseñado para la **inspección y clasificación de papas Chaucha mediante visión artificial**.
 
 Como entrada principal, el sistema recibe **papas Chaucha sin clasificar**. También recibe la **energía eléctrica** necesaria para el funcionamiento de los componentes mecánicos y electrónicos, además de información proporcionada por el usuario, como la **orden de inicio o parada**, los **parámetros de clasificación**, los **parámetros de operación** y la **configuración del proceso**.
