@@ -64,9 +64,16 @@
 
 ## 👥 Sobre nosotros
 
-El **Equipo 10** del curso **Proyecto Integrador 2026-2** está conformado por estudiantes de las carreras de **Ingeniería Informática e Ingeniería Ambiental** de la **Universidad Peruana Cayetano Heredia (UPCH)**.
+Somos el **Grupo 10** del curso **Proyecto Integrador**, semestre 2026-02. Nuestro equipo esta conformado por estudiantes de las carreras de **Ingeniería Informática e Ingeniería Ambiental** de la **Universidad Peruana Cayetano Heredia (UPCH)**.
 
-Nuestro proyecto se denomina **Kartoffelmachine** y consiste en el desarrollo de un sistema mecatrónico de **inspección continua de papas** que integra:
+---
+
+<details>
+<summary><h2>🥔 ¿Qué es Kartoffelmachine?</h2></summary>
+
+<br>
+
+Nuestro proyecto se denomina **Kartoffelmaschine** y consiste en el desarrollo de un sistema mecatrónico de **inspección continua de papas** que integra:
 
 <div align="center">
 
@@ -77,13 +84,6 @@ Nuestro proyecto se denomina **Kartoffelmachine** y consiste en el desarrollo de
 </div>
 
 El sistema está orientado principalmente a la inspección de papas del **grupo Phureja**, como la papa **criolla o chaucha**, buscando identificar **defectos externos visibles** mientras los tubérculos avanzan continuamente por el sistema.
-
----
-
-<details>
-<summary><h2>🥔 ¿Qué es Kartoffelmachine?</h2></summary>
-
-<br>
 
 **Kartoffelmachine** es un sistema diseñado para automatizar parte del proceso de inspección y selección de papas.
 
