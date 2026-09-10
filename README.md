@@ -147,7 +147,8 @@ flowchart LR
 
 <br>
 
-El el informe de la FAO (the food and agriculture organization of the united nations) titulado "Strengthening potato value chains" se redactó una investigación poscosecha para responder a las limitaciones en la cadena de valor de la papa Andina.
+El en informe de la FAO (the food and agriculture organization of the united nations) titulado "Strengthening potato value chains" se redactó una investigación sobre la poscosecha para responder a las limitaciones en la cadena de valor de la papa Andina. 
+En primer lugar, el Perú es un país que cuenta con la mayor colección de papa, estimada en unas 2800 variedades. Por lo que, el cultivo de papa se convirtió en una estrategia de subsistencia de la población, en especial para las ubicadas en las zonas altoandinas. No obstante, el informe resaltó una falta de 
 
 
 <br>
