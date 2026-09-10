@@ -1,22 +1,23 @@
 # Caja Negra, Esquema de Funciones y Matriz Morfológica — Kartoffelmaschine
 
 ## Caja Negra
+
 <p align="center">
-  <img src="../../Recursos/Imágenes/Caja_Negra_Equipo_10.png" alt="Configuración de conceptos de Kartoffelmachine" width="900">
+  <img src="../../Recursos/Imágenes/Caja_Negra_Equipo_10_V2.png" alt="Caja Negra Kartoffelmachine" width="900">
 </p>
-La **Caja Negra** representa de manera general el funcionamiento de **Kartoffelmachine**, un sistema mecatrónico automatizado diseñado para la **inspección y clasificación de papas Chaucha mediante visión artificial**.
 
-Como entrada principal, el sistema recibe **papas Chaucha sin clasificar**. También recibe la **energía eléctrica** necesaria para el funcionamiento de los componentes mecánicos y electrónicos, además de información proporcionada por el usuario, como la **orden de inicio o parada**, los **parámetros de clasificación**, los **parámetros de operación** y la **configuración del proceso**.
+La **Caja Negra** representa el funcionamiento general de **Kartoffelmachine**, un sistema mecatrónico diseñado para la **inspección y clasificación de papas Chaucha**.
 
-Durante el funcionamiento, las papas son recibidas, orientadas, giradas y transportadas para permitir la captura de imágenes de diferentes zonas de su superficie. Estas imágenes son procesadas mediante un modelo de **Machine Learning basado en YOLO**, que determina si cada papa corresponde a la categoría **buena o mala**.
+Como entradas, el sistema recibe **papas Chaucha sin clasificar**, **energía eléctrica**, una **señal de encendido/apagado** y una **señal de presencia de papa**.
 
-Como salidas principales se obtienen **papas clasificadas como buenas** y **papas clasificadas como malas**. Además, el sistema genera información sobre el proceso, como el **estado del sistema**, el **resultado de clasificación por papa**, la **cantidad de papas procesadas** y las **alertas o notificaciones mediante WiFi**. Debido al funcionamiento de motores y mecanismos, también se generan **calor, ruido y vibración disipados**.
+Luego de la inspección mediante visión artificial, se obtienen como salidas las **papas clasificadas como buenas o malas**, además del **estado del sistema**, la **señal de clasificación de la papa** y la **energía disipada** durante el funcionamiento.
 
 ### Tipos de flujo
 
-- **Materia:** representa el desplazamiento físico de las papas.
-- **Energía:** representa la alimentación eléctrica y la energía utilizada por el sistema.
-- **Información:** representa órdenes, parámetros, señales, resultados y datos del proceso.
+- **Materia:** papas Chaucha que ingresan y salen clasificadas.
+- **Energía:** energía eléctrica de entrada y energía disipada.
+- **Información:** señales de encendido/apagado, presencia, estado y clasificación.
+
 
 ---
 
