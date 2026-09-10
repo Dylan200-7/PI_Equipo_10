@@ -58,15 +58,11 @@
 
 > 🥔 **Sistema inteligente para inspeccionar, analizar y clasificar papas de manera automática.**
 
+------
+
 </div>
 
----
-
-## 👥 Sobre nosotros
-
-Somos el **Grupo 10** del curso **Proyecto Integrador**, semestre 2026-02. Nuestro equipo esta conformado por estudiantes de las carreras de **Ingeniería Informática e Ingeniería Ambiental** de la **Universidad Peruana Cayetano Heredia (UPCH)**.
-
----
+----
 
 <details>
 <summary><h2>🥔 ¿Qué es Kartoffelmachine?</h2></summary>
@@ -147,21 +143,12 @@ flowchart LR
 ---
 
 <details>
-<summary><h2>🎯 ¿Qué problema buscamos solucionar?</h2></summary>
+<summary><h2>🎯 Problemática </h2></summary>
 
 <br>
 
-La inspección de productos agrícolas puede depender en gran medida de una **evaluación visual**, especialmente cuando se busca identificar daños, alteraciones superficiales o características no deseadas.
+El el informe de la FAO (the food and agriculture organization of the united nations) titulado "Strengthening potato value chains" se redactó una investigación poscosecha para responder a las limitaciones en la cadena de valor de la papa Andina.
 
-Cuando este proceso se realiza manualmente puede presentar limitaciones relacionadas con:
-
-- ⏱️ Tiempo empleado en la inspección.
-- 👁️ Dependencia de la evaluación visual humana.
-- 🔄 Dificultad para observar diferentes caras del tubérculo.
-- 📦 Necesidad de procesar mayores cantidades de producto.
-- 🥔 Separación manual de los productos evaluados.
-
-Por ello, **Kartoffelmachine propone automatizar la inspección mediante visión artificial**, permitiendo analizar diferentes zonas de cada papa y realizar posteriormente su separación automática.
 
 <br>
 
@@ -439,6 +426,9 @@ Estas herramientas permiten desarrollar una solución tecnológica aplicada al *
 ---
 
 ## 👥 Integrantes del Equipo
+
+Somos el **Grupo 10** del curso **Proyecto Integrador**, semestre 2026-02. Nuestro equipo esta conformado por estudiantes de las carreras de **Ingeniería Informática e Ingeniería Ambiental** de la **Universidad Peruana Cayetano Heredia (UPCH)**.
+
 
 | Foto                                                  | Nombre                                    | Rol                          | Intereses                                        |
 | ----------------------------------------------------- | ----------------------------------------- | ---------------------------- | ------------------------------------------------ |
