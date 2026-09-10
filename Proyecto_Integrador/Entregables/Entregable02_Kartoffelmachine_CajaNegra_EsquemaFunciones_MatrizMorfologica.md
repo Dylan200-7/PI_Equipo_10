@@ -3,21 +3,20 @@
 ## Caja Negra
 
 <p align="center">
-  <img src="../../Recursos/Imágenes/Caja_Negra_Equipo_10_V2.png" alt="Caja Negra Kartoffelmachine" width="900">
+  <img src="../../Recursos/Imágenes/Caja_Negra_Equipo_10_v3.png" alt="Caja Negra Kartoffelmachine" width="900">
 </p>
 
 La **Caja Negra** representa el funcionamiento general de **Kartoffelmachine**, un sistema mecatrónico diseñado para la **inspección y clasificación de papas Chaucha**.
 
-Como entradas, el sistema recibe **papas Chaucha sin clasificar**, **energía eléctrica**, una **señal de encendido/apagado** y una **señal de presencia de papa**.
+Como entradas, el sistema recibe **papas Chaucha sin clasificar**, **energía eléctrica** y una **señal de encendido/apagado** **.
 
-Luego de la inspección mediante visión artificial, se obtienen como salidas las **papas clasificadas como buenas o malas**, además del **estado del sistema**, la **señal de clasificación de la papa** y la **energía disipada** durante el funcionamiento.
+Luego de la inspección mediante visión artificial, se obtienen como salidas las **papas clasificadas como buenas o malas**, además del **estado del sistema**y la **energía disipada** durante el funcionamiento.
 
 ### Tipos de flujo
 
 - **Materia:** papas Chaucha que ingresan y salen clasificadas.
 - **Energía:** energía eléctrica de entrada y energía disipada.
-- **Información:** señales de encendido/apagado, presencia, estado y clasificación.
-
+- **Información:** señales de encendido/apagado, presencia
 
 ---
 
