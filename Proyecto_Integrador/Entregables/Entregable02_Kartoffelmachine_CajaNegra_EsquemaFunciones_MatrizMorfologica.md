@@ -23,7 +23,7 @@ Luego de la inspección mediante visión artificial, se obtienen como salidas la
 ## Esquema de Funciones
 
 <p align="center">
-  <img src="../../Recursos/Imágenes/Esquema_de_Funciones.png?raw=1" width="800"/>
+  <img src="../../Recursos/Imágenes/Esquema_de_Funciones1.png?raw=1" width="800"/>
 </p>
 
 
