@@ -1,107 +1,112 @@
-# Análisis de Datos y Modelo de Regresión Lineal
+# Taller de Inteligencia Artificial
 
-En este trabajo se realizó un análisis de un conjunto de datos relacionado con el consumo de energía, utilizando diferentes técnicas de exploración, análisis estadístico y aprendizaje automático.
+## Análisis de Datos y Modelos de Regresión
 
-El objetivo fue comprender el comportamiento de las variables, identificar relaciones entre ellas y aplicar un modelo de regresión lineal para realizar predicciones.
+En este laboratorio se trabajó con un conjunto de datos relacionado con el consumo de energía, considerando variables como `Temperatura`, `Horas_Operacion`, `Carga` y `Humedad`.
 
----
+El trabajo permitió desarrollar diferentes etapas del análisis de datos y aprendizaje automático. Primero se realizó una exploración de la información mediante gráficos, posteriormente se analizaron las relaciones entre variables y finalmente se implementó un modelo de Regresión Lineal para generar predicciones.
 
-# FOTO 1: Presentación de los datos
-
-<img src="imagenes/foto1.png" alt="Presentación de los datos" width="900">
-
-##  Descripción de la captura:
-
-La imagen corresponde a la visualización inicial del conjunto de datos, donde se muestran las variables utilizadas:
-
-- Temperatura
-- Horas_Operacion
-- Carga
-- Humedad
-- Consumo_Energia
-
-
-### Explicación:
-
-En esta primera etapa se realizó una revisión general de la información disponible con la finalidad de conocer la estructura del conjunto de datos.
-
-Las variables analizadas representan diferentes factores que pueden relacionarse con el consumo energético, permitiendo identificar qué información será utilizada posteriormente para desarrollar el modelo predictivo.
+El objetivo fue comprender cómo los datos pueden ser utilizados para encontrar patrones, establecer relaciones y obtener estimaciones mediante un modelo predictivo.
 
 ---
 
-# FOTO 2: Histograma del consumo de energía
+# 1. Exploración inicial del conjunto de datos
 
-<img src="imagenes/foto2.png" alt="Histograma del consumo de energía" width="900">
 
-## 📸 Descripción de la captura:
+### Visualización de las variables disponibles
 
-La gráfica representa la distribución de la variable:
 
-**Consumo_Energia**
+<img src="../../Recursos/Imágenes/foto1.png" alt="Visualización inicial del conjunto de datos" width="900">
 
-### Explicación:
 
-Se evaluó el comportamiento de la variable objetivo mediante un histograma, con la finalidad de observar cómo se distribuyen los valores registrados.
+En esta primera etapa se realizó una revisión general del conjunto de datos para identificar las variables disponibles y comprender la información con la que trabajará el modelo.
 
-Se puede apreciar que la mayor concentración de datos se encuentra en valores intermedios, mientras que los consumos extremos presentan una menor frecuencia.
+Los datos analizados corresponden al consumo energético e incluyen factores como temperatura, horas de operación, carga y humedad, los cuales serán utilizados posteriormente para determinar relaciones y realizar predicciones.
 
-Este análisis permite conocer las características generales de los datos antes de aplicar el modelo de regresión.
 
 ---
 
-# FOTO 3: Matriz de correlación
+# 2. Distribución del Consumo de Energía
 
-<img src="imagenes/foto3.png" alt="Matriz de correlación" width="900">
 
-## 📸 Descripción de la captura:
+### Histograma del Consumo de Energía
 
-Mapa de calor donde se muestra la relación entre las diferentes variables del conjunto de datos.
 
-### Explicación:
+<img src="../../Recursos/Imágenes/foto2.png" alt="Histograma del Consumo de Energía" width="900">
 
-La matriz de correlación permite identificar qué variables presentan una mayor relación lineal con el consumo energético.
 
-El resultado más representativo fue:
+El siguiente análisis permitió observar cómo se distribuyen los valores correspondientes al consumo energético.
 
-**Horas_Operacion → Consumo_Energia = 0.84**
+En el histograma se aprecia que la mayoría de registros se concentran en valores intermedios, mientras que los consumos demasiado bajos o elevados aparecen con menor frecuencia.
 
-Esto indica una relación positiva fuerte, donde un incremento en las horas de funcionamiento está asociado con un aumento del consumo energético.
+Esta visualización permite conocer el comportamiento general de la variable objetivo antes de realizar el entrenamiento del modelo.
 
-Por otro lado, variables como temperatura y humedad presentan una relación menor con la variable objetivo.
 
 ---
 
-# FOTO 4: Variables utilizadas en el modelo
-
-<img src="imagenes/foto4.png" alt="Separación de variables del modelo" width="900">
-
-## 📸 Descripción de la captura:
-
-Se muestran las variables independientes utilizadas como entrada del modelo:
-
-- Temperatura
-- Horas_Operacion
-- Carga
-- Humedad
+# 3. Relación entre las Variables
 
 
-### Explicación:
+### Matriz de Correlación
 
-Para desarrollar el modelo predictivo fue necesario separar las variables de entrada y la variable que se desea estimar.
 
-Las características seleccionadas funcionan como información de referencia para que el algoritmo pueda encontrar patrones y generar predicciones sobre el consumo energético.
+<img src="../../Recursos/Imágenes/foto3.png" alt="Matriz de Correlación" width="900">
+
+
+Después de analizar la distribución del consumo, se evaluó la relación existente entre las variables mediante una matriz de correlación.
+
+Esta herramienta permite identificar la intensidad de relación lineal entre dos variables.
+
+El resultado más importante fue:
+
+**`Horas_Operacion` → `Consumo_Energia` = 0.84**
+
+Este valor representa una relación positiva fuerte, indicando que cuando aumentan las horas de funcionamiento existe una tendencia a incrementar el consumo energético.
+
+También se identificó una relación positiva entre:
+
+**`Carga` → `Consumo_Energia` = 0.34**
+
+Mientras que:
+
+- `Temperatura` → `Consumo_Energia` ≈ **0.098**
+- `Humedad` → `Consumo_Energia` ≈ **0.063**
+
+presentan una relación menor.
+
+Es importante considerar que la correlación permite identificar comportamientos relacionados entre variables, pero no determina directamente una relación de causa y efecto.
+
 
 ---
 
-# FOTO 5: Coeficientes del modelo
+# 4. Construcción del Modelo de Regresión Lineal
 
-<img src="imagenes/foto5.png" alt="Coeficientes del modelo" width="900">
 
-## 📸 Descripción de la captura:
+### Selección de variables de entrada
 
-Resultados obtenidos después del entrenamiento de la regresión lineal.
 
-Valores principales:
+<img src="../../Recursos/Imágenes/foto4.png" alt="Variables utilizadas en el modelo" width="900">
+
+
+Para desarrollar el modelo predictivo se realizó la separación entre las variables independientes y la variable objetivo.
+
+Las variables de entrada proporcionan la información necesaria para que el algoritmo pueda encontrar patrones, mientras que `Consumo_Energia` representa el valor que el modelo busca estimar.
+
+
+---
+
+# 5. Coeficientes obtenidos por el Modelo
+
+
+### Interpretación de los coeficientes de regresión
+
+
+<img src="../../Recursos/Imágenes/foto5.png" alt="Coeficientes del modelo" width="900">
+
+
+Después del entrenamiento del modelo se analizaron los coeficientes obtenidos para conocer la participación de cada variable dentro de la predicción.
+
+Los resultados muestran que:
 
 - Temperatura: 0.137
 - Horas_Operacion: 1.668
@@ -109,61 +114,57 @@ Valores principales:
 - Humedad: 0.027
 
 
-### Explicación:
+La variable con mayor influencia fue `Horas_Operacion`, resultado que coincide con el análisis realizado previamente mediante la matriz de correlación.
 
-Después de entrenar el modelo se analizaron los coeficientes obtenidos para conocer la participación de cada variable dentro de la predicción.
-
-La característica con mayor influencia fue **Horas_Operacion**, resultado que coincide con la relación encontrada previamente mediante la matriz de correlación.
 
 ---
 
-# FOTO 6: Valores reales vs valores predichos
+# 6. Comparación de Valores Reales y Predichos
 
-<img src="imagenes/foto6.png" alt="Consumo real vs predicho" width="900">
 
-## 📸 Descripción de la captura:
+### Consumo de Energía Real vs Predicción
 
-Gráfica comparativa entre los valores reales del consumo energético y las predicciones realizadas por el modelo.
 
-### Explicación:
+<img src="../../Recursos/Imágenes/foto6.png" alt="Consumo Real vs Predicho" width="900">
 
-Esta gráfica permite evaluar visualmente qué tan cerca se encuentran las predicciones respecto a los valores reales.
 
-Se observa una tendencia creciente, indicando que el modelo logra representar correctamente el comportamiento general de los datos.
+Luego del entrenamiento del modelo se generaron predicciones utilizando los datos de prueba.
 
-Sin embargo, existen diferencias entre algunos puntos debido al error natural presente en cualquier modelo predictivo.
+La gráfica permite comparar los valores reales del consumo energético frente a los valores estimados por la regresión.
 
----
+Se observa una tendencia creciente donde las predicciones siguen un comportamiento similar al de los valores reales, aunque existen diferencias producidas por el error propio del modelo.
 
-# FOTO 7: Análisis de residuos
-
-<img src="imagenes/foto7.png" alt="Valores residuales vs predichos" width="900">
-
-## 📸 Descripción de la captura:
-
-Gráfico donde se muestran los residuos obtenidos por el modelo.
-
-### Explicación:
-
-Los residuos representan la diferencia entre el valor real y el valor calculado por la regresión.
-
-Al analizar la gráfica se observa que los errores se distribuyen alrededor del valor cero sin seguir un patrón definido.
-
-Esto permite revisar el comportamiento del modelo y verificar cómo se distribuyen sus errores.
 
 ---
 
-# FOTO 8: Importancia de características
+# 7. Análisis de los Residuos
 
-<img src="imagenes/foto8.png" alt="Importancia relativa de características" width="900">
 
-## 📸 Descripción de la captura:
+### Residuos vs Valores Predichos
 
-Gráfico generado mediante un árbol de decisión donde se muestra la importancia relativa de cada característica.
 
-### Explicación:
+<img src="../../Recursos/Imágenes/foto7.png" alt="Análisis de residuos" width="900">
 
-Como complemento del análisis se utilizó un árbol de decisión para identificar qué variables tienen mayor participación dentro del modelo.
+
+Los residuos representan la diferencia entre el valor observado y el valor calculado por el modelo.
+
+En la gráfica se observa que los puntos se distribuyen alrededor del valor cero sin presentar una tendencia definida.
+
+Este análisis permite evaluar el comportamiento de los errores y comprobar si existe algún patrón que pueda afectar el rendimiento del modelo.
+
+
+---
+
+# 8. Importancia de las Características
+
+
+### Análisis mediante Árbol de Decisión
+
+
+<img src="../../Recursos/Imágenes/foto8.png" alt="Importancia de características" width="900">
+
+
+Como análisis complementario se utilizó un árbol de decisión para determinar la importancia relativa de las características utilizadas.
 
 Se observa que:
 
@@ -171,42 +172,38 @@ Se observa que:
 - X1 ocupa el segundo lugar.
 - X3 tiene una participación intermedia.
 
-Las demás variables tienen una influencia menor dentro del resultado obtenido.
+Esto permite identificar qué variables tienen mayor influencia dentro de las decisiones tomadas por el modelo.
+
 
 ---
 
-# FOTO 9: Análisis estadístico del modelo
+# 9. Análisis Estadístico
 
-<img src="imagenes/foto9.png" alt="OLS Regression Results" width="900">
 
-## 📸 Descripción de la captura:
+### Resultados de OLS Regression
 
-Resumen estadístico generado mediante OLS Regression Results.
 
-### Explicación:
+<img src="../../Recursos/Imágenes/foto9.png" alt="Resultados estadísticos del modelo" width="900">
 
-Finalmente se realizó una evaluación estadística del modelo para complementar los resultados obtenidos.
 
-Este análisis permite revisar indicadores como el ajuste del modelo, los coeficientes calculados y la participación de cada variable dentro de la regresión.
+Finalmente se realizó un análisis estadístico utilizando OLS Regression Results.
 
-El resultado permite comprender con mayor detalle cómo funciona internamente el modelo predictivo.
+Estos resultados permiten evaluar el comportamiento del modelo mediante indicadores estadísticos, coeficientes y medidas que ayudan a comprender la participación de cada variable dentro de la regresión.
+
 
 ---
 
-# FOTO 10: Conclusión personal
+# 10. Conclusiones
 
-<img src="imagenes/foto10.png" alt="Conclusión personal" width="900">
 
-## 📸 Descripción de la captura:
+### Aprendizajes obtenidos
 
-Reflexión final sobre los conocimientos adquiridos durante el desarrollo del taller.
 
-### Explicación:
+<img src="../../Recursos/Imágenes/foto10.png" alt="Conclusiones finales" width="900">
 
-Durante el desarrollo del taller comprendí que la creación de un modelo de inteligencia artificial requiere más que ejecutar un algoritmo.
 
-Primero es necesario analizar la información, identificar patrones y comprender la relación existente entre las variables.
+Durante el desarrollo del taller comprendí que la creación de un modelo de inteligencia artificial requiere diferentes etapas, iniciando desde la exploración y análisis de datos hasta la interpretación de los resultados obtenidos.
 
-Además, aprendí cómo la regresión lineal permite realizar predicciones utilizando datos históricos y cómo herramientas como gráficos, correlaciones y análisis estadístico ayudan a interpretar los resultados obtenidos.
+También comprendí cómo la regresión lineal permite realizar predicciones utilizando información histórica y cómo herramientas estadísticas y gráficas ayudan a evaluar el comportamiento del modelo.
 
 Este trabajo permitió conocer una aplicación práctica de la inteligencia artificial orientada al análisis de datos y generación de predicciones.
