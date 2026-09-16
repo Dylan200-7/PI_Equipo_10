@@ -14,7 +14,7 @@ El propósito general fue comprender, de manera práctica, cómo un conjunto de 
 
 ### Visualización de las variables disponibles
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto1.png" alt="Visualización inicial del conjunto de datos" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto1.png" alt="Visualización inicial del conjunto de datos" width="900">
 
 La primera etapa de cualquier proyecto de análisis de datos consiste en conocer a fondo la información con la que se va a trabajar, antes de intentar construir un modelo. Por ello, se cargó el conjunto de datos desde el archivo `Data_PI_regresion.csv` y se utilizaron funciones como `df.head()`, `df.info()` y `df.describe()` para inspeccionar su contenido.
 
@@ -28,7 +28,7 @@ En conjunto, esta exploración inicial confirma que el dataset está limpio, bie
 
 ### Histograma del Consumo de Energía
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto2.png" alt="Histograma del Consumo de Energía" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto2.png" alt="Histograma del Consumo de Energía" width="900">
 
 Antes de construir el modelo, es fundamental entender cómo se distribuyen los valores de la variable que se busca predecir, en este caso `Consumo_Energia`. Para ello se generó un histograma con 25 bins, que agrupa los valores del consumo en intervalos y muestra la frecuencia con la que ocurre cada uno.
 
@@ -42,7 +42,7 @@ Esta característica es una buena noticia de cara al modelo de regresión lineal
 
 ### Matriz de Correlación
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto3.png" alt="Matriz de Correlación" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto3.png" alt="Matriz de Correlación" width="900">
 
 Una vez comprendida la distribución de la variable objetivo, el siguiente paso fue analizar cómo se relaciona cada variable predictora con `Consumo_Energia`. Para esto se calculó el coeficiente de correlación de Pearson entre todas las variables numéricas y se visualizó el resultado mediante un mapa de calor (`heatmap`), donde los tonos más intensos representan relaciones más fuertes.
 
@@ -65,7 +65,7 @@ Es importante subrayar que la correlación mide exclusivamente el grado de asoci
 
 ### Selección de variables de entrada
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto4.png" alt="Variables utilizadas en el modelo" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto4.png" alt="Variables utilizadas en el modelo" width="900">
 
 Para poder entrenar el modelo predictivo, primero fue necesario definir con claridad cuáles variables actuarían como entradas (predictoras) y cuál sería la variable a estimar. Se definió `X` como el conjunto formado por `Temperatura`, `Horas_Operacion`, `Carga` y `Humedad`, y `y` como la variable objetivo `Consumo_Energia`.
 
@@ -79,7 +79,7 @@ Con los conjuntos ya definidos, se instanció un modelo `LinearRegression` de la
 
 ### Interpretación de los coeficientes de regresión
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto5.png" alt="Coeficientes del modelo" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto5.png" alt="Coeficientes del modelo" width="900">
 
 Una vez entrenado el modelo, se obtuvo un intercepto de aproximadamente **2.74** y los siguientes coeficientes para cada variable:
 
@@ -100,7 +100,7 @@ En un modelo de regresión lineal múltiple, cada coeficiente representa el camb
 
 ### Consumo de Energía Real vs Predicción
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto6.png" alt="Consumo Real vs Predicho" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto6.png" alt="Consumo Real vs Predicho" width="900">
 
 Con el modelo ya entrenado, se generaron predicciones sobre el conjunto de prueba (`X_test`, que el modelo nunca utilizó durante el entrenamiento) y se compararon contra los valores reales correspondientes (`y_test`) mediante un diagrama de dispersión, donde el eje horizontal representa el consumo real y el eje vertical el consumo predicho por el modelo.
 
@@ -112,7 +112,7 @@ Si el modelo fuera perfecto, todos los puntos se ubicarían exactamente sobre un
 
 ### Residuos vs Valores Predichos
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto7.png" alt="Análisis de residuos" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto7.png" alt="Análisis de residuos" width="900">
 
 El residuo de una predicción se define como la diferencia entre el valor real observado y el valor estimado por el modelo (`y_test - predicciones`). Analizar el comportamiento de los residuos es una de las formas más importantes de validar si un modelo de regresión lineal es apropiado para los datos, más allá de solo mirar qué tan cerca están las predicciones de los valores reales.
 
@@ -126,7 +126,7 @@ En conjunto, este análisis respalda la validez del modelo de regresión lineal 
 
 ### Análisis mediante Árbol de Decisión
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto8.png" alt="Importancia de características" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto8.png" alt="Importancia de características" width="900">
 
 Como análisis complementario, y con el objetivo de explorar otra técnica distinta a la regresión lineal para medir la importancia de las variables, se generó un **conjunto de datos sintético independiente** utilizando la función `make_regression` de scikit-learn (importante notar que, a partir de esta sección, ya no se trabaja con el dataset original de consumo energético, sino con datos simulados de 6 variables `X1` a `X6`, de las cuales solo 3 fueron definidas como verdaderamente informativas al momento de generarlas).
 
@@ -151,7 +151,7 @@ Este ejercicio ilustra un punto valioso: además de los coeficientes de una regr
 
 ### Resultados de OLS Regression
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto9.png" alt="Resultados estadísticos del modelo" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto9.png" alt="Resultados estadísticos del modelo" width="900">
 
 Para cerrar el análisis con un respaldo estadístico más riguroso, se ajustó un modelo de regresión por **Mínimos Cuadrados Ordinarios (OLS)** utilizando la librería `statsmodels`, nuevamente sobre el conjunto de datos sintético descrito en la sección anterior. A diferencia de scikit-learn, `statsmodels` entrega un resumen estadístico detallado que permite evaluar no solo qué tan bien ajusta el modelo, sino también qué tan confiables son sus coeficientes desde un punto de vista estadístico.
 
@@ -169,11 +169,10 @@ Este último punto es particularmente interesante porque confirma, ahora desde u
 
 ### Aprendizajes obtenidos
 
-<img src="https://raw.githubusercontent.com/josue456cris/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto10.png" alt="Conclusiones finales" width="900">
+<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto10.png" alt="Conclusiones finales" width="900">
 
 El desarrollo de este taller permitió comprender que construir un modelo de inteligencia artificial no se limita simplemente a entrenar un algoritmo y obtener predicciones, sino que implica un proceso completo y cuidadoso: explorar los datos disponibles, entender sus distribuciones y la calidad de la información, analizar las relaciones existentes entre las variables, seleccionar y entrenar un modelo adecuado, y —de manera igualmente importante— **validar rigurosamente sus resultados** a través de distintas herramientas complementarias, como el análisis de residuos, la importancia de características mediante árboles de decisión, y las pruebas estadísticas formales que ofrece un análisis OLS.
 
 También quedó claro que la regresión lineal es una herramienta especialmente poderosa e interpretable cuando existe una relación lineal fuerte y clara entre las variables, tal como ocurrió con `Horas_Operacion` en el dataset de consumo energético. Sin embargo, su buen desempeño depende de que se cumplan ciertos supuestos estadísticos (como la distribución de los residuos o la ausencia de heterocedasticidad), los cuales no deben darse por sentados, sino verificarse explícitamente mediante las técnicas empleadas a lo largo de este taller.
 
 En conjunto, este trabajo representa una aplicación práctica y bastante completa de los fundamentos de la inteligencia artificial aplicados al análisis de datos, mostrando cómo distintas técnicas —regresión lineal, árboles de decisión y análisis estadístico— pueden combinarse para construir modelos predictivos más confiables y, sobre todo, mejor entendidos por quien los desarrolla.
-
