@@ -49,6 +49,7 @@ Después de entrenar el árbol, se realizan predicciones utilizando los datos de
 El árbol utiliza lo que aprendió para intentar predecir los valores correspondientes de "Y_test". Luego se crea un gráfico de dispersión. En el eje X se colocan los valores reales de `Y_test` y en el eje Y se colocan los valores predichos por el árbol.
 Finalmente, se calcula el Mean Squared Error (MSE) que permite evaluar numéricamente el desempeño del árbol de decisión.
 
-6. Statsmodels
+5. Statsmodels
+
 Finalmente, se vió de manera rápida, una última forma de realizar una regresión utilizando Statsmodels.
 Con OLS pudo realizar una regresión lineal por mínimos cuadrados ordinarios y obtener un resumen estadístico bastante completo del modelo.
