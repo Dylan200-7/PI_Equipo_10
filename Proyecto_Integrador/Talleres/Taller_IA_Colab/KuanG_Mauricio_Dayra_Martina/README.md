@@ -9,11 +9,13 @@ Lo más destacado fue cuando se separaron los datos en dos grupos utilizando tra
 •	30 % para prueba
 
 1. Regresión Lineal
+
 Este es un método que permite encontrar una relación entre diferentes variables de entrada y una variable de salida. 
 En el taller, se utilizó para intentar predecir el Consumo_Energia a partir de distintas características. 
 Para ello, se crea un modelo con “LinearRegression” de Scikit-learn, se guardó como lm y se entrenó utilizando los datos disponibles. Una vez entrenado, se pudo utilizar "lm.predict(X_test)" para obtener las predicciones del consumo de energía para nuevos datos.
 
 2. Random Forrest
+
 La función “make_regression” permitió generar datos artificiales para probar diferentes modelos de regresión. 
 En el taller, se generaron 100 muestras con 6 características, de las cuales solamente 3 son informativas, es decir, realmente influyen en la variable de salida. 
 Además, se agrega ruido para hacer que los datos sean más realistas y se utiliza una semilla aleatoria para obtener resultados reproducibles. 
@@ -37,6 +39,7 @@ Una vez obtenido el error estándar, se calcula el t-statistic y compara el tama
 Por lo tanto, permite observar qué tan grande es el coeficiente en relación con la incertidumbre de su estimación.
 
 4. Árbol de decisiones
+
 En el taller también pudimos observar otra opción de regresión lineal. A través de DecisionTreeRegressor, se creó un árbol de decisiones para regresión, para predecir un valor numérico.
 Se trabajó de la misma manera con Consumo_Energia. El árbol funciona realizando diferentes divisiones sobre las variables de entrada.
 En el modelo realizado en clase se estableció "max_depth=5", lo que significa que el árbol puede tener como máximo cinco niveles de decisión. 
@@ -46,6 +49,6 @@ Después de entrenar el árbol, se realizan predicciones utilizando los datos de
 El árbol utiliza lo que aprendió para intentar predecir los valores correspondientes de "Y_test". Luego se crea un gráfico de dispersión. En el eje X se colocan los valores reales de `Y_test` y en el eje Y se colocan los valores predichos por el árbol.
 Finalmente, se calcula el Mean Squared Error (MSE) que permite evaluar numéricamente el desempeño del árbol de decisión.
 
-5. Statsmodels
+6. Statsmodels
 Finalmente, se vió de manera rápida, una última forma de realizar una regresión utilizando Statsmodels.
 Con OLS pudo realizar una regresión lineal por mínimos cuadrados ordinarios y obtener un resumen estadístico bastante completo del modelo.
