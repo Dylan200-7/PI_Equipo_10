@@ -169,7 +169,6 @@ Este último punto es particularmente interesante porque confirma, ahora desde u
 
 ### Aprendizajes obtenidos
 
-<img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Recursos/Im%C3%A1genes/foto10.png" alt="Conclusiones finales" width="900">
 
 El desarrollo de este taller permitió comprender que construir un modelo de inteligencia artificial no se limita simplemente a entrenar un algoritmo y obtener predicciones, sino que implica un proceso completo y cuidadoso: explorar los datos disponibles, entender sus distribuciones y la calidad de la información, analizar las relaciones existentes entre las variables, seleccionar y entrenar un modelo adecuado, y de manera igualmente importante **validar rigurosamente sus resultados** a través de distintas herramientas complementarias, como el análisis de residuos, la importancia de características mediante árboles de decisión, y las pruebas estadísticas formales que ofrece un análisis OLS.
 
