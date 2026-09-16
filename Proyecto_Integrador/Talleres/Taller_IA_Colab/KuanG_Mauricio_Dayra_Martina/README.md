@@ -8,19 +8,19 @@ Lo más destacado fue cuando se separaron los datos en dos grupos utilizando tra
 •	70 % para entrenamiento
 •	30 % para prueba
 
-Regresión Lineal
+1. Regresión Lineal
 Este es un método que permite encontrar una relación entre diferentes variables de entrada y una variable de salida. 
 En el taller, se utilizó para intentar predecir el Consumo_Energia a partir de distintas características. 
-Para ello, se crea un modelo con “LinearRegression” de Scikit-learn, se guardó como lm y se entrenó utilizando los datos disponibles. Una vez entrenado, se pudo utilizar `lm.predict(X_test)` para obtener las predicciones del consumo de energía para nuevos datos.
+Para ello, se crea un modelo con “LinearRegression” de Scikit-learn, se guardó como lm y se entrenó utilizando los datos disponibles. Una vez entrenado, se pudo utilizar "lm.predict(X_test)" para obtener las predicciones del consumo de energía para nuevos datos.
 
-Random Forrest
+2. Random Forrest
 La función “make_regression” permitió generar datos artificiales para probar diferentes modelos de regresión. 
 En el taller, se generaron 100 muestras con 6 características, de las cuales solamente 3 son informativas, es decir, realmente influyen en la variable de salida. 
 Además, se agrega ruido para hacer que los datos sean más realistas y se utiliza una semilla aleatoria para obtener resultados reproducibles. 
 Estos datos pueden utilizarse posteriormente para entrenar un modelo como Random Forest, que aprende la relación entre las características y la variable de salida y permite realizar predicciones. 
 De esta manera, “make_regression” se encarga de generar los datos, mientras que Random Forest se encarga de aprender de ellos y predecir resultados.
 
-3, Standard Error y T-statistic
+3. Standard Error y T-statistic
 
 Primero se determinó cuántos datos y cuántas variables tiene el conjunto de entrenamiento.
 n = X_train.shape[0] indica la cantidad de datos u observaciones que tenemos. 
