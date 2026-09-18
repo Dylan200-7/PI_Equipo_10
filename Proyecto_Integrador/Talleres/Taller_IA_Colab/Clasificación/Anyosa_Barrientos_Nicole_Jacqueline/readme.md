@@ -79,9 +79,9 @@ La Regresión Lineal presentó un R² de **0.0369**, mientras que Random Forest 
 
 De acuerdo con las métricas obtenidas, los dos modelos presentan errores en sus predicciones, aunque Random Forest obtuvo mejores resultados en este conjunto de datos.
 
-## 8. Referencias
+## 8. Referencia
 
-[1] U.S. Environmental Protection Agency, “Exploratory Data Analysis,” EPA.
+[1] U.S. Environmental Protection Agency, “Exploratory Data Analysis,” CADDIS, Feb. 3, 2026.
 
-[2] R. Henderson, *Six Sigma Quality Improvement with Minitab*, 2nd ed. Wiley, 2011.
+
 
