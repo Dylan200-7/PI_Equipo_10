@@ -1,4 +1,4 @@
-Actividad: Regresión Lineal
+##Actividad: Regresión Lineal
 datos:
 - Caso de estudio: Phoenix-Mesa-Scottsdale, Arizona
 - Periodo analizado: 2022
@@ -11,7 +11,7 @@ Entonces, se definió:
   - 1 variable Y: dependiente
 Recordemos que la regresión lineal busca una relación de la siguiente forma: y=bo​+b1(​x)
 
-3. Definición de Variables
+2. Definición de Variables 
    Se definió como variables X,y
    X = Daily Max 1-hour NO2 Concentration"
    y = Daily AQI Value
