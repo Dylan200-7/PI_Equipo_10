@@ -377,9 +377,9 @@ En general, las herramientas de análisis estadístico, visualización y aprendi
 
 # Referencias
 
-[1] U.S. Environmental Protection Agency, “Download Daily Data,” *Outdoor Air Quality Data*. [En línea]. Disponible en: https://www.epa.gov/outdoor-air-quality-data/download-daily-data. [Accedido: 18-sep-2026].
+[1] U.S. Environmental Protection Agency, “Download Daily Data,” *Outdoor Air Quality Data*. [En línea]. Disponible en: https://www.epa.gov/outdoor-air-quality-data/airdata.
 
-[2] U.S. Environmental Protection Agency, “AirData: Air Quality Data Collected at Outdoor Monitors Across the US,” *U.S. EPA*. [En línea]. Disponible en: https://www.epa.gov/outdoor-air-quality-data. [Accedido: 18-sep-2026].
+[2] U.S. Environmental Protection Agency, “AirData: Air Quality Data Collected at Outdoor Monitors Across the US,” *U.S. EPA*. [En línea]. Disponible en: https://www.epa.gov/outdoor-air-quality-data.
 
 [3] F. Pedregosa *et al*., “Scikit-learn: Machine Learning in Python,” *Journal of Machine Learning Research*, vol. 12, pp. 2825–2830, 2011.
 
