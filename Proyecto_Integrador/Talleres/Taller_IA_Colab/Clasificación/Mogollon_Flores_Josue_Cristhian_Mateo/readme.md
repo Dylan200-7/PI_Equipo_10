@@ -6,7 +6,7 @@ En este trabajo se analizaron datos de calidad del aire correspondientes al **a�
 
 El archivo utilizado fue `Lead_daily_aqs_data_downloaded_2026-09-18_19_45_02.csv`, el cual contiene **106 registros** obtenidos de información publicada por la **United States Environmental Protection Agency (EPA)**. A diferencia de otros contaminantes medidos a diario, el plomo en este monitor se registra aproximadamente **una vez por semana**, por lo que el conjunto de datos es considerablemente más pequeño.
 
-El objetivo fue aplicar y comparar tres modelos de regresión —**Regresión Lineal**, **Árbol de Decisión** y **Random Forest**— para estimar la concentración diaria de plomo a partir de variables derivadas de la fecha y del identificador de sonda del monitor.
+El objetivo fue aplicar y comparar tres modelos de regresión **Regresión Lineal**, **Árbol de Decisión** y **Random Forest** para estimar la concentración diaria de plomo a partir de variables derivadas de la fecha y del identificador de sonda del monitor.
 
 Las variables utilizadas como predictoras fueron:
 
