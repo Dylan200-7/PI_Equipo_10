@@ -102,7 +102,7 @@ El término de intersección fue aproximadamente **0.1705**.
 
 ### 1. Distribución del plomo
 
-![Histograma de la concentración diaria de plomo](./imagenes/01_histograma_pb.png)
+![Histograma de la concentración diaria de plomo](./Imagenes/01_histograma_pb.png)
 
 **Figura 1. Histograma de Pb.**
 
@@ -123,7 +123,7 @@ Los valores descriptivos principales fueron:
 
 ### 2. Correlación entre variables
 
-![Matriz de correlación](./imagenes/02_matriz_correlacion.png)
+![Matriz de correlación](./Imagenes/02_matriz_correlacion.png)
 
 **Figura 2. Matriz de correlación.**
 
@@ -131,7 +131,7 @@ Los valores descriptivos principales fueron:
 
 ### 3. Variables predictoras frente al plomo
 
-![Variables predictoras frente a Pb](./imagenes/03_variables_vs_pb.png)
+![Variables predictoras frente a Pb](./Imagenes/03_variables_vs_pb.png)
 
 **Figura 3. Variables predictoras frente a Pb.**
 
@@ -141,7 +141,7 @@ Los valores descriptivos principales fueron:
 
 Luego de entrenar el modelo se utilizó `predict()` con los datos de prueba.
 
-![Pb real frente a Pb predicho - Regresión Lineal](./imagenes/04_real_vs_predicho_lineal.png)
+![Pb real frente a Pb predicho - Regresión Lineal](./Imagenes/04_real_vs_predicho_lineal.png)
 
 **Figura 4. Pb real frente a Pb predicho (Regresión Lineal).**
 
@@ -164,7 +164,7 @@ $$
 
 ### 6. Histograma de residuos
 
-![Histograma de residuos](./imagenes/05_histograma_residuos.png)
+![Histograma de residuos](./Imagenes/05_histograma_residuos.png)
 
 **Figura 5. Histograma de residuos.**
 
@@ -172,7 +172,7 @@ $$
 
 ### 7. Residuos frente a valores predichos
 
-![Residuos frente a valores predichos](./imagenes/06_residuos_vs_predicho.png)
+![Residuos frente a valores predichos](./Imagenes/06_residuos_vs_predicho.png)
 
 **Figura 6. Residuos frente a valores predichos.**
 
@@ -182,11 +182,11 @@ $$
 
 Dado el bajo desempeño del modelo lineal, se probaron dos modelos no lineales.
 
-![Pb real frente a Pb predicho - Árbol de Decisión](./imagenes/07_real_vs_predicho_arbol.png)
+![Pb real frente a Pb predicho - Árbol de Decisión](./Imagenes/07_real_vs_predicho_arbol.png)
 
 **Figura 7. Pb real frente a Pb predicho (Árbol de Decisión).**
 
-![Pb real frente a Pb predicho - Random Forest](./imagenes/08_real_vs_predicho_rf.png)
+![Pb real frente a Pb predicho - Random Forest](./Imagenes/08_real_vs_predicho_rf.png)
 
 **Figura 8. Pb real frente a Pb predicho (Random Forest).**
 
@@ -200,7 +200,7 @@ Dado el bajo desempeño del modelo lineal, se probaron dos modelos no lineales.
 
 ### 9. Importancia de las variables (Random Forest)
 
-![Importancia relativa de las variables](./imagenes/09_importancia_variables.png)
+![Importancia relativa de las variables](./Imagenes/09_importancia_variables.png)
 
 **Figura 9. Importancia relativa de las variables.**
 
