@@ -235,9 +235,9 @@ En conclusión, el análisis realizado permitió explorar la relación entre las
 
 ## Referencias
 
-[1] United States Environmental Protection Agency, "Outdoor Air Quality Data," EPA. [En línea]. Disponible en: https://www.epa.gov/outdoor-air-quality-data. [Accedido: 19-sep-2026].
+[1] United States Environmental Protection Agency, "Outdoor Air Quality Data," EPA. [En línea]. Disponible en: https://www.epa.gov/outdoor-air-quality-data. [Accedido: 18-sep-2026].
 
-[2] United States Environmental Protection Agency, "Data," EPA. [En línea]. Disponible en: https://www.epa.gov/data. [Accedido: 19-sep-2026].
+[2] United States Environmental Protection Agency, "Data," EPA. [En línea]. Disponible en: https://www.epa.gov/data. [Accedido: 18-sep-2026].
 
 [3] United States Environmental Protection Agency, *Lead_daily_aqs_data_downloaded_2026-09-18_19_45_02.csv*, datos diarios de calidad del aire para Troy, Alabama, 2023.
 
