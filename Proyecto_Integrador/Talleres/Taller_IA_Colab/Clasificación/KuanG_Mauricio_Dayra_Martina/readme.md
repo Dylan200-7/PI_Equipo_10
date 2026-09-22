@@ -14,8 +14,8 @@ datos:
 
 2. Definición de Variables 
   Se definió como variables X,y
-   X = Daily Max 1-hour NO2 Concentration
-   y = Daily AQI Value
+   - X = Daily Max 1-hour NO2 Concentration
+   - y = Daily AQI Value
 
   En palabras mas simples, el objetivo fue estudiar cómo cambia el AQI diario en función de la concentración de NO₂ reportada diariamente.
   Se escogió a "Daily Max 1-hour NO2 Concentration" como variable independiente ya que el dataset puso en evidencia que el "Daily AQI Value"
