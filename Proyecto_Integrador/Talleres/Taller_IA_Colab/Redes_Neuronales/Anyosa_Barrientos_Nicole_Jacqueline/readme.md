@@ -20,4 +20,9 @@ En nuestro código se crea una clase llamada `SimpleCNN`, donde se define la est
 
 ![METODO CNN](Imagenes/8.png)
 
+### Interpretación
+
+En esta parte se define cómo va a funcionar nuestra red. Las capas convolucionales ayudan al modelo a reconocer diferentes características de las imágenes.
+
+Primero puede identificar cosas simples, como bordes y formas, y luego utiliza esa información para poder clasificar las imágenes.
 
