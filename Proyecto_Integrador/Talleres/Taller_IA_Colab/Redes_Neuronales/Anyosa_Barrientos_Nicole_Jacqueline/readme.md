@@ -56,7 +56,7 @@ Después de terminar el entrenamiento, se evalúa el modelo utilizando los datos
 
 ![MODELO CNN](Imagenes/2.png)
 
-###Interpretación
+### Interpretación
 
 La accuracy indica qué porcentaje de las imágenes fueron clasificadas correctamente.
 
