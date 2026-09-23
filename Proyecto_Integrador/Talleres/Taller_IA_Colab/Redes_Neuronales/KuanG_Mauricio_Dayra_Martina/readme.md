@@ -142,7 +142,7 @@ la función vectorizar() transformó las reseñas, representadas mediante índic
 De esta manera, x_train y x_test contienen las reseñas convertidas a una representación numérica que puede recibir el modelo.
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="Recursos/Imágenes/Kera1.png" width="850">
 </p>
 
 2.2 Creación de Keras
