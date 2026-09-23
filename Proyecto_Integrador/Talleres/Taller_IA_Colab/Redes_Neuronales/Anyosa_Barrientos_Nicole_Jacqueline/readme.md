@@ -1,6 +1,6 @@
-Redes neuronales: CNN, Keras y Perceptrón
+## Redes neuronales: CNN, Keras y Perceptrón
 
-**1. CNN**
+## 1. CNN
 
 Una CNN (Convolutional Neural Network) o red neuronal convolucional es un tipo de red neuronal que se utiliza principalmente para trabajar con imágenes. La idea es que el modelo pueda encontrar características dentro de una imagen y utilizarlas para poder clasificarla.
 
@@ -25,4 +25,11 @@ Además, se evaluó el modelo con imágenes que no se usaron directamente durant
 **Interpretación:**
 
 Aquí podemos ver los resultados que obtuvo el modelo al clasificar las imágenes de prueba. La **accuracy** muestra el porcentaje de imágenes que el modelo clasificó correctamente. Además, la matriz de confusión nos permite ver en qué clases tuvo más errores y qué imágenes llegó a confundir.
+
+
+## 2. Keras
+
+**Keras** es una herramienta que nos ayuda a crear redes neuronales de una manera más sencilla. En vez de programar toda la red desde cero, podemos usar diferentes capas y configurarlas según lo que necesitamos.
+
+En nuestro código usamos Keras para hacer una **clasificación binaria de reseñas de películas** usando el conjunto de datos **IMDB**. Primero, se importan las herramientas necesarias y luego se carga el conjunto de datos.
 
