@@ -192,7 +192,7 @@ el 50% de las neuronas Ello obliga a la red a aprender de diferentes combinacion
 </p>
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="Recursos/Imágenes/Kera6.png" width="850">
 </p>
 ---
 
