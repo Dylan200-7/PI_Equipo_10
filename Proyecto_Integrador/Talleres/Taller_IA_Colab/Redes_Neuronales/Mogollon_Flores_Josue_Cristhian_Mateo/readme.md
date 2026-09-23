@@ -10,9 +10,6 @@ A continuación se describe lo trabajado en cada sección, incluyendo los result
 
 Para la parte de imágenes se usó **TrashNet**, un conjunto de fotografías de residuos. El ejercicio se limitó a dos categorías: **vidrio (`glass = 0`) y plástico (`plastic = 1`)**, con lo cual la tarea quedó definida como una **clasificación binaria**.
 
-**Imagen sugerida:** captura de pantalla de la celda donde se muestran ejemplos de vidrio y plástico (salida de `show_glass_plastic`).
-`Imagenes/01_ejemplos_vidrio_plastico.png`
-
 ![01_ejemplos_vidrio_plastico.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/01_ejemplos_vidrio_plastico.png)
 
 Las imágenes se repartieron en tres subconjuntos, cada uno con una función distinta:
@@ -70,9 +67,6 @@ for epoch in range(1, epochs + 1):
     val_acc, val_auc, _, _, _ = evaluate(model_scratch, val_loader)
 ```
 
-**Imagen sugerida:** captura de las curvas de pérdida y de accuracy/AUC en validación.
-`Imagenes/02_cnn_curvas_entrenamiento.png`
-
 ![02_cnn_curvas_entrenamiento.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/02_cnn_curvas_entrenamiento.png)
 
 Durante el entrenamiento, la exactitud en validación fue subiendo de forma irregular, alcanzando un máximo cercano al **63,27 %** hacia la cuarta época, mientras que el ROC-AUC se mantuvo entre **0,63 y 0,69**. La pérdida de entrenamiento bajó de forma lenta pero constante, lo que indica que el modelo sí estaba aprendiendo, aunque con dificultad para separar bien ambas clases.
@@ -81,9 +75,6 @@ En la evaluación final sobre el conjunto de prueba, el modelo obtuvo:
 
 - **Exactitud (accuracy):** 55,03 %
 - **ROC-AUC:** 63,23 %
-
-**Imagen sugerida:** matriz de confusión del modelo entrenado desde cero.
-`Imagenes/03_cnn_matriz_confusion_scratch.png`
 
 ![03_cnn_matriz_confusion_scratch.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/03_cnn_matriz_confusion_scratch.png)
 
@@ -104,9 +95,6 @@ transform_aug = T.Compose([
 - **`RandomRotation`**: rota levemente la imagen.
 - **`RandomAffine`**: la desplaza un poco en el plano.
 - **`ToTensor`**: la convierte al formato numérico que espera el modelo.
-
-**Imagen sugerida:** salida impresa de la comparación entre ambos modelos.
-`Imagenes/04_comparacion_augmentation.png`
 
 ![04_comparacion_augmentation.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/04_comparacion_augmentation.png)
 
@@ -133,9 +121,6 @@ for param in resnet.fc.parameters():
     param.requires_grad = True
 ```
 
-**Imagen sugerida:** salida de las épocas de esta primera etapa (Stage 1).
-`Imagenes/05_transfer_learning_stage1.png`
-
 ![05_transfer_learning_stage1.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/05_transfer_learning_stage1.png)
 
 Ya en esta primera etapa, la exactitud en validación subió de manera notoria, llegando a valores cercanos al **70-73 %**, con un ROC-AUC que superó el **0,87**, muy por encima de lo logrado por la CNN entrenada desde cero.
@@ -153,15 +138,9 @@ trainable_params = [p for p in resnet.parameters() if p.requires_grad]
 optimizer = torch.optim.Adam(trainable_params, lr=1e-4)
 ```
 
-**Imagen sugerida:** salida de las épocas de la segunda etapa (Stage 2, fine-tuning).
-`Imagenes/06_transfer_learning_stage2.png`
-
 ![06_transfer_learning_stage2.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/06_transfer_learning_stage2.png)
 
 En esta etapa el aprendizaje mejoró de forma notable: la exactitud en validación llegó a **87,07 %** y el ROC-AUC a **95,28 %**.
-
-**Imagen sugerida:** salida con el reporte de clasificación y la matriz de confusión del modelo con transfer learning.
-`Imagenes/07_transfer_learning_matriz_confusion.png`
 
 ![07_transfer_learning_matriz_confusion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/07_transfer_learning_matriz_confusion.png)
 
@@ -191,9 +170,6 @@ idx = 0
 x, y = test_dataset_tl[idx]
 cam, pred_class = grad_cam(resnet, x)
 ```
-
-**Imagen sugerida:** imagen original, mapa de calor y superposición generados por Grad-CAM.
-`Imagenes/08_gradcam.png`
 
 ![08_gradcam.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/08_gradcam.png)
 
@@ -228,9 +204,6 @@ En pocas palabras, **Keras permitió armar y entrenar la red en muy pocas línea
 
 ### 7.1. Sobreajuste
 
-**Imagen sugerida:** gráfico de pérdida de entrenamiento vs. validación por época.
-`Imagenes/09_keras_perdida_entrenamiento_validacion.png`
-
 ![09_keras_perdida_entrenamiento_validacion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/09_keras_perdida_entrenamiento_validacion.png)
 
 Al graficar la pérdida de entrenamiento junto a la de validación se observó un fenómeno de **sobreajuste**: la pérdida de entrenamiento siguió bajando en cada época, mientras que la de validación dejó de mejorar e incluso empezó a subir después de las primeras épocas. Esto significa que el modelo se estaba memorizando los ejemplos de entrenamiento en lugar de aprender patrones que se generalicen a reseñas nuevas.
@@ -244,9 +217,6 @@ model2 = models.Sequential()
 model2.add(layers.Dense(4, activation='relu', input_shape=(10000,)))
 model2.add(layers.Dense(1, activation='sigmoid'))
 ```
-
-**Imagen sugerida:** comparación de la pérdida de validación entre el modelo original y el modelo reducido.
-`Imagenes/10_keras_modelo_reducido.png`
 
 ![10_keras_modelo_reducido.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/10_keras_modelo_reducido.png)
 
@@ -263,9 +233,6 @@ model3.add(layers.Dense(16, activation='relu', kernel_regularizer=regularizers.l
 model3.add(layers.Dense(1, activation='sigmoid'))
 ```
 
-**Imagen sugerida:** comparación de la pérdida de validación entre el modelo original y el modelo regularizado.
-`Imagenes/11_keras_regularizacion.png`
-
 ![11_keras_regularizacion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/11_keras_regularizacion.png)
 
 La regularización suavizó el crecimiento de la pérdida de validación en las últimas épocas, mostrando que penalizar pesos extremos ayuda a que el modelo no se especialice demasiado en los datos de entrenamiento.
@@ -280,9 +247,6 @@ model4.add(layers.Dropout(0.5))
 model4.add(layers.Dense(16, activation='relu'))
 model4.add(layers.Dropout(0.5))
 ```
-
-**Imagen sugerida:** comparación de la pérdida de validación entre el modelo original y el modelo con dropout.
-`Imagenes/12_keras_dropout.png`
 
 ![12_keras_dropout.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/12_keras_dropout.png)
 
@@ -320,9 +284,6 @@ Con la función escalón, la salida fue **0** (sin alerta), y con la función ta
 
 Luego se probó el comportamiento del perceptrón como compuertas lógicas **AND**, **OR** y **XOR**, variando los pesos y el sesgo. El perceptrón logró reproducir sin problema las compuertas AND y OR, pero no pudo resolver XOR por sí solo, ya que sus dos clases no se pueden separar con una sola línea recta.
 
-**Imagen sugerida:** gráfico con las fronteras de decisión y los puntos de la compuerta XOR.
-`Imagenes/13_perceptron_xor.png`
-
 ![13_perceptron_xor.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/13_perceptron_xor.png)
 
 Esto ayudó a visualizar por qué se necesita más de una neurona (una capa oculta) para resolver problemas que no son linealmente separables, como XOR.
@@ -332,9 +293,6 @@ Esto ayudó a visualizar por qué se necesita más de una neurona (una capa ocul
 Si llevamos los conceptos aprendidos en la práctica a nuestro proyecto, el objetivo será desarrollar un sistema capaz de clasificar automáticamente papas mediante imágenes capturadas por una cámara, utilizando técnicas de Machine Learning y visión artificial. Para ello, contamos con una base de datos propia de imágenes de papas, las cuales serán utilizadas para entrenar un modelo que pueda reconocer patrones visuales relacionados con la condición del producto.
 
 El modelo de Machine Learning que utilizaremos será YOLO (You Only Look Once), una arquitectura especializada en detección y clasificación de objetos en tiempo real. Mediante este modelo, el sistema podrá detectar la presencia de una papa dentro de la imagen y clasificarla según las categorías definidas previamente, por ejemplo, papa en buen estado o papa con defectos visibles.
-
-**Imagen sugerida:** diagrama de flujo del sistema de clasificación de papas (captura de una imagen, procesamiento por YOLO, clasificación y envío del resultado). Puede elaborarse con ayuda de IA para representar el proceso.
-`Imagenes/14_diagrama_flujo_papas_yolo.png`
 
 ![14_diagrama_flujo_papas_yolo.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/14_diagrama_flujo_papas_yolo.png)
 
