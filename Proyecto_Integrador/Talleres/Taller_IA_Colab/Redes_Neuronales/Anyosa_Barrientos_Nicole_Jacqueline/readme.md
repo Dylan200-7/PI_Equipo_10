@@ -269,7 +269,26 @@ En la compuerta XOR, la salida es 1 cuando las dos entradas son diferentes.
 Este ejemplo permite observar una limitación del perceptrón simple, ya que una sola frontera de decisión no es suficiente para representar directamente XOR. Para resolver este tipo de problema se necesita combinar varias neuronas.
 
 ---
+## Aplicación en Kartoffelmachine
 
+De todo lo visto, la CNN es lo que más relación tiene con nuestro proyecto.
+
+La idea sería reemplazar las imágenes de vidrio y plástico por imágenes reales de papas Chaucha.
+
+El funcionamiento sería:
+
+La papa entra a la zona de inspección.
+Los rodillos hacen que la papa rote.
+La cámara toma imágenes mientras gira.
+Las imágenes se preparan para ingresar al modelo.
+La CNN analiza características como manchas, forma, textura o daños.
+Se determina si la papa es buena o mala.
+La Raspberry Pi recibe y procesa la decisión.
+El mecanismo dirige la papa al contenedor correspondiente.
+Para aplicarlo realmente tendríamos que crear nuestro propio dataset con fotos de papas buenas y malas.
+
+También sería importante tomar las imágenes con una iluminación parecida a la que tendrá el módulo real, para que el modelo no tenga problemas cuando se implemente en Kartoffelmachine.
+---
 # Conclusión
 
 Con estos ejemplos podemos observar diferentes formas de utilizar las redes neuronales.
