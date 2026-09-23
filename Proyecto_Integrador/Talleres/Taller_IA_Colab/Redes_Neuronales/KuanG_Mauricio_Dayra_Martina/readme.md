@@ -277,26 +277,10 @@ Para mí las cosas principales que se deben recordar son:
 * suma ponderada
 * función escalón
 * `tanh`
-
+* 
 ---
 
-# Qué aprendimos
-
-La parte más importante fue entender que una red neuronal aprende usando datos y que tenemos que medir si realmente está aprendiendo bien.
-
-También vimos que:
-
-* un perceptrón es la parte más básica;
-* las CNN están pensadas para imágenes;
-* Keras facilita bastante la construcción de redes;
-* el sobreajuste puede hacer que un modelo funcione bien solo con los datos que ya conoce;
-* y el transfer learning ayuda cuando no tenemos demasiados datos.
-
-Otra parte que me pareció importante fue Grad-CAM, porque permite ver qué zonas de una imagen fueron importantes para la decisión del modelo.
-
----
-
-## Cómo lo usaríamos en Kartoffelmachine
+## Aplicación al proyecto: Kartoffelmaschine
 
 En nuestro proyecto la idea sería cambiar el problema de clasificación del ejemplo y usarlo con las papas Chaucha.
 
@@ -338,7 +322,5 @@ También sería importante que las fotos se tomen con una iluminación lo más p
 # Conclusión
 
 De los tres temas, el que más serviría directamente para Kartoffelmachine sería la CNN.
-
 Keras también nos puede ayudar si queremos construir el modelo más rápido, mientras que el perceptrón sirve principalmente para entender cómo funciona una neurona.
-
 Antes de implementar algo real todavía tendríamos que recolectar imágenes de papas Chaucha, etiquetarlas y probar si la red realmente puede diferenciar papas buenas y malas.
