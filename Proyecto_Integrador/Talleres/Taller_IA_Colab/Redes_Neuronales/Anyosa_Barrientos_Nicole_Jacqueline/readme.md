@@ -29,3 +29,10 @@ Primero puede identificar cosas simples, como bordes y formas, y luego utiliza e
 ## Entrenamiento de la CNN
 
 Después de crear el modelo, se procede a entrenarlo utilizando los datos del dataset. Durante este proceso, la red aprende a reconocer las características de las imágenes para poder clasificarlas correctamente.
+
+![MODELO CNN](Imagenes/9.png)
+
+### Interpretación
+
+En esta parte se define cómo va a aprender el modelo. La función `CrossEntropyLoss` ayuda a calcular el error que tiene al clasificar las imágenes, mientras que el optimizador `Adam` se encarga de ir ajustando el modelo durante el entrenamiento.
+
