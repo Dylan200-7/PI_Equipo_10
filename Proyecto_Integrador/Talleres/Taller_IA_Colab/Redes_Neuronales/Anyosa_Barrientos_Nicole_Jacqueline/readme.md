@@ -1,53 +1,23 @@
-## Redes neuronales: CNN, Keras y Perceptrón
+# Redes neuronales: CNN, Keras y Perceptrón
 
-## 1. CNN
+En este trabajo se presentan tres conceptos relacionados con las redes neuronales: **CNN, Keras y Perceptrón**. Para cada uno se utiliza un ejemplo realizado en Python y se muestran los resultados obtenidos al ejecutar el código.
 
-Una CNN (Convolutional Neural Network) o red neuronal convolucional es un tipo de red neuronal que se utiliza principalmente para trabajar con imágenes. La idea es que el modelo pueda encontrar características dentro de una imagen y utilizarlas para poder clasificarla.
+---
 
-En nuestro caso, utilizamos una CNN para trabajar con imágenes de residuos y poder reconocer las diferentes clases del conjunto de datos TrashNet.
+# 1. CNN
 
-**¿Cómo funciona en nuestro código?**
+## ¿Qué es una CNN?
 
-En esta parte se crea la estructura de nuestra red usando la clase `SimpleCNN`. La red tiene capas convolucionales que ayudan a reconocer las características de las imágenes y después utiliza esas características para poder clasificarlas.
+Una **CNN (Convolutional Neural Network)** o red neuronal convolucional es un tipo de red neuronal que se utiliza principalmente para trabajar con imágenes.
 
-![MODELO CNN](Imagenes/1.png)
+En nuestro caso, utilizamos una CNN con imágenes del conjunto de datos **TrashNet**. El objetivo es que el modelo pueda aprender a reconocer y diferenciar las distintas clases de residuos.
 
-**Interpretación:**
+## Construcción de la CNN
 
-En esta parte podemos observar cómo está formada la CNN. Las capas convolucionales permiten que el modelo identifique diferentes características de las imágenes, como bordes, formas y patrones. Luego, utiliza estas características para reconocer a qué clase pertenece cada imagen.
+En nuestro código se crea una clase llamada `SimpleCNN`, donde se define la estructura de la red y las diferentes capas que se van a utilizar.
 
-Además, se evaluó el modelo con imágenes que no se usaron directamente durante el entrenamiento, para comprobar cómo funciona con imágenes nuevas.
+![METODO CNN](Imagenes/1.png)
 
-![MODELO CNN](Imagenes/2.png)
-
-![MODELO CNN](Imagenes/3.png)
-
-**Interpretación:**
-
-Aquí podemos ver los resultados que obtuvo el modelo al clasificar las imágenes de prueba. La **accuracy** muestra el porcentaje de imágenes que el modelo clasificó correctamente. Además, la matriz de confusión nos permite ver en qué clases tuvo más errores y qué imágenes llegó a confundir.
-
-
-## 2. Keras
-
-**Keras** es una herramienta que nos ayuda a crear redes neuronales de una manera más sencilla. En vez de programar toda la red desde cero, podemos usar diferentes capas y configurarlas según lo que necesitamos.
-
-En nuestro código usamos Keras para hacer una **clasificación binaria de reseñas de películas** usando el conjunto de datos **IMDB**. Primero, se importan las herramientas necesarias y luego se carga el conjunto de datos.
-
-![MODELO KERAS](Imagenes/4.png)
-
-![MODELO KERAS](Imagenes/5.png)
-
-![MODELO KERAS](Imagenes/6.png)
-
-**Interpretación:**
-
-Aquí se va formando la red neuronal agregando las capas una después de otra. Las capas `Dense` están conectadas entre sí y ayudan a procesar la información para poder clasificar las reseñas.
-
-Una ventaja de Keras es que nos permite crear este tipo de modelos de una forma más sencilla, sin tener que programar todo el funcionamiento de la red manualmente.
-
-Finalmente, se comprueba el funcionamiento del modelo utilizando los datos de prueba.
-
-
-
+![METODO CNN](Imagenes/8.png)
 
 
