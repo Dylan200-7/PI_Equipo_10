@@ -7,3 +7,5 @@ Una CNN (Convolutional Neural Network) o red neuronal convolucional es un tipo d
 En nuestro caso, utilizamos una CNN para trabajar con imágenes de residuos y poder reconocer las diferentes clases del conjunto de datos TrashNet.
 
 ¿Cómo funciona en nuestro código?
+
+![MODELO CNN](imagenes/1.png)
