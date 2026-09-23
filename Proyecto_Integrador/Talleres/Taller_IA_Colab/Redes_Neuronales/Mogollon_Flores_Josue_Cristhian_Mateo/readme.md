@@ -292,9 +292,7 @@ Esto ayudó a visualizar por qué se necesita más de una neurona (una capa ocul
 
 Si llevamos los conceptos aprendidos en la práctica a nuestro proyecto, el objetivo será desarrollar un sistema capaz de clasificar automáticamente papas mediante imágenes capturadas por una cámara, utilizando técnicas de Machine Learning y visión artificial. Para ello, contamos con una base de datos propia de imágenes de papas, las cuales serán utilizadas para entrenar un modelo que pueda reconocer patrones visuales relacionados con la condición del producto.
 
-El modelo de Machine Learning que utilizaremos será YOLO (You Only Look Once), una arquitectura especializada en detección y clasificación de objetos en tiempo real. Mediante este modelo, el sistema podrá detectar la presencia de una papa dentro de la imagen y clasificarla según las categorías definidas previamente, por ejemplo, papa en buen estado o papa con defectos visibles.
-
-![14_diagrama_flujo_papas_yolo.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/14_diagrama_flujo_papas_yolo.png)
+El modelo de Machine Learning que utilizaremos será YOLO , una arquitectura especializada en detección y clasificación de objetos en tiempo real. Mediante este modelo, el sistema podrá detectar la presencia de una papa dentro de la imagen y clasificarla según las categorías definidas previamente, por ejemplo, papa en buen estado o papa con defectos visibles.
 
 Para mejorar el aprendizaje del modelo se aplicarán diferentes funciones y técnicas de Machine Learning:
 
@@ -309,6 +307,3 @@ Los resultados esperados serán realistas considerando la cantidad y calidad de 
 
 En conclusión, entender el rol del matching learning nos ayudo a comprender que este no solamente depende de elegir una arquitectura, sino también de la calidad de los datos, el entrenamiento y la evaluación de resultados. En nuestro proyecto, estas herramientas permitirán integrar visión artificial, inteligencia artificial y control electrónico para desarrollar un sistema automatizado de triaje poscosecha.
 
----
-
-**Nota:** Se utilizó **IA** para mejorar y ordenar la redacción y las ideas del informe.
