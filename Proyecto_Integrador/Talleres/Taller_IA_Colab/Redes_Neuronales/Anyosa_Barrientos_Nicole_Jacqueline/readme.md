@@ -20,7 +20,7 @@ Además, se evaluó el modelo con imágenes que no se usaron directamente durant
 
 ![MODELO CNN](Imagenes/2.png)
 
-![MODELO CNN](Imagenes/.png)
+![MODELO CNN](Imagenes/3.png)
 
 **Interpretación:**
 Aquí podemos ver los resultados que obtuvo el modelo al clasificar las imágenes de prueba. La **accuracy** muestra el porcentaje de imágenes que el modelo clasificó correctamente. Además, la matriz de confusión nos permite ver en qué clases tuvo más errores y qué imágenes llegó a confundir.
