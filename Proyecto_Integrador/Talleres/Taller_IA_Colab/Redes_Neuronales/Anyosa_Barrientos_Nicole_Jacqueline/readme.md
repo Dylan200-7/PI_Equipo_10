@@ -18,3 +18,4 @@ En esta parte podemos observar cómo está formada la CNN. Las capas convolucion
 
 Además, se evaluó el modelo con imágenes que no se usaron directamente durante el entrenamiento, para comprobar cómo funciona con imágenes nuevas.
 
+![MODELO CNN](Imagenes/2.png)
