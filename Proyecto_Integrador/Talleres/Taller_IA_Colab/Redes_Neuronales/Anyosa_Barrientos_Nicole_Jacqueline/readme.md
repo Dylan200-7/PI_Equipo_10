@@ -126,7 +126,7 @@ De esta manera, los datos quedan preparados para ingresar al modelo.
 
 ## Construcción del modelo
 
-#[KERAS](Imagenes/6.png)
+![KERAS](Imagenes/6.png)
 
 ### Interpretación
 
