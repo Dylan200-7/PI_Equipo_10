@@ -276,18 +276,17 @@ De todo lo visto, la CNN es lo que más relación tiene con nuestro proyecto.
 La idea sería reemplazar las imágenes de vidrio y plástico por imágenes reales de papas Chaucha.
 
 El funcionamiento sería:
-
-La papa entra a la zona de inspección.
-Los rodillos hacen que la papa rote.
-La cámara toma imágenes mientras gira.
-Las imágenes se preparan para ingresar al modelo.
-La CNN analiza características como manchas, forma, textura o daños.
-Se determina si la papa es buena o mala.
-La Raspberry Pi recibe y procesa la decisión.
-El mecanismo dirige la papa al contenedor correspondiente.
+- La papa entra a la zona de inspección.
+- Los rodillos hacen que la papa rote.
+- La cámara toma imágenes mientras gira.
+- Las imágenes se preparan para ingresar al modelo.
+- La CNN analiza características como manchas, forma, textura o daños.
+- Se determina si la papa es buena o mala.
+- La Raspberry Pi recibe y procesa la decisión.
+- El mecanismo dirige la papa al contenedor correspondiente.
 Para aplicarlo realmente tendríamos que crear nuestro propio dataset con fotos de papas buenas y malas.
-
 También sería importante tomar las imágenes con una iluminación parecida a la que tendrá el módulo real, para que el modelo no tenga problemas cuando se implemente en Kartoffelmachine.
+
 ---
 # Conclusión
 
