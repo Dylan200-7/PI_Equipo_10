@@ -284,6 +284,7 @@ El funcionamiento sería:
 - Se determina si la papa es buena o mala.
 - La Raspberry Pi recibe y procesa la decisión.
 - El mecanismo dirige la papa al contenedor correspondiente.
+
 Para aplicarlo realmente tendríamos que crear nuestro propio dataset con fotos de papas buenas y malas.
 También sería importante tomar las imágenes con una iluminación parecida a la que tendrá el módulo real, para que el modelo no tenga problemas cuando se implemente en Kartoffelmachine.
 
