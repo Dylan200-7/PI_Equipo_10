@@ -67,7 +67,7 @@ Este resultado nos ayuda a saber cómo funciona el modelo con imágenes que no u
 ![MODELO CNN](Imagenes/3.png)
 
 
-###Interpretación del gráfico
+### Interpretación del gráfico
 
 La matriz de confusión nos permite observar con más detalle los aciertos y errores del modelo.
 
