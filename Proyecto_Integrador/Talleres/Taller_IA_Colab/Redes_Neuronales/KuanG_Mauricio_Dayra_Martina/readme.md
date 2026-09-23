@@ -25,80 +25,105 @@ para la clasificación automática de residuos.
 CNN stands for Convolutional Neural Network. Esta es un tipo de red neuronal diseñada para trabajr con imágenes.
 A continuación, se explicará su funcionamiento mediante el código brindado en clase
 
+La idea general era que el modelo CNN, pueda clasificar correctamente la imagen del Data Set
+Si es 0 o 1, es decir, si es vidrio o plástico.
+La CNN aprende progresivamente:
+
+píxeles
+   ↓
+bordes
+   ↓
+formas
+   ↓
+texturas
+   ↓
+patrones más complejos
+   ↓
+glass / plastic
+
 1.1 Preparación del entorno
 
 Para construir y entrenar la red neuronal, se importó la biblioteca "Pytorch"
 
-1.2 Transformación inicial
+1.2 Cargar el data set utilizando trashNet
 
-Esta librería nos permitirá realizar las transformaciones que queremos aplicar a cada imagen.
-
-## Ejemplos de imágenes
-
-El código tiene una función para mostrar ejemplos de vidrio y plástico.
-
+TrashNet se utilizó para almacenar el conjunto de imágenes del Data Set
 <p align="center">
   <img src="imagenes/03_cnn_visualizar_dataset_py.png" width="850">
 </p>
 
-También había una imagen guardada dentro del archivo exportado:
+1.3 Transformación inicial
+
+Cómo ya se importó la librería PyTorch, se realizó las transformaciones que se necesitanban
+para una mejor funcionalidad del modelo CNN
+
+Con "transform_basic = T.Compose([
+    T.ToTensor()
+])"
+Se permitió darle el formato PyTorch a la imagen que se suba.
+"T.ToTensor" transforma toma la imagen y la convierte en un tensor de PyTorch
+
+Luego se crearon los conjuntos de entrenamiento, prueba y validación
 
 <p align="center">
   <img src="imagenes/12_cnn_imagen_incrustada_en_py.png" width="650">
 </p>
 
-Esto sirve para revisar si los datos realmente se están leyendo bien antes de entrenar.
+1.4 Visualización de Ejemplos de imágenes
 
----
-
-## Funciones para evaluar
-
-Una parte importante del código es que no solo entrena, también evalúa.
+Se mostró algunos ejemplos de vidrio y plástico para revisar si los datos realmente se están leyendo bien antes de entrenar.
 
 <p align="center">
   <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
 </p>
 
-Se usan métricas como:
+1.4 Creación del modelo CNN
+Se construyó una CNN sencilla desde cero para clasificar las imágenes de TrashNet.
+La red está formada por tres capas convolucionales que extraen características de las imágenes:
+1. nn.Conv2d(1, 16, ...) : Indica 1 canal de entrada y 16 de salida (capta 16 características)
+2. nn.Conv2d(16, 32, ...)
+3. nn.Conv2d(32, 64, ...)
+Cada capa convolucional esta acompañada del filtro "Kernel" el cual aprende patrones para deterctar determinadas caracterísicas.
+También, estan seguidas de ReLU y MaxPool para introducir no linealidad y reducir el tamaño espacial.
 
-* accuracy,
-* ROC-AUC,
-* matriz de confusión,
-* precision,
-* recall,
-* F1.
-
-Esto es importante porque un modelo puede tener una accuracy aceptable y aun así equivocarse bastante en una clase.
-
----
-
-## Aumento de datos
-
-Después aparece Data Augmentation.
+Después se evalúa el modelo con el conjunto de validación y se obtienen la accuracy (val_acc) y el AUC (val_auc)
 
 <p align="center">
-  <img src="imagenes/08_cnn_augmentation_transfer_py.png" width="850">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
 </p>
 
-En este caso se hacen pequeñas rotaciones y desplazamientos.
+1.5 Entrenamiento del Modelo
 
-Lo entiendo como una forma de crear variaciones de las mismas imágenes para que el modelo no dependa de que todo esté exactamente en la misma posición.
-
----
-
-## Transfer Learning
-
-Luego se usa ResNet18.
+En esta etapa se entrena la CNN. Se definió la función de perdida "CrossEntropyLoss", la cual mide qué tan diferentes son las 
+predicciones del modelo e utiliza el optimizador Adam para actualizar los parámetros de la red, con una tasa de aprendizaje de 0.001. 
+El modelo se entrenó durante 8 épocas y, en cada una, se calcula el "train_loss" utilizando las imágenes de entrenamiento. 
 
 <p align="center">
-  <img src="imagenes/09_cnn_resnet_finetuning_resultados_py.png" width="850">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
 </p>
 
-Esta parte es útil porque en vez de entrenar todo desde cero, se usa un modelo que ya fue entrenado anteriormente y se cambia la parte final.
+Luego se graficó para ver si el modelo estaba aprendiendo
 
-Después también se hace fine-tuning, donde algunas capas vuelven a entrenarse.
+<p align="center">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+</p>
 
-Para un dataset pequeño puede ser una mejor opción que empezar completamente desde cero.
+A partir de la época 4 se tiene un mejor porcentaje de accuracy - 63.27%
+Por lo que, puedo decir que si hay evidencia de aprendizaje moderado
+
+1.5 Evaluación Final en Test
+
+Finalmente, se pruebó el modelo con datos que no utilizó directamente durante el entrenamiento.
+<p align="center">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+</p>
+
+1.6 Grad Cam
+
+Una parte resaltante del código, ya que permitió ver en que parte de la imagen se fijó más 
+el modelo CNN red para hacer la predicción, y por ende si evaluaba las zonas de mayor importancia.
+- zonas claras/amarillas = más influencia
+- zonas oscuras/moradas = menor influencia
 
 ---
 
