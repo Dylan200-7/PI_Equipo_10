@@ -210,9 +210,6 @@ El funcionamiento sería:
 7. La Raspberry Pi recibe y procesa la decisión.
 8. El mecanismo dirige la papa al contenedor correspondiente.
 
-<p align="center">
-  <img src="./imagenes/20_kartoffelmachine_flujo_cnn.png" width="850">
-</p>
 
 Para aplicarlo realmente tendríamos que crear nuestro propio dataset con fotos de papas buenas y malas.
 
