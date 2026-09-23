@@ -33,3 +33,21 @@ Aquí podemos ver los resultados que obtuvo el modelo al clasificar las imágene
 
 En nuestro código usamos Keras para hacer una **clasificación binaria de reseñas de películas** usando el conjunto de datos **IMDB**. Primero, se importan las herramientas necesarias y luego se carga el conjunto de datos.
 
+![MODELO KERAS](Imagenes/4.png)
+
+![MODELO KERAS](Imagenes/5.png)
+
+![MODELO KERAS](Imagenes/6.png)
+
+**Interpretación:**
+
+Aquí se va formando la red neuronal agregando las capas una después de otra. Las capas `Dense` están conectadas entre sí y ayudan a procesar la información para poder clasificar las reseñas.
+
+Una ventaja de Keras es que nos permite crear este tipo de modelos de una forma más sencilla, sin tener que programar todo el funcionamiento de la red manualmente.
+
+Finalmente, se comprueba el funcionamiento del modelo utilizando los datos de prueba.
+
+
+
+
+
