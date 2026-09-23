@@ -1,419 +1,229 @@
 # Redes neuronales - CNN, Keras y Perceptrón
 
-En esta parte revisé el archivo de redes neuronales y traté de entender principalmente **qué hace cada cosa y para qué podría servirnos en el proyecto**.
-
-No puse todo el código escrito porque se hace muy largo. Mejor coloqué capturas de las partes que me parecieron más importantes del `.py`.
+En esta práctica revisé tres temas principales: CNN, Keras y Perceptrón. La idea fue entender de manera general cómo funcionan y ver qué parte nos podría servir para Kartoffelmachine.
 
 ---
 
 ## CNN
 
-Una CNN es una red que sirve bastante para trabajar con imágenes.
-
-Yo la entendí así: la red no mira la foto completa de frente como nosotros, sino que va revisando pequeñas partes y buscando patrones. Al inicio puede reconocer cosas simples como bordes o cambios de color, y luego con más capas va juntando esa información.
-
-En el código se habla de `Conv2D`, `ReLU`, `MaxPool` y capas densas.
+Las CNN son redes neuronales utilizadas principalmente para trabajar con imágenes. Yo lo entendí como una red que va buscando características pequeñas de una imagen, como bordes o texturas, y poco a poco junta esa información para poder clasificarla.
 
 <p align="center">
   <img src="./imagenes/01_cnn_componentes.png" width="850">
 </p>
 
-### Lo que entendí de cada parte
+Las partes principales que vimos fueron Conv2D, ReLU, MaxPool y las capas densas. Cada una cumple una función diferente durante el análisis de la imagen.
 
-- **Conv2D:** busca patrones en la imagen.
-- **ReLU:** ayuda a dejar pasar los valores que sirven.
-- **MaxPool:** reduce información, pero intenta quedarse con lo más importante.
-- **Dense:** al final usa lo aprendido para decidir la clase.
+### Dataset
 
----
-
-## Dataset que se usó
-
-En el ejercicio se usa TrashNet y se trabaja con imágenes de vidrio y plástico.
-
-Primero se carga el dataset y se definen las clases que se van a utilizar.
+Para practicar se utilizó TrashNet, usando imágenes de vidrio y plástico.
 
 <p align="center">
   <img src="./imagenes/02_cnn_dataset_inicio.png" width="850">
 </p>
 
-Después se descarga el dataset y se preparan las partes de entrenamiento, validación y prueba.
-
 <p align="center">
   <img src="./imagenes/03_cnn_dataset_carga.png" width="850">
 </p>
 
-Esto sirve para practicar clasificación binaria, porque solo hay dos opciones:
+Los datos se separaron en entrenamiento, validación y prueba.
 
-- Vidrio.
-- Plástico.
-
----
-
-## Visualización de ejemplos
-
-Antes de entrenar la red también podemos visualizar algunas imágenes del dataset.
-
-Esto nos sirve para comprobar que las imágenes se están cargando correctamente y ver cómo son las dos clases con las que estamos trabajando.
+También se mostraron algunos ejemplos para comprobar que las imágenes se habían cargado correctamente.
 
 <p align="center">
   <img src="./imagenes/04_cnn_visualizar_ejemplos.png" width="850">
 </p>
 
----
+### Modelo CNN
 
-## Modelo CNN
-
-Esta es la parte donde se construye la CNN.
+Después se creó una CNN desde cero.
 
 <p align="center">
   <img src="./imagenes/05_cnn_modelo_desde_cero.png" width="850">
 </p>
 
-Lo que vi es que va aumentando la cantidad de filtros:
+El modelo comienza con 16 filtros, luego pasa a 32 y finalmente a 64. La idea es que mientras avanza por las capas pueda reconocer características cada vez más importantes.
 
-- primero 16,
-- luego 32,
-- después 64.
+### Entrenamiento
 
-También utiliza `ReLU` y `MaxPool`.
-
-Luego pasa por una capa final que hace la clasificación.
-
-No entendí todos los parámetros al comienzo, pero sí la idea general: **cada capa va sacando características diferentes de la imagen**.
-
----
-
-## Entrenamiento
-
-Después de crear la CNN se empieza a entrenar el modelo.
-
-En esta parte se utilizan 8 épocas y en cada una se calcula la pérdida, accuracy y ROC-AUC.
+El modelo se entrenó durante 8 épocas.
 
 <p align="center">
   <img src="./imagenes/06_cnn_entrenamiento.png" width="850">
 </p>
 
-Podemos ver que en cada época los valores van cambiando conforme la red aprende de las imágenes.
-
----
-
-## Curvas de entrenamiento
-
-Para entender mejor cómo está aprendiendo el modelo se muestran las curvas de entrenamiento.
+Luego se graficaron los resultados para observar si realmente estaba aprendiendo.
 
 <p align="center">
   <img src="./imagenes/07_cnn_curvas_entrenamiento.png" width="850">
 </p>
 
-En el archivo se indica que desde la época 4 comienza a mejorar la clasificación y llega aproximadamente a **63.27% de accuracy**.
+A partir de la época 4 se nota una mejora y se llega aproximadamente a 63.27% de accuracy. El ROC-AUC se mantiene alrededor de 0.67 a 0.69.
 
-También aparece un ROC-AUC de alrededor de **0.67 a 0.69**.
+Para mí esto indica que sí existe aprendizaje, aunque todavía el modelo comete varios errores.
 
-### ¿Qué significa?
+### Evaluación
 
-Para mí significa que el modelo sí está aprendiendo, pero todavía no está clasificando de una manera demasiado buena.
-
-O sea, ya encuentra diferencias entre vidrio y plástico, pero todavía se equivoca bastante.
-
----
-
-## Evaluación final
-
-Después del entrenamiento se prueba el modelo con imágenes que no utilizó directamente para aprender.
-
-Aquí podemos ver el accuracy final, ROC-AUC y la matriz de confusión.
+Al final se prueba el modelo con datos que no utilizó directamente durante el entrenamiento.
 
 <p align="center">
   <img src="./imagenes/08_cnn_evaluacion_test.png" width="850">
 </p>
 
-La matriz de confusión ayuda a ver de una forma más clara cuántas imágenes fueron clasificadas correctamente y en cuáles se equivocó.
+La matriz de confusión permite ver cuántas imágenes clasificó correctamente y en cuáles se equivocó.
 
----
+### Grad-CAM
 
-## Grad-CAM
-
-Esta parte me pareció una de las más interesantes porque sirve para saber **qué zona de la imagen influyó en la decisión de la red**.
+Grad-CAM fue una de las partes que más me llamó la atención porque permite ver qué zona de una imagen tomó más en cuenta la red para hacer una predicción.
 
 <p align="center">
   <img src="./imagenes/09_cnn_gradcam.png" width="850">
 </p>
 
-En la imagen podemos observar tres partes:
-
-- La imagen original.
-- El mapa de Grad-CAM.
-- La superposición del mapa sobre la imagen.
-
-La idea es que las zonas más claras tienen mayor importancia para la predicción.
-
-Esto es útil porque no solo vemos el resultado, sino que también podemos revisar si el modelo está mirando la parte correcta de la imagen.
+Esto sería útil porque no solo tenemos el resultado, sino que también podemos revisar si la IA está observando la parte correcta de la imagen.
 
 ---
 
-# Keras
+## Keras
 
-Keras lo entendí más como una herramienta para crear redes neuronales de forma más sencilla.
+Keras permite crear y entrenar redes neuronales de una forma más sencilla.
 
-En el ejemplo se usan reseñas de películas y se clasifican como positivas o negativas.
-
----
-
-## Creación del modelo
-
-La red tiene dos capas con 16 neuronas y una salida con `sigmoid`.
+En este ejemplo ya no se usaron imágenes, sino reseñas de películas que tenían que clasificarse como positivas o negativas.
 
 <p align="center">
   <img src="./imagenes/10_keras_creacion_modelo.png" width="850">
 </p>
 
-También se utiliza:
+Se utilizaron dos capas de 16 neuronas y una capa final para realizar la clasificación.
 
-- `rmsprop` como optimizador.
-- `binary_crossentropy` para calcular el error.
-- `accuracy` como una de las métricas.
+### Sobreajuste
 
-Lo importante de `sigmoid` es que ayuda a obtener un valor entre 0 y 1, lo cual sirve bastante cuando solo existen dos clases.
-
----
-
-## Análisis del resultado
-
-En Keras también vimos el problema del sobreajuste.
+También vimos el problema del sobreajuste.
 
 <p align="center">
   <img src="./imagenes/11_keras_analisis_resultado.png" width="850">
 </p>
 
-En el gráfico podemos ver dos curvas:
+Yo lo entendí como cuando el modelo aprende demasiado bien los datos con los que entrenó, pero después empieza a fallar cuando recibe datos nuevos.
 
-- La curva de entrenamiento.
-- La curva de validación.
+En este ejemplo se obtuvo aproximadamente 86.1% de exactitud.
 
-La forma más simple en la que entiendo el sobreajuste es:
+### Dropout
 
-> El modelo aprende demasiado bien los datos de entrenamiento, pero cuando le das datos nuevos puede empezar a fallar.
-
-En el archivo aparece una exactitud de aproximadamente **86.1%** para este ejemplo.
-
----
-
-## Dropout
-
-También se utiliza Dropout para intentar reducir el sobreajuste.
+Para reducir el sobreajuste también se utilizó Dropout.
 
 <p align="center">
   <img src="./imagenes/12_keras_dropout.png" width="850">
 </p>
 
-Según lo que entendí, durante el entrenamiento se desactivan algunas neuronas de manera aleatoria.
+Durante el entrenamiento algunas neuronas se desactivan temporalmente para que la red no dependa siempre de las mismas.
 
-Esto hace que la red no dependa siempre de las mismas neuronas y tenga que aprender usando diferentes combinaciones.
-
----
-
-## Predicciones
-
-Después de entrenar el modelo se puede utilizar para realizar predicciones.
+Finalmente también se hicieron predicciones.
 
 <p align="center">
   <img src="./imagenes/13_keras_predicciones.png" width="850">
 </p>
 
-En este caso se hizo una predicción sobre una reseña y se obtuvo aproximadamente un **99.4% de probabilidad de que sea positiva**.
+En este caso una de las reseñas obtuvo aproximadamente 99.4% de probabilidad de ser positiva.
 
 ---
 
-# Perceptrón
+## Perceptrón
 
-El perceptrón me pareció más fácil de entender porque es como una neurona básica.
+El perceptrón fue la parte más sencilla de entender porque funciona como una neurona básica.
 
-Tiene:
-
-- entradas,
-- pesos,
-- bias,
-- una función de activación.
-
----
-
-## Factores y funcionamiento
-
-En el ejemplo se utilizan como entradas:
-
-- temperatura,
-- vibración.
-
-También se definen pesos y un bias.
+Recibe entradas, utiliza pesos y un bias, y finalmente genera una salida.
 
 <p align="center">
   <img src="./imagenes/14_perceptron_factores_funcionamiento.png" width="850">
 </p>
 
-Después el perceptrón realiza una suma utilizando las entradas y sus pesos.
+En el ejemplo se utilizaron temperatura y vibración como entradas.
 
-Finalmente aplica una función de activación para generar una salida.
-
----
-
-## Resultados del perceptrón
-
-En el código se prueban dos funciones de activación:
-
-- función escalón,
-- función `tanh`.
+Después se probaron dos funciones de activación diferentes.
 
 <p align="center">
   <img src="./imagenes/15_perceptron_resultados.png" width="850">
 </p>
 
-La función escalón devuelve solamente 0 o 1.
+La función escalón devuelve 0 o 1, mientras que tanh puede devolver valores entre -1 y 1.
 
-En cambio, `tanh` puede devolver valores entre -1 y 1.
+### AND y OR
 
-La función de activación es importante porque transforma la suma que realiza la neurona en una salida que puede utilizar para tomar una decisión.
-
----
-
-## Perceptrón AND y OR
-
-También se probó el perceptrón utilizando compuertas lógicas.
+También se probó el perceptrón con las compuertas AND y OR.
 
 <p align="center">
   <img src="./imagenes/16_perceptron_and_or.png" width="850">
 </p>
 
-En AND el resultado es 1 solamente cuando las dos entradas son 1.
+Con estos ejemplos se puede ver cómo una neurona separa datos dependiendo de sus entradas.
 
-En OR el resultado es 1 cuando al menos una de las entradas es 1.
-
-Estos ejemplos permiten entender de una forma sencilla cómo una neurona puede separar diferentes datos.
-
----
-
-## Compuerta XOR
+### XOR
 
 Finalmente se probó XOR.
-
-Primero se construye el gráfico con los diferentes puntos y fronteras de decisión.
 
 <p align="center">
   <img src="./imagenes/17_perceptron_xor_inicio.png" width="850">
 </p>
 
-Después podemos observar gráficamente cómo se intenta separar los datos.
-
 <p align="center">
   <img src="./imagenes/18_perceptron_xor_grafico.png" width="700">
 </p>
-
-La conclusión de esta parte es importante.
 
 <p align="center">
   <img src="./imagenes/19_perceptron_xor_conclusion.png" width="700">
 </p>
 
-La idea principal es:
+La conclusión principal fue que un solo perceptrón no puede resolver XOR. Se necesitan más neuronas y una capa de salida.
 
-- **1 perceptrón no puede resolver XOR.**
-- **2 perceptrones y una capa de salida sí pueden hacerlo.**
-
-Esto ayuda a entender por qué una sola neurona no sirve para resolver cualquier problema y por qué las redes neuronales utilizan varias neuronas y capas.
-
----
-
-## Funciones que me parecieron más importantes
-
-### CNN
-
-- `Conv2D`
-- `ReLU`
-- `MaxPool2D`
-- `evaluate()`
-- `train_one_epoch()`
-- `grad_cam()`
-
-### Keras
-
-- `Sequential`
-- `Dense`
-- `sigmoid`
-- `Dropout`
-- `model.fit()`
-- `model.predict()`
-
-### Perceptrón
-
-- `perceptron()`
-- `step_function()`
-- `tanh_activation()`
+Esto ayuda a entender por qué las redes neuronales reales utilizan varias neuronas y varias capas.
 
 ---
 
 ## Qué aprendí
 
-Lo principal que saqué de esta práctica fue esto:
+De esta práctica me quedo principalmente con lo siguiente:
 
-- El perceptrón es como la base de una red neuronal.
-- Una sola neurona tiene limitaciones.
-- Keras hace más fácil crear redes neuronales.
-- Las CNN son buenas para trabajar con imágenes.
-- No solo hay que mirar el accuracy.
-- La matriz de confusión también ayuda a encontrar errores.
-- El sobreajuste es algo que se debe controlar.
-- Dropout ayuda a reducir el sobreajuste.
-- Grad-CAM sirve para entender mejor qué está mirando una CNN.
-- Los modelos se pueden guardar después de entrenarlos.
+- El perceptrón ayuda a entender cómo funciona una neurona artificial.
+- Keras facilita la creación de redes neuronales.
+- Las CNN son muy útiles cuando trabajamos con imágenes.
+- No siempre basta con revisar el accuracy.
+- El sobreajuste puede hacer que un modelo funcione bien entrenando, pero mal con datos nuevos.
+- Grad-CAM permite entender mejor qué está observando una CNN.
 
 ---
 
-## Cómo lo usaríamos en Kartoffelmachine
+## Aplicación en Kartoffelmachine
 
-En nuestro proyecto la idea sería cambiar el problema de clasificación del ejemplo y usarlo con las papas Chaucha.
+De todo lo visto, la CNN es lo que más relación tiene con nuestro proyecto.
 
-El flujo que pensamos sería así:
+La idea sería reemplazar las imágenes de vidrio y plástico por imágenes reales de papas Chaucha.
+
+El funcionamiento sería:
 
 1. La papa entra a la zona de inspección.
-2. Los rodillos hacen que vaya rotando.
-3. La cámara toma imágenes de diferentes partes de la papa.
-4. La imagen se prepara para que entre a la red.
-5. Una CNN analiza cosas como manchas, forma, textura o daños visibles.
-6. El modelo da una clasificación:
-   - **Papa buena**
-   - **Papa mala**
-7. Esa decisión se manda al controlador.
-8. Finalmente el mecanismo manda la papa al lado que corresponde.
+2. Los rodillos hacen que la papa rote.
+3. La cámara toma imágenes mientras gira.
+4. Las imágenes se preparan para ingresar al modelo.
+5. La CNN analiza características como manchas, forma, textura o daños.
+6. Se determina si la papa es buena o mala.
+7. La Raspberry Pi recibe y procesa la decisión.
+8. El mecanismo dirige la papa al contenedor correspondiente.
 
 <p align="center">
   <img src="./imagenes/20_kartoffelmachine_flujo_cnn.png" width="850">
 </p>
 
-Lo que más nos serviría del código de la práctica sería:
+Para aplicarlo realmente tendríamos que crear nuestro propio dataset con fotos de papas buenas y malas.
 
-- la preparación de imágenes;
-- la CNN;
-- las funciones de entrenamiento;
-- las métricas;
-- el aumento de datos;
-- Transfer Learning;
-- Grad-CAM;
-- guardar el modelo después de entrenarlo.
-
-Lo que sí tendríamos que cambiar es el dataset.
-
-En vez de usar vidrio y plástico, tendríamos que tener fotos reales de papas Chaucha separadas en buenas y malas.
-
-También sería importante que las fotos se tomen con una iluminación lo más parecida posible a la que habrá dentro del módulo de Kartoffelmachine.
-
-Esto es importante porque si entrenamos el modelo con un fondo o iluminación totalmente diferente, puede fallar cuando lo pongamos en el sistema real.
+También sería importante tomar las imágenes con una iluminación parecida a la que tendrá el módulo real, para que el modelo no tenga problemas cuando se implemente en Kartoffelmachine.
 
 ---
 
 ## Conclusión
 
-Después de revisar el código, lo que más relación tiene con nuestro proyecto son las **CNN y Grad-CAM**, porque Kartoffelmachine trabaja directamente con imágenes.
+Esta práctica me ayudó a entender mejor cómo una red neuronal puede aprender a partir de datos.
 
-El perceptrón ayuda más a entender la lógica básica de una neurona, mientras que Keras sirve para construir modelos de una forma más práctica.
+Para Kartoffelmachine lo más útil sería trabajar con una CNN, porque nuestro sistema necesita analizar imágenes de las papas para poder clasificarlas.
 
-La parte que nos faltaría para usar esto realmente en Kartoffelmachine sería crear nuestro propio dataset de papas buenas y malas y entrenar el modelo utilizando imágenes tomadas en condiciones parecidas a las del sistema real.
+Más adelante tendríamos que tomar nuestras propias fotos, entrenar el modelo y probar qué tan bien logra diferenciar una papa buena de una mala.
