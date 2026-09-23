@@ -140,7 +140,7 @@ optimizer = torch.optim.Adam(trainable_params, lr=1e-4)
 
 ![06_transfer_learning_stage2.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/06_transfer_learning_stage2.png)
 
-En esta etapa el aprendizaje mejoró de forma notable: la exactitud en validación llegó a **87,07 %** y el ROC-AUC a **95,28 %**.
+En esta etapa el aprendizaje mejoró de forma notable: la exactitud en validación llegó a **87,05 %** y el ROC-AUC a **95,28 %**.
 
 ![07_transfer_learning_matriz_confusion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/07_transfer_learning_matriz_confusion.png)
 
