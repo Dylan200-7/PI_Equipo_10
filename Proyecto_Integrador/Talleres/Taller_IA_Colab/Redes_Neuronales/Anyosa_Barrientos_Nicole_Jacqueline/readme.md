@@ -36,3 +36,17 @@ Después de crear el modelo, se procede a entrenarlo utilizando los datos del da
 
 En esta parte se define cómo va a aprender el modelo. La función `CrossEntropyLoss` ayuda a calcular el error que tiene al clasificar las imágenes, mientras que el optimizador `Adam` se encarga de ir ajustando el modelo durante el entrenamiento.
 
+## Curvas de entrenamiento
+
+El notebook también muestra las curvas de entrenamiento, las cuales nos permiten observar cómo va mejorando el modelo durante el proceso de entrenamiento.
+
+![MODELOCNN](Imagenes/10.png)
+
+### Interpretación del gráfico
+
+En este gráfico podemos ver cómo va cambiando el modelo durante las épocas de entrenamiento.
+
+A medida que se entrena, el modelo va aprendiendo a reconocer mejor las características de las imágenes. También podemos comparar las curvas de entrenamiento y validación para ver si existe una diferencia grande entre ellas, lo que podría indicar un sobreajuste.
+
+En nuestro notebook se observa que el modelo mejora durante las primeras épocas y luego su rendimiento se vuelve más estable.
+
