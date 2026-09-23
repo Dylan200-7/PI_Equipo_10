@@ -26,3 +26,6 @@ En esta parte se define cómo va a funcionar nuestra red. Las capas convoluciona
 
 Primero puede identificar cosas simples, como bordes y formas, y luego utiliza esa información para poder clasificar las imágenes.
 
+## Entrenamiento de la CNN
+
+Después de crear el modelo, se procede a entrenarlo utilizando los datos del dataset. Durante este proceso, la red aprende a reconocer las características de las imágenes para poder clasificarlas correctamente.
