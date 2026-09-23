@@ -129,39 +129,71 @@ el modelo CNN red para hacer la predicción, y por ende si evaluaba las zonas de
 
 # 2. Keras
 
-En Keras el ejemplo cambia. Ya no se usan imágenes, sino reseñas de películas.
-
-La idea sigue siendo clasificación binaria:
-
+En Keras se trabajó con reseñas de películas
+Del mismo modo, sigue siendo clasificación binaria:
 * negativa,
 * positiva.
 
-## Preparación de los datos
+2.1 Transformación inicial
 
-Primero las palabras se convierten a una representación numérica.
+Se convirtieron las palabras a una representación numérica. Así como con ToTensor.(),
+la función vectorizar() transformó las reseñas, representadas mediante índices de palabras, en vectores binarios de 10 000 posiciones
 
-<p align="center">
-  <img src="imagenes/13_keras_datos_vectorizacion_py.png" width="850">
-</p>
-
-Esto es necesario porque la red no puede trabajar directamente con texto como nosotros lo leemos.
-
----
-
-## Modelo pequeño y regularización
-
-Más adelante se compara un modelo normal con uno más pequeño.
+De esta manera, x_train y x_test contienen las reseñas convertidas a una representación numérica que puede recibir el modelo.
 
 <p align="center">
-  <img src="imagenes/16_keras_modelo_pequeno_regularizacion_py.png" width="850">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
 </p>
 
-El objetivo es revisar el sobreajuste.
+2.2 Creación de Keras
 
-También se aplica regularización para intentar que la red no se adapte demasiado a los datos de entrenamiento.
+Primero se creó una arquitectura Sequential formada por dos capas
+1. model.add(layers.Dense(16, activation='relu', input_shape=(10000,)))
+2. model.add(layers.Dense(16, activation='relu'))
+En esta red enuronal cada neurona de la capa está conectada con las de la siguiente
+Además, cada una de las 16 neuronas con activación ReLU, para la no linealidad.
+Y una capa final de una neurona con activación Sigmoid: transforma el resultado a un valor entre [0.1]
+para la clasificación binaria
 
-La idea que me quedó es que **hacer una red más grande no siempre significa que vaya a funcionar mejor**.
+<p align="center">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+</p>
 
+2.3 Entrenamiento
+
+El entrenamiento, a comparación, resulta mucho mas sencillo 
+fit() entrena la red:
+- epochs=20: el modelo recorrere el conjunto de entrenamiento 20 veces.
+- batch_size=512: el modelo procesa 512 ejemplos por vez antes de actualizar los parámetro
+
+<p align="center">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+</p>
+
+1.4 Tabla de Análisis de Resultado
+
+La tabla en un inicio muestra a ambas labels estan en bajada, entonces indica que 
+el modelo esta aprendiendo, disminuyendo su error.
+No obstante, la curva de validación empieza a subir a partir de la mitad,
+El modelo no trabaja bien los datos nuevos
+Unicamente funciona bien con los datos de entrenamiento 
+
+<p align="center">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+</p>
+
+1.5 Dropout
+
+Para reducir el sobreajuste, durante el entrenamiento se desactivan aleatoriamente 
+el 50% de las neuronas Ello obliga a la red a aprender de diferentes combinaciones de neuronas
+
+ <p align="center">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+</p>
+
+<p align="center">
+  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+</p>
 ---
 
 # 3. Perceptrón
