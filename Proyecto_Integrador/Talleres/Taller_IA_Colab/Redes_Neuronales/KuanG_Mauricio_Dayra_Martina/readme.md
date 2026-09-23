@@ -1,20 +1,37 @@
 # Práctica de redes neuronales
+En el presente informé se explicarán los tres tipos de redes neuronales
+1. CNN
+2. Keras
+3. Perceptrón
 
-En este trabajo revisamos tres cosas principales del código:
+# Data Set
 
-* CNN
-* Keras
-* Perceptrón
+El data Set que se utilizó en esta ocasión. Contiene un conjunto de imágenes de vidrios y plásticos,
+para la clasificación automática de residuos.
+- Entrada: imágenes 2D de vidrio y plástico a escala de grises.
 
-La idea fue ver qué hace cada uno y qué partes podrían servir después para el proyecto integrador.
+- Etiquetas: clasificación binaria.
+  - (0) Vidrio
+  - (1) Plástico
+  
+- Particiones: Las imágenes se dividen en conjuntos de train, validation y test mediante trash_dataset.py
+  - 70 % entrenamiento
+  - 15 % validación
+  - 15 % prueba.
 
----
+  Este archivo mantiene la compatibilidad con la CNN
 
 # 1. CNN
+CNN stands for Convolutional Neural Network. Esta es un tipo de red neuronal diseñada para trabajr con imágenes.
+A continuación, se explicará su funcionamiento mediante el código brindado en clase
 
-Las CNN se usan para procesar imágenes. A diferencia de una red simple, aquí se usan filtros que van recorriendo la imagen para encontrar características.
+1.1 Preparación del entorno
 
-En el código primero se cargan ejemplos y se separan datos para entrenamiento, validación y prueba.
+Para construir y entrenar la red neuronal, se importó la biblioteca "Pytorch"
+
+1.2 Transformación inicial
+
+Esta librería nos permitirá realizar las transformaciones que queremos aplicar a cada imagen.
 
 ## Ejemplos de imágenes
 
