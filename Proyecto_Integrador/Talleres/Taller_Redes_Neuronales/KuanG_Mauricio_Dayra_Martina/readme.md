@@ -142,7 +142,7 @@ la función vectorizar() transformó las reseñas, representadas mediante índic
 De esta manera, x_train y x_test contienen las reseñas convertidas a una representación numérica que puede recibir el modelo.
 
 <p align="center">
-  <img src="Recursos/Imágenes/Kera1.png" width="850">
+  <img src="imagenes/Kera1.png" width="850">
 </p>
 
 2.2 Creación de Keras
@@ -156,7 +156,7 @@ Y una capa final de una neurona con activación Sigmoid: transforma el resultado
 para la clasificación binaria
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="imagenes/Kera2.png" width="850">
 </p>
 
 2.3 Entrenamiento
@@ -167,7 +167,7 @@ fit() entrena la red:
 - batch_size=512: el modelo procesa 512 ejemplos por vez antes de actualizar los parámetro
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="imagenes/Kera3.png" width="850">
 </p>
 
 1.4 Tabla de Análisis de Resultado
@@ -179,7 +179,7 @@ El modelo no trabaja bien los datos nuevos
 Unicamente funciona bien con los datos de entrenamiento 
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="imagenes/Kera4.png" width="850">
 </p>
 
 1.5 Dropout
@@ -187,13 +187,14 @@ Unicamente funciona bien con los datos de entrenamiento
 Para reducir el sobreajuste, durante el entrenamiento se desactivan aleatoriamente 
 el 50% de las neuronas Ello obliga a la red a aprender de diferentes combinaciones de neuronas
 
- <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+<p align="center">
+  <img src="imagenes/Kera5.png" width="850">
 </p>
 
 <p align="center">
-  <img src="Recursos/Imágenes/Kera6.png" width="850">
+  <img src="imagenes/Kera6.png" width="850">
 </p>
+
 ---
 
 # 3. Perceptrón
