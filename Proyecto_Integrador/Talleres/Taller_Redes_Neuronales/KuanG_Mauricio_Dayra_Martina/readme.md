@@ -225,19 +225,19 @@ inputs = np.array([temperatura, vibracion])
 ## AND y OR
 
 <p align="center">
-  <img src="imagenes/19_perceptron_resultados_and_or_py.png" width="850">
+  <img src="imagenes/PER2.png" width="850">
 </p>
 
 La salida usando los mismos valores del código queda así:
 
 <p align="center">
-  <img src="imagenes/23_perceptron_salida_and_or.png" width="850">
+  <img src="imagenes/Kera6.png" width="850">
 </p>
 
 Luego se dibujan las fronteras de decisión.
 
 <p align="center">
-  <img src="imagenes/20_perceptron_grafico_and_or_py.png" width="850">
+  <img src="imagenes/Kera6.png" width="850">
 </p>
 
 AND y OR sí pueden resolverse con una separación lineal.
@@ -249,7 +249,11 @@ AND y OR sí pueden resolverse con una separación lineal.
 Con XOR cambia la situación.
 
 <p align="center">
-  <img src="imagenes/21_perceptron_xor_py.png" width="850">
+  <img src="imagenes/PER3.png" width="850">
+</p>
+
+<p align="center">
+  <img src="imagenes/PER4.png" width="850">
 </p>
 
 Para XOR una sola neurona no alcanza.
