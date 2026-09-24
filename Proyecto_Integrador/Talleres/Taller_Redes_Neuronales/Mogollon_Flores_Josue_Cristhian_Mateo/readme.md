@@ -10,7 +10,7 @@ A continuación se describe lo trabajado en cada sección, incluyendo los result
 
 Para la parte de imágenes se usó **TrashNet**, un conjunto de fotografías de residuos. El ejercicio se limitó a dos categorías: **vidrio (`glass = 0`) y plástico (`plastic = 1`)**, con lo cual la tarea quedó definida como una **clasificación binaria**.
 
-![01_ejemplos_vidrio_plastico.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/01_ejemplos_vidrio_plastico.png)
+![01_ejemplos_vidrio_plastico.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/01_ejemplos_vidrio_plastico.png)
 
 Las imágenes se repartieron en tres subconjuntos, cada uno con una función distinta:
 
@@ -67,7 +67,7 @@ for epoch in range(1, epochs + 1):
     val_acc, val_auc, _, _, _ = evaluate(model_scratch, val_loader)
 ```
 
-![02_cnn_curvas_entrenamiento.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/02_cnn_curvas_entrenamiento.png)
+![02_cnn_curvas_entrenamiento.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/02_cnn_curvas_entrenamiento.png)
 
 Durante el entrenamiento, la exactitud en validación fue subiendo de forma irregular, alcanzando un máximo cercano al **63,27 %** hacia la cuarta época, mientras que el ROC-AUC se mantuvo entre **0,63 y 0,69**. La pérdida de entrenamiento bajó de forma lenta pero constante, lo que indica que el modelo sí estaba aprendiendo, aunque con dificultad para separar bien ambas clases.
 
@@ -76,7 +76,7 @@ En la evaluación final sobre el conjunto de prueba, el modelo obtuvo:
 - **Exactitud (accuracy):** 55,03 %
 - **ROC-AUC:** 63,23 %
 
-![03_cnn_matriz_confusion_scratch.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/03_cnn_matriz_confusion_scratch.png)
+![03_cnn_matriz_confusion_scratch.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/03_cnn_matriz_confusion_scratch.png)
 
 La matriz de confusión mostró 46 aciertos y 30 errores para la clase vidrio, y 36 aciertos y 37 errores para plástico, lo que confirma que el modelo todavía confundía bastante ambas categorías.
 
@@ -96,7 +96,7 @@ transform_aug = T.Compose([
 - **`RandomAffine`**: la desplaza un poco en el plano.
 - **`ToTensor`**: la convierte al formato numérico que espera el modelo.
 
-![04_comparacion_augmentation.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/04_comparacion_augmentation.png)
+![04_comparacion_augmentation.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/04_comparacion_augmentation.png)
 
 Con este cambio, la exactitud en prueba subió de **55,03 % a 61,07 %**, y el ROC-AUC pasó de **63,23 % a 65,92 %**. La mejora fue clara, aunque no muy grande: augmentar los datos ayuda a que el modelo no dependa de una única orientación o posición del objeto, pero no reemplaza la necesidad de más datos o de un modelo más robusto.
 
@@ -121,7 +121,7 @@ for param in resnet.fc.parameters():
     param.requires_grad = True
 ```
 
-![05_transfer_learning_stage1.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/05_transfer_learning_stage1.png)
+![05_transfer_learning_stage1.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/05_transfer_learning_stage1.png)
 
 Ya en esta primera etapa, la exactitud en validación subió de manera notoria, llegando a valores cercanos al **70-73 %**, con un ROC-AUC que superó el **0,87**, muy por encima de lo logrado por la CNN entrenada desde cero.
 
@@ -138,11 +138,11 @@ trainable_params = [p for p in resnet.parameters() if p.requires_grad]
 optimizer = torch.optim.Adam(trainable_params, lr=1e-4)
 ```
 
-![06_transfer_learning_stage2.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/06_transfer_learning_stage2.png)
+![06_transfer_learning_stage2.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/06_transfer_learning_stage2.png)
 
 En esta etapa el aprendizaje mejoró de forma notable: la exactitud en validación llegó a **87,05 %** y el ROC-AUC a **95,28 %**.
 
-![07_transfer_learning_matriz_confusion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/07_transfer_learning_matriz_confusion.png)
+![07_transfer_learning_matriz_confusion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/07_transfer_learning_matriz_confusion.png)
 
 En la evaluación final sobre el conjunto de prueba, el modelo con transfer learning y fine-tuning alcanzó:
 
@@ -171,7 +171,7 @@ x, y = test_dataset_tl[idx]
 cam, pred_class = grad_cam(resnet, x)
 ```
 
-![08_gradcam.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/08_gradcam.png)
+![08_gradcam.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/08_gradcam.png)
 
 Las zonas más claras del mapa indican dónde puso más "atención" el modelo para tomar su decisión, mientras que las zonas oscuras aportaron poco. Esta herramienta permitió confirmar que el modelo no acertaba al azar, sino que efectivamente se apoyaba en regiones específicas de la imagen del objeto.
 
@@ -204,7 +204,7 @@ En pocas palabras, **Keras permitió armar y entrenar la red en muy pocas línea
 
 ### 7.1. Sobreajuste
 
-![09_keras_perdida_entrenamiento_validacion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/09_keras_perdida_entrenamiento_validacion.png)
+![09_keras_perdida_entrenamiento_validacion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/09_keras_perdida_entrenamiento_validacion.png)
 
 Al graficar la pérdida de entrenamiento junto a la de validación se observó un fenómeno de **sobreajuste**: la pérdida de entrenamiento siguió bajando en cada época, mientras que la de validación dejó de mejorar e incluso empezó a subir después de las primeras épocas. Esto significa que el modelo se estaba memorizando los ejemplos de entrenamiento en lugar de aprender patrones que se generalicen a reseñas nuevas.
 
@@ -218,7 +218,7 @@ model2.add(layers.Dense(4, activation='relu', input_shape=(10000,)))
 model2.add(layers.Dense(1, activation='sigmoid'))
 ```
 
-![10_keras_modelo_reducido.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/10_keras_modelo_reducido.png)
+![10_keras_modelo_reducido.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/10_keras_modelo_reducido.png)
 
 Con menos neuronas, la pérdida de validación se mantuvo estable por más épocas antes de empezar a subir, lo que indica un sobreajuste más leve, aunque el modelo sigue teniendo menos capacidad para captar relaciones complejas.
 
@@ -233,7 +233,7 @@ model3.add(layers.Dense(16, activation='relu', kernel_regularizer=regularizers.l
 model3.add(layers.Dense(1, activation='sigmoid'))
 ```
 
-![11_keras_regularizacion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/11_keras_regularizacion.png)
+![11_keras_regularizacion.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/11_keras_regularizacion.png)
 
 La regularización suavizó el crecimiento de la pérdida de validación en las últimas épocas, mostrando que penalizar pesos extremos ayuda a que el modelo no se especialice demasiado en los datos de entrenamiento.
 
@@ -248,7 +248,7 @@ model4.add(layers.Dense(16, activation='relu'))
 model4.add(layers.Dropout(0.5))
 ```
 
-![12_keras_dropout.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/12_keras_dropout.png)
+![12_keras_dropout.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/12_keras_dropout.png)
 
 Al desactivar la mitad de las neuronas en cada paso de entrenamiento, la red se ve obligada a no depender de un pequeño grupo de ellas, lo que también contribuyó a reducir el sobreajuste observado.
 
@@ -284,7 +284,7 @@ Con la función escalón, la salida fue **0** (sin alerta), y con la función ta
 
 Luego se probó el comportamiento del perceptrón como compuertas lógicas **AND**, **OR** y **XOR**, variando los pesos y el sesgo. El perceptrón logró reproducir sin problema las compuertas AND y OR, pero no pudo resolver XOR por sí solo, ya que sus dos clases no se pueden separar con una sola línea recta.
 
-![13_perceptron_xor.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_IA_Colab/Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/13_perceptron_xor.png)
+![13_perceptron_xor.png](https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/Mogollon_Flores_Josue_Cristhian_Mateo/Imagenes/13_perceptron_xor.png)
 
 Esto ayudó a visualizar por qué se necesita más de una neurona (una capa oculta) para resolver problemas que no son linealmente separables, como XOR.
 
