@@ -105,7 +105,7 @@ El modelo se entrenó durante 8 épocas y, en cada una, se calcula el "train_los
 Luego se graficó para ver si el modelo estaba aprendiendo
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="imagenes/CNN6.png" width="850">
 </p>
 
 A partir de la época 4 se tiene un mejor porcentaje de accuracy - 63.27%
@@ -115,7 +115,11 @@ Por lo que, puedo decir que si hay evidencia de aprendizaje moderado
 
 Finalmente, se pruebó el modelo con datos que no utilizó directamente durante el entrenamiento.
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="imagenes/CNN7.png" width="850">
+</p>
+
+<p align="center">
+  <img src="imagenes/CNN8.png" width="850">
 </p>
 
 1.6 Grad Cam
