@@ -203,11 +203,24 @@ el 50% de las neuronas Ello obliga a la red a aprender de diferentes combinacion
 
 # 3. Perceptrón
 
-El perceptrón es una neurona sencilla.
+El perceptrón es una neurona sencilla. El perceptrón es una de las formas más simples de neurona artificial. 
+Recibe diferentes entradas, multiplica cada una por un peso, añade un bias y aplica una función de activación para producir una salida
 
-Primero recibe valores, después cada valor tiene un peso, se suma todo junto con el bias y finalmente se aplica una función.
+1.1 Entrada
+En primer lugar se importan las librerías. Luego se definen dos funciones de activación: la función escalón, 
+que transforma el resultado en 0 o 1, y la función tanh, que transforma el resultado a un valor entre -1 y 1.
+Finalmente, la función perceptron() recibe las entradas, los pesos, el bias y la función de activación. 
+Con estos valores calcula primero la suma ponderada de las entradas mediante el producto
 
-En la práctica se usa primero con temperatura y vibración, pero después se prueba con compuertas lógicas.
+temperatura = 100
+vibracion = 50
+
+# Pesos y sesgo (bias) del perceptrón
+weights = np.array([0.5, -0.5])
+bias = -30
+
+# Establecemos las entradas del perceptrón
+inputs = np.array([temperatura, vibracion])
 
 ## AND y OR
 
