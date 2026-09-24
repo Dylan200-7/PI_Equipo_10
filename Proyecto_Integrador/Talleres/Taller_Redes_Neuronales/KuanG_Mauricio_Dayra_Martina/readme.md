@@ -74,7 +74,7 @@ Luego se crearon los conjuntos de entrenamiento, prueba y validación
 Se mostró algunos ejemplos de vidrio y plástico para revisar si los datos realmente se están leyendo bien antes de entrenar.
 
 <p align="center">
-  <img src="imagenes/Kera3.png" width="850">
+  <img src="imagenes/CNN3.png" width="850">
 </p>
 
 1.4 Creación del modelo CNN
@@ -89,7 +89,7 @@ También, estan seguidas de ReLU y MaxPool para introducir no linealidad y reduc
 Después se evalúa el modelo con el conjunto de validación y se obtienen la accuracy (val_acc) y el AUC (val_auc)
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="imagenes/CNN4.png" width="850">
 </p>
 
 1.5 Entrenamiento del Modelo
@@ -99,7 +99,7 @@ predicciones del modelo e utiliza el optimizador Adam para actualizar los parám
 El modelo se entrenó durante 8 épocas y, en cada una, se calcula el "train_loss" utilizando las imágenes de entrenamiento. 
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="imagenes/CNN5.png" width="850">
 </p>
 
 Luego se graficó para ver si el modelo estaba aprendiendo
