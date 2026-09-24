@@ -201,7 +201,7 @@ En nuestro ejemplo se utiliza para trabajar con factores que pueden influir en e
 
 ## Funcionamiento del perceptrón
 
-![PERCEPTON](Imagenes/18 (2).png)
+![PERCEPTON](Imagenes/18(2).png)
 
 
 ### Interpretación
