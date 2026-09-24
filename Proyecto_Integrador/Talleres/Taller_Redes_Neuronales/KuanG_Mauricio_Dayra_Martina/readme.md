@@ -49,7 +49,7 @@ Para construir y entrenar la red neuronal, se importó la biblioteca "Pytorch"
 
 TrashNet se utilizó para almacenar el conjunto de imágenes del Data Set
 <p align="center">
-  <img src="imagenes/03_cnn_visualizar_dataset_py.png" width="850">
+  <img src="Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/KuanG_Mauricio_Dayra_Martina/imagenes/Kera1.png" width="850">
 </p>
 
 1.3 Transformación inicial
@@ -251,22 +251,20 @@ Para mí las cosas principales que se deben recordar son:
 
 ### De CNN
 
-* `Conv2D`
-* `ReLU`
-* `MaxPool`
-* `CrossEntropyLoss`
-* `Adam`
-* `evaluate()`
-* `train_one_epoch()`
-* Transfer Learning
+* Conv2D
+* ReLU
+* MaxPool
+* Adam
+* evaluate()
+* train_one_epoch()
 * Grad-CAM
 
 ### De Keras
 
-* `Sequential`
-* `Dense`
-* `sigmoid`
-* `binary_crossentropy`
+* Sequential
+* Dense
+* sigmoid
+* binary_crossentropy
 * regularización
 * Dropout
 
@@ -276,9 +274,7 @@ Para mí las cosas principales que se deben recordar son:
 * bias
 * suma ponderada
 * función escalón
-* `tanh`
-* 
----
+* tanh
 
 ## Aplicación al proyecto: Kartoffelmaschine
 
@@ -297,10 +293,6 @@ El flujo que pensamos sería así:
    * **Papa mala**
 7. Esa decisión se manda al controlador.
 8. Finalmente el mecanismo manda la papa al lado que corresponde.
-
-<p align="center">
-  <img src="imagenes/26_kartoffelmachine_flujo_cnn.png" width="850">
-</p>
 
 Lo que más nos serviría del código de la práctica sería:
 
