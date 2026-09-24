@@ -66,7 +66,7 @@ Se permitió darle el formato PyTorch a la imagen que se suba.
 Luego se crearon los conjuntos de entrenamiento, prueba y validación
 
 <p align="center">
-  <img src="imagenes/12_cnn_imagen_incrustada_en_py.png" width="650">
+  <img src="imagenes/Kera2.png" width="850">
 </p>
 
 1.4 Visualización de Ejemplos de imágenes
@@ -74,7 +74,7 @@ Luego se crearon los conjuntos de entrenamiento, prueba y validación
 Se mostró algunos ejemplos de vidrio y plástico para revisar si los datos realmente se están leyendo bien antes de entrenar.
 
 <p align="center">
-  <img src="imagenes/05_cnn_funciones_entrenamiento_py.png" width="850">
+  <img src="imagenes/Kera3.png" width="850">
 </p>
 
 1.4 Creación del modelo CNN
