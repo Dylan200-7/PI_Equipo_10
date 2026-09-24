@@ -49,7 +49,7 @@ Para construir y entrenar la red neuronal, se importó la biblioteca "Pytorch"
 
 TrashNet se utilizó para almacenar el conjunto de imágenes del Data Set
 <p align="center">
-  <img src="Proyecto_Integrador/Talleres/Taller_Redes_Neuronales/KuanG_Mauricio_Dayra_Martina/imagenes/Kera1.png" width="850">
+  <img src="imagenes/Kera1.png" width="850">
 </p>
 
 1.3 Transformación inicial
