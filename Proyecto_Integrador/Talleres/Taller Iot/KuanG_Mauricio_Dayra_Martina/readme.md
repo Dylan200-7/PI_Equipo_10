@@ -15,21 +15,36 @@ valores del ADC a valores de voltaje
 
 *Código Básico:*
 
-"int potPin = 34; // Pin donde está conectado el potenciómetro
+const int potPin = 34;
+const int numeroLecturas = 10;
 
 void setup() {
-
-Serial.begin(115200); // Inicializar el monitor serie
-
+  Serial.begin(115200);
 }
 
 void loop() {
 
-int valor = analogRead(potPin); // Leer valor del potenciómetro
+  long suma = 0;
 
-Serial.println(valor); // Mostrar valor en el monitor serie
+  for (int i = 0; i < numeroLecturas; i++) {
+    suma += analogRead(potPin);
+    delay(10);
+  }
 
-delay(500); // Esperar medio segundo}"
+  float promedio = suma / (float)numeroLecturas;
+
+  float voltaje = promedio * 3.3 / 4095.0;
+
+  Serial.print("ADC promedio: ");
+  Serial.print(promedio);
+
+  Serial.print(" | Voltaje: ");
+  Serial.print(voltaje, 2);
+
+  Serial.println(" V");
+
+  delay(500);
+}
 
 <p align="center">
   <img src="imagenes/Actividad_1.jpeg" width="850">
