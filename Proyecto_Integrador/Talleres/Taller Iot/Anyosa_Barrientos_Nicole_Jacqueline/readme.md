@@ -126,11 +126,11 @@ Conexiones: Los extremos del potenciómetro se conectaron a **3.3 V** y **GND**,
 
 Monitor serial: permite verificar y confirmar cada vez que se realiza el envío de los datos.
 
-![ACTIVIDAD 3](Imagenes/005.png)
+![ACTIVIDAD 3](Imagenes/005.jpeg)
 
 Gráfica en ThingSpeak
 
-![ACTIVIDAD3](Imagenes/006.png)
+![ACTIVIDAD3](Imagenes/006.jpeg)
 
 Código:
 
@@ -299,7 +299,7 @@ Conexión del LED:
 
 Pagina de control
 
-![ACTIVIDAD 5](Imagenes/010.png)
+![ACTIVIDAD 5](Imagenes/010.jpeg)
 
 Al presionar un botón, el **ESP32** recibe la ruta correspondiente (`/encender` o `/apagar`) y modifica el estado del pin según la opción seleccionada.
 
