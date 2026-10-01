@@ -26,9 +26,9 @@ delay(500); // Esperar medio segundo
 }"
 
 <p align="center">
-  <img src="imagenes/Actividad_1.png" width="850">
+  <img src="imagenes/Actividad_1.jpeg" width="850">
 </p>
 
 <p align="center">
-  <img src="imagenes/Actividad_11.png" width="850">
+  <img src="imagenes/Actividad_11.jpeg" width="850">
 </p>
