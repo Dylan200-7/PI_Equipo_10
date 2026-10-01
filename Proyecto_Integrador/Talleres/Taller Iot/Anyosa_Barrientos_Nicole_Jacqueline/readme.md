@@ -40,4 +40,6 @@ delay(500); // Esperar medio segundo
 
 ## Actividad 2: Scanner WIFI con ESP32
 
+Crear una red WIFI usando su Smartphone como Hotspot, y conectarse a ella con el ESP32. En el
+monitor serial se deberá visualizar la dirección IP asignada.
 
