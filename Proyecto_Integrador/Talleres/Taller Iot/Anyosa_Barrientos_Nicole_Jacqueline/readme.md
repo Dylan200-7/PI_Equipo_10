@@ -35,8 +35,9 @@ delay(500); // Esperar medio segundo
 
 ![ACTIVIDAD 1](Imagenes/001.jpeg)
 
-![ACTIVIDAD 2](Imagenes/002.jpeg)
+![ACTIVIDAD 2](Imagenes/003.jpeg)
 
 
+## Actividad 2: Scanner WIFI con ESP32
 
 
