@@ -36,14 +36,13 @@
 
 <br>
 
-
 ---
 
-<!--                DESCRIPCIÓN DEL PROYECTO                      -->
+<!-- DESCRIPCIÓN DEL PROYECTO -->
 
 <div align="center">
 
-## 🌍 Kartoffelmachine
+## Kartoffelmachine
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=22C55E&center=true&vCenter=true&width=750&lines=Sistema+mecatr%C3%B3nico+de+inspecci%C3%B3n+de+papas;Visi%C3%B3n+Artificial+%2B+Machine+Learning;Inspecci%C3%B3n+continua+%2B+clasificaci%C3%B3n+autom%C3%A1tica" alt="Typing SVG" />
 
@@ -56,16 +55,16 @@
 
 <br><br>
 
-> 🥔 **Sistema inteligente para inspeccionar, analizar y clasificar papas de manera automática.**
+> **Sistema inteligente para inspeccionar, analizar y clasificar papas de manera automática.**
 
 ------
 
 </div>
 
-----
+---
 
 <details>
-<summary><h2>🥔 ¿Qué es Kartoffelmachine?</h2></summary>
+<summary><h2>¿Qué es Kartoffelmachine?</h2></summary>
 
 <br>
 
@@ -73,7 +72,7 @@ Nuestro proyecto se denomina **Kartoffelmaschine** y consiste en el desarrollo d
 
 <div align="center">
 
-| ⚙️ Mecatrónica | 👁️ Visión Artificial | 🧠 Inteligencia Artificial | 💻 Computación |
+| Mecatrónica | Visión Artificial | Inteligencia Artificial | Computación |
 |:---:|:---:|:---:|:---:|
 | Transporte y separación | Captura de imágenes | Machine Learning | Raspberry Pi |
 
@@ -87,22 +86,20 @@ A diferencia de una inspección estática en la que se analiza un tubérculo det
 
 Durante el recorrido:
 
-1. 🥔 Las papas ingresan al sistema.
-2. ➡️ Son transportadas mediante una **faja transportadora**.
-3. 🔄 Cambian de orientación para exponer diferentes zonas de su superficie.
-4. 📷 Una cámara captura **múltiples vistas** de cada papa.
-5. 🧠 Una **Raspberry Pi** procesa las imágenes mediante visión artificial.
-6. 🔍 El modelo de inteligencia artificial analiza posibles defectos visibles.
-7. ✅❌ Cada tubérculo es clasificado como **papa buena** o **papa mala**.
-8. 🚪 Un mecanismo de separación automática dirige cada papa hacia su salida correspondiente.
+1. Las papas ingresan al sistema.
+2. Son transportadas mediante una **faja transportadora**.
+3. Cambian de orientación para exponer diferentes zonas de su superficie.
+4. Una cámara captura **múltiples vistas** de cada papa.
+5. Una **Raspberry Pi** procesa las imágenes mediante visión artificial.
+6. El modelo de inteligencia artificial analiza posibles defectos visibles.
+7. Cada tubérculo es clasificado como **papa buena** o **papa mala**.
+8. Un mecanismo de separación automática dirige cada papa hacia su salida correspondiente.
 
 <br>
 
 <div align="center">
 
-### 🥔 ➜ ➡️ ➜ 🔄 ➜ 📷 ➜ 🧠 ➜ ✅ / ❌ ➜ 🚪
-
-**Ingreso → Transporte → Giro → Captura → IA → Clasificación → Separación**
+### Ingreso → Transporte → Giro → Captura → IA → Clasificación → Separación
 
 </div>
 
@@ -112,112 +109,247 @@ Durante el recorrido:
 
 ---
 
-## ⚙️ ¿Cómo funciona?
+## ¿Cómo funciona?
 
 ```mermaid
 flowchart LR
 
-    A["🥔 Ingreso de papas"] --> B["➡️ Faja transportadora"]
+    A["Ingreso de papas"] --> B["Faja transportadora"]
 
-    B --> C["🔄 Cambio de orientación"]
+    B --> C["Cambio de orientación"]
 
-    C --> D["📷 Captura de múltiples vistas"]
+    C --> D["Captura de múltiples vistas"]
 
-    D --> E["🧠 Raspberry Pi"]
+    D --> E["Raspberry Pi"]
 
-    E --> F["👁️ Visión Artificial + IA"]
+    E --> F["Visión Artificial + IA"]
 
-    F --> G{"🔍 Evaluación"}
+    F --> G{"Evaluación"}
 
-    G -->|"Sin defectos visibles"| H["✅ Papa buena"]
+    G -->|"Sin defectos visibles"| H["Papa buena"]
 
-    G -->|"Con defectos visibles"| I["❌ Papa mala"]
+    G -->|"Con defectos visibles"| I["Papa mala"]
 
-    H --> J["⚙️ Separación automática"]
+    H --> J["Separación automática"]
 
     I --> J
 
-    J --> K["📦 Salidas clasificadas"]
+    J --> K["Salidas clasificadas"]
 ```
 
 ---
 
 <details>
-<summary><h2>🎯 Problemática </h2></summary>
+<summary><h2>Problemática</h2></summary>
 
 <br>
 
-El en informe de la FAO (the food and agriculture organization of the united nations) titulado "Strengthening potato value chains" se redactó una investigación sobre la poscosecha para responder a las limitaciones en la cadena de valor de la papa Andina. 
+El informe de la FAO (Food and Agriculture Organization of the United Nations) titulado *Strengthening Potato Value Chains* presenta una investigación relacionada con la poscosecha y las limitaciones presentes en la cadena de valor de la papa andina [1].
 
-En primer lugar, el Perú es un país que cuenta con la mayor colección de papa, estimada en unas 2800 variedades. 
-Por lo que, el cultivo de papa se convirtió en una estrategia de subsistencia de la población, en especial para las ubicadas en las zonas altoandinas.
-No obstante, el informe reveló que debido a la ubicación geográfica existe una falta de asistencia técnica. Consecuentemente, esto genera una cantidad limitada y variada de productos disponibles para la venta. 
+En primer lugar, el Perú es un país que cuenta con una gran diversidad de papas, estimada en unas 2800 variedades [1].
 
-Adicionalmente, su organización de venta está enfocada principalmente en las necesidades de la comunidad y no en las exigencias del mercado. 
-Esta situación incrementa los costos relacionados con la comercialización y las transacciones, así como los gastos por unidad asociados con la recolección, manipulación y transporte de los productos. 
+Por lo que, el cultivo de papa se convirtió en una estrategia de subsistencia de la población, en especial para las ubicadas en las zonas altoandinas [1].
 
-Consideramos estas ultimas tres situaciones las mas fundamentales
+No obstante, el informe reveló que debido a la ubicación geográfica existe una falta de asistencia técnica. Consecuentemente, esto genera una cantidad limitada y variada de productos disponibles para la venta [1].
 
+Adicionalmente, su organización de venta está enfocada principalmente en las necesidades de la comunidad y no en las exigencias del mercado [1].
+
+Esta situación incrementa los costos relacionados con la comercialización y las transacciones, así como los gastos por unidad asociados con la recolección, manipulación y transporte de los productos [1].
+
+Consideramos estas últimas tres situaciones las más fundamentales.
 
 <br>
+
 </details>
 
 ---
 
 <details>
-<summary><h2>💡 Nuestra solución</h2></summary>
+<summary><h2>Nuestra solución</h2></summary>
+
 <br>
 
 Nuestra propuesta integra diferentes áreas de ingeniería en un único sistema:
 
 | Componente | Función |
 |---|---|
-| 🥔 **Ingreso de papas** | Permitir el ingreso continuo de los tubérculos |
-| ➡️ **Faja transportadora** | Desplazar las papas durante la inspección |
-| 🔄 **Sistema de orientación** | Cambiar la posición de las papas durante el recorrido |
-| 📷 **Cámara** | Capturar múltiples vistas de la superficie |
-| 🍓 **Raspberry Pi** | Ejecutar el procesamiento de las imágenes |
-| 👁️ **Visión artificial** | Analizar las características visibles |
-| 🧠 **Machine Learning** | Determinar la clasificación de cada papa |
-| ⚙️ **Actuador / Servo** | Ejecutar la separación automática |
-| 📦 **Salidas** | Recibir las papas según su clasificación |
+| **Ingreso de papas** | Permitir el ingreso continuo de los tubérculos |
+| **Faja transportadora** | Desplazar las papas durante la inspección |
+| **Sistema de orientación** | Cambiar la posición de las papas durante el recorrido |
+| **Cámara** | Capturar múltiples vistas de la superficie |
+| **Raspberry Pi** | Ejecutar el procesamiento de las imágenes |
+| **Visión artificial** | Analizar las características visibles |
+| **Machine Learning** | Determinar la clasificación de cada papa |
+| **Actuador / Servo** | Ejecutar la separación automática |
+| **Salidas** | Recibir las papas según su clasificación |
 
 ### Clasificación final
 
 <div align="center">
 
-| ✅ PAPA BUENA | ❌ PAPA MALA |
+| PAPA BUENA | PAPA MALA |
 |:---:|:---:|
 | Sin defectos externos considerados críticos | Con defectos externos detectados |
 | Continúa hacia la salida correspondiente | Es desviada hacia otra salida |
 
 </div>
+
 <br>
+
 </details>
 
 ---
 
-## 🔬 Principio de inspección
+## Principio de inspección
 
-Uno de los principales retos del proyecto es que una sola fotografía **no permite observar toda la superficie de una papa**.
+Uno de los principales retos del proyecto es que una sola fotografía **no permite observar toda la superficie de una papa** [2][3].
 
 Por esta razón, Kartoffelmachine plantea realizar un **cambio de orientación del tubérculo durante su desplazamiento**.
 
 ```mermaid
 flowchart LR
 
-    A["🥔 Vista inicial"] --> B["🔄 Giro"]
-    B --> C["🥔 Vista lateral"]
-    C --> D["🔄 Giro"]
-    D --> E["🥔 Nueva superficie visible"]
-    E --> F["📷 Múltiples imágenes"]
-    F --> G["🧠 Análisis conjunto"]
+    A["Vista inicial"] --> B["Giro"]
+    B --> C["Vista lateral"]
+    C --> D["Giro"]
+    D --> E["Nueva superficie visible"]
+    E --> F["Múltiples imágenes"]
+    F --> G["Análisis conjunto"]
 ```
 
-Esto permite proporcionar al sistema de visión artificial **más información visual sobre cada tubérculo** antes de determinar su clasificación.
+Esto permite proporcionar al sistema de visión artificial **más información visual sobre cada tubérculo** antes de determinar su clasificación [2][3].
 
+---
 
-## 🧠 Kartoffelmachine en una mirada
+## Objetivos de Kartoffelmachine
+
+<table>
+<tr>
+<td width="50%">
+
+### Inspección
+
+Obtener diferentes vistas de la superficie de cada papa durante su recorrido.
+
+</td>
+
+<td width="50%">
+
+### Inteligencia
+
+Utilizar visión artificial y Machine Learning para analizar los tubérculos.
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### Automatización
+
+Reducir la intervención manual durante el proceso de inspección y clasificación.
+
+</td>
+
+<td width="50%">
+
+### Clasificación
+
+Separar automáticamente las papas según el resultado obtenido por el sistema.
+
+</td>
+</tr>
+</table>
+
+---
+
+## Tecnologías involucradas
+
+<div align="center">
+
+### Software
+
+![Python](https://img.shields.io/badge/Python-Visión%20Artificial-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Control%20de%20Versiones-181717?style=for-the-badge&logo=github&logoColor=white)
+
+### Hardware
+
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-Procesamiento-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![Camera](https://img.shields.io/badge/Cámara-Captura%20de%20Imágenes-2563EB?style=for-the-badge)
+![Servo](https://img.shields.io/badge/Servo-Separación%20Automática-F59E0B?style=for-the-badge)
+
+### Inteligencia Artificial
+
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Clasificación-8B5CF6?style=for-the-badge)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-Inspección-06B6D4?style=for-the-badge)
+
+</div>
+
+---
+
+# Objetivos de Desarrollo Sostenible
+
+<div align="center">
+
+Kartoffelmachine se relaciona principalmente con los:
+
+### ODS 12 + ODS 9
+
+</div>
+
+---
+
+<details>
+<summary><h2>ODS 12 — Producción y Consumo Responsables</h2></summary>
+
+<br>
+
+### Meta 12.3
+
+> De aquí a 2030, reducir a la mitad el desperdicio de alimentos per cápita mundial en la venta al por menor y a nivel de los consumidores, y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas las pérdidas posteriores a la cosecha [4].
+
+### Relación con Kartoffelmachine
+
+El proyecto busca contribuir a mejorar los procesos de **inspección y selección de productos agrícolas**, utilizando tecnologías que permitan identificar automáticamente las condiciones externas de los tubérculos.
+
+Una clasificación más eficiente puede facilitar la toma de decisiones durante etapas posteriores a la cosecha y contribuir al aprovechamiento adecuado de los productos agrícolas.
+
+<br>
+
+<div align="center">
+
+**Producción → Inspección → Evaluación → Clasificación → Mejor aprovechamiento**
+
+</div>
+
+<br>
+
+</details>
+
+---
+
+<details>
+<summary><h2>ODS 9 — Industria, Innovación e Infraestructura</h2></summary>
+
+<br>
+
+### Meta 9.5
+
+> Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales, fomentando la innovación y aumentando las capacidades de investigación y desarrollo [5].
+
+### Relación con Kartoffelmachine
+
+Kartoffelmachine integra diferentes áreas tecnológicas como la **mecatrónica, visión artificial, Machine Learning y sistemas embebidos** para desarrollar una solución aplicada al proceso de inspección y clasificación de productos agrícolas.
+
+El proyecto se relaciona con este objetivo debido al uso de tecnologías digitales y automatización para el desarrollo de una propuesta orientada al sector agrícola.
+
+<br>
+
+</details>
+
+---
+
+## Kartoffelmachine en una mirada
 
 <div align="center">
 
@@ -225,7 +357,7 @@ Esto permite proporcionar al sistema de visión artificial **más información v
              KARTOFFELMACHINE
                      │
                      ▼
-                  🥔 🥔 🥔
+                  PAPAS
                      │
                      ▼
            ┌─────────────────┐
@@ -234,12 +366,12 @@ Esto permite proporcionar al sistema de visión artificial **más información v
            └────────┬────────┘
                     │
                     ▼
-                  🔄 🥔
+                  PAPA
              Cambio de
              orientación
                     │
                     ▼
-                  📷
+                 CÁMARA
           Captura de múltiples
                  vistas
                     │
@@ -250,147 +382,23 @@ Esto permite proporcionar al sistema de visión artificial **más información v
              └──────┬─────┘
                     │
                     ▼
-               🧠 IA / ML
+                 IA / ML
                     │
              ┌──────┴──────┐
              ▼             ▼
-          ✅ BUENA       ❌ MALA
+           BUENA          MALA
              │             │
              └──────┬──────┘
                     ▼
-             ⚙️ SEPARACIÓN
-                AUTOMÁTICA
+               SEPARACIÓN
+               AUTOMÁTICA
 ```
 
 </div>
 
-
 ---
 
-## 🚀 Objetivos de Kartoffelmachine
-
-<table>
-<tr>
-<td width="50%">
-
-### 👁️ Inspección
-
-Obtener diferentes vistas de la superficie de cada papa durante su recorrido.
-
-</td>
-
-<td width="50%">
-
-### 🧠 Inteligencia
-
-Utilizar visión artificial y Machine Learning para analizar los tubérculos.
-
-</td>
-</tr>
-
-<tr>
-<td width="50%">
-
-### ⚡ Automatización
-
-Reducir la intervención manual durante el proceso de inspección y clasificación.
-
-</td>
-
-<td width="50%">
-
-### 📦 Clasificación
-
-Separar automáticamente las papas según el resultado obtenido por el sistema.
-
-</td>
-</tr>
-</table>
-
----
-
-## 🧩 Tecnologías involucradas
-
-<div align="center">
-
-### 💻 Software
-
-![Python](https://img.shields.io/badge/Python-Visión%20Artificial-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-Control%20de%20Versiones-181717?style=for-the-badge&logo=github&logoColor=white)
-
-### ⚙️ Hardware
-
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-Procesamiento-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white)
-![Camera](https://img.shields.io/badge/Cámara-Captura%20de%20Imágenes-2563EB?style=for-the-badge)
-![Servo](https://img.shields.io/badge/Servo-Separación%20Automática-F59E0B?style=for-the-badge)
-
-### 🧠 Inteligencia Artificial
-
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Clasificación-8B5CF6?style=for-the-badge)
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-Inspección-06B6D4?style=for-the-badge)
-
-</div>
-
----
-
-# 🌱 Objetivos de Desarrollo Sostenible
-
-<div align="center">
-
-Kartoffelmachine se relaciona principalmente con los:
-
-### ♻️ ODS 12 + 💡 ODS 9
-
-</div>
-
----
-
-<details>
-<summary><h2>♻️ ODS 12 — Producción y Consumo Responsables</h2></summary>
-<br>
-
-### 🎯 Meta 12.3
-
-> De aquí a 2030, reducir a la mitad el desperdicio de alimentos per cápita mundial en la venta al por menor y a nivel de los consumidores, y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas las pérdidas posteriores a la cosecha.
-
-### 🔗 Relación con Kartoffelmachine
-
-
-<br>
-
-<div align="center">
-
-**🥔 Producción → 🔍 Inspección → 🧠 Evaluación → 📦 Clasificación → ♻️ Mejor aprovechamiento**
-
-</div>
-
-<br>
-</details>
-
----
-
-<details>
-<summary><h2>💡 ODS 9 — Industria, Innovación e Infraestructura</h2></summary>
-
-<br>
-
-### 🎯 Meta 9.5
-
-> Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales, fomentando la innovación y aumentando las capacidades de investigación y desarrollo.
-
-### 🔗 Relación con Kartoffelmachine
-
-<br>
-</details>
-
----
-
-<details>
-<summary><h2> Equipo 10 </h2></summary>
-<div align="center">
-<br>
-
-## 📸 Fotografía del Equipo
+## Fotografía del Equipo
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/0a4e330e-6d46-49d8-8c06-36d7d69c9a28" width="700" alt="Fotografía del Equipo 10"/>
@@ -400,34 +408,38 @@ Kartoffelmachine se relaciona principalmente con los:
 
 ---
 
-## 👥 Integrantes del Equipo
+## Integrantes del Equipo
 
 Somos el **Grupo 10** del curso **Proyecto Integrador**, semestre 2026-02. Nuestro equipo esta conformado por estudiantes de las carreras de **Ingeniería Informática e Ingeniería Ambiental** de la **Universidad Peruana Cayetano Heredia (UPCH)**.
 
-
-| Foto                                                  | Nombre                                    | Rol                          | Intereses                                        |
-| ----------------------------------------------------- | ----------------------------------------- | ---------------------------- | ------------------------------------------------ |
-| <img src="Recursos/Imágenes/Josue.jpg" width="90"/>   | **Josue Cristhian Mateo Mogollon Flores** | Líder del equipo             | Innovación, tecnología y sostenibilidad          |
-| <img src="Recursos/Imágenes/Dylan.jpg" width="90"/> | **Mathias Dylan Henry Quispe Charres**    | Diseñador / Modelador        | Diseño de prototipos, modelado 3D y programación |
-| <img src="Recursos/Imágenes/Nicole.jpg" width="90"/>   | **Nicole Jacqueline Anyosa Barrientos**   | Responsable de investigación | Investigación y desarrollo sostenible            |
-| <img src="Recursos/Imágenes/Dayra.jpg" width="90"/>   | **Dayra Martina Kuang Mauricio**          | Encargada de documentación   | Documentación y comunicación                     |
-
-<details>
-<br>
-</div>
+| Foto | Nombre | Rol | Intereses |
+|---|---|---|---|
+| <img src="Recursos/Imágenes/Josue.jpg" width="90"/> | **Josue Cristhian Mateo Mogollon Flores** | Líder del equipo | Innovación, tecnología y sostenibilidad |
+| <img src="Recursos/Imágenes/Dylan.jpg" width="90"/> | **Mathias Dylan Henry Quispe Charres** | Diseñador / Modelador | Diseño de prototipos, modelado 3D y programación |
+| <img src="Recursos/Imágenes/Nicole.jpg" width="90"/> | **Nicole Jacqueline Anyosa Barrientos** | Responsable de investigación | Investigación y desarrollo sostenible |
+| <img src="Recursos/Imágenes/Dayra.jpg" width="90"/> | **Dayra Martina Kuang Mauricio** | Encargada de documentación | Documentación y comunicación |
 
 ---
 
-<details>
-<summary><h2> Referencias Bibliográficas </h2></summary>
-<div align="center">
-<br>
+## Referencias
 
-## 📌 Referencias
+[1] Cromme, N., Prakash, A. B., Lutaladio, N., & Ezeta, F. (Eds.). (2010). *Strengthening potato value chains: Technical and policy options for developing countries*. Food and Agriculture Organization of the United Nations (FAO) & Common Fund for Commodities.  
+https://www.fao.org/4/i1710e/i1710e.pdf
 
-1. 
+[2] Su, Q., Kondo, N., Li, M., Sun, H., Al Riza, D. F., & Habaragamuwa, H. (2018). *Potato quality grading based on machine vision and 3D shape analysis*. Computers and Electronics in Agriculture, 152, 261–268.  
+https://doi.org/10.1016/j.compag.2018.07.012
 
-<details>
-<br>
-</div>
+[3] Su, Q., Kondo, N., Al Riza, D. F., & Habaragamuwa, H. (2020). *Potato quality grading based on depth imaging and convolutional neural network*. Journal of Food Quality, 2020, 8815896.  
+https://doi.org/10.1155/2020/8815896
 
+[4] United Nations. (s. f.). *Goal 12: Ensure sustainable consumption and production patterns*. Sustainable Development Goals.  
+https://sdgs.un.org/goals/goal12
+
+[5] United Nations. (s. f.). *Goal 9: Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation*. Sustainable Development Goals.  
+https://sdgs.un.org/goals/goal9
+
+---
+
+## Resumen Final
+
+Este README presenta al **Equipo 10**, sus integrantes y el proyecto **Kartoffelmachine**, el cual continuaremos desarrollando durante el curso de **Proyecto Integrador 2026-2**, con énfasis en tecnología, innovación y producción responsable.
