@@ -15,21 +15,21 @@ valores del ADC a valores de voltaje.
 
 Código Básico:
 ```cpp
-int potPin = 34; // Pin donde está conectado el potenciómetro
+int potPin = 34; 
 
 void setup() {
 
-Serial.begin(115200); // Inicializar el monitor serie
+Serial.begin(115200); 
 
 }
 
 void loop() {
 
-int valor = analogRead(potPin); // Leer valor del potenciómetro
+int valor = analogRead(potPin); 
 
-Serial.println(valor); // Mostrar valor en el monitor serie
+Serial.println(valor); 
 
-delay(500); // Esperar medio segundo
+delay(500); 
 
 }
 ```
