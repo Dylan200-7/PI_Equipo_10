@@ -35,5 +35,8 @@ delay(500); // Esperar medio segundo
 
 ![ACTIVIDAD 1](Imagenes/001.jpeg)
 
+![ACTIVIDAD 2](Imagenes/002.jpeg)
+
+
 
 
