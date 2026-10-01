@@ -1,4 +1,4 @@
-# 🔌 Práctica de IoT con ESP32
+#  Práctica de IoT con ESP32
 
 Documentación de las prácticas realizadas con una placa **ESP32**. En ellas se leen sensores, se conecta la placa a WiFi, se publican datos en la nube (ThingSpeak) y se controla un LED desde el navegador.
 
@@ -6,7 +6,7 @@ Documentación de las prácticas realizadas con una placa **ESP32**. En ellas se
 
 ---
 
-## 📑 Contenido
+##  Contenido
 
 1. [Actividad 01 – Potenciómetro: promedio y voltaje](#actividad-01--potenciómetro-promedio-y-voltaje)
 2. [Actividad 02 – Conexión a WiFi](#actividad-02--conexión-a-wifi)
@@ -112,7 +112,7 @@ void loop() {
 }
 ```
 
-> 🔒 Los datos reales de la red (nombre y contraseña) fueron reemplazados por marcadores por seguridad.
+>  Los datos reales de la red (nombre y contraseña) fueron reemplazados por marcadores por seguridad.
 
 ---
 
@@ -185,7 +185,7 @@ void loop() {
 }
 ```
 
-> 🔒 Tampoco se publican la contraseña del WiFi ni la API Key real de ThingSpeak.
+>  Tampoco se publican la contraseña del WiFi ni la API Key real de ThingSpeak.
 
 ---
 
