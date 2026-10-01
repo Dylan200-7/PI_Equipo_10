@@ -216,6 +216,55 @@ flowchart LR
 
 Esto permite proporcionar al sistema de visión artificial **más información visual sobre cada tubérculo** antes de determinar su clasificación.
 
+
+## 🧠 Kartoffelmachine en una mirada
+
+<div align="center">
+
+```text
+             KARTOFFELMACHINE
+                     │
+                     ▼
+                  🥔 🥔 🥔
+                     │
+                     ▼
+           ┌─────────────────┐
+           │      FAJA       │
+           │ TRANSPORTADORA  │
+           └────────┬────────┘
+                    │
+                    ▼
+                  🔄 🥔
+             Cambio de
+             orientación
+                    │
+                    ▼
+                  📷
+          Captura de múltiples
+                 vistas
+                    │
+                    ▼
+             ┌────────────┐
+             │ Raspberry  │
+             │     Pi     │
+             └──────┬─────┘
+                    │
+                    ▼
+               🧠 IA / ML
+                    │
+             ┌──────┴──────┐
+             ▼             ▼
+          ✅ BUENA       ❌ MALA
+             │             │
+             └──────┬──────┘
+                    ▼
+             ⚙️ SEPARACIÓN
+                AUTOMÁTICA
+```
+
+</div>
+
+
 ---
 
 ## 🚀 Objetivos de Kartoffelmachine
@@ -334,68 +383,11 @@ Kartoffelmachine se relaciona principalmente con los:
 <br>
 </details>
 
---------
-
-<details>
-<summary><h2> Kartoffelnmaschine </h2></summary>
-
-<br>
-
-## 🧠 Kartoffelmachine en una mirada
-
-<div align="center">
-
-```text
-             KARTOFFELMACHINE
-                     │
-                     ▼
-                  🥔 🥔 🥔
-                     │
-                     ▼
-           ┌─────────────────┐
-           │      FAJA       │
-           │ TRANSPORTADORA  │
-           └────────┬────────┘
-                    │
-                    ▼
-                  🔄 🥔
-             Cambio de
-             orientación
-                    │
-                    ▼
-                  📷
-          Captura de múltiples
-                 vistas
-                    │
-                    ▼
-             ┌────────────┐
-             │ Raspberry  │
-             │     Pi     │
-             └──────┬─────┘
-                    │
-                    ▼
-               🧠 IA / ML
-                    │
-             ┌──────┴──────┐
-             ▼             ▼
-          ✅ BUENA       ❌ MALA
-             │             │
-             └──────┬──────┘
-                    ▼
-             ⚙️ SEPARACIÓN
-                AUTOMÁTICA
-```
-
-</div>
-
----
-
-<div align="center">
-  
 ---
 
 <details>
 <summary><h2> Equipo 10 </h2></summary>
+<div align="center">
 <br>
 
 ## 📸 Fotografía del Equipo
@@ -422,6 +414,7 @@ Somos el **Grupo 10** del curso **Proyecto Integrador**, semestre 2026-02. Nuest
 
 <details>
 <br>
+</div>
 
 ---
 
