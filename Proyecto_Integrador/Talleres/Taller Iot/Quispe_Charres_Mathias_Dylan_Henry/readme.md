@@ -347,7 +347,7 @@ La página cuenta con dos botones:
 
 El ESP32 se conecta al WiFi y muestra su dirección IP en el monitor serial. Luego se coloca esa dirección IP en el navegador de una computadora o celular conectado a la misma red.
 
-## ESP32 utilizado
+## Conexión del LED al ESP32
 
 <p align="center">
   <img src="./imagenes/Actividad5_1.jpeg" width="700">
