@@ -159,16 +159,13 @@ Esta situación incrementa los costos relacionados con la comercialización y la
 Consideramos estas ultimas tres situaciones las mas fundamentales
 
 
-
 <br>
-
 </details>
 
 ---
 
 <details>
 <summary><h2>💡 Nuestra solución</h2></summary>
-
 <br>
 
 Nuestra propuesta integra diferentes áreas de ingeniería en un único sistema:
@@ -195,9 +192,7 @@ Nuestra propuesta integra diferentes áreas de ingeniería en un único sistema:
 | Continúa hacia la salida correspondiente | Es desviada hacia otra salida |
 
 </div>
-
 <br>
-
 </details>
 
 ---
@@ -303,7 +298,6 @@ Kartoffelmachine se relaciona principalmente con los:
 
 <details>
 <summary><h2>♻️ ODS 12 — Producción y Consumo Responsables</h2></summary>
-
 <br>
 
 ### 🎯 Meta 12.3
@@ -312,9 +306,6 @@ Kartoffelmachine se relaciona principalmente con los:
 
 ### 🔗 Relación con Kartoffelmachine
 
-El proyecto busca contribuir a mejorar los procesos de **inspección y selección de productos agrícolas**, utilizando tecnologías que permitan identificar automáticamente las condiciones externas de los tubérculos.
-
-Una clasificación más eficiente puede facilitar la toma de decisiones durante etapas posteriores a la cosecha y contribuir al aprovechamiento adecuado de los productos agrícolas.
 
 <br>
 
@@ -325,7 +316,6 @@ Una clasificación más eficiente puede facilitar la toma de decisiones durante 
 </div>
 
 <br>
-
 </details>
 
 ---
@@ -339,6 +329,17 @@ Una clasificación más eficiente puede facilitar la toma de decisiones durante 
 
 > Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales, fomentando la innovación y aumentando las capacidades de investigación y desarrollo.
 
+### 🔗 Relación con Kartoffelmachine
+
+<br>
+</details>
+
+--------
+
+<details>
+<summary><h2> Kartoffelnmaschine </h2></summary>
+
+<br>
 
 ## 🧠 Kartoffelmachine en una mirada
 
@@ -392,6 +393,11 @@ Una clasificación más eficiente puede facilitar la toma de decisiones durante 
 <div align="center">
   
 ---
+
+<details>
+<summary><h2> Equipo 10 </h2></summary>
+<br>
+
 ## 📸 Fotografía del Equipo
 
 <p align="center">
@@ -413,6 +419,9 @@ Somos el **Grupo 10** del curso **Proyecto Integrador**, semestre 2026-02. Nuest
 | <img src="Recursos/Imágenes/Dylan.jpg" width="90"/> | **Mathias Dylan Henry Quispe Charres**    | Diseñador / Modelador        | Diseño de prototipos, modelado 3D y programación |
 | <img src="Recursos/Imágenes/Nicole.jpg" width="90"/>   | **Nicole Jacqueline Anyosa Barrientos**   | Responsable de investigación | Investigación y desarrollo sostenible            |
 | <img src="Recursos/Imágenes/Dayra.jpg" width="90"/>   | **Dayra Martina Kuang Mauricio**          | Encargada de documentación   | Documentación y comunicación                     |
+
+<details>
+<br>
 
 ---
 
