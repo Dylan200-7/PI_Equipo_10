@@ -9,7 +9,7 @@ En la clase se trabajó con:
 ● 01 Multímetro
 ● 01 Protoboard
 
-## Actividad: Lectura de un Potenciómetro con ESP32
+## Actividad 01: Lectura de un Potenciómetro con ESP32
 Mejorar el código proporcionado haciendo uso de un promediado de los datos y convirtiendo los
 valores del ADC a valores de voltaje 
 
@@ -76,10 +76,6 @@ En esta segunda actividad, se activó el mobile hotstop de mi celular
 Luego, para conectar el ESP32 con la red que se observa en la imagen 
 se configuró el ESP utilizando la librería "Wifi.h"
 
-<p align="center">
-  <img src="imagenes/actividad2.jpeg" width="850">
-</p>
-
 ## Código Utilizado
 
 ```cpp
@@ -113,12 +109,93 @@ void loop() {
 }
 ```
 
-
-<p align="center">
-  <img src="imagenes/actividad22.jpeg" width="850">
-</p>
+Luego, de que se realizara correctamente la conexión, se visualizó la IP en el monitor serial
 
 <p align="center">
   <img src="imagenes/actividad222.jpeg" width="850">
 </p>
+
+
+## Actividad 03: Lectura de un Potenciómetro con ESP32
+Escribir un código que muestre en tiempo real la variación del potenciómetro conectado al
+ESP32 en las siguientes plataformas de IoT: Arduino Cloud, ThingSpeak y Ubidots
+
+Para esta tercera actividad, se utilizó nuevamente el potenciómetro y su extremo medio se conectó al GPIO 34.
+Previamente, se conectó el ESP32 a la red Wifi, para poder enviar los datos recopilados hacia el Field 1 de la plataforma ThingSpeak.
+El envío se repitió cada 20 segundos
+
+Se realizaron las siguientes conexiones 
+- VCC a 3.3V
+- GND a GND
+
+
+
+## Código utilizado
+
+```cpp
+#include <WiFi.h>
+#include <ThingSpeak.h>
+
+const char* ssid = "NOMBRE_DE_LA_RED";
+const char* password = "CONTRASEÑA_DE_LA_RED";
+
+unsigned long channelID = TU_CHANNEL_ID;
+const char* writeAPIKey = "TU_WRITE_API_KEY";
+
+WiFiClient client;
+
+const int potPin = 34;
+
+void setup() {
+
+  Serial.begin(115200);
+
+  Serial.println("Conectando al WiFi...");
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println();
+  Serial.println("WiFi conectado correctamente");
+
+  Serial.print("IP del ESP32: ");
+  Serial.println(WiFi.localIP());
+
+  ThingSpeak.begin(client);
+}
+
+void loop() {
+
+  int valorPotenciometro = analogRead(potPin);
+
+  Serial.print("Potenciometro: ");
+  Serial.println(valorPotenciometro);
+
+  int respuesta = ThingSpeak.writeField(
+    channelID,
+    1,
+    valorPotenciometro,
+    writeAPIKey
+  );
+
+  if (respuesta == 200) {
+    Serial.println("Dato enviado correctamente a ThingSpeak");
+  } else {
+    Serial.print("Error al enviar el dato. Codigo: ");
+    Serial.println(respuesta);
+  }
+
+  Serial.println("------------------------");
+
+  delay(20000);
+}
+```
+
+
+
+
 
