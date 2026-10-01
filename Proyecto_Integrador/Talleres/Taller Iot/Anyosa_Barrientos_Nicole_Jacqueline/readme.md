@@ -79,7 +79,7 @@ void loop() {
 Crear una red WIFI usando su Smartphone como Hotspot, y conectarse a ella con el ESP32. En el
 monitor serial se deberá visualizar la dirección IP asignada.
 
-![ACTIVIDAD 2](Imagenes/004.jpeg)
+![ACTIVIDAD 2](Imagenes/004.png)
 
 La conexión fue exitosa y la IP quedó visible en el monitor serial.
 
