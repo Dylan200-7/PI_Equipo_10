@@ -33,6 +33,7 @@ delay(500); // Esperar medio segundo
 
 }
 
-![ACTIVIDAD 1](001.png)
+![ACTIVIDAD 1](Imagenes/001.png)
+
 
 
