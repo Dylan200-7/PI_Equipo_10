@@ -11,10 +11,11 @@ En la clase se trabajó con:
 
 ## Actividad: Lectura de un Potenciómetro con ESP32
 Mejorar el código proporcionado haciendo uso de un promediado de los datos y convirtiendo los
-valores del ADC a valores de voltaje
+valores del ADC a valores de voltaje 
 
-*Código Básico:*
+## *Código utilizado*
 
+```cpp
 const int potPin = 34;
 const int numeroLecturas = 10;
 
@@ -45,6 +46,7 @@ void loop() {
 
   delay(500);
 }
+```
 
 <p align="center">
   <img src="imagenes/Actividad_1.jpeg" width="850">
