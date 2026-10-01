@@ -72,4 +72,53 @@ void loop() {
 Crear una red WIFI usando su Smartphone como Hotspot, y conectarse a ella con el ESP32. En el
 monitor serial se deberá visualizar la dirección IP asignada.
 
+En esta segunda actividad, se activó el mobile hotstop de mi celular
+Luego, para conectar el ESP32 con la red que se observa en la imagen 
+se configuró el ESP utilizando la librería "Wifi.h"
+
+<p align="center">
+  <img src="imagenes/actividad2.jpeg" width="850">
+</p>
+
+## Código Utilizado
+
+```cpp
+#include <WiFi.h>
+
+const char* ssid = "NOMBRE_DE_LA_RED";
+const char* password = "CONTRASEÑA_DE_LA_RED";
+
+void setup() {
+
+  Serial.begin(115200);
+
+  Serial.println("Conectando al WiFi...");
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println();
+  Serial.println("WiFi conectado correctamente");
+
+  Serial.print("Direccion IP asignada: ");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+
+}
+```
+
+
+<p align="center">
+  <img src="imagenes/actividad22.jpeg" width="850">
+</p>
+
+<p align="center">
+  <img src="imagenes/actividad222.jpeg" width="850">
+</p>
 
