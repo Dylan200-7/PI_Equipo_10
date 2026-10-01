@@ -38,3 +38,10 @@ delay(500); // Esperar medio segundo}"
 <p align="center">
   <img src="imagenes/Actividad_11.jpeg" width="850">
 </p>
+
+
+## Actividad 02:
+Crear una red WIFI usando su Smartphone como Hotspot, y conectarse a ella con el ESP32. En el
+monitor serial se deberá visualizar la dirección IP asignada.
+
+
