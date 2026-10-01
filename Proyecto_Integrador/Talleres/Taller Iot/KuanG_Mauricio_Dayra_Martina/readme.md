@@ -128,6 +128,13 @@ Se realizaron las siguientes conexiones
 - VCC a 3.3V
 - GND a GND
 
+<p align="center">
+  <img src="imagenes/actividad3.jpeg" width="850">
+</p>
+
+<p align="center">
+  <img src="imagenes/actividad33.jpeg" width="850">
+</p>
 
 
 ## Código utilizado
