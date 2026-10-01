@@ -16,14 +16,20 @@ valores del ADC a valores de voltaje
 *Código Básico:*
 
 "int potPin = 34; // Pin donde está conectado el potenciómetro
+
 void setup() {
+
 Serial.begin(115200); // Inicializar el monitor serie
+
 }
+
 void loop() {
+
 int valor = analogRead(potPin); // Leer valor del potenciómetro
+
 Serial.println(valor); // Mostrar valor en el monitor serie
-delay(500); // Esperar medio segundo
-}"
+
+delay(500); // Esperar medio segundo}"
 
 <p align="center">
   <img src="imagenes/Actividad_1.jpeg" width="850">
