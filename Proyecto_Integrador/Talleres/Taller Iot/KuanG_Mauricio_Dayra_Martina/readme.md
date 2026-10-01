@@ -132,10 +132,6 @@ Se realizaron las siguientes conexiones
   <img src="imagenes/actividad3.jpeg" width="850">
 </p>
 
-<p align="center">
-  <img src="imagenes/actividad33.jpeg" width="850">
-</p>
-
 
 ## Código utilizado
 
@@ -202,7 +198,103 @@ void loop() {
 }
 ```
 
+## Actividad 4: 
 
+Escribir un código que muestre en tiempo real la variación de uno de los sensores del kit
+Keystudio (LM35, LDR, etc) conectado al ESP32 en las siguientes plataformas de IoT: Arduino
+Cloud, ThingSpeak y Ubidots.
 
+Para esta cuarta actividad se utilizó un sensor Ultrasónico HC-SRO4. Este sensor mide distancias entre 2 cm y 400 cm 
+con otros objetos utilizando ondas sonoras de alta frecuencia 
 
+Se realizaron las siguientes conexiones: 
+- VCC a 5V del ESP32.
+- GND a GND.
+- TRIG a GPIO 25.
+- ECHO a GPIO 26.
+
+<p align="center">
+  <img src="imagenes/actividad33.jpeg" width="850">
+</p>
+
+Entonces, el ESP32 recibe los datos de distancia en centimetros y envía los datos a ThingSpeak
+## Código utilizado
+
+```cpp
+#include <WiFi.h>
+#include <ThingSpeak.h>
+
+const char* ssid = "NOMBRE_DE_LA_RED";
+const char* password = "CONTRASEÑA_DE_LA_RED";
+
+unsigned long channelID = TU_CHANNEL_ID;
+const char* writeAPIKey = "TU_WRITE_API_KEY";
+
+WiFiClient client;
+
+const int TRIG = 25;
+const int ECHO = 26;
+
+void setup() {
+
+  Serial.begin(115200);
+
+  pinMode(TRIG, OUTPUT);
+  pinMode(ECHO, INPUT);
+
+  Serial.println("Conectando al WiFi...");
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println();
+  Serial.println("WiFi conectado correctamente");
+
+  Serial.print("IP del ESP32: ");
+  Serial.println(WiFi.localIP());
+
+  ThingSpeak.begin(client);
+}
+
+void loop() {
+
+  digitalWrite(TRIG, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(TRIG, HIGH);
+  delayMicroseconds(10);
+
+  digitalWrite(TRIG, LOW);
+
+  long duracion = pulseIn(ECHO, HIGH, 30000);
+
+  float distancia = duracion * 0.0343 / 2.0;
+
+  Serial.print("Distancia: ");
+  Serial.print(distancia);
+  Serial.println(" cm");
+
+  int respuesta = ThingSpeak.writeField(
+    channelID,
+    1,
+    distancia,
+    writeAPIKey
+  );
+
+  if (respuesta == 200) {
+    Serial.println("Dato enviado correctamente a ThingSpeak");
+  } else {
+    Serial.print("Error al enviar el dato. Codigo: ");
+    Serial.println(respuesta);
+  }
+
+  Serial.println("------------------------");
+
+  delay(20000);
+}
+```
 
