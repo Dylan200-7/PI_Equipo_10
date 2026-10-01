@@ -339,24 +339,6 @@ Una clasificación más eficiente puede facilitar la toma de decisiones durante 
 
 > Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales, fomentando la innovación y aumentando las capacidades de investigación y desarrollo.
 
-### 🔗 Relación con Kartoffelmachine
-
-Kartoffelmachine integra diferentes tecnologías:
-
-- 🧠 Inteligencia Artificial
-- 👁️ Visión Artificial
-- ⚙️ Mecatrónica
-- 🍓 Sistemas embebidos
-- 📷 Procesamiento de imágenes
-- 🤖 Automatización
-
-Estas herramientas permiten desarrollar una solución tecnológica aplicada al **sector agroalimentario**, promoviendo la investigación, innovación y aplicación de ingeniería en procesos agrícolas.
-
-<br>
-
-</details>
-
----
 
 ## 🧠 Kartoffelmachine en una mirada
 
@@ -408,22 +390,7 @@ Estas herramientas permiten desarrollar una solución tecnológica aplicada al *
 ---
 
 <div align="center">
-
-## 🚀 Nuestra propuesta
-
-> **Kartoffelmachine busca transformar la inspección convencional de papas en un proceso continuo, automatizado e inteligente mediante la integración de mecatrónica, visión artificial e inteligencia artificial.**
-
-### 🥔 + ⚙️ + 📷 + 🧠 = Kartoffelmachine
-
-<br>
-
-**Equipo 10 · Proyecto Integrador 2026-2 · UPCH**
-
-</div>
-
----
-
-
+  
 ---
 ## 📸 Fotografía del Equipo
 
