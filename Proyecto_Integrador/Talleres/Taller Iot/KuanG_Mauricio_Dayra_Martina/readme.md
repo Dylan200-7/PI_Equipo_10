@@ -12,7 +12,9 @@ En la clase se trabajó con:
 ## Actividad: Lectura de un Potenciómetro con ESP32
 Mejorar el código proporcionado haciendo uso de un promediado de los datos y convirtiendo los
 valores del ADC a valores de voltaje
+
 *Código Básico:*
+
 "int potPin = 34; // Pin donde está conectado el potenciómetro
 void setup() {
 Serial.begin(115200); // Inicializar el monitor serie
@@ -23,5 +25,10 @@ Serial.println(valor); // Mostrar valor en el monitor serie
 delay(500); // Esperar medio segundo
 }"
 
+<p align="center">
+  <img src="imagenes/Actividad_1.png" width="850">
+</p>
 
-
+<p align="center">
+  <img src="imagenes/Actividad_11.png" width="850">
+</p>
