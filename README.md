@@ -418,6 +418,16 @@ Somos el **Grupo 10** del curso **Proyecto Integrador**, semestre 2026-02. Nuest
 
 ---
 
-## 📌 Resumen Final
+<details>
+<summary><h2> Referencias Bibliográficas </h2></summary>
+<div align="center">
+<br>
 
-Este README presenta al **Equipo 10**, sus integrantes y el proyecto **Kartoffelmachine**, el cual continuaremos desarrollando durante el curso de **Proyecto Integrador 2026-2**, con énfasis en tecnología, innovación y producción responsable.
+## 📌 Referencias
+
+1. 
+
+<details>
+<br>
+</div>
+
