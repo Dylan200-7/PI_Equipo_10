@@ -13,6 +13,21 @@ En la clase se trabajó con:
 Mejorar el código proporcionado haciendo uso de un promediado de los datos y convirtiendo los
 valores del ADC a valores de voltaje 
 
+Para esta primera actividad, se utilizó un protoboard a través del cual se conectó el potenciómetro al ESP-32.
+Se realizaron las siguientes conecciones:
+-  Extremo 1 se conectó a 3.3V
+-  Extremo 2	se conectó a GND
+-  Pin central	se conectó a GPIO 34
+
+<p align="center">
+  <img src="imagenes/Actividad_1.jpeg" width="850">
+</p>
+
+
+nota: Un potenciómetro sirve para regular y controlar de forma manual el nivel de corriente o el voltaje en un circuito eléctrico o electrónico.
+
+Entonces se obtuvo la señal analógica del potenciómetro mediante el ADC del ESP32. Con el fin de mejorar la estabilidad de la medición, se realizaron 10 lecturas y se calculó su valor promedio. Finalmente, este resultado se transformó a su equivalente en voltios.
+
 ## *Código utilizado*
 
 ```cpp
@@ -47,10 +62,6 @@ void loop() {
   delay(500);
 }
 ```
-
-<p align="center">
-  <img src="imagenes/Actividad_1.jpeg" width="850">
-</p>
 
 <p align="center">
   <img src="imagenes/Actividad_11.jpeg" width="850">
