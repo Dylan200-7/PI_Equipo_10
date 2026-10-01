@@ -14,7 +14,7 @@ Mejorar el código anterior haciendo uso de un promediado de los datos y convirt
 valores del ADC a valores de voltaje.
 
 Código Básico:
-
+```cpp
 int potPin = 34; // Pin donde está conectado el potenciómetro
 
 void setup() {
@@ -32,6 +32,7 @@ Serial.println(valor); // Mostrar valor en el monitor serie
 delay(500); // Esperar medio segundo
 
 }
+```
 
 ![ACTIVIDAD 1](Imagenes/001.jpeg)
 
