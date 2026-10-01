@@ -37,6 +37,41 @@ delay(500); // Esperar medio segundo
 
 ![ACTIVIDAD 1](Imagenes/003.jpeg)
 
+El monitor muestra el ADC promedio (0–4095) y su equivalente en voltaje (0–3.3 V).
+
+**Código:**
+
+```cpp
+const int pinPot = 34;
+const int totalMuestras = 10;
+
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  long acumulado = 0;
+
+  // Se toman varias muestras para suavizar la lectura
+  for (int i = 0; i < totalMuestras; i++) {
+    acumulado += analogRead(pinPot);
+    delay(10);
+  }
+
+  float adcPromedio = acumulado / (float)totalMuestras;
+  float voltios = adcPromedio * 3.3 / 4095.0;
+
+  Serial.print("ADC promedio: ");
+  Serial.print(adcPromedio);
+  Serial.print(" | Voltaje: ");
+  Serial.print(voltios, 2);
+  Serial.println(" V");
+
+  delay(500);
+}
+```
+
+---
 
 ## Actividad 2: Scanner WIFI con ESP32
 
