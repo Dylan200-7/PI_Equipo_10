@@ -514,15 +514,15 @@ El flujo final desarrollado en Node-RED se muestra a continuación:
   <img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller%20Iot/Imagenes/NodeRED_Flujo_Kartoffelmachine.jpeg" width="900" alt="Flujo final en Node-RED">
 </p>
 
-En la imagen se observa que el tópico:
+En la imagen se observa que el nodo **MQTT IN**, suscrito al tópico:
 
 ```text
 equipo10/sensor/datos
 ```
 
-se encuentra conectado correctamente al broker.
+se encuentra conectado correctamente al broker, ya que muestra el estado `connected`.
 
-Los datos recibidos se separan en:
+Los datos recibidos pasan por tres nodos **change** (`set msg.payload`), que los separan en:
 
 ```text
 Temperatura
@@ -530,9 +530,13 @@ Humedad
 Dispositivo
 ```
 
-Posteriormente, cada dato es enviado al elemento correspondiente del Dashboard.
+Posteriormente, cada dato es enviado al elemento correspondiente del Dashboard:
 
-En la parte inferior se encuentra el switch encargado del control del LED, conectado al nodo MQTT de publicación.
+- **Temperatura:** al gauge `Temperatura` y al gráfico `Evolucion temperatura`.
+- **Humedad:** al gauge `Humedad` y al gráfico `Evolucion Humedad`.
+- **Dispositivo:** al nodo de texto `Dispositivo`.
+
+En la parte inferior se encuentra el nodo **Switch LED**, que está conectado al nodo MQTT de salida `Comandos Publicados`, encargado de publicar los comandos hacia el ESP32. En la captura, el switch aparece en estado `on` y el nodo MQTT de salida también figura como `connected`.
 
 ---
 
@@ -551,14 +555,17 @@ En esta interfaz se pueden observar en tiempo real los datos provenientes del se
 Durante la prueba mostrada en la imagen se obtuvieron aproximadamente los siguientes valores:
 
 ```text
-Temperatura: 26.2 °C
-Humedad: 60.7 %
+Temperatura: 24.5 °C
+Humedad: 76 %
 Dispositivo: ESP32_Equipo10
 ```
 
-Los gráficos permiten visualizar cómo varían la temperatura y la humedad conforme el ESP32 continúa realizando mediciones.
+Los gráficos muestran la evolución de las mediciones durante unos 20 minutos (de 19:24 a 19:44 aproximadamente):
 
-El Dashboard también incluye el control del LED en la parte superior.
+- **Temperatura:** se mantuvo estable alrededor de 25 °C, con un aumento leve cerca de las 19:37, donde llegó a unos 30 °C, y luego volvió a bajar.
+- **Humedad:** tuvo variaciones más marcadas. Llegó al 100 % cerca de las 19:29, bajó hasta aproximadamente 70 % hacia las 19:36, subió de nuevo casi al 100 % a las 19:37 y después descendió progresivamente hasta el 76 % registrado al final. Entre las 19:24 y las 19:28 se observa un tramo sin datos.
+
+En la parte superior del Dashboard se encuentra el interruptor **Control LED**, que en la captura aparece activado, y debajo se muestra el dispositivo que envía los datos (`ESP32_Equipo10`).
 
 ---
 
@@ -649,6 +656,11 @@ ESP32 <-> MQTT <-> Node-RED
 ```
 
 El ESP32 pudo publicar los valores obtenidos mediante el DHT11, mientras que Node-RED recibió y mostró la información mediante indicadores y gráficos.
+
+También se logró enviar comandos desde Node-RED hacia el ESP32 mediante MQTT para controlar el estado del LED.
+
+De esta manera se comprobó el funcionamiento de la comunicación bidireccional utilizando MQTT dentro del proyecto Kartoffelmachine.
+
 
 También se logró enviar comandos desde Node-RED hacia el ESP32 mediante MQTT para controlar el estado del LED.
 
