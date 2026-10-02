@@ -76,6 +76,11 @@ En esta segunda actividad, se activó el mobile hotstop de mi celular
 Luego, para conectar el ESP32 con la red que se observa en la imagen 
 se configuró el ESP utilizando la librería "Wifi.h"
 
+<p align="center">
+  <img src="imagenes/imagen2.jpeg" width="850">
+</p>
+
+
 ## Código Utilizado
 
 ```cpp
