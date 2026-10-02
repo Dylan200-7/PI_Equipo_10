@@ -225,7 +225,7 @@ Se realizaron las siguientes conexiones:
 Entonces, el ESP32 recibe los datos de distancia en centimetros y envía los datos a ThingSpeak
 
 <p align="center">
-  <img src="imagenes/Actividad4.jpeg" width="850">
+  <img src="imagenes/imagen33.jpeg" width="850">
 </p>
 
 
