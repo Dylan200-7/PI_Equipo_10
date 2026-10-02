@@ -129,7 +129,7 @@ Se realizaron las siguientes conexiones
 - GND a GND
 
 <p align="center">
-  <img src="imagenes/actividad3.jpeg" width="850">
+  <img src="imagenes/actividad22.jpeg" width="850">
 </p>
 
 
