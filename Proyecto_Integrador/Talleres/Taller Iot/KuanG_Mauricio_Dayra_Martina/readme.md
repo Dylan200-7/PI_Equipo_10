@@ -529,5 +529,23 @@ void loop() {
 }
 ```
 
+## Conclusiones
+
+Este taller permitió conocer sobre la tecnología IoT
+Algo innovador a mi parecer
+En primer lugar, se realizaron varias recopilaciones de datos con el ADC del ESP32 para 
+obtener un valor promedio más estable y convertirlo posteriormente a voltaje.
+
+Luego, se comprobó la conectividad del ESP32 a una red WiFi, utilizando el hotspot de un celular. 
+Para obtener la dirección IP
+
+Posteriormente, se utilizó ThingSpeak para enviar y visualizar los datos obtenidos del potenciómetro y del sensor ultrasónico HC-SR04, 
+permitiendo observar las mediciones en Gráficas y comprender el proceso de transmisión de datos hacia una plataforma en la nube.
+
+Finalmente, se implementó un servidor web directamente en el ESP32, mediante el cual fue posible controlar un LED desde un navegador, demostrando cómo el dispositivo puede recibir comandos de manera remota y ejecutar una acción.
+
+En conjunto, estas actividades permitieron comprender cómo un microcontrolador como el ESP32 puede capturar información de sensores, procesarla, conectarse a una red, enviar datos a una plataforma IoT y recibir comandos para controlar dispositivos.
+
+
  
 
