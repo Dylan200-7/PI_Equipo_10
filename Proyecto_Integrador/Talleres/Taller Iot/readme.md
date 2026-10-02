@@ -95,8 +95,8 @@ El código completo utilizado fue el siguiente:
 #include <DHT.h>
 
 // ================= CONFIGURACIÓN WIFI =================
-const char* WIFI_SSID = "Galaxy A36 5G BF8B";
-const char* WIFI_PASS = "12345678";
+const char* WIFI_SSID = "TU_RED_WIFI";
+const char* WIFI_PASS = "TU_PASSWORD";
 
 // ================= CONFIGURACIÓN MQTT =================
 const char* MQTT_SERVER = "mqtt.rcr-labs.com";
@@ -511,7 +511,7 @@ Finalmente, el flujo quedó formado por:
 El flujo final desarrollado en Node-RED se muestra a continuación:
 
 <p align="center">
-  <img src="./imagenes/NodeRED_Flujo_Kartoffelmachine.jpeg" width="900">
+  <img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller%20Iot/Imagenes/NodeRED_Flujo_Kartoffelmachine.jpeg" width="900" alt="Flujo final en Node-RED">
 </p>
 
 En la imagen se observa que el tópico:
@@ -545,7 +545,7 @@ Después de realizar la configuración se ingresó al Dashboard de Node-RED.
 En esta interfaz se pueden observar en tiempo real los datos provenientes del sensor DHT11.
 
 <p align="center">
-  <img src="./imagenes/NodeRED_Dashboard_Kartoffelmachine.jpeg" width="900">
+  <img src="https://raw.githubusercontent.com/Dylan200-7/PI_Equipo_10/main/Proyecto_Integrador/Talleres/Taller%20Iot/Imagenes/NodeRED_Dashboard_Kartoffelmachine.jpeg" width="900" alt="Dashboard de Kartoffelmachine">
 </p>
 
 Durante la prueba mostrada en la imagen se obtuvieron aproximadamente los siguientes valores:
