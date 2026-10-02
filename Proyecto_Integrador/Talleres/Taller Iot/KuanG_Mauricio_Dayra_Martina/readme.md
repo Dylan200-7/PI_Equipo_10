@@ -223,6 +223,13 @@ Entonces, el ESP32 recibe los datos de distancia en centimetros y envía los dat
   <img src="imagenes/Actividad4.jpeg" width="850">
 </p>
 
+
+<p align="center">
+  <img src="imagenes/actividad44.jpeg" width="850">
+</p>
+
+
+
 ## Código utilizado
 
 ```cpp
