@@ -128,7 +128,7 @@ Se realizaron las siguientes conexiones
 - GND a GND
 
 <p align="center">
-  <img src="imagenes/imagen3.jpeg" width="850">
+  <img src="imagenes/imagen3.png" width="850">
 </p>
 
 En Thinkspeak se podía observar como cambiaba la gráfica segun los datos que recopilaba el potenciómetro
