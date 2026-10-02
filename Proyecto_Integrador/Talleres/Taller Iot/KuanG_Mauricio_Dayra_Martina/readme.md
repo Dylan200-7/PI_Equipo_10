@@ -127,6 +127,16 @@ Se realizaron las siguientes conexiones
 - VCC a 3.3V
 - GND a GND
 
+<p align="center">
+  <img src="imagenes/imagen3.jpeg" width="850">
+</p>
+
+En Thinkspeak se podía observar como cambiaba la gráfica segun los datos que recopilaba el potenciómetro
+
+<p align="center">
+  <img src="imagenes/imagen33.jpeg" width="850">
+</p>
+
 
 ## Código utilizado
 
