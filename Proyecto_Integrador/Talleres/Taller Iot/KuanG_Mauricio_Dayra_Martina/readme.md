@@ -203,7 +203,7 @@ void loop() {
 }
 ```
 
-## Actividad 4: 
+## Actividad 4: Enviando datos a ThingSpeak
 
 Escribir un código que muestre en tiempo real la variación de uno de los sensores del kit
 Keystudio (LM35, LDR, etc) conectado al ESP32 en las siguientes plataformas de IoT: Arduino
@@ -228,12 +228,7 @@ Entonces, el ESP32 recibe los datos de distancia en centimetros y envía los dat
   <img src="imagenes/imagen33.jpeg" width="850">
 </p>
 
-
-<p align="center">
-  <img src="imagenes/actividad444.jpeg" width="850">
-</p>
-
-
+La grafica mostraba como cambian la distancia según la lejanía o cercanía de un objeto
 
 ## Código utilizado
 
@@ -314,4 +309,225 @@ void loop() {
   delay(20000);
 }
 ```
+
+## Actividad 5: Controlando desde la Nube
+
+Conectar un LED en uno de los pines digitales del ESP32 y controlar su encendido desde alguna
+de las plataformas web de su preferencia.
+
+En esta ultima actividad, se utilizó el ESP32 como servidor web. Esto, para poder apagar y prender un foco led,
+desde una pagina web
+
+<p align="center">
+  <img src="imagenes/LED.jpeg" width="850">
+</p>
+
+A continuación, fotos del encendido y apagado del foco led
+
+<p align="center">
+  <img src="imagenes/LEDP.jpeg" width="850">
+</p>
+
+<p align="center">
+  <img src="imagenes/LEDA.jpeg" width="850">
+</p>
+
+## Código utilizado
+
+```cpp
+#include <WiFi.h>
+#include <WebServer.h>
+
+const char* ssid = "NOMBRE_DE_LA_RED";
+const char* password = "CONTRASEÑA_DE_LA_RED";
+
+const int ledPin = 23;
+
+WebServer server(80);
+
+String pagina() {
+
+  String html = R"rawliteral(
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>ESP32 - Control Web</title>
+
+    <style>
+
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      button {
+        width: 200px;
+        padding: 15px;
+        margin: 10px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .encender {
+        background-color: green;
+      }
+
+      .apagar {
+        background-color: red;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>ESP32 - Control Web</h1>
+
+    <h2>Actividad 05 - IoT</h2>
+
+    <p>Control del LED integrado del ESP32</p>
+
+    <p>
+      <a href="/encender">
+        <button class="encender">
+          ENCENDER LED
+        </button>
+      </a>
+    </p>
+
+    <p>
+      <a href="/apagar">
+        <button class="apagar">
+          APAGAR LED
+        </button>
+      </a>
+    </p>
+
+  </body>
+
+  </html>
+  )rawliteral";
+
+  return html;
+}
+
+void inicio() {
+
+  server.send(
+    200,
+    "text/html",
+    pagina()
+  );
+
+}
+
+void encenderLED() {
+
+  digitalWrite(ledPin, HIGH);
+
+  Serial.println("LED encendido");
+
+  server.send(
+    200,
+    "text/html",
+    pagina()
+  );
+
+}
+
+void apagarLED() {
+
+  digitalWrite(ledPin, LOW);
+
+  Serial.println("LED apagado");
+
+  server.send(
+    200,
+    "text/html",
+    pagina()
+  );
+
+}
+
+void setup() {
+
+  Serial.begin(115200);
+
+  pinMode(ledPin, OUTPUT);
+
+  digitalWrite(ledPin, LOW);
+
+  Serial.println("Conectando al WiFi...");
+
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+
+    delay(500);
+
+    Serial.print(".");
+
+  }
+
+  Serial.println();
+
+  Serial.println(
+    "WiFi conectado correctamente"
+  );
+
+  Serial.print(
+    "Direccion IP del ESP32: "
+  );
+
+  Serial.println(
+    WiFi.localIP()
+  );
+
+  server.on(
+    "/",
+    inicio
+  );
+
+  server.on(
+    "/encender",
+    encenderLED
+  );
+
+  server.on(
+    "/apagar",
+    apagarLED
+  );
+
+  server.begin();
+
+  Serial.println(
+    "Servidor web iniciado"
+  );
+
+}
+
+void loop() {
+
+  server.handleClient();
+
+}
+```
+
+ 
 
