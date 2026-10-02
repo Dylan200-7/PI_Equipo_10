@@ -511,7 +511,7 @@ Finalmente, el flujo quedó formado por:
 El flujo final desarrollado en Node-RED se muestra a continuación:
 
 <p align="center">
-  <img src="./imagenes/NodeRED_Flujo_Kartoffelmachine.png" width="900">
+  <img src="./imagenes/NodeRED_Flujo_Kartoffelmachine.jpeg" width="900">
 </p>
 
 En la imagen se observa que el tópico:
@@ -545,7 +545,7 @@ Después de realizar la configuración se ingresó al Dashboard de Node-RED.
 En esta interfaz se pueden observar en tiempo real los datos provenientes del sensor DHT11.
 
 <p align="center">
-  <img src="./imagenes/NodeRED_Dashboard_Kartoffelmachine.png" width="900">
+  <img src="./imagenes/NodeRED_Dashboard_Kartoffelmachine.jpeg" width="900">
 </p>
 
 Durante la prueba mostrada en la imagen se obtuvieron aproximadamente los siguientes valores:
