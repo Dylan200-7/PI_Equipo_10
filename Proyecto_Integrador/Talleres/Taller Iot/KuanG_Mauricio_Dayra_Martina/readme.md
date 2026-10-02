@@ -225,7 +225,7 @@ Entonces, el ESP32 recibe los datos de distancia en centimetros y envía los dat
 
 
 <p align="center">
-  <img src="imagenes/actividad44.jpeg" width="850">
+  <img src="imagenes/actividad444.jpeg" width="850">
 </p>
 
 
