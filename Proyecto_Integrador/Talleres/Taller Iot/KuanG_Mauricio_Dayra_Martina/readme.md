@@ -214,10 +214,15 @@ Se realizaron las siguientes conexiones:
 - ECHO a GPIO 26.
 
 <p align="center">
-  <img src="imagenes/actividad33.jpeg" width="850">
+  <img src="imagenes/actividad44.jpeg" width="850">
 </p>
 
 Entonces, el ESP32 recibe los datos de distancia en centimetros y envía los datos a ThingSpeak
+
+<p align="center">
+  <img src="imagenes/Actividad4.jpeg" width="850">
+</p>
+
 ## Código utilizado
 
 ```cpp
