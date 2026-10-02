@@ -76,11 +76,6 @@ En esta segunda actividad, se activó el mobile hotstop de mi celular
 Luego, para conectar el ESP32 con la red que se observa en la imagen 
 se configuró el ESP utilizando la librería "Wifi.h"
 
-<p align="center">
-  <img src="imagenes/imagen2.jpeg" width="850">
-</p>
-
-
 ## Código Utilizado
 
 ```cpp
@@ -117,9 +112,8 @@ void loop() {
 Luego, de que se realizara correctamente la conexión, se visualizó la IP en el monitor serial
 
 <p align="center">
-  <img src="imagenes/actividad222.jpeg" width="850">
+  <img src="imagenes/imagen2.jpeg" width="850">
 </p>
-
 
 ## Actividad 03: Lectura de un Potenciómetro con ESP32
 Escribir un código que muestre en tiempo real la variación del potenciómetro conectado al
@@ -132,10 +126,6 @@ El envío se repitió cada 20 segundos
 Se realizaron las siguientes conexiones 
 - VCC a 3.3V
 - GND a GND
-
-<p align="center">
-  <img src="imagenes/actividad22.jpeg" width="850">
-</p>
 
 
 ## Código utilizado
