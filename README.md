@@ -76,7 +76,7 @@ El informe de la FAO (Food and Agriculture Organization of the United Nations) t
 
 Consideramos estas últimas situaciones las más controversiales, en las cuales se debe poner énfasis para buscar una solución. Como fue mencionado, se busca una mejora técnica que optimice y modernice el sistema de recolección y manipulación, que permita acelerar el transporte del tubérculo, para poder ofrecer una mayor cantidad de productos para la venta. En este sentido, para que sea aprovechable y se eviten mayores desperdicios a futuro.
 
-Bajo estas ideas nació Kartoffelmaschine. Un sistema que busca resolver la problemática planteada.
+Bajo estas ideas nació Kartoffelmaschine.
 
 <br>
 
@@ -85,11 +85,12 @@ Bajo estas ideas nació Kartoffelmaschine. Un sistema que busca resolver la prob
 ---
 
 <details>
-<summary><h2>¿Qué es Kartoffelmachine?</h2></summary>
+<summary><h2>Kartoffelmaschine</h2></summary>
 
 <br>
 
-Nuestro proyecto se denomina **Kartoffelmaschine** y consiste en el desarrollo de un sistema mecatrónico de **inspección continua de papas** que integra:
+Nuestro proyecto se denomina **Kartoffelmaschine**, como traducción literal: Máquina de papas.
+Consiste en el desarrollo de un sistema mecatrónico de **inspección continua de papas** que integra:
 
 <div align="center">
 
@@ -99,9 +100,10 @@ Nuestro proyecto se denomina **Kartoffelmaschine** y consiste en el desarrollo d
 
 </div>
 
+Para el proyecto, se decidió trabajar con e
 El sistema está orientado principalmente a la inspección de papas del **grupo Phureja**, como la papa **criolla o chaucha**, buscando identificar **defectos externos visibles** mientras los tubérculos avanzan continuamente por el sistema.
 
-**Kartoffelmachine** es un sistema diseñado para automatizar parte del proceso de inspección y selección de papas.
+**Kartoffelmaschine** es un sistema diseñado para automatizar parte del proceso de inspección y selección de papas.
 
 A diferencia de una inspección estática en la que se analiza un tubérculo detenido, nuestra propuesta busca trabajar con un **flujo continuo de papas mediante una faja transportadora**.
 
