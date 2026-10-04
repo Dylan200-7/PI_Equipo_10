@@ -64,6 +64,27 @@
 ---
 
 <details>
+<summary><h2>Problemática</h2></summary>
+
+<br>
+
+La papá es un tuberculo cuyo origen se remonta a Perú aproximadamente hace unos 7000 años. El banco de germoplasma del Centro Internacional de la Papa, considerado el más grande del mundo en su tipo, ha registrado más de 4 000 variedades de papa cultivada provenientes de diferentes partes del mundo. De estas, aproximadamente 3 000 fueron recolectadas en el Perú [7].
+
+Consecuentemente, el cultivo de papa se convirtió en una estrategia de subsistencia de la población, en especial para las ubicadas en las zonas altoandinas [1]. Según Pradel, economista agrícola del CIP con sede en Lima: “La papa es un cultivo fundamental para la seguridad alimentaria, que sustenta los medios de subsistencia de 700,000 personas, pero cada vez es más difícil de cultivar”. [6]
+
+El informe de la FAO (Food and Agriculture Organization of the United Nations) titulado *Strengthening Potato Value Chains* presenta una investigación relacionada con la post cosecha y las limitaciones presentes en la cadena de valor de la papa andina [1]. Según indica Manrique [1], debido a la ubicación geográfica existe una falta de asistencia técnica, lo que genera una cantidad limitada y variada de productos disponibles para la venta. Adicionalmente, su organización de venta está enfocada principalmente en las necesidades de la comunidad y no en las exigencias del mercado [1]. Esta situación incrementa los costos relacionados con la comercialización y las transacciones, así como los gastos por unidad asociados con la recolección, manipulación y transporte de los productos [1]. Esta situación se vió reflejada hasta 2019, año en el que la FAO indicó que en Perú se registraban perdidas (31.96%) de papa, desde el cultivo hasta la distribución [8]
+
+Consideramos estas últimas situaciones las más controversiales, en las cuales se debe poner énfasis para buscar una solución. Como fue mencionado, se busca una mejora técnica que optimice y modernice el sistema de recolección y manipulación, que permita acelerar el transporte del tubérculo, para poder ofrecer una mayor cantidad de productos para la venta. En este sentido, para que sea aprovechable y se eviten mayores desperdicios a futuro.
+
+Bajo estas ideas nació Kartoffelmaschine. Un sistema que busca resolver la problemática planteada.
+
+<br>
+
+</details>
+
+---
+
+<details>
 <summary><h2>¿Qué es Kartoffelmachine?</h2></summary>
 
 <br>
@@ -136,28 +157,6 @@ flowchart LR
 
     J --> K["Salidas clasificadas"]
 ```
-
----
-
-<details>
-<summary><h2>Problemática</h2></summary>
-
-<br>
-
-La papá es un tuberculo cuyo origen se remonta a Perú aproximadamente hace unos 7000 años. El banco de germoplasma del Centro Internacional de la Papa, considerado el más grande del mundo en su tipo, ha registrado más de 4 000 variedades de papa cultivada provenientes de diferentes partes del mundo. De estas, aproximadamente 3 000 fueron recolectadas en el Perú [7].
-
-Consecuentemente, el cultivo de papa se convirtió en una estrategia de subsistencia de la población, en especial para las ubicadas en las zonas altoandinas [1]. Según Pradel, economista agrícola del CIP con sede en Lima: “La papa es un cultivo fundamental para la seguridad alimentaria, que sustenta los medios de subsistencia de 700,000 personas, pero cada vez es más difícil de cultivar”. [6]
-
-El informe de la FAO (Food and Agriculture Organization of the United Nations) titulado *Strengthening Potato Value Chains* presenta una investigación relacionada con la post cosecha y las limitaciones presentes en la cadena de valor de la papa andina [1]. Según indica Manrique [1], debido a la ubicación geográfica existe una falta de asistencia técnica, lo que genera una cantidad limitada y variada de productos disponibles para la venta. Adicionalmente, su organización de venta está enfocada principalmente en las necesidades de la comunidad y no en las exigencias del mercado [1]. Esta situación incrementa los costos relacionados con la comercialización y las transacciones, así como los gastos por unidad asociados con la recolección, manipulación y transporte de los productos [1]. Esta situación se vió reflejada hasta 2019, año en el que la FAO indicó que en Perú se registraban perdidas (31.96%) de papa, desde el cultivo hasta la distribución [8]
-
-Consideramos estas últimas situaciones las más controversiales, en las cuales se debe poner énfasis para buscar una solución. Como fue mencionado, se busca una mejora técnica que optimice y modernice el sistema de recolección y manipulación, que permita acelerar el transporte del tubérculo, para poder ofrecer una mayor cantidad de productos para la venta. En este sentido, para que sea aprovechable y se eviten mayores desperdicios a futuro.
-
-Bajo estas ideas nació Kartoffelmaschine. Un sistema que busca resolver la problemática planteada.
-
-<br>
-
-</details>
-
 ---
 
 <details>
