@@ -426,10 +426,11 @@ Disponible en: https://doi.org/10.1016/j.compag.2018.07.012
 [3] Su Q, Kondo N, Al Riza DF, Habaragamuwa H. Potato quality grading based on depth imaging and convolutional neural network. J Food Qual. 2020. 
 en: https://doi.org/10.1155/2020/8815896
 
-[4] United Nations. Goal 12: Ensure sustainable consumption and production patterns [Internet]. New York: United Nations; [citado 3 oct 2026]. Disponible en: https://sdgs.un.org/goals/goal12
+[4] United Nations. Goal 12: Ensure sustainable consumption and production patterns [Internet]. New York: United Nations; [citado 3 oct 2026]. 
+Disponible en: https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/
 
 [5] United Nations. Goal 9: Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation [Internet]. New York: United Nations; [citado 3 oct 2026]. 
-Disponible en: https://sdgs.un.org/goals/goal9
+Disponible en: https://www.un.org/sustainabledevelopment/es/infrastructure/
 
 [6] Centro Internacional de la Papa. Aumento de los beneficios de la papa en el Perú [Internet]. Lima: Centro Internacional de la Papa; [citado 3 oct 2026]. 
 Disponible en: https://cipotato.org/es/cip_50/historias/aumento-beneficios-papa-peru/
