@@ -288,17 +288,9 @@ Separar automáticamente las papas según el resultado obtenido por el sistema.
 
 Kartoffelmachine se relaciona principalmente con los:
 
-### ODS 12 + ODS 9
-
-</div>
-
-<br>
-
-<div align="center">
-
 | ODS 9 | ODS 12 |
 |---|---|
-| <img src="Recursos/Imágenes/sustainable_development_goal9.jpg" width="90"/> | <img src="Recursos/Imágenes/sustainable_development_goal12.png" width="90"/> | 
+| <img src="Recursos/Imágenes/sustainable_development_goal9.jpg" width="120"/> | <img src="Recursos/Imágenes/sustainable_development_goal12.png" width="120"/> | 
 
 </div>
 
