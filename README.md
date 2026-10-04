@@ -292,6 +292,14 @@ Kartoffelmachine se relaciona principalmente con los:
 
 </div>
 
+<br>
+
+<div align="center">
+
+
+
+</div>
+
 ---
 
 <details>
@@ -337,14 +345,6 @@ de alimentos. No obstante, es posible abordar esta problemática a través de in
 Por consiguiente, nuestro proyecto busca contribuir a mejorar los procesos de filtro y selección de la papa, utilizando tecnologías que permitan 
 identificar automáticamente las condiciones externas del tuberculo. Una clasificación más eficiente puede facilitar la toma de decisiones durante
 etapas posteriores a la cosecha y así acelerar el proceso de transporte y distribución, por ende, contribuir al aprovechamiento máximo del tubérculo.
-
-<br>
-
-<div align="center">
-
-**Producción → Inspección → Evaluación → Clasificación → Mejor aprovechamiento**
-
-</div>
 
 <br>
 </details>
