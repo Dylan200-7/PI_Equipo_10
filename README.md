@@ -295,6 +295,27 @@ Kartoffelmachine se relaciona principalmente con los:
 ---
 
 <details>
+<summary><h2>ODS 9 — Industria, Innovación e Infraestructura</h2></summary>
+
+<br>
+
+### Meta 9.5
+
+> Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales de todos los países, en particular los países en desarrollo, entre otras cosas fomentando la innovación...” [5].
+
+### Relación con Kartoffelmachine
+
+El crecimiento económico, el desarrollo social y la acción por el clima van de la mano con las inversiones en infraestructura y en especial el desarrollo industrial sostenible y el proceso tecnológico. El gran crecimiento económico ha dejado evidente las desigualdades que existen en el mercado mundial. Por ello, se busca un crecimiento sostenible que implique una industrialización que permita oportunidades a todas las personas y apoyo en innovación tecnológica e infraestructuras resistentes. 
+
+En este sentido, Kartoffelmaschine busca brindar una asistencia técnica en el proceso de selección/filtro de papas. La optimización de este proceso es fundamental para evitar el aumento de gastos por unidad asociados con la recolección, manipulación y transporte de los productos. Y de igual manera, reducir las pérdidas registradas desde el cultivo hasta la distribución.
+
+<br>
+
+</details>
+
+---
+
+<details>
 <summary><h2>ODS 12 — Producción y Consumo Responsables</h2></summary>
 
 <br>
@@ -321,28 +342,7 @@ Una clasificación más eficiente puede facilitar la toma de decisiones durante 
 
 </details>
 
----
-
-<details>
-<summary><h2>ODS 9 — Industria, Innovación e Infraestructura</h2></summary>
-
-<br>
-
-### Meta 9.5
-
-> Aumentar la investigación científica y mejorar la capacidad tecnológica de los sectores industriales, fomentando la innovación y aumentando las capacidades de investigación y desarrollo [5].
-
-### Relación con Kartoffelmachine
-
-Kartoffelmachine integra diferentes áreas tecnológicas como la **mecatrónica, visión artificial, Machine Learning y sistemas embebidos** para desarrollar una solución aplicada al proceso de inspección y clasificación de productos agrícolas.
-
-El proyecto se relaciona con este objetivo debido al uso de tecnologías digitales y automatización para el desarrollo de una propuesta orientada al sector agrícola.
-
-<br>
-
-</details>
-
----
+----
 
 ## Kartoffelmachine en una mirada
 
