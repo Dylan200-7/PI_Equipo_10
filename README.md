@@ -305,12 +305,11 @@ Kartoffelmachine se relaciona principalmente con los:
 
 ### Relación con Kartoffelmachine
 
-El crecimiento económico, el desarrollo social y la acción por el clima van de la mano con las inversiones en infraestructura y en especial el desarrollo industrial sostenible y el proceso tecnológico. El gran crecimiento económico ha dejado evidente las desigualdades que existen en el mercado mundial. Por ello, se busca un crecimiento sostenible que implique una industrialización que permita oportunidades a todas las personas y apoyo en innovación tecnológica e infraestructuras resistentes. 
+El crecimiento económico, el desarrollo social y la acción por el clima van de la mano con las inversiones en infraestructura y en especial el desarrollo industrial sostenible y el proceso tecnológico. El gran crecimiento económico ha dejado evidente las desigualdades que existen en el mercado mundial. Por ello, se busca un crecimiento sostenible que implique una industrialización que permita oportunidades a todas las personas y apoyo en innovación tecnológica e infraestructuras resistentes [5]. 
 
 En este sentido, Kartoffelmaschine busca brindar una asistencia técnica en el proceso de selección/filtro de papas. La optimización de este proceso es fundamental para evitar el aumento de gastos por unidad asociados con la recolección, manipulación y transporte de los productos. Y de igual manera, reducir las pérdidas registradas desde el cultivo hasta la distribución.
 
 <br>
-
 </details>
 
 ---
@@ -339,7 +338,6 @@ Una clasificación más eficiente puede facilitar la toma de decisiones durante 
 </div>
 
 <br>
-
 </details>
 
 ----
