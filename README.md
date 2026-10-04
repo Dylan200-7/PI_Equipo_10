@@ -305,9 +305,14 @@ Kartoffelmachine se relaciona principalmente con los:
 
 ### Relación con Kartoffelmachine
 
-El crecimiento económico, el desarrollo social y la acción por el clima van de la mano con las inversiones en infraestructura y en especial el desarrollo industrial sostenible y el proceso tecnológico. El gran crecimiento económico ha dejado evidente las desigualdades que existen en el mercado mundial. Por ello, se busca un crecimiento sostenible que implique una industrialización que permita oportunidades a todas las personas y apoyo en innovación tecnológica e infraestructuras resistentes [5]. 
+El crecimiento económico, el desarrollo social y la acción por el clima van de la mano con las inversiones en infraestructura y en especial 
+el desarrollo industrial sostenible y el proceso tecnológico. El gran crecimiento económico ha dejado evidente las desigualdades que existen 
+en el mercado mundial. Por ello, se busca un crecimiento sostenible que implique una industrialización que permita oportunidades a todas las 
+personas y apoyo en innovación tecnológica e infraestructuras resistentes [5]. 
 
-En este sentido, Kartoffelmaschine busca brindar una asistencia técnica en el proceso de selección/filtro de papas. La optimización de este proceso es fundamental para evitar el aumento de gastos por unidad asociados con la recolección, manipulación y transporte de los productos. Y de igual manera, reducir las pérdidas registradas desde el cultivo hasta la distribución.
+En este sentido, Kartoffelmaschine busca brindar una asistencia técnica en el proceso de selección/filtro de papas. La optimización de este 
+proceso es fundamental para evitar el aumento de gastos por unidad asociados con la recolección, manipulación y transporte de los productos. 
+Y de igual manera, reducir las pérdidas registradas desde el cultivo hasta la distribución.
 
 <br>
 </details>
@@ -321,13 +326,17 @@ En este sentido, Kartoffelmaschine busca brindar una asistencia técnica en el p
 
 ### Meta 12.3
 
-> De aquí a 2030, reducir a la mitad el desperdicio de alimentos per cápita mundial en la venta al por menor y a nivel de los consumidores, y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas las pérdidas posteriores a la cosecha [4].
+> De aquí a 2030, reducir a la mitad el desperdicio de alimentos per cápita mundial en la venta al por menor y a nivel de los consumidores,
+> y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas las pérdidas posteriores a la cosecha [4].
 
 ### Relación con Kartoffelmachine
 
-El proyecto busca contribuir a mejorar los procesos de **inspección y selección de productos agrícolas**, utilizando tecnologías que permitan identificar automáticamente las condiciones externas de los tubérculos.
+Un indicio de consumo excesivo es el desperdicio de alimentos. Anualmente, se desperdicia una cantidad asombrosa de 931 millones de toneladas 
+de alimentos. No obstante, es posible abordar esta problemática a través de inversiones en tecnologías, enseñanzas y supervisión. 
 
-Una clasificación más eficiente puede facilitar la toma de decisiones durante etapas posteriores a la cosecha y contribuir al aprovechamiento adecuado de los productos agrícolas.
+Por consiguiente, nuestro proyecto busca contribuir a mejorar los procesos de filtro y selección de la papa, utilizando tecnologías que permitan 
+identificar automáticamente las condiciones externas del tuberculo. Una clasificación más eficiente puede facilitar la toma de decisiones durante
+etapas posteriores a la cosecha y así acelerar el proceso de transporte y distribución, por ende, contribuir al aprovechamiento máximo del tubérculo.
 
 <br>
 
