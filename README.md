@@ -144,17 +144,14 @@ flowchart LR
 
 <br>
 
-El informe de la FAO (Food and Agriculture Organization of the United Nations) titulado *Strengthening Potato Value Chains* presenta una investigación relacionada con la poscosecha y las limitaciones presentes en la cadena de valor de la papa andina [1].
+La papá es un tuberculo cuyo origen se remonta a Perú aproximadamente hace unos 7000 años. El banco de germoplasma del Centro Internacional de la Papa, considerado el más grande del mundo en su tipo, ha registrado más de 4 000 variedades de papa cultivada provenientes de diferentes partes del mundo. De estas, aproximadamente 3 000 fueron recolectadas en el Perú [7].
 
-En primer lugar, el Perú es un país que cuenta con una gran diversidad de papas, estimada en unas 2800 variedades [1].
+Consecuentemente, el cultivo de papa se convirtió en una estrategia de subsistencia de la población, en especial para las ubicadas en las zonas altoandinas [1]. Según Pradel, economista agrícola del CIP con sede en Lima: “La papa es un cultivo fundamental para la seguridad alimentaria, que sustenta los medios de subsistencia de 700,000 personas, pero cada vez es más difícil de cultivar”. [6]
 
-Por lo que, el cultivo de papa se convirtió en una estrategia de subsistencia de la población, en especial para las ubicadas en las zonas altoandinas [1].
+El informe de la FAO (Food and Agriculture Organization of the United Nations) titulado *Strengthening Potato Value Chains* presenta una investigación relacionada con la poscosecha y las limitaciones presentes en la cadena de valor de la papa andina [1]. Según indica Manrique [1], debido a la ubicación geográfica existe una falta de asistencia técnica, lo que genera una cantidad limitada y variada de productos disponibles para la venta.
 
-No obstante, el informe reveló que debido a la ubicación geográfica existe una falta de asistencia técnica. Consecuentemente, esto genera una cantidad limitada y variada de productos disponibles para la venta [1].
+Adicionalmente, su organización de venta está enfocada principalmente en las necesidades de la comunidad y no en las exigencias del mercado [1]. Esta situación incrementa los costos relacionados con la comercialización y las transacciones, así como los gastos por unidad asociados con la recolección, manipulación y transporte de los productos [1]. Esta situación se vió reflejada hasta 2019, año en el que la FAO indicó que en Perú se registraban perdidas (31.96%) de papa, desde el cultivo hasta la distribución [8]
 
-Adicionalmente, su organización de venta está enfocada principalmente en las necesidades de la comunidad y no en las exigencias del mercado [1].
-
-Esta situación incrementa los costos relacionados con la comercialización y las transacciones, así como los gastos por unidad asociados con la recolección, manipulación y transporte de los productos [1].
 
 Consideramos estas últimas tres situaciones las más fundamentales.
 
@@ -422,21 +419,28 @@ Somos el **Grupo 10** del curso **Proyecto Integrador**, semestre 2026-02. Nuest
 ---
 
 ## Referencias
+[1] Cromme N, Prakash AB, Lutaladio N, Ezeta F, editores. Strengthening potato value chains: Technical and policy options for developing countries [Internet]. Rome: Food and Agriculture Organization of the United Nations; 2010. 
+Disponible en: https://www.fao.org/4/i1710e/i1710e.pdf
 
-[1] Cromme, N., Prakash, A. B., Lutaladio, N., & Ezeta, F. (Eds.). (2010). *Strengthening potato value chains: Technical and policy options for developing countries*. Food and Agriculture Organization of the United Nations (FAO) & Common Fund for Commodities.  
-https://www.fao.org/4/i1710e/i1710e.pdf
+[2] Su Q, Kondo N, Li M, Sun H, Al Riza DF, Habaragamuwa H. Potato quality grading based on machine vision and 3D shape analysis. Comput Electron Agric. 2018. 
+Disponible en: https://doi.org/10.1016/j.compag.2018.07.012
 
-[2] Su, Q., Kondo, N., Li, M., Sun, H., Al Riza, D. F., & Habaragamuwa, H. (2018). *Potato quality grading based on machine vision and 3D shape analysis*. Computers and Electronics in Agriculture, 152, 261–268.  
-https://doi.org/10.1016/j.compag.2018.07.012
+[3] Su Q, Kondo N, Al Riza DF, Habaragamuwa H. Potato quality grading based on depth imaging and convolutional neural network. J Food Qual. 2020. 
+en: https://doi.org/10.1155/2020/8815896
 
-[3] Su, Q., Kondo, N., Al Riza, D. F., & Habaragamuwa, H. (2020). *Potato quality grading based on depth imaging and convolutional neural network*. Journal of Food Quality, 2020, 8815896.  
-https://doi.org/10.1155/2020/8815896
+[4] United Nations. Goal 12: Ensure sustainable consumption and production patterns [Internet]. New York: United Nations; [citado 3 oct 2026]. Disponible en: https://sdgs.un.org/goals/goal12
 
-[4] United Nations. (s. f.). *Goal 12: Ensure sustainable consumption and production patterns*. Sustainable Development Goals.  
-https://sdgs.un.org/goals/goal12
+[5] United Nations. Goal 9: Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation [Internet]. New York: United Nations; [citado 3 oct 2026]. 
+Disponible en: https://sdgs.un.org/goals/goal9
 
-[5] United Nations. (s. f.). *Goal 9: Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation*. Sustainable Development Goals.  
-https://sdgs.un.org/goals/goal9
+[6] Centro Internacional de la Papa. Aumento de los beneficios de la papa en el Perú [Internet]. Lima: Centro Internacional de la Papa; [citado 3 oct 2026]. 
+Disponible en: https://cipotato.org/es/cip_50/historias/aumento-beneficios-papa-peru/
+
+[7] Ministerio de Agricultura y Riego, Instituto Nacional de Innovación Agraria. Catálogo de variedades de papa nativa [Internet]. Lima: Instituto Nacional de Innovación Agraria; 2017. 
+Disponible en: https://cipotato.org/es/cip_50/historias/aumento-beneficios-papa-peru/
+
+[8] Redacción. La papa es el tercer alimento que más se desperdicia en Perú [Internet]. Agraria.pe. 2019. [citado 3 oct 2026]. 
+Disponible en: https://www.agraria.pe/noticias/la-papa-es-el-tercer-alimento-que-mas-se-desperdicia-en-peru-19781
 
 ---
 
