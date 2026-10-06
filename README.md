@@ -439,7 +439,7 @@ Disponible en: https://www.un.org/sustainabledevelopment/es/infrastructure/
 Disponible en: https://cipotato.org/es/cip_50/historias/aumento-beneficios-papa-peru/
 
 [7] Ministerio de Agricultura y Riego, Instituto Nacional de Innovación Agraria. Catálogo de variedades de papa nativa [Internet]. Lima: Instituto Nacional de Innovación Agraria; 2017. 
-Disponible en: https://cipotato.org/es/cip_50/historias/aumento-beneficios-papa-peru/
+Disponible en: [https://cipotato.org/es/cip_50/historias/aumento-beneficios-papa-peru/](http://hdl.handle.net/20.500.13036/391)
 
 [8] Redacción. La papa es el tercer alimento que más se desperdicia en Perú [Internet]. Agraria.pe. 2019. [citado 3 oct 2026]. 
 Disponible en: https://www.agraria.pe/noticias/la-papa-es-el-tercer-alimento-que-mas-se-desperdicia-en-peru-19781
