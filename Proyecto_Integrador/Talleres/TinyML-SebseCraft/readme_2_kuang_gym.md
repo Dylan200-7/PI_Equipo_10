@@ -7,7 +7,7 @@
 
 ## 1. Introducción
 
-En esta práctica trabajamos con SenseCraft AI para entrenar y probar un modelo de clasificación de imágenes que pudiera diferenciar dos objetos: un mono y un mapache
+En esta práctica trabajamos con SenseCraft AI para entrenar y probar un modelo de clasificación de imágenes que pudiera diferenciar dos objetos: un tomatodo y un celular.
 
 Para realizar la actividad utilizamos fotografías de ambos objetos, las herramientas de entrenamiento de la plataforma y la XIAO ESP32S3 Sense para comprobar los resultados.
 
@@ -24,9 +24,10 @@ Para realizar la actividad utilizamos fotografías de ambos objetos, las herrami
 
 Primero ingresamos a SenseCraft AI y seleccionamos la opción **Modelos → Entrenamiento → Clasificación de imágenes**.
 
+![1](imagenes/Imagen1.jpeg)
+
+
 Para nuestro modelo trabajamos con dos categorías:
 
-- **Mono:** imágenes del mono.
-- **Mapache:** imágenes del mapache.
-
-El objetivo fue que el modelo aprendiera a diferenciar ambos objetos a partir de las imágenes utilizadas.
+- **Mapache:** imágenes del Mapache.
+- **Mono:** imágenes del Mono.
