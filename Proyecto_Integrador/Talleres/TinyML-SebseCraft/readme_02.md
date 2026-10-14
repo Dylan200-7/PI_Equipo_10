@@ -74,7 +74,7 @@ Al ingresar al espacio de trabajo, inicialmente la plataforma indicaba que no ha
 
 Posteriormente logramos conectar el dispositivo y ejecutar el modelo desde la vista previa.
 
-### 4.1. Prueba con el TOMATODO
+### 4.1. Prueba con el TOMATODO [Nicole Anyosa]
 
 Primero colocamos el tomatodo frente a la cámara.
 
@@ -89,7 +89,7 @@ Observamos que el modelo mostró los siguientes resultados:
 
 En esta prueba el modelo identificó correctamente el objeto que estábamos mostrando.
 
-### 4.2. Prueba con el CELULAR
+### 4.2. Prueba con el CELULAR [Dylan Quispe]
 
 Después retiramos el tomatodo y colocamos un celular frente a la cámara para comprobar si el modelo podía diferenciar ambos objetos.
 

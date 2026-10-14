@@ -48,7 +48,7 @@ La configuración que utilizamos fue:
 
 ## 3. Pruebas de detección
 
-### 3.1. Detección MALE [Nicole Anyosa]
+### 3.1. Detección MALE [Josue Mogollon]
 
 Para comenzar colocamos a uno de los integrantes frente a la cámara.
 
