@@ -24,7 +24,7 @@ Para realizar la actividad utilizamos fotografías de ambos objetos, las herrami
 
 Primero ingresamos a SenseCraft AI y seleccionamos la opción **Modelos → Entrenamiento → Clasificación de imágenes**.
 
-![1](imagenes/imagen_1.jpeg)
+![1](imagenes/0001.jpeg)
 
 
 Para nuestro modelo trabajamos con dos categorías:
