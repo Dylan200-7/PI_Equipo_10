@@ -1,241 +1,254 @@
-# Clasificación de objetos «TomaTodo» y «Celular» con SenseCraft AI
 
-**Práctica de laboratorio | Universidad Peruana Cayetano Heredia (UPCH)**  
-**Fecha:** 13 de octubre de 2026  
-**Plataforma:** [SenseCraft AI](https://sensecraft.seeed.cc/ai/)  
-**Dispositivo objetivo y de pruebas:** XIAO ESP32S3 Sense  
-**Tipo de práctica:** Preparación de datos, entrenamiento y prueba de un modelo personalizado de clasificación de imágenes.
+# Clasificación de Tomatodo y Celular con SenseCraft AI
+
+**Universidad:** Universidad Peruana Cayetano Heredia (UPCH)  
+**Fecha:** 13/10/2026  
+**Plataforma:** SenseCraft AI  
+**Dispositivo:** XIAO ESP32S3 Sense
 
 ## 1. Introducción
 
-En esta actividad trabajé con **SenseCraft AI** para crear y probar un modelo de inteligencia artificial capaz de clasificar imágenes en dos categorías: **`TomaTodo`** y **`Celular`**. A diferencia de la práctica con el modelo preentrenado de género, en este caso se utilizó un **modelo personalizado** que aparece en el espacio de trabajo con el nombre **`Xiao_20261013223033 (TomaTodo, Celular)`**, versión **`1.0.0`**.
+En esta segunda actividad trabajamos con SenseCraft AI para crear y probar un modelo de clasificación de imágenes.
 
-Realicé las pruebas utilizando la **XIAO ESP32S3 Sense** y su sistema de cámara. También exploré la posibilidad de capturar imágenes de entrenamiento desde la **webcam de la laptop**, funcionalidad disponible en la interfaz de SenseCraft AI. Finalmente, configuré una condición de salida para encender un LED cuando la clase `TomaTodo` fuera reconocida con una confianza superior al umbral establecido.
+A diferencia de la práctica anterior, donde utilizamos un modelo preentrenado, en esta ocasión trabajamos con un modelo personalizado para reconocer dos objetos: un **tomatodo** y un **celular**.
 
-> **Importante:** se trata de **clasificación de la imagen completa** en dos categorías. No es un sistema de detección con recuadros que ubique físicamente cada objeto en la escena.
+Para realizar la actividad exploramos las opciones de entrenamiento, utilizamos la webcam de una laptop para recolectar imágenes y probamos el modelo con la XIAO ESP32S3 Sense.
 
-## 2. Objetivos
+También configuramos una acción GPIO para relacionar el reconocimiento del tomatodo con el funcionamiento de un LED.
 
-- Explorar el entrenamiento de clasificación de imágenes de SenseCraft AI.
-- Definir las clases `TomaTodo` y `Celular`.
-- Documentar la opción de adquisición de imágenes desde webcam y la elección del dispositivo objetivo.
-- Realizar pruebas de inferencia con el modelo entrenado desde la XIAO ESP32S3 Sense.
-- Registrar los resultados de clasificación que muestra la plataforma.
-- Configurar una regla GPIO/LED basada en la clase `TomaTodo`.
-- Conservar el conjunto de imágenes en `datos.zip` y el modelo de inferencia en formato `.tflite` para su publicación posterior en GitHub.
+## 2. Materiales utilizados
 
-## 3. Materiales y herramientas
+- XIAO ESP32S3 Sense.
+- Laptop con webcam.
+- Cable USB.
+- Tomatodo.
+- Celular.
+- Plataforma SenseCraft AI.
+- Imágenes de los objetos utilizados.
 
-| Elemento | Utilidad |
-|---|---|
-| XIAO ESP32S3 Sense | Dispositivo donde se probó el modelo |
-| Cámara de la XIAO | Captura de objetos en el espacio de trabajo |
-| Laptop con webcam | Alternativa para recolectar imágenes en la página de entrenamiento |
-| Cable USB de datos | Conexión entre el dispositivo y la laptop |
-| SenseCraft AI en Google Chrome | Recolección, entrenamiento, despliegue, prueba y GPIO |
-| Tomatodo | Objeto de la primera categoría |
-| Teléfono celular | Objeto de la segunda categoría |
-| `datos.zip` | Archivo que contendrá las fotografías de las dos clases |
-| `modelo_tomatodo_celular.tflite` | Archivo del modelo que se añadirá a este repositorio |
+## 3. Procedimiento
 
-## 4. Preparación del modelo
+### 3.1. Exploración de la plataforma
 
-### 4.1. Revisión de la biblioteca y compatibilidad
+Primero ingresamos a SenseCraft AI y revisamos los diferentes modelos disponibles en la biblioteca.
 
-Antes de entrenar, revisé las herramientas y los filtros de la plataforma. SenseCraft AI permite seleccionar tareas de detección o clasificación, además de filtrar modelos por el hardware compatible. En nuestro caso se trabajó con la **XIAO ESP32S3 Sense**.
+Observamos que la plataforma cuenta con distintas opciones, como detección de objetos, clasificación de imágenes y otros modelos que se pueden utilizar dependiendo del dispositivo.
 
-![Filtros y tipos de tareas](imagenes/05_filtros_de_modelos.png)
+También revisamos los filtros disponibles para seleccionar el tipo de tarea y los dispositivos compatibles.
 
-*Figura 1. Filtros de tareas y dispositivos compatibles disponibles en SenseCraft AI.*
+![Filtros de modelos](imagenes/05_filtros_de_modelos.png)
 
-### 4.2. Primer intento de conexión
+*Figura 1. Opciones de clasificación y dispositivos compatibles.*
 
-En el espacio de trabajo de la XIAO, la interfaz mostró el aviso **«No está conectado al dispositivo. Por favor conéctese primero»**. Mientras la placa no estaba conectada, las opciones de carga de modelo y vista previa aparecían deshabilitadas.
+### 3.2. Conexión del dispositivo
+
+Luego ingresamos al espacio de trabajo y seleccionamos **XIAO ESP32S3 Sense**.
+
+Al inicio la plataforma mostraba un mensaje indicando que el dispositivo no estaba conectado, por lo que todavía no podíamos ejecutar ningún modelo.
 
 ![Dispositivo desconectado](imagenes/01_dispositivo_desconectado.png)
 
-*Figura 2. Estado inicial del espacio de trabajo sin conexión al dispositivo.*
+*Figura 2. Espacio de trabajo sin conexión al dispositivo.*
 
-Se conservó esta captura para registrar una dificultad inicial. Las capturas de resultados posteriores evidencian que el sistema finalmente logró ejecutar el modelo; no se puede determinar solo con las imágenes qué ajuste resolvió la conexión.
+Posteriormente conseguimos establecer la conexión para continuar con las pruebas.
 
-### 4.3. Acceso a la sección de entrenamiento
+### 3.3. Creación del modelo de clasificación
 
-Ingresé a **Modelos → Entrenamiento → Detección de Clasificación de Imágenes**. La plataforma presenta tres etapas: **recolección de datos de clasificación**, **entrenamiento** y **despliegue/vista previa**.
+Después ingresamos a la sección **Modelos → Entrenamiento** y seleccionamos la opción de clasificación de imágenes.
 
-En la pantalla inicial aparecen dos categorías con los nombres provisionales `Class 1` y `Class 2`. Después, el modelo utilizado en las pruebas aparece con las etiquetas definitivas `TomaTodo` y `Celular`.
+La plataforma nos mostró tres pasos:
 
-![Pantalla inicial de entrenamiento](imagenes/02_entrenamiento_clases_iniciales.png)
+1. Recolección de datos.
+2. Entrenamiento.
+3. Despliegue y vista previa.
 
-*Figura 3. Pantalla inicial del entrenamiento con dos clases aún sin muestras visibles.*
+En el primer paso aparecían dos categorías llamadas `Class 1` y `Class 2`, las cuales podían modificarse.
 
-Las clases se pueden renombrar usando el ícono de edición, y SenseCraft AI permite agregar nuevas categorías, importar imágenes de un dataset existente o exportar las imágenes capturadas.
+Para nuestro trabajo utilizamos dos clases:
 
-### 4.4. Uso de la cámara de la laptop para capturar imágenes
+- **TomaTodo:** para reconocer el tomatodo.
+- **Celular:** para reconocer el teléfono celular.
 
-Seleccioné la opción **Webcam** como fuente de entrada en la sección de recolección. La cámara de la laptop mostró video dentro de la propia página, y se habilitó la opción **«Mantener para grabar»**, con la que se pueden capturar imágenes de entrenamiento.
+![Entrenamiento](imagenes/02_entrenamiento_clases_iniciales.png)
 
-![Webcam habilitada en entrenamiento](imagenes/04_entrenamiento_webcam.png)
+*Figura 3. Pantalla de entrenamiento y creación de categorías.*
 
-*Figura 4. Acceso a la webcam desde SenseCraft AI para la recolección de imágenes.*
+### 3.4. Recolección de imágenes con la webcam
 
-Esta captura demuestra que la **webcam se puede utilizar como fuente de imágenes durante el entrenamiento**. No demuestra que una webcam pueda sustituir a la XIAO como dispositivo conectado en el **Espacio de trabajo** o como destino de despliegue.
+Una de las herramientas que probamos fue la opción para utilizar la cámara de la laptop.
 
-Para construir un dataset útil se deben incorporar fotografías de cada categoría desde diferentes ángulos, posiciones e iluminaciones y evitar que el modelo dependa únicamente del fondo. El **número exacto de fotografías utilizadas en esta práctica aún debe verificarse con `datos.zip`**, que se añadirá posteriormente.
+Seleccionamos **Webcam** como fuente de entrada y comprobamos que SenseCraft AI mostraba la imagen capturada por la cámara.
 
-### 4.5. Selección del dispositivo objetivo
+También encontramos la opción **Mantener para grabar**, que permite recolectar imágenes para las categorías del modelo.
 
-En la etapa **Paso 2: Entrenar**, revisé las opciones de hardware y seleccioné **XIAO ESP32S3 Sense** como dispositivo objetivo. La plataforma ofrece otras alternativas, pero el modelo de esta práctica se evaluó en la XIAO.
+![Webcam](imagenes/04_entrenamiento_webcam.png)
 
-![Menú de selección de hardware](imagenes/03_seleccion_dispositivo_objetivo.png)
+*Figura 4. Prueba de la webcam desde SenseCraft AI.*
 
-*Figura 5. Opciones del dispositivo objetivo, incluida la XIAO ESP32S3 Sense.*
+Con esta opción comprobamos que podíamos utilizar la cámara de la laptop durante la recolección de imágenes, sin necesidad de utilizar la cámara de la XIAO en esa etapa.
 
-### 4.6. Modelo personalizado resultante
+### 3.5. Selección del dispositivo
 
-En las capturas de la etapa de pruebas se observa un modelo cargado con la siguiente información:
+En el segundo paso revisamos las opciones disponibles para entrenar el modelo según el dispositivo que se iba a utilizar.
 
-| Campo | Información visible |
+La plataforma mostraba diferentes dispositivos compatibles, entre ellos Grove Vision AI V2, SenseCAP y XIAO ESP32S3 Sense.
+
+Para nuestra práctica seleccionamos **XIAO ESP32S3 Sense**, ya que era el dispositivo que estábamos utilizando en el laboratorio.
+
+![Dispositivos disponibles](imagenes/03_seleccion_dispositivo_objetivo.png)
+
+*Figura 5. Selección del dispositivo para el modelo.*
+
+### 3.6. Modelo utilizado
+
+Después trabajamos con el modelo personalizado que aparecía en nuestro espacio de trabajo.
+
+La información mostrada por la plataforma fue la siguiente:
+
+| Parámetro | Información |
 |---|---|
-| Nombre mostrado | `Xiao_20261013223033 (TomaTodo, Celular)` |
-| Versión | `1.0.0` |
+| Nombre del modelo | Xiao_20261013223033 |
+| Versión | 1.0.0 |
 | Tipo | Clasificación de imágenes |
-| Categorías | `TomaTodo` y `Celular` |
+| Categorías | TomaTodo y Celular |
 | Dispositivo | XIAO ESP32S3 Sense |
-| Archivo para el repositorio | `modelo/modelo_tomatodo_celular.tflite` (pendiente de incorporar) |
 
-Aunque el modelo aparece ejecutándose, las capturas proporcionadas **no incluyen el historial del entrenamiento, la cantidad de épocas ni las métricas de entrenamiento o validación**. Esos datos no se estiman ni se inventan en esta documentación.
+Este modelo fue utilizado para realizar las pruebas con los dos objetos.
 
-## 5. Pruebas de clasificación
+### 3.7. Prueba con el tomatodo [Nicole Anyosa]
 
-### 5.1. Prueba con un tomatodo
+Para comenzar colocamos un tomatodo frente a la cámara del dispositivo.
 
-Primero coloqué un tomatodo frente a la cámara. La plataforma presentó la clasificación **`TomaTodo: 100 %`** y **`Celular: 0 %`** en el fotograma registrado. También se aprecia el panel con la información del modelo y los registros de inferencia.
+En la vista previa observamos que el modelo mostraba las dos categorías con sus porcentajes de confianza.
 
-![Resultado TomaTodo](imagenes/06_resultado_tomatodo.png)
+El resultado obtenido fue:
 
-*Figura 6. Prueba del modelo con un tomatodo; predicción mostrada de 100 %.*
+- **TomaTodo:** 100 %.
+- **Celular:** 0 %.
 
-### 5.2. Prueba con un celular
+![Resultado Tomatodo](imagenes/06_resultado_tomatodo.png)
 
-Después coloqué un teléfono celular en el área de visión. En la captura se muestra la categoría **`Celular: 89 %`** y **`TomaTodo: 0 %`**.
+*Figura 6. Resultado de la clasificación del tomatodo.*
+
+Durante esta prueba el modelo identificó correctamente el tomatodo que colocamos frente a la cámara.
+
+### 3.8. Prueba con el celular [Dylan Quispe]
+
+Después retiramos el tomatodo y colocamos un celular frente a la cámara para comprobar si el modelo podía distinguir entre ambos objetos.
+
+En esta ocasión observamos los siguientes resultados:
+
+- **Celular:** 89 %.
+- **TomaTodo:** 0 %.
 
 ![Resultado Celular](imagenes/07_resultado_celular.png)
 
-*Figura 7. Prueba del modelo con un celular; predicción mostrada de 89 %.*
+*Figura 7. Resultado de la clasificación del celular.*
 
-### 5.3. Resumen de resultados
+Con esta segunda prueba comprobamos que el modelo mostraba predicciones diferentes dependiendo del objeto colocado frente a la cámara.
 
-| N.º | Objeto presentado | Clase mostrada | Confianza registrada | Evidencia |
-|---:|---|---|---:|---|
-| 1 | Tomatodo | `TomaTodo` | 100 % | Figura 6 |
-| 2 | Celular | `Celular` | 89 % | Figura 7 |
+### 3.9. Configuración GPIO
 
-**Interpretación:** en los fotogramas documentados el modelo asignó la clase esperada a los objetos presentados. Los porcentajes son salidas puntuales de confianza, **no representan la exactitud del modelo sobre un conjunto de prueba**. Para calcular una matriz de confusión y métricas como precisión, recall o accuracy, se requeriría evaluar múltiples imágenes etiquetadas que no hayan sido usadas en el entrenamiento.
+Después de realizar las pruebas ingresamos a **Salida → GPIO**.
 
-## 6. Configuración de salida GPIO
+En esta sección configuramos una condición para que el LED se active cuando el modelo reconozca la clase `TomaTodo` con una confianza mayor a 60.
 
-Luego ingresé a **Salida → GPIO** y registré una acción que relaciona la clasificación `TomaTodo` con el encendido de un LED.
+Los valores utilizados fueron:
 
-| Campo | Valor observado |
+| Parámetro | Configuración |
 |---|---|
-| Objeto / categoría | `TomaTodo` |
-| Salida | `LED` |
+| Objeto | TomaTodo |
+| GPIO | LED |
 | Condición | Mayor que |
-| Confianza | `60` |
-| Estado predeterminado | LED apagado |
+| Confianza | 60 |
+| Estado inicial | LED apagado |
 | Estado activo | LED encendido |
 
-![GPIO TomaTodo](imagenes/08_configuracion_gpio_tomatodo.png)
+![GPIO Tomatodo](imagenes/08_configuracion_gpio_tomatodo.png)
 
-*Figura 8. Regla GPIO configurada para la categoría `TomaTodo`, confianza mayor que 60.*
+*Figura 8. Configuración GPIO para la detección del tomatodo.*
 
-La regla busca activar la salida cuando se cumple la condición configurada. La captura **verifica la configuración en la interfaz**, pero **no documenta de manera concluyente el cambio físico del LED**. Para completar esta prueba se recomienda registrar una foto o video en la que se observe el LED apagado y encendido mientras se alternan los objetos.
+Esta parte nos permitió conocer cómo se puede configurar una acción dependiendo de los resultados obtenidos por el modelo.
 
-## 7. Evidencia física del trabajo
+En las capturas se observa la condición configurada, aunque no se registra una prueba física del encendido del LED.
 
-Además de las pruebas en pantalla, tomé una fotografía del montaje en el laboratorio donde se aprecia el cableado y el uso de la cámara/sistema de visión durante la clasificación de objetos.
+### 3.10. Pruebas realizadas en el laboratorio
 
-<p align="center"><img src="imagenes/09_montaje_fisico.png" alt="Pruebas físicas de objetos en el laboratorio" width="560"></p>
+Durante el desarrollo de la práctica también tomamos fotografías del equipo y los objetos utilizados.
 
-*Figura 9. Evidencia del montaje físico empleado para realizar las pruebas con objetos.*
+En la siguiente imagen se observa una de las pruebas que realizamos con el tomatodo y la XIAO ESP32S3 Sense.
 
-## 8. Dataset y archivo del modelo
+![Prueba laboratorio](imagenes/09_montaje_fisico.png)
 
-Como parte de la entrega se incorporarán **dos archivos** adicionales. No están incluidos todavía en esta versión, por lo que sus contenidos y propiedades técnicas están **pendientes de verificación**.
+*Figura 9. Prueba realizada con el tomatodo en el laboratorio.*
 
-### 8.1. Dataset: `datos.zip`
+## 4. Dataset utilizado
 
-El archivo `datos/datos.zip` contendrá las fotografías utilizadas para las clases `TomaTodo` y `Celular`, reunidas en un único ZIP. Se recomienda organizarlas internamente de esta manera:
+Para esta actividad utilizamos imágenes correspondientes a los dos objetos que queríamos clasificar.
 
-```text
-datos.zip
-├── TomaTodo/
-│   ├── imagen_001.jpg
-│   └── ...
-└── Celular/
-    ├── imagen_001.jpg
-    └── ...
-```
+Estas imágenes forman parte del conjunto de datos empleado para trabajar con el modelo.
 
-**Esta estructura es una recomendación para organizar la entrega**, no una inspección del ZIP real. Cuando se agregue el archivo, conviene indicar cuántas imágenes contiene cada carpeta, el formato de las fotografías y, si se conoce, la separación entre entrenamiento y validación.
+Decidimos guardar las fotografías en un solo archivo comprimido llamado `datos.zip`, para mantener organizado el material utilizado durante la práctica.
 
-### 8.2. Modelo: `modelo_tomatodo_celular.tflite`
+El archivo reúne las imágenes de las dos categorías:
 
-En la carpeta `modelo/` se guardará el archivo exportado en formato **TensorFlow Lite (`.tflite`)**:
+- TomaTodo.
+- Celular.
 
-```text
-modelo/
-└── modelo_tomatodo_celular.tflite
-```
+### Archivo del dataset
 
-El archivo `.tflite` permitirá conservar el artefacto de inferencia correspondiente a esta práctica. **Su compatibilidad, tamaño, entradas, salidas y cuantización deberán comprobarse a partir del archivo real una vez añadido**, en lugar de inferirlos solamente por la extensión.
+[Ver datos de entrenamiento](datos/datos.zip)
 
-### 8.3. Estructura de esta carpeta en GitHub
+De esta manera podemos conservar las imágenes y utilizarlas nuevamente si necesitamos realizar otras pruebas o entrenar otro modelo.
 
-```text
-02_Clasificacion_TomaTodo_Celular/
-├── README.md
-├── imagenes/
-│   ├── 01_dispositivo_desconectado.png
-│   ├── 02_entrenamiento_clases_iniciales.png
-│   ├── 03_seleccion_dispositivo_objetivo.png
-│   ├── 04_entrenamiento_webcam.png
-│   ├── 05_filtros_de_modelos.png
-│   ├── 06_resultado_tomatodo.png
-│   ├── 07_resultado_celular.png
-│   ├── 08_configuracion_gpio_tomatodo.png
-│   └── 09_montaje_fisico.png
-├── datos/
-│   └── datos.zip                       # Por añadir
-└── modelo/
-    └── modelo_tomatodo_celular.tflite  # Por añadir
-```
+## 5. Modelo entrenado
 
-> Cuando agregues los archivos, respeta los nombres de las carpetas o actualiza las referencias del README si utilizas otros nombres.
+También guardaremos el modelo en formato **TensorFlow Lite (.tflite)**.
 
-## 9. Dificultades y limitaciones
+Este formato permite almacenar modelos de inteligencia artificial que pueden ejecutarse en dispositivos con recursos limitados, siempre que sean compatibles.
 
-1. **Conexión del dispositivo:** inicialmente la XIAO aparecía desconectada; después se consiguió ejecutar el modelo.
-2. **Fuente de cámara:** se observó que SenseCraft AI admite webcam para la recolección de datos, pero no se comprobó un despliegue del modelo directamente sobre la webcam como dispositivo de hardware.
-3. **Cantidad de datos:** todavía no se ha inspeccionado el archivo ZIP para verificar el número de imágenes por clase.
-4. **Resultados limitados:** se dispone de capturas representativas, no de una evaluación estadística independiente.
-5. **Acción GPIO:** se registró la condición del LED, pero no una prueba visible de su estado físico.
-6. **Modelo exportado:** falta incorporar y verificar el archivo `.tflite`.
+### Archivo del modelo
 
-## 10. Conclusiones
+[Ver modelo TomaTodo y Celular](modelo/modelo_tomatodo_celular.tflite)
 
-Con esta práctica aprendí a utilizar la sección de entrenamiento de SenseCraft AI para definir dos categorías, trabajar con la cámara de la laptop durante la recolección y seleccionar la XIAO ESP32S3 Sense como dispositivo objetivo. Posteriormente probé el modelo personalizado en el espacio de trabajo y registré una predicción de **100 % para `TomaTodo`** y **89 % para `Celular`** en los fotogramas seleccionados.
+Tanto el dataset como el archivo del modelo se incluirán en el repositorio para conservar los recursos de la práctica.
 
-También configuré una regla GPIO para activar una salida LED cuando `TomaTodo` alcance una confianza mayor que 60. Los resultados evidencian el funcionamiento del flujo de clasificación a nivel de interfaz, mientras que una evaluación más completa requeriría inspeccionar el dataset, analizar el `.tflite`, probar más imágenes y comprobar la activación física del LED.
+## 6. Resultados obtenidos
 
-## 11. Referencias (formato IEEE)
+| Prueba | Resultado | Confianza |
+|---|---|---|
+| Clasificación de tomatodo | TomaTodo | 100 % |
+| Clasificación de celular | Celular | 89 % |
+| Configuración GPIO | LED asociado a TomaTodo | Mayor a 60 |
 
-[1] Seeed Studio, «Entrenamiento de Clasificación de Imágenes con SenseCraft AI», *Seeed Studio Wiki*. [En línea]. Disponible: https://wiki.seeedstudio.com/es/sensecraft-ai/tutorials/sensecraft-ai-training-classification/. [Accedido: 13-oct-2026].
+Durante las pruebas realizadas observamos que el modelo logró reconocer correctamente los dos objetos mostrados frente a la cámara.
 
-[2] Seeed Studio, «Entrena rápidamente modelos de clasificación de imágenes en línea con SenseCraft AI», *Seeed Studio Wiki*. [En línea]. Disponible: https://wiki.seeedstudio.com/es/train_classification_model_online/. [Accedido: 13-oct-2026].
+También vimos que la plataforma actualizaba los resultados según el objeto que aparecía en la imagen.
 
-[3] Seeed Studio, «Configuración de la salida del modelo y GPIO en SenseCraft AI para XIAO ESP32S3 Sense», *Seeed Studio Wiki*. [En línea]. Disponible: https://wiki.seeedstudio.com/es/sensecraft_ai_output_gpio_xiao/. [Accedido: 13-oct-2026].
+Los porcentajes corresponden a las predicciones observadas durante las pruebas. Para evaluar mejor el modelo sería necesario realizar más pruebas con otros fondos, posiciones e iluminaciones.
 
----
+## 7. Dificultades encontradas
 
-**Estado de entrega:** documentación e imágenes incluidas; `datos.zip` y el archivo `.tflite` pendientes de incorporar. Antes de hacer público el repositorio, revisar que ninguna imagen del dataset o las capturas exponga información privada o rostros sin autorización.
+Una de las primeras dificultades fue establecer la conexión con la XIAO ESP32S3 Sense desde la plataforma.
+
+También tuvimos que explorar las opciones disponibles para utilizar la webcam, seleccionar las categorías y configurar el dispositivo de destino.
+
+Durante el desarrollo de la práctica fuimos entendiendo mejor cada una de estas herramientas y cómo se relacionan con el funcionamiento del modelo.
+
+## 8. Conclusiones
+
+En esta actividad aprendimos a trabajar con un modelo personalizado de clasificación de imágenes utilizando SenseCraft AI.
+
+Realizamos pruebas con un tomatodo y un celular, obteniendo resultados de confianza de 100 % y 89 %, respectivamente.
+
+También conocimos las opciones para recolectar imágenes mediante la webcam, seleccionar el dispositivo de ejecución y configurar una condición GPIO.
+
+Finalmente, guardar el dataset y el modelo en GitHub nos permitirá mantener organizados los archivos utilizados y tenerlos disponibles para futuras pruebas.
+
+## 9. Referencias
+
+[1] Seeed Studio, "SenseCraft AI", *Seeed Studio Wiki*. [En línea]. Disponible: https://wiki.seeedstudio.com/es/sensecraft-ai/overview/.
+
+[2] Seeed Studio, "Entrenamiento de modelos de clasificación de imágenes en SenseCraft AI", *Seeed Studio Wiki*. [En línea]. Disponible: https://wiki.seeedstudio.com/es/train_classification_model_online/.
+
+[3] Seeed Studio, "Configuración de salida GPIO en SenseCraft AI para XIAO ESP32S3 Sense", *Seeed Studio Wiki*. [En línea]. Disponible: https://wiki.seeedstudio.com/es/sensecraft_ai_output_gpio_xiao/.
