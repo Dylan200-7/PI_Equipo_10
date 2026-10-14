@@ -8,11 +8,9 @@
 
 ## 1. Introducción
 
-En esta práctica trabajamos con la plataforma SenseCraft AI para conocer cómo funcionan los modelos de inteligencia artificial que ya se encuentran entrenados.
+En esta práctica utilizamos SenseCraft AI para probar un modelo de inteligencia artificial previamente entrenado, el cual permite detectar rostros y clasificarlos mediante las etiquetas `male` y `female`.
 
-Como grupo seleccionamos el modelo **Detección de género**, el cual permite detectar rostros y mostrar las etiquetas `male` y `female`, junto con un porcentaje de confianza.
-
-Para realizar las pruebas utilizamos la placa XIAO ESP32S3 Sense con su cámara. También exploramos la configuración GPIO para relacionar las detecciones con el funcionamiento de un LED.
+Nuestro objetivo fue conocer el funcionamiento de la plataforma, conectar la XIAO ESP32S3 Sense, ejecutar el modelo en tiempo real y configurar una salida GPIO según las detecciones realizadas.
 
 ## 2. Materiales utilizados
 
@@ -25,89 +23,119 @@ Para realizar las pruebas utilizamos la placa XIAO ESP32S3 Sense con su cámara.
 
 ## 3. Procedimiento
 
-### 3.1. Exploración de SenseCraft AI
+### 3.1. Ingreso a SenseCraft AI
 
-Primero ingresamos a la plataforma [SenseCraft AI](https://sensecraft.seeed.cc/ai/) y exploramos la sección de modelos.
+Primero ingresamos a la página oficial de [SenseCraft AI](https://sensecraft.seeed.cc/ai/) desde Google Chrome.
 
-En esta parte encontramos diferentes modelos de inteligencia artificial, los cuales se pueden filtrar por tipo de tarea y dispositivo compatible.
+Una vez dentro, seleccionamos el apartado **Modelos**, donde encontramos la biblioteca con diferentes modelos de inteligencia artificial.
+
+Revisamos las opciones disponibles para conocer qué modelos podíamos utilizar durante la práctica.
 
 ![Biblioteca de modelos](imagenes/01_biblioteca_general.png)
 
-*Figura 1. Biblioteca de modelos disponibles en SenseCraft AI.*
+*Figura 1. Biblioteca de modelos de SenseCraft AI.*
 
-Después seleccionamos el dispositivo **XIAO ESP32S3 Sense** para visualizar los modelos que podíamos utilizar con nuestra placa.
+### 3.2. Búsqueda del modelo
+
+Después utilizamos el filtro de dispositivos compatibles y seleccionamos **XIAO ESP32S3 Sense**.
+
+De esta manera pudimos visualizar únicamente los modelos disponibles para trabajar con nuestra placa.
 
 ![Modelos compatibles](imagenes/02_biblioteca_xiao.png)
 
 *Figura 2. Modelos compatibles con XIAO ESP32S3 Sense.*
 
-### 3.2. Selección del modelo
+### 3.3. Selección del modelo de género
 
-Entre las opciones disponibles elegimos el modelo **Detección de género**.
+Entre los modelos disponibles seleccionamos **Detección de género**.
 
-Según la información de la plataforma, este modelo está basado en Swift-YOLO y permite identificar rostros mediante recuadros de detección.
+Según la descripción de la plataforma, este modelo utiliza Swift-YOLO y permite detectar rostros, mostrando un recuadro con la etiqueta y su confianza.
 
-En esta primera actividad no entrenamos ningún modelo nuevo, ya que utilizamos uno que se encontraba disponible en la biblioteca.
+En esta actividad utilizamos el modelo directamente desde la biblioteca, sin necesidad de entrenarlo nuevamente.
 
-![Modelo seleccionado](imagenes/03_ficha_modelo_genero.png)
+![Modelo de género](imagenes/03_ficha_modelo_genero.png)
 
-*Figura 3. Modelo de detección de género seleccionado.*
+*Figura 3. Modelo preentrenado de detección de género.*
 
-### 3.3. Conexión del dispositivo
+### 3.4. Conexión de la XIAO ESP32S3 Sense
 
-Luego ingresamos a **Espacio de trabajo**, seleccionamos la XIAO ESP32S3 Sense e intentamos conectarla a la laptop mediante USB.
+Luego ingresamos a **Espacio de trabajo** y seleccionamos la XIAO ESP32S3 Sense.
 
-Durante uno de los intentos apareció el mensaje **"No se encontraron dispositivos compatibles"**, por lo que inicialmente no pudimos iniciar las pruebas.
+Conectamos el dispositivo a la laptop mediante un cable USB e intentamos establecer comunicación desde el navegador.
 
-![Error de conexión](imagenes/04_conexion_sin_dispositivo.png)
+Durante uno de los intentos apareció el mensaje **"No se encontraron dispositivos compatibles"**, por lo que inicialmente no pudimos continuar con la ejecución.
 
-*Figura 4. Problema presentado durante la conexión del dispositivo.*
+![Problema de conexión](imagenes/04_conexion_sin_dispositivo.png)
 
-Posteriormente logramos establecer la conexión y continuar con la ejecución del modelo.
+*Figura 4. Problema presentado al intentar conectar la XIAO.*
 
-### 3.4. Prueba con la etiqueta MALE [Josue Cristian Mogollon]
+Posteriormente logramos conectar el dispositivo y continuar con las pruebas.
 
-Una vez conectado el dispositivo, iniciamos la vista previa y colocamos a uno de los integrantes frente a la cámara.
+### 3.5. Ejecución del modelo
 
-El modelo mostró un recuadro rojo alrededor del rostro y presentó el siguiente resultado:
+Una vez conectado el dispositivo, seleccionamos el modelo y comenzamos a utilizar la vista previa.
+
+La plataforma mostraba la imagen de la cámara y los resultados de detección en tiempo real.
+
+Durante las pruebas utilizamos la siguiente configuración:
+
+| Parámetro | Valor |
+|---|---|
+| Modelo | Detección de género |
+| Confianza | 60 |
+| Umbral IoU | 14 |
+| Modo de inferencia | UART(GPIO) |
+| Etiquetas | male y female |
+
+### 3.6. Prueba de detección MALE
+
+Para realizar la primera prueba colocamos a uno de los integrantes del grupo frente a la cámara.
+
+Observamos que el modelo detectaba el rostro mediante un recuadro rojo y mostraba la etiqueta `male`.
+
+El resultado obtenido fue:
 
 - **Etiqueta:** male.
 - **Confianza:** 91 %.
 
-También observamos que en el registro del dispositivo se mostraban datos relacionados con las detecciones realizadas.
-
 ![Detección male](imagenes/05_resultado_male.png)
 
-*Figura 5. Resultado obtenido durante la detección de la etiqueta male.*
+*Figura 5. Resultado obtenido durante la detección male.*
 
-### 3.5. Prueba con la etiqueta FEMALE [Dayra Martina Kuang]
+También observamos que el registro del dispositivo mostraba información relacionada con las detecciones.
+
+### 3.7. Prueba de detección FEMALE
 
 Después realizamos otra prueba colocando a una compañera frente a la cámara.
 
-En esta ocasión el modelo mostró un recuadro verde sobre el rostro con los siguientes resultados:
+En este caso el modelo mostró un recuadro verde alrededor del rostro y presentó la etiqueta `female`.
+
+El resultado observado fue:
 
 - **Etiqueta:** female.
 - **Confianza:** 86 %.
 
 ![Detección female](imagenes/06_resultado_female_adicional.png)
 
-*Figura 6. Primera prueba con la etiqueta female.*
+*Figura 6. Primera prueba de detección female.*
 
-También realizamos otra captura con una posición diferente frente a la cámara.
+También realizamos una segunda captura cambiando la posición frente a la cámara.
 
 ![Segunda detección female](imagenes/07_resultado_female.png)
 
-*Figura 7. Segunda prueba realizada con la etiqueta female.*
+*Figura 7. Segunda prueba de detección female.*
 
-Con estas pruebas pudimos observar cómo el modelo realizaba las predicciones en tiempo real.
+Con estas pruebas observamos que el modelo generaba predicciones mientras recibía imágenes de la cámara.
 
-### 3.6. Configuración GPIO
+Las etiquetas corresponden a estimaciones visuales del modelo y no determinan la identidad de género real de una persona.
 
-Después de probar el modelo ingresamos a la opción **Salida → GPIO**, donde encontramos las acciones que se pueden configurar según los resultados de la detección.
+### 3.8. Configuración GPIO
 
-Como grupo configuramos una condición para que el LED se active cuando se detecte la etiqueta `male` con una confianza mayor a 54.
+Después de realizar las detecciones ingresamos a **Salida → GPIO**.
 
-La configuración realizada fue la siguiente:
+En esta sección configuramos una condición para que el LED se active cuando el modelo detecte la etiqueta `male` con una confianza mayor a 54.
+
+Los parámetros utilizados fueron:
 
 | Parámetro | Configuración |
 |---|---|
@@ -120,21 +148,19 @@ La configuración realizada fue la siguiente:
 
 ![Configuración GPIO](imagenes/08_configuracion_gpio_male.png)
 
-*Figura 8. Configuración GPIO realizada para la detección male.*
+*Figura 8. Configuración de GPIO para la detección male.*
 
-Esta opción nos permitió conocer cómo se puede utilizar el resultado de un modelo de inteligencia artificial para controlar una salida del dispositivo.
+Con esta parte conocimos cómo relacionar los resultados del modelo con una salida del dispositivo.
 
-En la captura quedó registrada la configuración de la condición, aunque no se muestra una comprobación física del encendido del LED.
+La captura muestra la condición configurada, aunque no permite comprobar físicamente el encendido del LED.
 
-### 3.7. Evidencia de la práctica
+### 3.9. Evidencia de la práctica
 
-Durante el desarrollo de la actividad también tomamos fotografías del trabajo realizado en el laboratorio.
-
-En ellas se puede observar la laptop ejecutando SenseCraft AI y el dispositivo utilizado para las pruebas.
+Durante el desarrollo de la actividad también registramos una fotografía del equipo utilizado y de la detección que se estaba realizando.
 
 ![Prueba en laboratorio](imagenes/09_montaje_fisico.png)
 
-*Figura 9. Pruebas realizadas durante la práctica de laboratorio.*
+*Figura 9. Prueba del modelo de detección de género en el laboratorio.*
 
 ## 4. Resultados obtenidos
 
@@ -144,29 +170,25 @@ En ellas se puede observar la laptop ejecutando SenseCraft AI y el dispositivo u
 | Detección FEMALE | female | 86 % |
 | Configuración GPIO | LED asociado a male | Mayor a 54 |
 
-Durante las pruebas observamos que el modelo identificaba los rostros y mostraba una etiqueta junto con su nivel de confianza.
+Durante las pruebas observamos que el modelo mostraba los rostros detectados mediante recuadros y asignaba una etiqueta con su respectivo nivel de confianza.
 
-Estos porcentajes corresponden a las predicciones de las pruebas realizadas, por lo que no representan la precisión general del modelo.
-
-Además, las etiquetas `male` y `female` son estimaciones visuales del modelo y no permiten determinar la identidad de género real de una persona.
+Los porcentajes corresponden a las predicciones observadas y no representan la precisión general del modelo.
 
 ## 5. Dificultades encontradas
 
-Una de las dificultades que tuvimos fue la conexión inicial de la XIAO ESP32S3 Sense, ya que el navegador no detectaba el dispositivo.
+Una de las dificultades fue la conexión inicial de la XIAO ESP32S3 Sense, ya que el navegador no encontraba dispositivos compatibles.
 
-También tuvimos que revisar las opciones de la plataforma para entender cómo seleccionar el modelo, iniciar la vista previa y configurar las acciones GPIO.
-
-Después de realizar las pruebas pudimos familiarizarnos mejor con estas herramientas.
+También tuvimos que explorar las opciones de SenseCraft AI para aprender a seleccionar el modelo, visualizar las detecciones y configurar las acciones GPIO.
 
 ## 6. Conclusiones
 
-En esta práctica aprendimos a utilizar un modelo preentrenado desde SenseCraft AI y ejecutarlo mediante la XIAO ESP32S3 Sense.
+En esta práctica aprendimos a utilizar un modelo preentrenado de SenseCraft AI y ejecutarlo con la XIAO ESP32S3 Sense.
 
-Logramos realizar pruebas con las etiquetas `male` y `female`, obteniendo valores de confianza de 91 % y 86 %, respectivamente.
+Logramos realizar pruebas de detección con las etiquetas `male` y `female`, obteniendo valores de confianza de 91 % y 86 %, respectivamente.
 
-También conocimos cómo configurar una condición GPIO para relacionar una predicción del modelo con una salida LED.
+Además, conocimos cómo configurar una acción GPIO a partir de los resultados del modelo.
 
-Finalmente, esta actividad nos ayudó a comprender mejor cómo se pueden utilizar los modelos de visión artificial en dispositivos pequeños.
+Esta actividad nos ayudó a comprender mejor cómo funcionan los modelos de visión artificial en tiempo real.
 
 ## 7. Referencias
 
