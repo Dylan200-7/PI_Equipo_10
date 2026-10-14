@@ -26,7 +26,7 @@ Primero ingresamos a SenseCraft AI y seleccionamos la opción **Modelos → Entr
 
 Para nuestro modelo trabajamos con dos categorías:
 
-- **TomaTodo:** imágenes del tomatodo.
-- **Celular:** imágenes del teléfono celular.
+- **Mono:** imágenes del mono.
+- **Mapache:** imágenes del mapache.
 
 El objetivo fue que el modelo aprendiera a diferenciar ambos objetos a partir de las imágenes utilizadas.
