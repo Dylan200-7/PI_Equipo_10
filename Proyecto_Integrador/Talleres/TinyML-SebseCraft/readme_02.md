@@ -15,13 +15,9 @@ Para realizar la actividad utilizamos fotografías de ambos objetos, las herrami
 ## 2. Materiales utilizados
 
 - XIAO ESP32S3 Sense.
-- Laptop.
 - Cámara.
 - Tomatodo.
-- Celular.
 - Cable USB.
-- Plataforma SenseCraft AI.
-- Imágenes para el entrenamiento.
 
 ## 3. Entrenamiento del modelo
 
