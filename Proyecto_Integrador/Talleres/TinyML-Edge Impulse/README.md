@@ -8,7 +8,9 @@ Creamos nuestro proyecto en Edge Impulse y trabajamos con imágenes etiquetadas 
 
 ![Proyecto en Edge Impulse](Imagenes/01_Proyecto_Edge_Impulse.png)
 
-**Dataset:** Reunimos **100 imágenes JPG**, distribuidas en dos clases (50 de **Cargador** y 50 de **Mouse**). Se incluyen en `Data.zip`, con un ZIP y una carpeta etiquetada por cada clase.
+**Dataset:** Reunimos **100 imágenes JPG**, 50 de **Cargador** y 50 de **Mouse**. En Edge Impulse se dividieron en **80 imágenes de entrenamiento** y **20 de prueba** (80 % / 20 %). Los archivos originales están en `Data.zip`.
+
+![Dataset y distribución de entrenamiento y prueba en Edge Impulse](Imagenes/01b_Dataset_Edge_Impulse.png)
 
 ## 2. Configuración y entrenamiento
 
