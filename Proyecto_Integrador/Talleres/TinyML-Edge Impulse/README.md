@@ -229,19 +229,3 @@ Con el mouse frente a la cámara, el valor más alto corresponde a la clase **Mo
 - Realizar más pruebas físicas y registrar tanto aciertos como errores.
 - Añadir una clase adicional de fondo u objetos ajenos para evaluar el comportamiento ante entradas desconocidas.
 
----
-
-## 9. Estructura del repositorio
-
-| Elemento | Descripción |
-|---|---|
-| `Imagenes/` | Capturas de pantalla y fotografías de las pruebas |
-| `Data.zip` | Dataset original de 100 imágenes, agrupadas en `Cargador_images_50.zip` y `Mouse_images_50.zip` |
-| `Modelo.zip` | Contiene `Modelo_Arduino.zip` (biblioteca para Arduino IDE) y `Modelo_SenseCraft.tflite` (modelo para SenseCraft AI) |
-
----
-
-## 10. Referencias
-
-[1] UPCH, *Guía TinyML con Edge Impulse*, material de laboratorio, 2026.
-
