@@ -14,8 +14,7 @@ Este proyecto implementa un clasificador de imágenes capaz de distinguir entre 
 6. [Despliegue en Arduino IDE](#6-despliegue-en-arduino-ide)
 7. [Pruebas en SenseCraft AI](#7-pruebas-en-sensecraft-ai)
 8. [Análisis y limitaciones](#8-análisis-y-limitaciones)
-9. [Estructura del repositorio](#9-estructura-del-repositorio)
-10. [Referencias](#10-referencias)
+
 
 ---
 
