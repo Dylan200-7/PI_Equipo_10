@@ -45,16 +45,20 @@ Después exportamos el modelo cuantizado **int8** como biblioteca para Arduino I
 ![Exportación de la biblioteca Arduino](Imagenes/07_Exportacion_Arduino.png)
 
 ![Prueba de cargador en Arduino IDE](Imagenes/12_Arduino_Cargador.png)
+(Imagenes/cargador_arduino.jpeg)
 
 ![Prueba de mouse en Arduino IDE](Imagenes/10_Arduino_Mouse.png)
+(Imagenes/mouse_arduino.jpeg)
 
 ## 5. Pruebas en SenseCraft
 
 Importamos el modelo TensorFlow Lite en SenseCraft y comprobamos la clasificación de ambos objetos con la cámara.
 
 ![Cargador en SenseCraft](Imagenes/11_SenseCraft_Cargador.png)
+(Imagenes/cargador.jpeg)
 
 ![Mouse en SenseCraft](Imagenes/09_SenseCraft_Mouse.png)
+(Imagenes/mouse.jpeg)
 
 ## Archivos del proyecto
 
