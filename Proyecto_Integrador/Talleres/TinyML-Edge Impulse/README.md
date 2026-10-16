@@ -221,10 +221,4 @@ Con el mouse frente a la cámara, el valor más alto corresponde a la clase **Mo
 
 **Alcance de los resultados.** El dataset es pequeño (100 imágenes) y el conjunto de prueba contiene solo 20. Un accuracy del 100 % describe esos datos concretos y no garantiza el mismo resultado con otros modelos de cargador o mouse, fondos distintos o diferente iluminación. Las pruebas físicas son ejemplos individuales y no permiten calcular la exactitud global del dispositivo.
 
-**Mejoras propuestas.**
-
-- Ampliar el dataset con más variedad de cargadores y mouse.
-- Variar ángulos, fondos e iluminación durante la captura.
-- Realizar más pruebas físicas y registrar tanto aciertos como errores.
-- Añadir una clase adicional de fondo u objetos ajenos para evaluar el comportamiento ante entradas desconocidas.
 
