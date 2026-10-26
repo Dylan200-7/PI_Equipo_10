@@ -87,11 +87,12 @@ Los antecedentes muestran que la clasificación automatizada de papa ya cuenta c
 - **Detección de defectos:** los defectos internos no siempre pueden identificarse con imágenes convencionales.
 - **Tiempo de procesamiento e integración mecánica:** el análisis debe ser compatible con el tiempo disponible para ejecutar la separación.
 - **Adaptación a la papa Chaucha:** los resultados de otras variedades no deben trasladarse sin evaluación experimental.
+  
 ## 9. Conclusiones
  
 La revisión identificó tecnologías utilizadas en la clasificación poscosecha de papa: visión por computadora, análisis tridimensional, aprendizaje automático y detección óptica [2]–[6]. Los artículos muestran que las imágenes permiten analizar características geométricas y visuales, y que los modelos de aprendizaje automático pueden clasificar según patrones de los datos [2], [3]. Las patentes presentan sistemas que integran inspección con clasificación y separación física [4]–[6].
  
-Estos conocimientos proporcionan una base científica y tecnológica para investigar un sistema mecatrónico inteligente de triaje de papa Chaucha. Falta definir los criterios de clasificación, seleccionar las tecnologías, integrar los módulos y comprobar experimentalmente el desempeño. Este documento corresponde al TRL 1 y no constituye una validación experimental ni demuestra todavía la precisión, la eficiencia o la reducción de pérdidas del sistema.
+En conjunto, los antecedentes revisados respaldan la viabilidad de investigar un sistema mecatrónico inteligente para el triaje poscosecha de papa Chaucha. Como resultado del TRL 1, Kartoffelmaschine cuenta con un fundamento científico y tecnológico sólido sobre el cual avanzar.
  
 ## 10. Referencias
  
