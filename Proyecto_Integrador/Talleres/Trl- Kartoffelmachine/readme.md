@@ -98,9 +98,9 @@ En conjunto, los antecedentes revisados respaldan la viabilidad de investigar un
  
 [1] N. Cromme, A. B. Prakash, N. Lutaladio y F. Ezeta, Eds., *Strengthening Potato Value Chains: Technical and Policy Options for Developing Countries*. Roma, Italia: Food and Agriculture Organization of the United Nations, 2010. [En línea]. Disponible: https://www.fao.org/4/i1710e/i1710e.pdf
  
-[2] Q. Su, N. Kondo, M. Li, H. Sun, D. F. Al Riza y H. Habaragamuwa, "Potato quality grading based on machine vision and 3D shape analysis," *Comput. Electron. Agric.*, vol. 152, pp. 261–268, sep. 2018, doi:10.1016/j.compag.2018.07.012.
+[2] Q. Su, N. Kondo, M. Li, H. Sun, D. F. Al Riza y H. Habaragamuwa, "Potato quality grading based on machine vision and 3D shape analysis," Comput. Electron. Agric., vol. 152, pp. 261–268, sep. 2018, [En línea]. Disponible: https://doi.org/10.1016/j.compag.2018.07.012
  
-[3] Q. Su, N. Kondo, D. F. Al Riza y H. Habaragamuwa, "Potato quality grading based on depth imaging and convolutional neural network," *J. Food Qual.*, vol. 2020, art. no. 8815896, 2020, doi:10.1155/2020/8815896.
+[3] Q. Su, N. Kondo, D. F. Al Riza y H. Habaragamuwa, "Potato quality grading based on depth imaging and convolutional neural network," J. Food Qual., vol. 2020, art. no. 8815896, 2020, [En línea]. Disponible: https://doi.org/10.1155/2020/8815896
  
 [4] Zhengzhou University of Light Industry, "Panoramic potato defect detection device and method based on virtual and real imaging combination," China Patent CN109030504B, 2 oct. 2020. [En línea]. Disponible: https://patents.google.com/patent/CN109030504B/en
  
