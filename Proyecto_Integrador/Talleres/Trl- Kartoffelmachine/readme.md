@@ -1,4 +1,4 @@
-# TRL 1
+# TRL 1 : Technology Readiness Level
  
 ## 1. Introducción
  
@@ -43,6 +43,7 @@ Un sistema mecatrónico integra componentes mecánicos, electrónicos y computac
 | FAO, 2010 [1] | Marco técnico y de políticas sobre cadenas de valor de la papa en países en desarrollo. | Contextualiza la problemática poscosecha y justifica estudiar herramientas de selección y clasificación. |
 | Su et al., 2018 [2] | Clasificación de calidad de papa con visión artificial y análisis 3D de forma. | Antecedente para comparar lo que ofrecen imágenes convencionales y tridimensionales. |
 | Su et al., 2020 [3] | Clasificación de calidad de papa con imágenes de profundidad y CNN. | Fundamento para investigar modelos que clasifiquen papa Chaucha; sus resultados son antecedentes, no una medida del rendimiento esperado del sistema propuesto. |
+| J. Li et al, 2025 [9] | Método de detección de defectos externos en las papas usando tecnología YOLO v5s | El propósito es optimizar el proceso de clasificación de papas. Buscan analizar visualmente las papas y reconocer cuáles presentan defectos con la tecnología YOLO. |
  
 ## 5. Patentes relacionadas
  
@@ -112,3 +113,5 @@ En conjunto, los antecedentes revisados respaldan la viabilidad de investigar un
  
 [8] United Nations, "Goal 9: Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation." [En línea]. Disponible: https://www.un.org/sustainabledevelopment/es/infrastructure/
 
+[9] J. Li et al., “Multi-task learning based approach for potato edibility detection and defect segmentation,” Journal of Food Composition and Analysis, vol. 148, art. 108420, 2025. 
+[En linea]. Disponible: https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1527508/full
