@@ -7,8 +7,6 @@
 
 **Nivel de madurez tecnológica:** TRL 1 — Principios básicos observados e identificados.
 
-**Fuente para la selección técnica:** Matriz morfológica de KARTOFFELMASCHINE, ruta indicada mediante flechas azules (alternativa 1 de cada función).
-
 ---
 
 ## 1. Introducción
