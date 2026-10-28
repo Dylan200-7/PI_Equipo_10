@@ -14,7 +14,7 @@
 
 ## 1. Introducción
 
-A partir de los fundamentos científicos y tecnológicos identificados en el TRL 1, se plantea el desarrollo conceptual de **Kartoffelmaschine**, un sistema mecatrónico destinado a optimizar el proceso de inspección y clasificación poscosecha de papa Chaucha mediante visión artificial, aprendizaje automático y mecanismos automatizados de transporte y separación.
+A partir de los fundamentos científicos y tecnológicos identificados en el TRL 1, se plantea el desarrollo conceptual de **Kartoffelmaschine**, un sistema mecatrónico destinado a optimizar el proceso de inspección y clasificación poscosecha de la papa Chaucha mediante visión artificial, aprendizaje automático y mecanismos automatizados de transporte y separación.
 
 La clasificación tradicional mediante inspección visual humana puede presentar variaciones relacionadas con la experiencia del operador, las condiciones de iluminación y la continuidad del proceso. Frente a estas limitaciones, investigaciones previas han demostrado la utilidad de la visión artificial y las redes neuronales para analizar características externas de las papas [2], [3].
 
