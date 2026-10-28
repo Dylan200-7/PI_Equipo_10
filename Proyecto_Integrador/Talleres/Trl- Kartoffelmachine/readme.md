@@ -1,25 +1,31 @@
 
 # TRL 1 — KARTOFFELMASCHINE
 
-## Fundamentos científicos, estado del arte y documentación de los componentes seleccionados
+## Fundamentos científicos, estado del arte y documentación tecnológica
 
-**Proyecto:** Sistema mecatrónico de inspección y clasificación visual de papa Chaucha.
+**Proyecto:** Kartoffelmaschine — Sistema mecatrónico de clasificación automatizada de papa Chaucha.
 
-**Nivel de madurez tecnológica:** TRL 1 — Principios básicos observados e identificados.
+**Nivel de madurez tecnológica:** TRL 1 — Identificación y observación de los principios científicos y tecnológicos.
 
 ---
 
 ## 1. Introducción
 
-La papa es uno de los cultivos más relevantes para la alimentación y la economía de numerosos países. Sin embargo, durante las etapas poscosecha pueden producirse pérdidas asociadas con la manipulación, el almacenamiento, el transporte y la comercialización, lo que hace importante mejorar los procedimientos de inspección y clasificación [1].
+La papa es uno de los cultivos más importantes para la alimentación y la economía de numerosos países. Sin embargo, durante la etapa poscosecha pueden producirse pérdidas asociadas con la manipulación, almacenamiento, transporte y comercialización. Por ello, la evaluación de la calidad y la selección del producto representan actividades importantes dentro de su cadena de valor [1].
 
-La selección tradicional suele efectuarse mediante inspección visual humana o mediante equipos que consideran propiedades como tamaño, forma y peso. La inspección manual depende de la experiencia del operario y de las condiciones de trabajo, mientras que los métodos exclusivamente dimensionales no identifican necesariamente defectos superficiales. Por esta razón, se investigan tecnologías de visión artificial y aprendizaje automático capaces de analizar las imágenes de los productos [2], [3].
+Tradicionalmente, la clasificación de papas se realiza mediante inspección visual humana o procedimientos mecánicos basados en propiedades como tamaño, forma y peso. La inspección manual depende de la experiencia del operador y de las condiciones de trabajo, mientras que los sistemas exclusivamente mecánicos pueden presentar limitaciones para identificar determinadas alteraciones superficiales.
 
-**Kartoffelmaschine** propone un sistema mecatrónico para apoyar la clasificación de papa Chaucha según su **apariencia externa**, diferenciando papas sin defectos visibles de aquellas que presentan características superficiales no deseadas. La propuesta combina alimentación y transporte mecánico, orientación del producto, captura de imágenes, análisis mediante inteligencia artificial y separación física.
+Ante esta problemática, se han desarrollado investigaciones sobre el uso de visión artificial, procesamiento digital de imágenes e inteligencia artificial para automatizar el análisis de productos agrícolas. Estas tecnologías permiten reconocer características visibles, como cambios de color, manchas, deformaciones e irregularidades superficiales, con el propósito de apoyar los procesos de clasificación [2], [3].
 
-Como parte de la documentación de este **TRL 1**, además de revisar artículos científicos y patentes, se registran los **21 componentes, materiales y tecnologías seleccionados en la matriz morfológica**, exclusivamente los correspondientes a las **flechas azules**.
+**Kartoffelmaschine** propone el desarrollo de un sistema mecatrónico capaz de optimizar el proceso de clasificación de papa Chaucha mediante la integración de visión artificial, aprendizaje automático (*machine learning*) y mecanismos de separación física.
 
-Esta identificación describe la solución de diseño del equipo; no implica que todos los componentes se hayan comprado, montado o validado experimentalmente. Esas evidencias corresponderán a los siguientes niveles TRL.
+El prototipo contempla una estructura mecánica de transporte y orientación de papas, una cámara para obtener imágenes, una unidad de procesamiento basada en Raspberry Pi y un modelo de inteligencia artificial YOLOv8n para reconocer características visuales asociadas con defectos externos.
+
+Asimismo, el sistema incorpora sensores, motores, mecanismos de separación y una interfaz de comunicación para integrar las etapas del proceso.
+
+En este documento se presentan los fundamentos científicos y tecnológicos del proyecto, artículos científicos y patentes relacionadas, así como la documentación de los materiales, componentes electrónicos y herramientas computacionales que conforman la propuesta.
+
+El presente trabajo corresponde al **Technology Readiness Level 1 (TRL 1)**, en el que se identifican los principios tecnológicos necesarios para sustentar el desarrollo posterior del prototipo.
 
 ---
 
@@ -27,231 +33,309 @@ Esta identificación describe la solución de diseño del equipo; no implica que
 
 ### 2.1. Objetivo general
 
-Identificar los principios científicos y tecnológicos que sustentan Kartoffelmaschine y documentar la solución técnica seleccionada para un sistema automatizado de clasificación visual de papa Chaucha.
+Investigar y documentar los principios científicos y tecnológicos necesarios para el desarrollo de Kartoffelmaschine, un sistema mecatrónico que utiliza visión artificial y aprendizaje automático para optimizar la clasificación de papa Chaucha según sus características externas.
 
 ### 2.2. Objetivos específicos
 
-- Investigar métodos de inspección y clasificación poscosecha de papa, en particular visión artificial y aprendizaje automático.
-- Examinar artículos científicos y patentes relacionados con la identificación de defectos externos y la separación automatizada.
-- Registrar los componentes, materiales y tecnologías elegidos mediante la ruta de flechas azules de la matriz morfológica y describir su función.
-- Relacionar los antecedentes científicos con el funcionamiento conceptual del prototipo e identificar sus limitaciones.
+- Investigar los métodos tradicionales y automatizados de clasificación poscosecha de papa.
+- Analizar artículos científicos relacionados con visión artificial, procesamiento de imágenes y aprendizaje automático aplicado a la clasificación de papas.
+- Identificar patentes relacionadas con sistemas de inspección y separación automatizada de productos agrícolas.
+- Documentar los materiales, componentes mecánicos, electrónicos y herramientas computacionales utilizados en el diseño del proyecto.
+- Describir el funcionamiento conceptual del sistema y la interacción entre sus componentes.
+- Identificar las principales limitaciones tecnológicas que deberán evaluarse durante el desarrollo del prototipo.
 
 ---
 
-## 3. Estado del arte y principios tecnológicos
+## 3. Estado del arte
 
-### 3.1. Inspección poscosecha y visión artificial
+### 3.1. Clasificación poscosecha y visión artificial
 
-La clasificación poscosecha puede considerar atributos físicos o visuales, entre ellos tamaño, color, forma, deformaciones, manchas y alteraciones superficiales.
+La clasificación poscosecha consiste en separar productos agrícolas de acuerdo con determinadas características físicas o visuales, como tamaño, forma, color, deformaciones y presencia de defectos superficiales.
 
-La visión artificial permite obtener imágenes y analizarlas digitalmente mediante etapas de captura, preprocesamiento, identificación de características y asignación de una categoría [2].
+En el caso de la papa, los sistemas tradicionales pueden utilizar inspección manual o mecanismos de clasificación basados en dimensiones y peso. Sin embargo, estos métodos no siempre permiten identificar de manera uniforme alteraciones externas del producto.
 
-Su et al. estudiaron la clasificación de papa mediante visión artificial y análisis de forma tridimensional [2]. Este antecedente muestra que la información visual y geométrica resulta útil para evaluar características del producto.
+La visión artificial constituye una alternativa tecnológica que permite obtener información visual mediante cámaras y analizarla utilizando algoritmos computacionales.
 
-No obstante, el uso de una cámara convencional, como la seleccionada para Kartoffelmaschine, **no equivale** a disponer de un sistema de imágenes de profundidad o de inspección del interior de la papa.
+Generalmente, un sistema de inspección por visión artificial comprende las siguientes etapas:
 
-### 3.2. Aprendizaje automático para detectar características externas
+1. Captura de imágenes del producto.
+2. Preprocesamiento para mejorar la calidad de las imágenes.
+3. Identificación de características visuales relevantes.
+4. Clasificación de acuerdo con los criterios establecidos.
+5. Transmisión del resultado hacia el sistema de separación.
 
-El aprendizaje automático utiliza datos de ejemplo para aprender patrones y generar predicciones sobre nuevas observaciones.
+Su et al. [2] investigaron la clasificación de calidad de papas mediante visión artificial y análisis tridimensional de su forma, demostrando la utilidad de la información geométrica y visual en estos procedimientos.
 
-En el análisis de imágenes agrícolas se emplean redes neuronales y modelos de detección de objetos.
+En Kartoffelmaschine, este principio se aplicará mediante una cámara Raspberry Pi Camera Module 3, destinada a capturar imágenes de la superficie de las papas.
 
-Su et al. investigaron una red neuronal convolucional para clasificar la calidad de papas mediante imágenes de profundidad [3].
+### 3.2. Inteligencia artificial y aprendizaje automático
 
-Por su parte, Li et al. desarrollaron un método mejorado basado en YOLOv5s para la detección de defectos externos en papas [9].
+El aprendizaje automático o *machine learning* es una rama de la inteligencia artificial que permite desarrollar modelos capaces de identificar patrones a partir de datos.
 
-Como alternativa elegida para Kartoffelmaschine, la matriz morfológica señala **YOLOv8n**, una variante compacta del enfoque YOLO.
+En la inspección agrícola, esta tecnología puede utilizarse para reconocer características visuales y asignar categorías a los productos analizados.
 
-Su incorporación se plantea para reconocer atributos visibles a partir de las imágenes capturadas; los resultados publicados para otros modelos o variedades no representan el rendimiento demostrado de YOLOv8n en papa Chaucha.
+Entre los modelos empleados se encuentran las redes neuronales convolucionales (CNN), que permiten extraer automáticamente características relevantes de las imágenes.
 
-### 3.3. Integración mecatrónica y sincronización
+Su et al. [3] investigaron la clasificación de calidad de papas utilizando imágenes de profundidad y una red neuronal convolucional, proporcionando un antecedente del uso de aprendizaje profundo para esta aplicación.
 
-Una clasificadora automatizada integra alimentación, transporte, inspección, procesamiento de señales, control y separación.
+Por otra parte, Li et al. [9] desarrollaron un método basado en YOLOv5s para detectar defectos externos en papas.
 
-El producto debe ser detectado y fotografiado en una posición adecuada; posteriormente, el resultado del análisis debe asociarse correctamente con la papa que llega al mecanismo de desvío.
+Estos antecedentes respaldan la investigación de modelos de inteligencia artificial para automatizar la identificación de características visuales.
 
-En Kartoffelmaschine, la combinación conceptual de una **mini faja de PVC**, una **mesa de inspección por rodillos**, una **pin conveyor chain**, sensores, motores, cámara y compuerta busca resolver esas funciones.
+Para Kartoffelmaschine se propone utilizar **YOLOv8n**, una versión compacta de la familia de modelos YOLO (*You Only Look Once*).
 
-La sincronización entre captura, desplazamiento y separación constituye un aspecto por probar en el futuro.
+Su función será analizar las imágenes obtenidas por la cámara e identificar patrones visuales que permitan diferenciar las categorías de clasificación establecidas.
+
+El rendimiento del modelo dependerá de la calidad de las imágenes, la cantidad de datos disponibles, la variedad de papas utilizada y las condiciones de evaluación.
+
+### 3.3. Sistemas mecatrónicos de clasificación
+
+Un sistema mecatrónico integra componentes mecánicos, electrónicos y computacionales para ejecutar procesos de manera automatizada.
+
+En una clasificadora de productos agrícolas, los elementos mecánicos permiten transportar y posicionar el producto, mientras que los sensores y sistemas electrónicos proporcionan información para coordinar su funcionamiento.
+
+El sistema computacional procesa los datos obtenidos y genera instrucciones para los actuadores encargados de ejecutar la separación.
+
+En Kartoffelmaschine, el proceso integra:
+
+- Alimentación mediante una tolva por gravedad.
+- Transporte mediante una mini faja de PVC.
+- Orientación mediante una mesa de rodillos y un mecanismo de cadena.
+- Captura de imágenes mediante una cámara.
+- Procesamiento y clasificación con Raspberry Pi y YOLOv8n.
+- Separación física mediante una compuerta accionada por servomotor.
+- Visualización de información mediante indicadores LED y una interfaz web.
+
+La integración de estos elementos constituye la base conceptual del funcionamiento del prototipo.
 
 ---
 
 ## 4. Artículos científicos relacionados
 
-| Referencia | Hallazgo o aporte científico | Relación con Kartoffelmaschine |
-|---|---|---|
-| FAO, 2010 [1] | Analiza aspectos de la cadena de valor de la papa y su desarrollo. | Contextualiza la necesidad de mejorar la operación poscosecha. |
-| Su et al., 2018 [2] | Estudian clasificación de calidad mediante visión artificial y análisis 3D de forma. | Sustenta el principio de inspección por imágenes, aunque nuestra selección no incluye una cámara de profundidad. |
-| Su et al., 2020 [3] | Investigan clasificación de papa mediante imágenes de profundidad y una CNN. | Proporciona antecedentes del uso de aprendizaje profundo para clasificación. |
-| X. Li et al., 2025 [9] | Desarrollan un método mejorado basado en YOLOv5s para detectar defectos externos. | Respalda el enfoque de detección visual con la familia YOLO, sin confundir YOLOv5s con el YOLOv8n elegido. |
+La investigación bibliográfica permitió identificar trabajos relacionados con la automatización de la inspección y clasificación de papas.
 
-Estos trabajos muestran la pertinencia de investigar la automatización de la inspección, pero no permiten afirmar todavía que Kartoffelmaschine haya alcanzado una precisión determinada.
+| Referencia | Investigación | Aporte científico | Relación con Kartoffelmaschine |
+|---|---|---|---|
+| FAO, 2010 [1] | *Strengthening Potato Value Chains* | Analiza la cadena de valor de la papa y aspectos de su producción y comercialización. | Permite contextualizar los problemas relacionados con la etapa poscosecha. |
+| Su et al., 2018 [2] | *Potato quality grading based on machine vision and 3D shape analysis* | Investiga el uso de visión artificial y análisis geométrico para clasificar papas. | Sustenta la aplicación de imágenes para evaluar características del producto. |
+| Su et al., 2020 [3] | *Potato quality grading based on depth imaging and convolutional neural network* | Aplica redes neuronales convolucionales a imágenes de profundidad. | Proporciona fundamentos para estudiar modelos de aprendizaje profundo. |
+| Li et al., 2025 [9] | *Improved YOLO v5s-based detection method for external defects in potato* | Propone un método basado en YOLO para identificar defectos externos. | Se relaciona con la identificación visual mediante modelos de la familia YOLO. |
 
-Además, los defectos internos o problemas de inocuidad no pueden descartarse únicamente a partir de imágenes externas.
+### 4.1. Aplicación de las investigaciones al proyecto
+
+Los artículos muestran que la visión artificial y el aprendizaje profundo pueden utilizarse para estudiar características geométricas y visuales de papas.
+
+En particular, la detección automática de defectos externos constituye un antecedente importante para Kartoffelmaschine, debido a que el proyecto busca identificar papas que presenten alteraciones visibles.
+
+No obstante, los resultados publicados corresponden a las condiciones, variedades y modelos empleados en cada investigación.
+
+Por esta razón, será necesario evaluar experimentalmente el comportamiento de YOLOv8n utilizando imágenes de papa Chaucha.
 
 ---
 
 ## 5. Patentes relacionadas
 
-La búsqueda de antecedentes tecnológicos permite conocer distintas formas de combinar captura de imágenes, procesamiento y mecanismos de separación.
-
-Las patentes siguientes sirven como referencias técnicas; su inclusión no supone que Kartoffelmaschine reproduzca sus reivindicaciones ni constituye un análisis de libertad de operación.
+Además de los artículos científicos, se identificaron patentes que describen tecnologías de inspección visual, procesamiento de imágenes y clasificación automatizada.
 
 ### 5.1. CN109030504B — Panoramic potato defect detection device and method based on virtual and real imaging combination
 
-Esta patente [4] presenta una solución de inspección de papa que combina imágenes reales y virtuales para examinar distintas superficies, utiliza procesamiento basado en redes neuronales y contempla la separación del producto.
+Esta patente [4], desarrollada por Zhengzhou University of Light Industry, presenta un sistema de inspección que combina imágenes reales y virtuales para analizar diferentes superficies de las papas.
 
-Su interés para el proyecto reside en la búsqueda de mayor cobertura visual y en el acoplamiento de inspección y separación.
+El dispositivo utiliza una cámara y elementos ópticos que permiten obtener información visual desde distintas perspectivas. Posteriormente, las imágenes se analizan mediante una red neuronal para detectar características no deseadas.
+
+**Relación con Kartoffelmaschine:**
+
+Esta tecnología constituye un antecedente para el diseño de un sistema que busque observar diferentes superficies de las papas antes de realizar la clasificación.
+
+En Kartoffelmaschine se plantea utilizar mecanismos de rodillos y giro para modificar la orientación del producto durante la inspección.
 
 ### 5.2. US9114436B2 — Method for Sorting Potato Products and Sorting Apparatus for Potato Products
 
-Esta patente [5] describe un procedimiento de clasificación de productos de papa basado en mediciones ópticas y retirada de productos con condiciones no deseadas.
+Esta patente [5] describe un procedimiento de clasificación de productos de papa mediante tecnologías de detección óptica y mecanismos de separación.
 
-Constituye un antecedente de separación automatizada, aunque sus métodos ópticos no son equivalentes a una cámara RGB convencional.
+El sistema analiza características del producto y utiliza la información obtenida para identificar condiciones no deseadas.
+
+**Relación con Kartoffelmaschine:**
+
+Proporciona un antecedente de integración entre inspección óptica y separación automatizada.
+
+En el proyecto se busca aplicar este principio mediante una cámara, procesamiento computacional y una compuerta accionada por servomotor.
 
 ### 5.3. US9527115B2 — Computer Vision and Machine Learning Software for Grading and Sorting Plants
 
-Esta patente [6] expone una arquitectura que combina visión por computadora, aprendizaje automático y mecanismos de separación.
+Esta patente [6], desarrollada por Carnegie Mellon University, describe un sistema que integra visión artificial, aprendizaje automático y mecanismos de separación para clasificar plantas.
 
-Se desarrolló en el ámbito de plantas, no específicamente de papa Chaucha; por ello se cita como referencia de integración y no como validación de nuestra propuesta.
+Aunque su aplicación original no corresponde específicamente a papas, constituye un antecedente de integración entre procesamiento de imágenes y clasificación física automatizada.
 
-### 5.4. Comparación de las patentes
+**Relación con Kartoffelmaschine:**
 
-| Patente | Tecnología relevante | Relación conceptual con el proyecto |
+Sirve como referencia para la arquitectura del sistema, especialmente en la comunicación entre el procesamiento computacional y los mecanismos que realizan la separación.
+
+### 5.4. Comparación de patentes
+
+| Patente | Tecnología principal | Aplicación en Kartoffelmaschine |
 |---|---|---|
-| CN109030504B [4] | Inspección de varias superficies y separación. | Motiva considerar un mecanismo que oriente las papas antes de clasificarlas. |
-| US9114436B2 [5] | Análisis óptico y retirada automatizada. | Sustenta la necesidad de vincular la decisión de inspección con la separación física. |
-| US9527115B2 [6] | Visión artificial, aprendizaje automático y accionamiento. | Referencia de una arquitectura mecatrónica integrada. |
+| CN109030504B [4] | Inspección desde distintas perspectivas mediante visión artificial. | Diseño de un mecanismo que permita orientar las papas durante la captura de imágenes. |
+| US9114436B2 [5] | Detección óptica y separación automatizada. | Integración de inspección y compuerta de separación. |
+| US9527115B2 [6] | Visión por computadora y aprendizaje automático. | Arquitectura de procesamiento y control del sistema. |
+
+Las patentes permiten identificar soluciones tecnológicas existentes que sirven como antecedentes para el desarrollo del proyecto.
 
 ---
 
-## 6. Solución conceptual propuesta para Kartoffelmaschine
+## 6. Descripción general de Kartoffelmaschine
 
-La propuesta se organiza en una secuencia funcional:
+Kartoffelmaschine es una propuesta de sistema mecatrónico para optimizar la clasificación visual de papa Chaucha mediante tecnologías de visión artificial y aprendizaje automático.
 
-**Alimentación → Transporte → Orientación → Captura de imágenes → Procesamiento mediante IA → Separación → Presentación de resultados.**
+El funcionamiento contempla una secuencia de alimentación, transporte, orientación, adquisición de imágenes, clasificación y separación física.
 
 ### 6.1. Alimentación
 
-La papa ingresa mediante una tolva por gravedad fabricada en PETG y pasa a una mini faja de PVC.
+Las papas ingresarán mediante una tolva por gravedad fabricada en PETG.
 
-### 6.2. Inspección y orientación
+Posteriormente, serán transportadas mediante una mini faja de PVC hacia la zona de inspección.
 
-La mesa de rodillos, la pin conveyor chain y dos motorreductores DC JGA25-370 se proponen para posicionar y orientar la papa durante la inspección.
+### 6.2. Orientación e inspección
 
-### 6.3. Detección y captura
+Las papas llegarán a una mesa de inspección por rodillos.
 
-Un sensor E18-D80NK identifica la presencia del producto.
+El mecanismo de cadena con pasadores (*pin conveyor chain*), junto con los motorreductores, se utilizará para facilitar el movimiento y la orientación del producto.
 
-Un encoder incremental de 600 PPR ofrece información del movimiento del elemento al que se acople.
+Esta operación busca permitir la captura de imágenes desde diferentes posiciones, incrementando la superficie externa observable.
 
-La Raspberry Pi Camera Module 3 registra las imágenes.
+### 6.3. Captura de imágenes
 
-### 6.4. Procesamiento
+Un sensor de presencia E18-D80NK permitirá identificar la llegada de una papa a la zona de inspección.
 
-Una Raspberry Pi 5 de 8 GB ejecutaría el procesamiento y el modelo seleccionado YOLOv8n para asignar una categoría visual.
+La Raspberry Pi Camera Module 3 capturará imágenes del producto para su posterior análisis.
 
-### 6.5. Separación
+### 6.4. Procesamiento mediante inteligencia artificial
 
-Una compuerta accionada mediante servomotor MG996R desviaría la papa hacia la recepción prevista, compuesta por una compuerta con bandeja.
+Las imágenes serán procesadas por una Raspberry Pi 5 de 8 GB de memoria RAM.
 
-### 6.6. Comunicación
+Se utilizará el modelo YOLOv8n para estudiar la identificación automática de características visuales asociadas con las categorías de clasificación establecidas.
 
-Indicadores LED de 5 mm, el Wi-Fi integrado de la Raspberry Pi y una interfaz web desarrollada con Flask/HTML permitirían supervisar el estado y los resultados.
+### 6.5. Separación física
 
-La estructura se plantea en aluminio, con soportes y piezas personalizadas en PETG eSUN impreso en 3D y rodillos recubiertos de TPU 95A en la zona de contacto.
+El resultado del procesamiento se utilizará para controlar una compuerta accionada mediante un servomotor MG996R.
 
-La alimentación eléctrica se definirá a partir de los tres elementos seleccionados en la matriz, verificando las exigencias reales de tensión, corriente y conexión durante el diseño eléctrico.
+Este mecanismo permitirá dirigir las papas hacia las zonas de recepción previstas según su categoría.
+
+### 6.6. Visualización y comunicación
+
+El sistema contempla indicadores LED y una interfaz web desarrollada mediante Flask/HTML.
+
+La conectividad Wi-Fi integrada de la Raspberry Pi permitirá transmitir información para supervisar el funcionamiento del prototipo.
 
 ---
 
-## 7. Documentación de los componentes y materiales seleccionados
+## 7. Materiales, componentes y tecnologías del proyecto
 
-### 7.1. Criterio de selección
+Para el desarrollo de Kartoffelmaschine se contemplan componentes mecánicos, dispositivos electrónicos, materiales estructurales y herramientas computacionales.
 
-La **Matriz morfológica — KARTOFFELMASCHINE** presenta 21 funciones organizadas en cinco subsistemas y tres alternativas por función.
+Estos elementos cumplen funciones específicas dentro del sistema de alimentación, transporte, inspección visual, procesamiento de datos, control y separación física.
 
-Se ha considerado **únicamente la ruta marcada con flechas azules**, que corresponde a la **alternativa 1 en las 21 funciones**.
+### 7.1. Sistema de energía
 
-En las tablas siguientes se presentan los elementos seleccionados y se explica su finalidad dentro del prototipo.
+El sistema de energía tiene como finalidad suministrar las tensiones eléctricas requeridas por los distintos componentes del prototipo.
 
-**Alcance:** Se trata del inventario seleccionado para la propuesta de diseño. La matriz no certifica existencias físicas, compras, montaje ni pruebas.
-
-El término «materiales» se usa aquí en sentido amplio e incluye componentes, dispositivos y herramientas de software.
-
-### 7.2. Subsistema de energía (3 elementos)
-
-Este subsistema tiene como finalidad suministrar la energía eléctrica necesaria para el funcionamiento de los componentes electrónicos y los actuadores mecánicos.
-
-| N.º | Elemento seleccionado (flecha azul) | Función prevista |
+| N.º | Componente | Función |
 |---|---|---|
-| 1 | Fuente Mean Well 12 V | Proporcionar la alimentación eléctrica general prevista para el sistema. |
-| 2 | Fuente switching 12 V | Alimentar los actuadores de acuerdo con la distribución eléctrica propuesta. |
-| 3 | Buck XL4015 a 5 V | Reducir la tensión para la Raspberry Pi y la electrónica que requiera 5 V, sujeto a la verificación de corriente y compatibilidad. |
+| 1 | Fuente Mean Well de 12 V | Suministrar energía eléctrica al sistema. |
+| 2 | Fuente switching de 12 V | Proporcionar alimentación a los actuadores según los requerimientos del diseño. |
+| 3 | Convertidor Buck XL4015 a 5 V | Reducir la tensión de alimentación para los dispositivos electrónicos compatibles. |
 
-Las dos fuentes de 12 V figuran como selecciones distintas porque responden a funciones diferentes de la matriz.
+**Descripción:**
 
-Durante el diseño se deberá comprobar si ambas son necesarias y cómo se distribuye adecuadamente la potencia.
+Las fuentes de alimentación permitirán suministrar energía al sistema mecatrónico.
 
-### 7.3. Subsistema de procesamiento y control de señales (5 elementos)
+El convertidor Buck XL4015 se contempla para obtener una tensión reducida que pueda utilizarse en determinados dispositivos electrónicos.
 
-Este subsistema constituye la parte encargada de obtener y analizar la información visual de las papas y proporcionar señales para el control del mecanismo.
+La capacidad de corriente, distribución de potencia y compatibilidad eléctrica deberán verificarse durante la implementación.
 
-| N.º | Elemento seleccionado (flecha azul) | Función prevista |
+### 7.2. Sistema de procesamiento y control de señales
+
+Este sistema se encargará de obtener y procesar información visual, así como de coordinar el funcionamiento de los mecanismos del prototipo.
+
+| N.º | Componente | Función |
 |---|---|---|
-| 4 | Raspberry Pi 5, 8 GB RAM | Unidad de procesamiento de imágenes y coordinación del control. |
-| 5 | Raspberry Pi Camera Module 3 | Captura de imágenes de la superficie de las papas. |
-| 6 | YOLOv8n | Modelo de inteligencia artificial propuesto para la detección o clasificación visual; es software, no un material físico. |
-| 7 | Sensor E18-D80NK | Detección de presencia de una papa en el área de inspección. |
-| 8 | Encoder rotativo incremental 600 PPR | Medición del giro o desplazamiento del mecanismo al que se incorpore. |
+| 4 | Raspberry Pi 5 — 8 GB RAM | Procesamiento de imágenes y control computacional. |
+| 5 | Raspberry Pi Camera Module 3 | Adquisición de imágenes de las papas. |
+| 6 | YOLOv8n | Modelo de inteligencia artificial para la detección o clasificación visual. |
+| 7 | Sensor E18-D80NK | Detección de presencia de papas. |
+| 8 | Encoder rotativo incremental de 600 PPR | Medición del movimiento o posición angular del mecanismo correspondiente. |
 
-La selección de la Raspberry Pi 5 y el módulo de cámara responde a la necesidad de obtener y procesar imágenes en un sistema compacto.
+**Descripción:**
 
-Asimismo, YOLOv8n constituye la tecnología de aprendizaje automático propuesta para identificar características externas y apoyar la clasificación.
+La Raspberry Pi 5 funcionará como unidad central de procesamiento.
 
-### 7.4. Subsistema mecánico (7 elementos)
+La cámara permitirá obtener imágenes digitales de las papas, las cuales serán analizadas mediante YOLOv8n.
 
-Este subsistema tiene como finalidad permitir el ingreso, transporte, orientación y separación de las papas durante el funcionamiento del prototipo.
+El sensor E18-D80NK ayudará a detectar el ingreso de las papas a la zona de inspección.
 
-| N.º | Elemento seleccionado (flecha azul) | Función prevista |
+Por su parte, el encoder permitirá obtener información del movimiento mecánico para contribuir a la coordinación del sistema.
+
+### 7.3. Sistema mecánico
+
+El sistema mecánico permitirá transportar, orientar y separar físicamente las papas durante el proceso de clasificación.
+
+| N.º | Componente | Función |
 |---|---|---|
-| 9 | Tolva por gravedad PETG | Recepción de papas y alimentación hacia el sistema de transporte. |
-| 10 | Mini faja PVC | Desplazamiento de las papas desde la recepción hasta la inspección. |
-| 11 | Mesa de inspección por rodillos | Sostener y transportar las papas durante la inspección. |
-| 12 | Pin conveyor chain | Mecanismo de cadena con pasadores seleccionado para apoyar el giro u orientación de las papas. |
-| 13 | 2 motorreductores DC JGA25-370 | Accionamiento previsto del mecanismo de giro. |
-| 14 | Compuerta accionada por servo MG996R | Realizar la desviación de papas según la categoría asignada. |
-| 15 | Compuerta con bandeja | Recibir las papas después de la separación. |
+| 9 | Tolva por gravedad fabricada en PETG | Recepción y alimentación de papas. |
+| 10 | Mini faja transportadora de PVC | Transporte hacia la zona de inspección. |
+| 11 | Mesa de inspección por rodillos | Soporte y desplazamiento de las papas durante la inspección. |
+| 12 | Pin conveyor chain | Mecanismo de cadena con pasadores para apoyar la orientación de las papas. |
+| 13 | Dos motorreductores DC JGA25-370 | Accionamiento del mecanismo de giro. |
+| 14 | Compuerta accionada por servomotor MG996R | Separación física según la clasificación obtenida. |
+| 15 | Compuerta con bandeja | Recepción de las papas clasificadas. |
 
-La implementación de un mecanismo de orientación constituye una característica importante del diseño, ya que busca permitir la observación de distintas superficies de la papa y reducir las zonas que podrían quedar fuera del campo de visión de la cámara.
+**Descripción:**
 
-### 7.5. Subsistema de comunicación (3 elementos)
+La tolva por gravedad permitirá introducir las papas al sistema de transporte.
 
-Este subsistema permitirá informar al operador sobre el funcionamiento del equipo y los resultados del proceso de clasificación.
+La mini faja de PVC desplazará el producto hacia la mesa de inspección.
 
-| N.º | Elemento seleccionado (flecha azul) | Función prevista |
+En esta zona, los rodillos, el mecanismo de cadena y los motorreductores se utilizarán para orientar las papas, facilitando la captura de imágenes desde distintas posiciones.
+
+Finalmente, la compuerta accionada mediante el servomotor MG996R permitirá ejecutar la separación física de acuerdo con el resultado del sistema de clasificación.
+
+### 7.4. Sistema de comunicación
+
+Este sistema facilitará la visualización del estado operativo y de los resultados del proceso.
+
+| N.º | Componente o tecnología | Función |
 |---|---|---|
-| 16 | LEDs indicadores 5 mm | Mostrar información básica del estado del sistema y la clasificación. |
-| 17 | Wi-Fi integrado de Raspberry Pi 5 | Enviar resultados e información sin incorporar un módulo externo de comunicación. |
-| 18 | Interfaz web mediante Flask/HTML | Presentar información para la supervisión e interacción del operador; corresponde a software. |
+| 16 | LEDs indicadores de 5 mm | Señalización visual del estado del sistema. |
+| 17 | Wi-Fi integrado de Raspberry Pi 5 | Comunicación inalámbrica y transmisión de información. |
+| 18 | Interfaz web mediante Flask/HTML | Visualización de resultados y supervisión del prototipo. |
 
-La interfaz web facilitará la supervisión de los resultados, mientras que los indicadores LED ofrecerán una señalización visual básica durante el funcionamiento del prototipo.
+**Descripción:**
 
-### 7.6. Subsistema de materiales y estructura (3 elementos)
+Los indicadores LED proporcionarán información visual básica sobre las operaciones del equipo.
 
-Los materiales estructurales se seleccionaron considerando su aplicación en la fabricación y el montaje de los diferentes componentes mecánicos.
+La conectividad Wi-Fi de la Raspberry Pi permitirá comunicar el sistema con la interfaz web.
 
-| N.º | Material seleccionado (flecha azul) | Función prevista |
+Mediante Flask y HTML se desarrollará una interfaz para mostrar información del proceso de clasificación.
+
+### 7.5. Materiales y estructura
+
+Los materiales estructurales permitirán fabricar los soportes, mecanismos y elementos de contacto con las papas.
+
+| N.º | Material | Aplicación |
 |---|---|---|
-| 19 | Aluminio | Construcción de la estructura principal. |
-| 20 | PETG eSUN impreso en 3D | Fabricación de soportes y piezas personalizadas para el prototipo. |
-| 21 | Rodillo recubierto de TPU 95A | Proporcionar contacto con la papa durante las operaciones de giro u orientación. |
+| 19 | Aluminio | Fabricación de la estructura principal del prototipo. |
+| 20 | PETG eSUN impreso en 3D | Fabricación de soportes y piezas personalizadas. |
+| 21 | Rodillo recubierto de TPU 95A | Superficie de contacto para facilitar la orientación de las papas. |
 
-El aluminio constituye la opción seleccionada para la estructura principal, mientras que el PETG permite fabricar piezas personalizadas mediante impresión 3D.
+**Descripción:**
 
-Por su parte, el recubrimiento de TPU 95A se propone como superficie de contacto en el sistema de rodillos.
+El aluminio se utilizará como material principal de la estructura del equipo.
 
-### 7.7. Resumen de los componentes seleccionados
+El PETG eSUN permitirá fabricar piezas personalizadas mediante impresión 3D, adaptándolas a los requerimientos geométricos del prototipo.
+
+Por otro lado, el recubrimiento de TPU 95A se contempla para los rodillos que estarán en contacto con las papas durante su orientación.
+
+### 7.6. Resumen de los materiales y componentes
 
 | Subsistema | Cantidad de elementos |
 |---|---:|
@@ -262,71 +346,93 @@ Por su parte, el recubrimiento de TPU 95A se propone como superficie de contacto
 | Materiales y estructura | 3 |
 | **Total** | **21** |
 
-La documentación presentada corresponde exclusivamente a los 21 elementos seleccionados mediante las flechas azules de la matriz morfológica.
+En conjunto, estos 21 elementos constituyen la base tecnológica y material del diseño propuesto para Kartoffelmaschine.
 
-No se incorporan las alternativas 2 o 3 de la matriz.
-
-### 7.8. Relación de las selecciones con los principios estudiados
-
-| Principio tecnológico respaldado por antecedentes | Componentes seleccionados en Kartoffelmaschine | Justificación del diseño |
-|---|---|---|
-| Captura y análisis de imágenes [2], [3] | Raspberry Pi Camera Module 3 y Raspberry Pi 5 | Disponer de una plataforma para adquirir y procesar imágenes de la superficie. |
-| Aprendizaje profundo para detección visual [3], [9] | YOLOv8n | Explorar una clasificación automatizada basada en características visuales. |
-| Inspección de distintas superficies [4] | Mesa de rodillos, pin conveyor chain, dos motorreductores y rodillo TPU 95A | Proponer un mecanismo de orientación para reducir las superficies no observadas. |
-| Separación física basada en la inspección [4]–[6] | Compuerta con servo MG996R y compuerta con bandeja | Relacionar el resultado computacional con un mecanismo de salida. |
-| Integración del control mecatrónico | Sensor E18-D80NK, encoder y elementos de alimentación y comunicación | Posibilitar coordinación y monitoreo durante una implementación futura. |
+Su integración permitirá estudiar un proceso automatizado de inspección y separación de papa Chaucha.
 
 ---
 
-## 8. Relación con los Objetivos de Desarrollo Sostenible
+## 8. Relación del proyecto con los Objetivos de Desarrollo Sostenible
 
 ### 8.1. ODS 12 — Producción y consumo responsables
 
-La meta 12.3 plantea reducir las pérdidas de alimentos en las cadenas de producción y suministro [7].
+El ODS 12 promueve modalidades de producción y consumo sostenibles.
 
-Kartoffelmaschine se relaciona con este objetivo al estudiar una herramienta para realizar una inspección visual más sistemática.
+Específicamente, la meta 12.3 plantea reducir las pérdidas de alimentos a lo largo de las cadenas de producción y suministro [7].
 
-No puede afirmarse aún que el diseño reduzca pérdidas: será necesario evaluarlo con datos reales.
+Kartoffelmaschine se relaciona con este objetivo al proponer una herramienta tecnológica que permita apoyar la inspección y clasificación de papas durante la etapa poscosecha.
+
+La automatización podría contribuir a una selección más uniforme y a mejorar la eficiencia del proceso; sin embargo, estos beneficios deberán evaluarse experimentalmente.
 
 ### 8.2. ODS 9 — Industria, innovación e infraestructura
 
-Este objetivo impulsa la innovación tecnológica [8].
+El ODS 9 promueve el desarrollo tecnológico, la innovación y la industrialización sostenible [8].
 
-El proyecto se vincula con él mediante la integración propuesta de mecánica, electrónica, visión artificial y aprendizaje automático para una operación agrícola poscosecha.
+Kartoffelmaschine se vincula con este objetivo mediante la aplicación de tecnologías emergentes, como visión artificial, aprendizaje automático y sistemas mecatrónicos, para mejorar un proceso de clasificación agrícola.
+
+El proyecto busca integrar estas tecnologías dentro de un prototipo funcional que pueda ser evaluado y perfeccionado en las siguientes etapas de desarrollo.
 
 ---
 
-## 9. Limitaciones y aspectos por verificar
+## 9. Limitaciones identificadas
 
-- **Definición de categorías:** «Buen estado» y «mal estado» deben traducirse en criterios visuales reproducibles. Una fotografía no verifica por sí sola condiciones internas o inocuidad.
+Durante la revisión bibliográfica y el análisis tecnológico se identificaron diferentes factores que podrían influir en el funcionamiento del prototipo.
 
-- **Variabilidad de la papa Chaucha:** Forma, tamaño, color y apariencia pueden modificar el rendimiento de una clasificación automatizada.
+### 9.1. Variabilidad de las papas
 
-- **Adquisición de imágenes:** Iluminación, enfoque, distancia, fondo y posición influyen en los datos que recibirá el modelo.
+Las papas presentan diferencias naturales de tamaño, forma, color y textura.
 
-- **Orientación mecánica:** La cadena y los rodillos deberán demostrar que exponen suficientes superficies sin causar daños al producto.
+Estas variaciones pueden dificultar la identificación de características visuales y deberán considerarse durante el desarrollo del modelo de inteligencia artificial.
 
-- **Sincronización:** Deberá garantizarse que la decisión del modelo corresponda a la papa correcta cuando se active la compuerta.
+### 9.2. Condiciones de iluminación
 
-- **Alimentación eléctrica y conexiones:** Deberán verificarse la necesidad de dos fuentes de 12 V, la capacidad del convertidor a 5 V y la compatibilidad eléctrica de cada dispositivo.
+La calidad de las imágenes depende de factores como la iluminación, el enfoque, la distancia de captura y la orientación del producto.
 
-- **Evidencia de implementación:** La matriz morfológica documenta una selección, no ensayos, fotografías de montaje, pruebas de precisión ni validación del prototipo.
+Será necesario controlar estas condiciones para reducir las variaciones durante la inspección.
+
+### 9.3. Disponibilidad de datos
+
+El entrenamiento de modelos de aprendizaje automático requiere imágenes representativas y correctamente etiquetadas.
+
+La cantidad y diversidad de imágenes de papa Chaucha influirá en la capacidad del modelo para reconocer defectos externos.
+
+### 9.4. Identificación de defectos
+
+La inspección mediante cámaras convencionales se limita principalmente a las características visibles de la superficie.
+
+Por ello, no todos los defectos internos ni las condiciones de inocuidad pueden identificarse mediante esta tecnología.
+
+### 9.5. Sincronización del sistema
+
+El transporte, la orientación de las papas, la captura de imágenes y el accionamiento de la compuerta deberán trabajar de manera coordinada.
+
+Una sincronización inadecuada podría ocasionar errores de clasificación o separación.
+
+### 9.6. Integración eléctrica y mecánica
+
+La conexión de los componentes requerirá verificar tensiones, corrientes, potencia disponible y compatibilidad de señales.
+
+Asimismo, los mecanismos deberán permitir la manipulación de las papas sin ocasionar daños significativos.
 
 ---
 
 ## 10. Conclusiones
 
-El análisis de literatura científica y patentes permitió reconocer fundamentos tecnológicos para investigar la inspección y clasificación visual de papa Chaucha mediante procesamiento de imágenes, aprendizaje automático e integración mecatrónica [2]–[6], [9].
+La investigación realizada permitió identificar los principales fundamentos científicos y tecnológicos asociados con la clasificación automatizada de papas mediante visión artificial, procesamiento digital de imágenes y aprendizaje automático.
 
-Los antecedentes sustentan la **posibilidad de estudiar el concepto**, pero no constituyen una demostración experimental del funcionamiento de Kartoffelmaschine.
+Los artículos científicos analizados evidencian la aplicación de estas tecnologías en la evaluación de características geométricas y defectos externos de papas [2], [3], [9].
 
-Se documentó además la solución específica seleccionada en la matriz morfológica: **21 elementos correspondientes exclusivamente a las flechas azules**, distribuidos entre energía, procesamiento y control, mecánica, comunicación, y materiales y estructura.
+Asimismo, las patentes revisadas proporcionan antecedentes de sistemas que integran inspección visual, procesamiento computacional y separación física [4]–[6].
 
-Esta información concreta cómo se propone implementar el sistema y evita confundir los antecedentes científicos con los componentes escogidos.
+A partir de estos fundamentos, Kartoffelmaschine plantea una solución mecatrónica que combina alimentación, transporte, orientación del producto, adquisición de imágenes, clasificación mediante YOLOv8n y separación mediante una compuerta automatizada.
 
-Por tanto, el resultado del **TRL 1** es una base científica y documental coherente que reúne el problema de inspección poscosecha, los principios tecnológicos aplicables y un inventario conceptual claramente identificado.
+Se documentaron **21 elementos**, organizados en cinco subsistemas: energía, procesamiento y control de señales, mecánica, comunicación, y materiales y estructura.
 
-El análisis detallado del diseño, la prueba de concepto y la validación experimental deberán desarrollarse y registrarse en las etapas TRL posteriores.
+Entre los principales componentes se encuentran la Raspberry Pi 5, la Raspberry Pi Camera Module 3, el modelo YOLOv8n, sensores, motorreductores, mecanismos de transporte y materiales para fabricación mecánica.
+
+La integración de estos elementos constituye la base conceptual para el desarrollo del prototipo.
+
+Finalmente, el TRL 1 permite establecer los fundamentos científicos y tecnológicos necesarios para continuar con las siguientes etapas de diseño, prueba de concepto y validación experimental.
 
 ---
 
@@ -338,17 +444,14 @@ El análisis detallado del diseño, la prueba de concepto y la validación exper
 
 [3] Q. Su, N. Kondo, D. F. Al Riza y H. Habaragamuwa, “Potato quality grading based on depth imaging and convolutional neural network,” *Journal of Food Quality*, vol. 2020, art. 8815896, 2020, doi: 10.1155/2020/8815896.
 
-[4] Zhengzhou University of Light Industry, “Panoramic potato defect detection device and method based on virtual and real imaging combination,” patente china CN109030504B, 2020. [En línea]. Disponible: https://patents.google.com/patent/CN109030504B/en
+[4] Zhengzhou University of Light Industry, “Panoramic potato defect detection device and method based on virtual and real imaging combination,” China Patent CN109030504B, 2020. [En línea]. Disponible: https://patents.google.com/patent/CN109030504B/en
 
-[5] P. Berghmans, C. Fivez y J. Speybrouck, “Method for sorting potato products and sorting apparatus for potato products,” patente estadounidense US9114436B2, 2015. [En línea]. Disponible: https://patents.google.com/patent/US9114436B2/en
+[5] P. Berghmans, C. Fivez y J. Speybrouck, “Method for sorting potato products and sorting apparatus for potato products,” U.S. Patent US9114436B2, 2015. [En línea]. Disponible: https://patents.google.com/patent/US9114436B2/en
 
-[6] D. A. LaRose, C. C. Fromme, D. J. Stager, M. K. Sergi-Curfman, J. A. Bagnell, E. A. Cuzzillo y L. D. Baker, “Computer vision and machine learning software for grading and sorting plants,” patente estadounidense US9527115B2, 2016. [En línea]. Disponible: https://patents.google.com/patent/US9527115B2/en
+[6] D. A. LaRose, C. C. Fromme, D. J. Stager, M. K. Sergi-Curfman, J. A. Bagnell, E. A. Cuzzillo y L. D. Baker, “Computer vision and machine learning software for grading and sorting plants,” U.S. Patent US9527115B2, 2016. [En línea]. Disponible: https://patents.google.com/patent/US9527115B2/en
 
 [7] Naciones Unidas, “Objetivo 12: Garantizar modalidades de consumo y producción sostenibles.” [En línea]. Disponible: https://www.un.org/sustainabledevelopment/es/sustainable-consumption-production/
 
 [8] Naciones Unidas, “Objetivo 9: Construir infraestructuras resilientes, promover la industrialización sostenible y fomentar la innovación.” [En línea]. Disponible: https://www.un.org/sustainabledevelopment/es/infrastructure/
 
-[9] X. Li, F. Wang, Y. Guo, Y. Liu, H. Lv, F. Zeng y C. Lv, “Improved YOLO v5s-based detection method for external defects in potato,” *Frontiers in Plant Science*, vol. 16, art. 1527508, feb. 2025, doi: 10.3389/fpls.2025.1527508.
-
-
-La selección presentada corresponde a la alternativa 1 de las 21 funciones, indicada visualmente por flechas azules en el archivo original.
+[9] X. Li, F. Wang, Y. Guo, Y. Liu, H. Lv, F. Zeng y C. Lv, “Improved YOLO v5s-based detection method for external defects in potato,” *Frontiers in Plant Science*, vol. 16, art. 1527508, 2025, doi: 10.3389/fpls.2025.1527508.
