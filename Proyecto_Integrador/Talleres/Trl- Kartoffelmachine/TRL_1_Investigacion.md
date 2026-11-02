@@ -6,9 +6,9 @@
 **Universidad:** Universidad Peruana Cayetano Heredia (UPCH)  
 **Curso:** Proyecto Integrador 2026-II  
 **Equipo:** 10  
-**Nivel de madurez:** TRL 1 — Principios básicos observados y documentados.
+**Nivel de madurez:** TRL 1 — Principios básicos observados y documentados, de acuerdo con la clasificación de madurez tecnológica de la NASA [12].
 
-> **Alcance:** Este documento examina la problemática, los fundamentos científicos y los antecedentes bibliográficos que sustentan la posibilidad de clasificar papas mediante inspección visual automatizada. **No presenta un prototipo validado ni resultados experimentales propios.** La selección definitiva de componentes y la arquitectura de la solución se desarrollan en TRL 2; las pruebas analíticas y experimentales corresponden a TRL 3 y TRL 4.
+En esta etapa se estudian los fundamentos científicos de la inspección visual automatizada de papas y se revisan investigaciones relacionadas. El trabajo reúne antecedentes sobre captura de imágenes, procesamiento digital y aprendizaje automático. No se presentan ensayos propios ni resultados de un prototipo: esos aspectos se abordarán en etapas posteriores del proyecto.
 
 ---
 
@@ -62,7 +62,7 @@ Por consiguiente, debe diferenciarse entre **clasificación visual basada en cri
 
 Un sistema de visión artificial transforma la luz reflejada por el producto en información digital. La calidad de la imagen depende, entre otros factores, del enfoque, la resolución, la distancia de captura, la exposición, la iluminación y el contraste con el fondo. Las variaciones no controladas pueden modificar la apariencia de una misma superficie y afectar la interpretación de las imágenes.
 
-De forma general, el procedimiento puede comprender cuatro momentos: capturar una o más vistas; revisar la calidad de las fotografías; reconocer rasgos visibles; y tomar una decisión según categorías previamente definidas. El siguiente diagrama **explica el principio de trabajo**, no el funcionamiento de un prototipo ya construido.
+De forma general, el procedimiento puede comprender cuatro momentos: capturar una o más vistas; revisar la calidad de las fotografías; reconocer rasgos visibles; y tomar una decisión según categorías previamente definidas. La Figura 1 resume las etapas habituales de este tipo de inspección.
 
 ```mermaid
 flowchart LR
@@ -72,7 +72,7 @@ flowchart LR
     D --> E["Clasificación según criterios definidos"]
 ```
 
-*Figura 1. Secuencia conceptual de un proceso de inspección visual. Elaboración propia con base en los fundamentos revisados.*
+*Figura 1. Secuencia conceptual del proceso de inspección mediante visión artificial.*
 
 Las patentes de inspección de productos agrícolas también consideran la iluminación controlada y la exposición de distintas caras del producto como aspectos relevantes para el análisis visual [7], [8].
 
@@ -80,13 +80,13 @@ Las patentes de inspección de productos agrícolas también consideran la ilumi
 
 Una sola fotografía no necesariamente muestra toda la superficie de un tubérculo. La orientación o rotación del producto permite obtener vistas adicionales y reducir zonas no observadas. Este principio aparece en antecedentes de clasificación mediante imágenes tridimensionales y en sistemas patentados que giran productos frente a una cámara [2], [7], [8].
 
-La revisión documental permite considerar la **captura multivista** como un fundamento útil. Como ejemplo, la patente US12059712B2 presenta una disposición de cámara, iluminación y rodillos para observar diferentes caras de un producto agrícola. Se pueden consultar sus dibujos técnicos en [Google Patents](https://patents.google.com/patent/US12059712B2/en) [8]. No obstante, determinar el mecanismo concreto que implementará dicho principio corresponde al diseño conceptual y detallado de niveles posteriores.
+La revisión documental permite considerar la **captura multivista** como un fundamento útil. Como ejemplo, la patente US12059712B2 presenta una disposición de cámara, iluminación y rodillos para observar diferentes caras de un producto agrícola. Se pueden consultar sus dibujos técnicos en [Google Patents](https://patents.google.com/patent/US12059712B2/en) [8]. La aplicación de ese principio al diseño de Kartoffelmachine se definirá en las siguientes etapas.
 
 ### 3.4. Aprendizaje automático y redes neuronales convolucionales
 
 El aprendizaje automático utiliza ejemplos para identificar patrones y generar predicciones sobre datos no vistos durante el entrenamiento. En imágenes, las redes neuronales convolucionales (CNN) permiten aprender representaciones visuales asociadas con formas, texturas y otros patrones.
 
-Deben distinguirse tres tipos de tareas:
+En el análisis de imágenes se distinguen tres tareas principales:
 
 - **Clasificación de imágenes:** asigna una categoría a una imagen completa.
 - **Detección de objetos o defectos:** identifica la localización de elementos mediante regiones o cuadros delimitadores.
@@ -109,7 +109,7 @@ Los resultados de investigaciones anteriores demuestran que las técnicas pueden
 | Su et al. (2020) [3] | Imágenes de profundidad y CNN | Reporta **86,6 %** de aciertos globales en seis categorías combinadas de tamaño y apariencia. | Se estudiaron papas y una tecnología de captura distintas a las que se usarán en el proyecto. |
 | Li et al. (2025) [4] | Detección de defectos con YOLOv5s modificado | Reporta **85,1 % de mAP** para seis categorías, incluidas brotación y daños mecánicos. | No es una evaluación de YOLOv8 ni de papa Chaucha en Kartoffelmachine. |
 
-Para visualizar la diferencia entre una fotografía normal y una imagen de profundidad, es útil revisar la **Figura 2** del artículo de Su *et al.* (2020): [ver imágenes comparativas en la publicación original](https://onlinelibrary.wiley.com/doi/10.1155/2020/8815896) [3]. Esa figura pertenece a sus autores y aquí se enlaza como material de consulta, sin presentarla como imagen propia.
+El trabajo de Su *et al.* [3] también presenta ejemplos de imágenes RGB y de profundidad, que permiten apreciar la información adicional utilizada para analizar la forma del tubérculo. Las imágenes originales pueden consultarse en [la publicación científica](https://onlinelibrary.wiley.com/doi/10.1155/2020/8815896).
 
 ### 4.1. Análisis crítico
 
@@ -125,15 +125,13 @@ Aunque existen estudios que clasifican papas con buenos resultados, todavía que
 
 ## 5. Antecedentes tecnológicos y patentes
 
-Se identificaron las siguientes patentes como **antecedentes tecnológicos**, no como prueba de que el diseño del equipo sea patentable, libre de restricciones o técnicamente validado.
+La revisión identificó tres patentes que permiten conocer soluciones técnicas aplicadas a la inspección visual y clasificación de productos. Estos antecedentes no constituyen una evaluación formal de patentabilidad del proyecto.
 
 | Patente | Descripción del antecedente | Principio que interesa investigar |
 |---|---|---|
 | **CN109030504B** [7] | Dispositivo de detección panorámica de defectos de papas mediante combinación de imágenes y análisis computacional. | Observación de diferentes zonas de la superficie. |
 | **US12059712B2** [8] | Dispositivo de clasificación de productos agrícolas con adquisición de imágenes y mecanismo de volteo o rotación. | Exposición multivista, iluminación y decisión automatizada. |
 | **US9527115B2** [9] | Sistema de visión y aprendizaje automático para clasificar plantas de vivero. | Relación general entre procesamiento visual y decisión de separación; **no es una patente específica de clasificación de tubérculos**. |
-
-**Nota sobre el cambio de referencias:** la patente US9114436B2 que figuraba en la versión anterior trata una modalidad particular de detección óptica de productos de papa. Para nuestro estado del arte, US12059712B2 es un antecedente más cercano al principio de girar el tubérculo frente a una cámara. Si se mantiene la patente anterior, debe describirse con esa delimitación y sin presentarla como idéntica al sistema del proyecto.
 
 ### 5.1. Qué se puede concluir de las patentes
 
@@ -143,7 +141,7 @@ Los antecedentes muestran que existen enfoques para combinar inspección óptica
 
 ## 6. Relación con los Objetivos de Desarrollo Sostenible
 
-Las imágenes de los dos ODS que se muestran a continuación ya están disponibles en la carpeta `Recursos/Imágenes` del repositorio del Equipo 10.
+La investigación se relaciona principalmente con el ODS 12 y, de manera complementaria, con el ODS 9.
 
 <p align="center">
   <img src="../../../Recursos/Imágenes/sustainable_development_goal12.png" alt="ODS 12 - Producción y consumo responsables" width="185" />
@@ -157,7 +155,7 @@ Las imágenes de los dos ODS que se muestran a continuación ya están disponibl
 
 La meta 12.3 promueve la reducción de pérdidas de alimentos en las cadenas de producción y suministro [10]. La investigación se relaciona con esta meta porque aborda la posibilidad de hacer más consistente la inspección visual poscosecha.
 
-No debe afirmarse que el prototipo ya reduce pérdidas alimentarias: esa contribución sería una hipótesis que debe medirse en etapas posteriores.
+Aún no se ha medido una reducción de pérdidas alimentarias atribuible a Kartoffelmachine. Esa posible contribución deberá evaluarse experimentalmente.
 
 ### 6.2. ODS 9 — Industria, innovación e infraestructura (secundario)
 
@@ -192,8 +190,6 @@ El ODS 9 comprende la promoción de la innovación y el desarrollo tecnológico 
 
 ## 9. Referencias bibliográficas (IEEE)
 
-Las referencias se enumeran por orden de aparición. Los resultados cuantitativos incluidos en el estado del arte pertenecen a los estudios citados y **no son mediciones del Equipo 10**.
-
 [1] N. Cromme, A. B. Prakash, N. Lutaladio y F. Ezeta, coords., *Strengthening Potato Value Chains: Technical and Policy Options for Developing Countries*. Roma: FAO y Common Fund for Commodities, 2010. [En línea]. Disponible: https://www.fao.org/4/i1710e/i1710e.pdf
 
 [2] Q. Su, N. Kondo, M. Li, H. Sun, D. F. Al Riza y H. Habaragamuwa, “Potato quality grading based on machine vision and 3D shape analysis,” *Computers and Electronics in Agriculture*, vol. 152, pp. 261–268, 2018, doi: 10.1016/j.compag.2018.07.012.
@@ -219,17 +215,3 @@ Las referencias se enumeran por orden de aparición. Los resultados cuantitativo
 [12] NASA, “Technology Readiness Levels (TRLs),” Earth Science Technology Office. [En línea]. Disponible: https://esto.nasa.gov/trl/
 
 ---
-
-## 10. Fuentes de figuras y documentación visual
-
-- **Figura 1 (incluida):** diagrama de flujo conceptual elaborado por el equipo en formato Mermaid. GitHub lo representa directamente; no requiere subir una imagen.
-- **Figura 2 (incluida):** íconos de los ODS 12 y 9. Los enlaces son relativos a los archivos que ya están dentro de `Recursos/Imágenes`.
-- **Imagen científica de consulta (enlace, no insertada):** comparación de imágenes RGB y de profundidad, Figura 2 de Su *et al.* (2020), disponible en [el artículo](https://onlinelibrary.wiley.com/doi/10.1155/2020/8815896). Si se desea reproducirla dentro del informe, primero debe revisarse su licencia y agregarse el crédito correspondiente.
-- **Esquema de patente de consulta (enlace, no insertado):** dibujos del mecanismo de inspección y volteo de [US12059712B2](https://patents.google.com/patent/US12059712B2/en). El texto ya explica su aporte, por lo que no es indispensable copiar la figura.
-- **Fotografía opcional recomendada:** una fotografía propia de varias papas Chaucha con diferencias de color y forma naturales, indicando procedencia y fecha. Esta foto puede agregarse en la sección 1.1 cuando se disponga de muestras reales; **no debe etiquetarse «buena/mala» sin haber definido antes los criterios de evaluación**.
-
----
-
-### Criterio de madurez utilizado
-
-La definición de TRL 1 utilizada en este documento se basa en los criterios de NASA: principios científicos observados y reportados, sustentados con documentación científica [12]. Las aplicaciones concretas de la tecnología, el diseño de subsistemas y los ensayos experimentales corresponden a los siguientes niveles de madurez.
