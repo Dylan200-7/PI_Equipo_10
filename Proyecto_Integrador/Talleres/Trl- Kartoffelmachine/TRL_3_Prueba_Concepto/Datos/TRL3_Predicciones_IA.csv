@@ -1,0 +1,5 @@
+imagen,etiqueta_referencia,prediccion_modelo,confianza,coincide,prob_Buen estado,prob_Defectuoso
+Papa_BE_4.jpg,Buen estado,Buen estado,0.999972,True,0.999972,2.8e-05
+Papa_BE_13.jpg,Buen estado,Buen estado,0.99997,True,0.99997,3e-05
+Papa_D_7.jpg,Defectuoso,Defectuoso,1.0,True,0.0,1.0
+Papa_D_5.jpg,Defectuoso,Defectuoso,1.0,True,0.0,1.0

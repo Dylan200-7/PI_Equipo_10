@@ -1,0 +1,5 @@
+imagen,referencia_visual,prediccion_modelo,confianza,coincide
+IA2_BE_01.png,Buen estado,Buen estado,0.95612,True
+IA2_BE_02.png,Buen estado,Buen estado,0.99999,True
+IA2_D_Brotes_01.png,Defectuoso,Defectuoso,1.0,True
+IA2_D_Brotes_02.png,Defectuoso,Defectuoso,1.0,True
