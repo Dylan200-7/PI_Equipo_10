@@ -3,7 +3,8 @@
 ## Prueba de concepto y evaluación preliminar de los subsistemas de clasificación de papas Chaucha
 
 **Universidad:** Universidad Peruana Cayetano Heredia (UPCH)  
-**Curso:** Proyecto Integrador 2026-II  
+**Curso:** Proyecto Integrador 
+** Semestre: 2026-II  
 **Equipo:** 10  
 **Proyecto:** Kartoffelmachine  
 **Etapa:** TRL 3 — Prueba de concepto analítica y experimental  
@@ -13,11 +14,11 @@
 
 ## 1. Introducción
 
-En las primeras etapas del proyecto se estudiaron los fundamentos de la clasificación visual de papas y se planteó un sistema capaz de alimentarlas de forma individual, inspeccionar diferentes partes de su superficie y separarlas según su estado aparente. La propuesta fue tomando forma a través de la lista de exigencias, la caja negra, el esquema de funciones y la matriz morfológica, hasta llegar a una arquitectura basada en una tolva tubular, dos rodillos de inspección y un conjunto que bascula para realizar la descarga.
+En las primeras etapas del proyecto se estudiaron los fundamentos de la clasificación visual de papas y se planteó un sistema capaz de analizarlas de forma individual, inspeccionar diferentes partes de su superficie y separarlas según su estado aparente. Nuestra propuesta fue tomando forma a través de la lista de exigencias, la caja negra, el esquema de funciones y la matriz morfológica, hasta llegar a una arquitectura basada en una tolva tubular, dos rodillos de inspección y un conjunto que bascula para realizar la descarga.
 
-El trabajo correspondiente al TRL 3 busca comprobar por separado las funciones principales de esa propuesta. Para ello se elaboró un modelo mecánico tridimensional, se diseñó la electrónica de control, se analizó un soporte mediante simulación estructural y se probó un modelo de clasificación de imágenes. También se prepararon los archivos y parámetros de impresión 3D necesarios para fabricar los componentes mecánicos.
+El trabajo correspondiente al TRL 3 busca comprobar por separado las funciones principales de esa propuesta. Para ello se elaboró un modelo mecánico tridimensional, se diseñó la electrónica de control, se analizó un soporte mediante simulación estructural y se probó un modelo de clasificación de imágenes. Para el presente informe se prepararon los archivos y parámetros de impresión 3D necesarios para fabricar los componentes mecánicos.
 
-De acuerdo con la definición de niveles de madurez tecnológica de NASA [1], el TRL 3 se relaciona con la demostración analítica y experimental de funciones o características críticas. En esta etapa no es indispensable que la máquina completa esté ensamblada; sí es importante reconocer qué funciones cuentan con evidencia de funcionamiento y cuáles todavía deben pasar por ensayos de laboratorio. En Kartoffelmachine, las pruebas de software y el análisis estructural ya tienen resultados, mientras que la fabricación y las pruebas físicas de accionamiento e integración continúan en proceso.
+De acuerdo con la definición de niveles de madurez tecnológica de NASA [1], el TRL 3 se relaciona con la demostración analítica y experimental de funciones o características críticas, a través de modelamiento y somulación. En esta etapa no es indispensable que la máquina completa esté ensamblada; sí es importante reconocer qué funciones cuentan con evidencia de funcionamiento y cuáles todavía deben pasar por ensayos de laboratorio. En Kartoffelmachine, las pruebas de software y el análisis estructural ya tienen resultados, mientras que la fabricación y las pruebas físicas de accionamiento e integración continúan en proceso.
 
 ## 2. Objetivos
 
